@@ -1,7 +1,9 @@
 # Measuring the MCP Supply Chain: Eight Null Results and a Population That Is Not the Population
 
 **Prachet Poddar**
+
 University of California, Los Angeles
+
 prachetpoddar@gmail.com
 
 *Version 1.0, 7 September 2026*
@@ -272,13 +274,14 @@ The structural facts stand independently of all of this. Agent tool configuratio
 **Availability.** Every measurement, sampling frame, control arm and analysis script
 is released at:
 
-> https://github.com/PLACEHOLDER_USER/mcp-supply-chain-study
-> Archived copy with a citable DOI: PLACEHOLDER_DOI
+> https://github.com/prachetpoddar/mcp-supply-chain-study
+> Archived copy with a citable DOI: 10.5281/zenodo.22641813
+> https://doi.org/10.5281/zenodo.22641813
 
-The repository contains the eleven analysis scripts, the resolver library, and
-nine JSON datasets covering all four rounds of measurement, including the two
-runs that were later found invalid and the corrections applied to them. Nothing
-has been removed to make the result look cleaner.
+The repository contains eleven analysis scripts, the resolver library, and
+fourteen JSON datasets covering all four rounds of measurement, including the
+two runs that were later found invalid and the corrections applied to them.
+Nothing has been removed to make the result look cleaner.
 
 **Licensing.** Code is released under Apache-2.0. Data is released under
 CC-BY-4.0. The datasets consist of factual metadata retrieved from public

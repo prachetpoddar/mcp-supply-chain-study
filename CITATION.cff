@@ -32,6 +32,9 @@ keywords:
   - null results
   - measurement study
   - sampling bias
-# After archiving on Zenodo, uncomment and fill in:
-# doi: 10.5281/zenodo.XXXXXXX
-# repository-code: https://github.com/YOURUSER/mcp-supply-chain-study
+repository-code: https://github.com/prachetpoddar/mcp-supply-chain-study
+doi: 10.5281/zenodo.22641813
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22641813
+    description: Archived snapshot of version 1.0.0

@@ -4,7 +4,9 @@ Data and code for *Eight Null Results and a Population That Is Not the
 Population*, a measurement study of supply-chain risk in Model Context Protocol
 servers. Measurements run 6 to 7 September 2026.
 
-Paper: [`paper/mcp-supply-chain-nulls.md`](paper/mcp-supply-chain-nulls.md)
+Paper: [`paper/mcp-supply-chain-nulls.md`](paper/mcp-supply-chain-nulls.md), also as `.docx` and `.pdf` in the same folder.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22641813.svg)](https://doi.org/10.5281/zenodo.22641813)
 
 ## What it found
 
@@ -101,4 +103,5 @@ source is redistributed.
 See [`CITATION.cff`](CITATION.cff).
 
     Poddar, P. (2026). Measuring the MCP Supply Chain: Eight Null Results and a
-    Population That Is Not the Population. Version 1.0.
+    Population That Is Not the Population. Version 1.0.0. Zenodo.
+    https://doi.org/10.5281/zenodo.22641813

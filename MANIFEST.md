@@ -1,14 +1,14 @@
 # Manifest
 
-SHA-256 of every released file, generated 2026-09-07T09:53:27Z.
+SHA-256 of every released file, generated 2026-09-07T10:43:19Z.
 
 ```
 c0b1058614c0a01655a1635ff793fdbebae05d5e565b29f91867943c58482f5f  ./.gitignore
 7f823e01498ffdd7df21449b6538f8bfae893807c7acaae819a6b82f18d12473  ./.zenodo.json
-211fdf5ded3e9b615d681f29ecb8b29721d4c2d992876d85587222cb49cb563a  ./CITATION.cff
+3f7cb91b9147922be6c978b4ada6f188a50096cff3d990780e3a9a218c0a7d54  ./CITATION.cff
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  ./LICENSE
-9c7cddc9824da70296787b45fdd2bc4acdb5e70628eb9f8dd5b0142f57c81932  ./LICENSE-DATA.md
-320fcfdfb7c163bc556238b53872cbec87bfbb1134524bbee62d7bd39746b6d3  ./README.md
+f4990c40a5fa976ef00657e36c95ca46755bcafb6999050b7c82ebf15b8937cf  ./LICENSE-DATA.md
+570522e1239c12fbc5721503a145a38a81ce094a7d8104a4d34e08e5769422f2  ./README.md
 f408ef4c68f0a8e5c194d4acdfd83de5d22030cc9b596d95e817f3de5dc792f1  ./code/RUN_A_pypi_weighting.py
 bdb731ac3e4c1c9d37ca42d021f5bafc78bae98e41879b0230770911c7909274  ./code/docker_pulls.py
 52b8eba075db211e26e6973b4630659f17a29549a8c6751775a2f59d908d9626  ./code/enumerate_mcp.py
@@ -35,5 +35,7 @@ bb1979b292f83aee658c542bb47eb79ffeae5283da9f046d695a584bbaef2a78  ./data/mcp-stu
 b6443d0c2322dcf454d8ae6ae10f665586469ee0947c861132e3c437a92f99b5  ./data/mcp_docker.json
 f1c5db14b68f74775c0ab0f54e748d6560b6aa3526894e9b562429def2c3478a  ./data/npm_frame_wide_6540.json
 5fe773f5da8a5fa60652048d86a838a6f29e68680d23e5a63a67b372027afaea  ./data/pypi_sample_for_weighting.json
-921a6ec10a7770e412cd1097540fe185c77aa45dbd900940081d05899616b375  ./paper/mcp-supply-chain-nulls.md
+1b3f43e65393bc56b8f8f4fae01a70db21c71540875454efa68ea8593e112976  ./paper/mcp-supply-chain-nulls.docx
+408c80596ee25b4a62e3b66a1602e38a3c9ebacf11825d4036cb33091db3d281  ./paper/mcp-supply-chain-nulls.md
+c03b12e35a1fcb7eea858d8b472a5f166949fa9f536454d6bf18b1d5f6a3023c  ./paper/mcp-supply-chain-nulls.pdf
 ```
