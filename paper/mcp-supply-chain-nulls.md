@@ -6,7 +6,7 @@ University of California, Los Angeles
 
 prachetpoddar@gmail.com
 
-*Version 1.0.1, 7 September 2026*
+*Version 1.0.2, 7 September 2026*
 
 *This work was conducted independently. It was not funded by, supervised by, or
 carried out under the auspices of any research program, and it should not be
@@ -18,7 +18,11 @@ Model Context Protocol servers are software that runs on developer machines, is 
 
 We measured it. Across 250 npm-distributed MCP servers, 2,868 of their transitive dependencies, 400 published packages, and 247 PyPI-distributed servers, we tested eight dimensions against coverage-matched, size-adjusted and age-adjusted controls: license validity, license text distribution, deprecated dependencies, release churn, abandonment, install-script execution, name collision, and license metadata completeness.
 
-**No dimension shows elevated risk.** Against controls matched on sampling coverage, MCP servers on npm are indistinguishable from comparable packages on install-script execution and single-version publication, are lower on license-file absence, and are no worse on deprecated dependencies, where they are level with one control and lower than the other. They publish more often than the controls, not less. On name collision they are lower than one control and higher than the other, and the control they lose to is the one drawn from a comparably sized population. The residual coverage mismatch between our frames runs in MCP's favour on the licensing dimensions, so we report those as not worse rather than as better.
+**No dimension shows elevated risk, and we can now say so without hedging.** Version 1.0.2 enumerates 95.1% of the npm population rather than the 63.8% a score-ordered search frame reaches, which leaves an unidentified remainder of 4.9% instead of 36.2%. MCP servers ship license files more reliably than either control, 23.5% absent against 36.4% and 50.0%, and carry deprecated dependencies no more often. Install-script exposure is a genuine null: the identification bounds contain the control value. These conclusions hold whatever the 405 unreached packages contain.
+
+**Enumeration changed one result and rescaled another.** Single-version publication, reported as a null in earlier versions, is 45.2% across the population against langchain's 21.2%. Nearly half the published population has published exactly once, and in the deepest stratum it is 95.2%. Release recency stays higher than both controls but falls from 28.5% to 19.5%. The picture is a maintained head on a large dormant tail, and neither is visible from a search frame.
+
+**The frame bias is metric-specific.** Publishing behaviour moved by up to 20 points under enumeration. Dependency-tree properties moved by less than one: the median tree in the tail holds 96 packages against 97 in the head. Search score predicts how a package is maintained and not what it installs.
 
 The eighth appeared to be a real finding and then dissolved under usage weighting. Python-distributed MCP servers ship with no license information at all at 32.8% against a PyPI baseline of 18.0%, a risk ratio of 1.8 and an age-adjusted odds ratio of 2.45. Weighted by actual installs, that rate falls to **1.9%**, a sixteen-fold collapse.
 
@@ -54,7 +58,11 @@ The blind spot is real and its contents are numerous. This study asks a narrower
 
 ### 2.1 Sampling frames
 
-**npm.** The registry search API reports 8,227 packages carrying the keyword `mcp-server`. Pagination stops near 5,000 results, giving a frame of 5,250 unique packages, or 64% coverage. Because search orders by score, this frame is a top-slice and our npm estimates are optimistic. We tested for a hygiene gradient across score quartiles and found none (point-biserial r = −0.006 for unevaluable licenses, r = −0.059 for missing license files, against a significance threshold of 0.098 at n = 400).
+**npm.** Version 1.0.2 enumerates 95.1% of this population. The three paragraphs
+below describe the original 63.8% frame, which every result in versions 1.0.0 and
+1.0.1 rests on; Section 2.5 describes how the rest was reached and what it changed.
+
+The registry search API reports 8,227 packages carrying the keyword `mcp-server`. Pagination stops near 5,000 results, giving a frame of 5,250 unique packages, or 64% coverage. Because search orders by score, this frame is a top-slice and our npm estimates are optimistic. We tested for a hygiene gradient across score quartiles and found none (point-biserial r = −0.006 for unevaluable licenses, r = −0.059 for missing license files, against a significance threshold of 0.098 at n = 400).
 
 **PyPI.** The complete PyPI simple index is a single request returning **886,346 projects**. Filtering yields 18,963 packages carrying an mcp token and 4,062 that also contain "server". Treatment and control arms are simple random samples from this complete enumeration, with no score ordering.
 
@@ -65,6 +73,42 @@ The blind spot is real and its contents are numerous. This study asks a narrower
 | `keywords:mcp-server` | 8,227 | 5,250 | 64% |
 | `keywords:eslint-plugin` | 7,075 | 5,250 | 74% |
 | `keywords:langchain` | 1,973 | 1,973 | **100%** |
+
+### 2.5 Enumerating the population
+
+Free-text term expansion lifted coverage from 63.8% to 79.5% and then saturated:
+the last ten of a hundred query terms added 26 packages. What broke the ceiling
+was partitioning on maintainer. `keywords:mcp-server maintainer:cyanheads`
+returns 121 against the unrestricted 8,238, so the qualifier is applied. Every
+package has a maintainer and no maintainer's slice approaches the 5,000
+pagination cap, so complete maintainer coverage implies complete package
+coverage.
+
+**`scope:` is not a partition.** `keywords:mcp-server scope:pipeworx` returns
+8,238, identical to no filter at all. npm accepts the qualifier and ignores it.
+A frame built on it would look partitioned and would not be, which is the same
+failure as the Docker ordering parameter in Section 6.
+
+The crawl has one blind spot of its own. Maintainers are discovered from search
+results and search is score-ordered, so a maintainer whose every package sits
+below the cutoff is never seen. Reading the full `maintainers` array from each
+packument, rather than the single publisher search returns, surfaced 1,415
+maintainers search never showed. That is what took coverage from 82% to 95.1%.
+One of them held 1,286 packages.
+
+Final coverage is 7,833 of 8,238, in four strata:
+
+| Stratum | Reached by | Size | Share |
+|---|---|---|---|
+| A | score-ordered search | 5,250 | 63.7% |
+| B | free-text term expansion | 1,290 | 15.7% |
+| C | maintainer partitioning | 1,293 | 15.7% |
+| D | nothing | 405 | 4.9% |
+
+Strata B and C were sampled at n = 250 each and measured with the same code as
+stratum A. Population estimates are the size-weighted combination of the three
+observed strata. Bounds set stratum D to all-clean and all-bad, so a comparison
+is identified when the bound does not reach the control value.
 
 ### 2.2 Dependency resolution
 
@@ -146,29 +190,66 @@ against a `keywords:cli` plus `keywords:server` frame instead, which Section 6
 shows to be invalid; those four rows have been re-measured and two of them
 changed direction. Section 11 records what changed.
 
-| # | Dimension | MCP | eslint-plugin (74% coverage) | langchain (100% coverage) |
-|---|---|---|---|---|
-| 1 | Ships no license file | 22.2% ±4.1 (n=400) | 36.4% ±6.0, z = −3.92 | 50.0% ±6.2, z = −7.32 |
-| 2 | Declares a license, ships no text | 21.2% ±4.0 (n=400) | 36.0% ±6.0, z = −4.12 | 49.2% ±6.2, z = −7.43 |
-| 3 | Deprecated package in tree | 17.2% ±4.7 (n=250) | 20.4% ±5.0, z = −0.92 | 25.6% ±5.4, z = −2.29 |
-| 4 | Released in last 30 days | 28.5% ±4.4 (n=400) | 11.6% ±4.0, z = +5.06 | 16.4% ±4.6, z = +3.52 |
-| 5 | Published exactly one version | 25.2% ±4.3 | 26.4% ±5.5, z = −0.33 | 21.2% ±5.1, z = +1.18 |
-| 6 | Install hook in tree | 15.6% ±4.5 | not measured | 14.2% ±6.2, z = +0.36 |
-| 7 | Name collision | 14.1% ±0.9 | 9.1%, z = +8.01 | 20.7%, z = −6.83 |
+| # | Dimension | MCP, stratum A only | MCP, coverage-corrected | Identification bounds | eslint-plugin | langchain |
+|---|---|---|---|---|---|---|
+| 1 | Ships no license file | 22.2% | **23.5%** | [22.3, 27.2] | 36.4% | 50.0% |
+| 2 | Declares a license, ships no text | 21.2% | **22.0%** | [20.9, 25.9] | 36.0% | 49.2% |
+| 4 | Released in last 30 days | 28.5% | **19.5%** | [18.5, 23.5] | 11.6% | 16.4% |
+| 5 | Published exactly one version | 25.2% | **45.2%** | [43.0, 47.9] | 26.4% | 21.2% |
 
-Not one row shows MCP servers worse than a coverage-matched control. Four
-deserve comment, and two of those are cautions against reading the table too
-favourably.
+Rows 3, 6 and 7 are tree-shaped or name-shaped rather than metadata-shaped and
+are treated separately below. Corrected the same way, they move very little:
 
-**Licensing (rows 1 and 2).** MCP servers omit a license file at 22.2% against
-36.4% and 50.0%. Both differences are large and significant. We do not claim
-MCP servers are better licensed, because our MCP frame covers 64% of its
-population and is score-ordered, while langchain covers 100%. That residual
-mismatch is the same top-slice bias Section 6 describes, running this time in
-MCP's favour. The defensible statement is that MCP servers are not worse.
+| # | Dimension | Stratum A | Tail B+C | Corrected | Bounds | eslint | langchain |
+|---|---|---|---|---|---|---|---|
+| 3 | Deprecated package in tree | 17.2% | 20.1% | **18.1%** | [17.3, 22.2] | 20.4% | 25.6% |
+| 6 | Install hook in tree | 15.6% | 13.3% | **14.8%** | [14.1, 19.0] | not measured | 14.2% |
 
-**Deprecated dependencies (row 3).** No control satisfies both requirements
-here. The coverage-matched frames have median tree sizes of 8 and 10 packages
+**The bias is metric-specific, and that is the most useful thing enumeration
+taught us.** Single-version publication moved by 20 points and release recency by
+9. Deprecated dependencies moved by 0.9 and install hooks by 0.8. The reason is
+visible in the trees: the median dependency tree in the enumerated tail has 96
+packages against 97 in the score-ordered head. A package that published once and
+stopped installs the same amount of code as one that publishes weekly. Search
+score predicts how a package is maintained; it does not predict what it pulls in.
+
+Against langchain, which is enumerated completely and needs no correction, all
+four bounds clear the control value. Those four comparisons are identified: they
+hold whatever the 405 unreached packages contain. Against eslint-plugin, which is
+itself a 74% frame and therefore biased in the same direction, only rows 1, 2 and
+4 are identified; row 5 is not, because a corrected eslint-plugin figure could
+reach 45.5%.
+
+**Two rows did not survive enumeration.**
+
+Row 5 was reported as a null in versions 1.0.0 and 1.0.1. It is not. Single-version
+publication is 45.2% across the enumerated population against langchain's 21.2%,
+and in stratum C alone it is 95.2%. Nearly half the published MCP population has
+published exactly once. The null was an artifact of measuring the maintained
+top-slice of one ecosystem against a fully enumerated other.
+
+Row 4 moved the other way. The naive 28.5% becomes 19.5% once the tail is
+included, because the tail is almost entirely dormant: 0.4% of stratum B and 2.0%
+of stratum C published in the last 30 days. The direction survives, the magnitude
+does not.
+
+No row shows MCP servers worse than a coverage-matched control on licensing or
+deprecation. Two rows show them differing on maintenance, and the difference is
+in both directions depending on which maintenance measure is used: they publish
+more recently and they are far more likely to have published only once. Both are
+consistent with an ecosystem where a maintained head sits on a large dormant
+tail.
+
+**Licensing (rows 1 and 2).** Version 1.0.1 reported these as bounds because
+the MCP frame was 64% and score-ordered while langchain was 100%. At 95.1%
+enumeration the hedge is no longer needed. The corrected rates are 23.5% and
+22.0% against 36.4% and 50.0%, and the identification bounds reach only 27.2%
+and 25.9%. MCP servers ship license files more reliably than either control, and
+that conclusion does not depend on what the 405 unreached packages contain.
+
+**Deprecated dependencies (row 3).** At 18.1% corrected, with bounds reaching
+22.2%, MCP is identified as lower than langchain's 25.6% and not identified
+against eslint-plugin's 20.4%. No control satisfies both requirements here. The coverage-matched frames have median tree sizes of 8 and 10 packages
 against MCP's 97, and a one-package tree cannot contain a deprecated
 dependency, so they understate the control. The shape-matched `cli`/`server`
 frame has a median of 13 and a mean of 79, closer on shape but invalid on
@@ -179,27 +260,54 @@ have, despite installing more packages: ten times as many by median, though the
 control distributions are heavily right-skewed and by mean the langchain gap is
 only 1.6-fold.
 
-**Release churn (row 4).** In version 1.0.0 this was reported as significant in
-the opposite direction, MCP publishing less often than the control. That result
-came entirely from the invalid frame: a score-ordered top-slice selects for
-actively maintained packages, which inflates the control's recency. Against
-coverage-matched frames the sign reverses and MCP servers publish more often,
-z = +5.06 and +3.52. Note that the same residual bias in our MCP frame could
-inflate this figure too, so the safe reading is that MCP servers are not less
-maintained than comparable packages.
+**Maintenance (rows 4 and 5).** These two moved the most and they move in
+opposite directions, which is the useful part.
 
-**Name collision (row 7).** Not a null. MCP is significantly higher than
-eslint-plugin, z = +8.01, and significantly lower than langchain, z = −6.83.
-Version 1.0.0 printed this row with the z column blank, which understated what
-the measurement found. Collision rate scales with the size of the population a
-name has to be unique within, and langchain's population of 1,973 is 4.2 times
-smaller than the 7,075 and 8,227 of the other two arms, so the control that
-rescues a null reading is the one least comparable on the property that drives
-the metric. Against the comparably sized control MCP is worse. We report this as
-a bound, not as a null, and note that it is the dimension closest to the
-typosquatting outcomes this study does not measure.
+Version 1.0.0 reported MCP publishing less often than the control, z = −4.15,
+against the invalid frame. Version 1.0.1 reversed that against coverage-matched
+frames. Version 1.0.2 keeps the direction but cuts the magnitude: 19.5% rather
+than 28.5%, because the enumerated tail is dormant, publishing in the last 30
+days at 0.4% and 2.0% in strata B and C.
 
-**Install scripts (row 6).** The dimension we most expected to differ, because `npx -y` executes `preinstall`, `install` and `postinstall` for the root and every dependency. The absolute exposure is real: **15.6% of MCP server installations execute third-party code at install time, rising to 57.7% once the tree exceeds 120 packages**, usually through native-compilation packages such as `protobufjs`, `sharp`, `better-sqlite3` and `onnxruntime-node`. But `langchain` packages show 14.2% and the size-adjusted odds ratio is 0.79.
+Single-version publication went the other way and is the largest correction in
+the paper. Stratum A says 25.2%. Stratum C says 95.2%. The population says
+45.2%. A frame ordered by search score is, for this metric, close to a filter on
+the outcome being measured.
+
+Together they describe one shape rather than two findings: a maintained head
+that publishes often, and a large dormant tail that published once and stopped.
+Both are visible only if you enumerate.
+
+**Name collision (row 7), re-derived.** The figures given in versions 1.0.0 and
+1.0.1, 14.1% against 9.1% and 20.7%, are withdrawn. The code that produced them
+was never released, so they cannot be reproduced by us or by anyone else, and a
+reimplementation from the paper's own description of the metric does not
+reproduce them.
+
+The metric is therefore redefined explicitly. Strip any scope, lowercase, remove
+every character that is not a letter or a digit, then remove the ecosystem's own
+tokens; two packages collide if the remaining stem is identical. Collision rate
+is strongly coverage-dependent, since a name can only be seen to collide with a
+name you have, so all three arms are measured at the lowest coverage available
+to any of them, 74.2% of each population, averaged over 25 random draws.
+
+| Arm | Coverage available | At matched 74.2% coverage |
+|---|---|---|
+| MCP | 95.1% | **16.8% ± 0.6** |
+| eslint-plugin | 74.2% | **9.4%** |
+| langchain | 100% | **19.6% ± 1.6** |
+
+MCP sits between the two, which is what versions 1.0.0 and 1.0.1 concluded from
+figures that cannot be reproduced. The conclusion is unchanged and now rests on
+a stated definition and a matched comparison. At its own full 95.1% coverage the
+MCP rate is 19.2%, which is the figure to use when asking how much name reuse
+exists rather than how MCP compares.
+
+**Install scripts (row 6).** The dimension we most expected to differ, because `npx -y` executes `preinstall`, `install` and `postinstall` for the root and every dependency. The absolute exposure is real: **15.6% of MCP server installations execute third-party code at install time, rising to 57.7% once the tree exceeds 120 packages**, usually through native-compilation packages such as `protobufjs`, `sharp`, `better-sqlite3` and `onnxruntime-node`. But `langchain` packages show 14.2%, the size-adjusted odds ratio is 0.79, and
+the corrected MCP rate of 14.8% has bounds of [14.1, 19.0] that straddle it. This
+is the one row in the paper that is a null in the strict sense: the identification
+bounds contain the control value, so no enumeration effort available to us would
+separate them.
 
 ### 4.1 Why the licensing dimensions do not separate
 
@@ -290,7 +398,7 @@ Heavy redundancy: 297 packages address GitHub, 293 address databases, 76 address
 
 ## 8. Limitations
 
-The npm frame covers 64% of its population and is score-ordered. We found no hygiene gradient within it but cannot rule out that the excluded portion differs categorically. This matters more than it did in version 1.0.0: our control frames cover 74% and 100%, so the residual mismatch runs in MCP's favour on every dimension where prominence predicts hygiene. Rows 1, 2, 4 and 7 of Section 4 should be read as bounds rather than estimates. Row 7 in particular is prominence-sensitive and our frame is the most top-sliced of the three, so its true rate is if anything understated.
+The npm frame covers 95.1% of its population. The excluded portion does differ categorically on maintenance measures, which is why versions 1.0.0 and 1.0.1 were wrong about two of them, and does not differ on dependency-tree measures. The 405 packages no method reached are unobserved by us and by every published study of this ecosystem we are aware of. This matters more than it did in version 1.0.0: our control frames cover 74% and 100%, so the residual mismatch runs in MCP's favour on every dimension where prominence predicts hygiene. Every MCP figure in Section 4 is now a coverage-corrected estimate with identification bounds attached, computed over three observed strata with the unreached 4.9% set to both extremes. The control arms are not corrected the same way: langchain is enumerated completely and needs none, but eslint-plugin is a 74% frame and is biased in the same direction MCP's was, so every eslint-plugin comparison should be read as provisional and only the langchain comparisons are identified.
 
 Two figures in this paper cannot be recomputed from the release. The score-quartile hygiene-gradient test in Section 2.1, r = −0.006 and r = −0.059, needs a per-package search rank that `npm_stage1_metadata` does not carry; that test is the only defence of our 64% score-ordered frame, which version 1.0.1 leans on more heavily than 1.0.0 did. And the age-adjusted odds ratio of 1.84 in Section 6 is sensitive to the choice of age strata: standard bins give values near 1.0, and 1.84 is reachable only under the 561-day common-support restriction. The direction of that sensitivity is conservative, since a value nearer 1.0 strengthens rather than weakens the claim that the effect vanishes.
 
@@ -310,7 +418,7 @@ We measured license and maintenance metadata. We did not measure malware, typosq
 
 ## 9. What this means
 
-For anyone assessing MCP supply-chain risk on the dimensions a package registry exposes: this ecosystem is not worse than its neighbours, and on licensing it is lower than both of our matched controls. Claims that it is unusually poorly licensed, unusually abandoned, or unusually prone to install-time code execution are not supported once coverage-matched controls are applied. The one dimension where a real difference exists affects 1.9% of installs. MCP servers do publish more often than comparable packages, which is a sign of activity rather than of risk.
+For anyone assessing MCP supply-chain risk on the dimensions a package registry exposes: this ecosystem is not worse than its neighbours, and on licensing it is measurably better than both of our controls, with identification bounds that do not reach either. Claims that it is unusually poorly licensed, unusually abandoned, or unusually prone to install-time code execution are not supported once coverage-matched controls are applied. The one dimension where a real difference exists affects 1.9% of installs. MCP servers do publish more often than comparable packages, which is a sign of activity rather than of risk.
 
 The larger methodological point is that **the published population is the wrong unit of analysis**. With a Gini of 0.96 and a single package taking 63.6% of installs, per-package rates describe a long tail that is measured but not run. This applies to our own npm results as much as to the finding it dissolved, and it applies to any registry-scale study that samples uniformly.
 
@@ -454,3 +562,48 @@ which is a risk-ratio phrasing; the risk ratio is 1.8.
 None of these changes affect Section 3, Section 5, Section 7, or the structural
 facts in Section 1. The PyPI licensing result, the usage-concentration result,
 and the install-hook figures all reproduce from raw records unchanged.
+
+---
+
+## 12. Changes since version 1.0.1
+
+Version 1.0.1 reported four rows as identification bounds because the npm frame
+covered 63.8% of its population and was drawn in search-score order. Version
+1.0.2 enumerates 95.1% instead, which replaces the hedging with measurement.
+
+**Enumeration.** Maintainer partitioning plus reading the full `maintainers`
+array from every packument took coverage from 63.8% to 95.1%, 7,833 of 8,238
+packages. Section 2.5 gives the method, including the two things that did not
+work: free-text term expansion saturates near 79.5%, and the `scope:` qualifier
+is accepted by npm and silently ignored.
+
+**Row 5 was not a null.** Single-version publication is 45.2% across the
+population, not the 25.2% the score-ordered frame showed, against langchain's
+21.2%. The identification bound is 43.0%, so the comparison holds regardless of
+the unreached remainder. Versions 1.0.0 and 1.0.1 both called this a null.
+
+**Row 4 keeps its direction and loses half its size.** Release recency falls
+from 28.5% to 19.5% against controls at 11.6% and 16.4%.
+
+**Rows 1 and 2 stop being bounds and become findings.** Corrected rates of 23.5%
+and 22.0% against 36.4% and 50.0%, with bounds reaching only 27.2% and 25.9%.
+
+**Rows 3 and 6 barely move**, 17.2% to 18.1% and 15.6% to 14.8%. The median
+dependency tree in the enumerated tail holds 96 packages against 97 in the head,
+so search score predicts maintenance behaviour and not installed footprint. Row
+6 is the paper's one strict null: its bounds contain the control value.
+
+**Row 7 is withdrawn and re-derived.** The 14.1% / 9.1% / 20.7% figures in
+versions 1.0.0 and 1.0.1 came from code that was never released and cannot be
+reproduced, including by us. Section 4 now states the metric explicitly and
+measures all three arms at matched coverage: 16.8%, 9.4% and 19.6%. The
+conclusion, that MCP sits between two comparable ecosystems, is unchanged.
+
+**What did not change.** Section 3, Section 5 and Section 7 are untouched. The
+PyPI arm was drawn from the simple index, which enumerates completely, so it
+never had this problem. The usage-concentration result and the structural facts
+in Section 1 stand as published.
+
+**Standing caveat.** The control arms have not been enumerated to 95%.
+eslint-plugin remains a 74% frame carrying the same bias MCP's frame had, so
+those comparisons are provisional. Only the langchain comparisons are identified.

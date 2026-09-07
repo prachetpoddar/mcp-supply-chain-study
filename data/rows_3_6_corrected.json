@@ -1,0 +1,34 @@
+{
+ "median_tree_tail": 96,
+ "median_tree_A": 97,
+ "deprecated in tree": {
+  "A": [
+   43,
+   250
+  ],
+  "tail": [
+   50,
+   249
+  ],
+  "corrected": 18.1,
+  "bounds": [
+   17.3,
+   22.2
+  ]
+ },
+ "install hook in tree": {
+  "A": [
+   39,
+   250
+  ],
+  "tail": [
+   33,
+   249
+  ],
+  "corrected": 14.8,
+  "bounds": [
+   14.1,
+   19.0
+  ]
+ }
+}

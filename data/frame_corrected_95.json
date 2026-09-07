@@ -1,0 +1,97 @@
+{
+ "strata": {
+  "A": 5250,
+  "B": 1290,
+  "C": 1293,
+  "D": 405,
+  "population": 8238
+ },
+ "no license file": {
+  "A": [
+   89,
+   400
+  ],
+  "B": [
+   77,
+   250
+  ],
+  "C": [
+   53,
+   250
+  ],
+  "corrected": 23.5,
+  "bounds": [
+   22.3,
+   27.2
+  ],
+  "eslint": 36.4,
+  "langchain": 50.0,
+  "z_C_vs_A": 0.32
+ },
+ "declares, no text": {
+  "A": [
+   85,
+   400
+  ],
+  "B": [
+   71,
+   250
+  ],
+  "C": [
+   47,
+   250
+  ],
+  "corrected": 22.0,
+  "bounds": [
+   20.9,
+   25.9
+  ],
+  "eslint": 36.0,
+  "langchain": 49.2,
+  "z_C_vs_A": 0.76
+ },
+ "exactly one version": {
+  "A": [
+   101,
+   400
+  ],
+  "B": [
+   191,
+   250
+  ],
+  "C": [
+   238,
+   250
+  ],
+  "corrected": 45.2,
+  "bounds": [
+   43.0,
+   47.9
+  ],
+  "eslint": 26.4,
+  "langchain": 21.2,
+  "z_C_vs_A": -17.37
+ },
+ "released last 30 days": {
+  "A": [
+   114,
+   400
+  ],
+  "B": [
+   1,
+   250
+  ],
+  "C": [
+   5,
+   250
+  ],
+  "corrected": 19.5,
+  "bounds": [
+   18.5,
+   23.5
+  ],
+  "eslint": 11.6,
+  "langchain": 16.4,
+  "z_C_vs_A": 8.5
+ }
+}

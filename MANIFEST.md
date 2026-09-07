@@ -1,17 +1,20 @@
 # Manifest
 
-SHA-256 of every released file, generated 2026-09-07T12:41:14Z.
+SHA-256 of every released file, generated 2026-09-07T18:26:07Z.
 
 ```
 c0b1058614c0a01655a1635ff793fdbebae05d5e565b29f91867943c58482f5f  ./.gitignore
 fc841f5e9ba1eee9d6816fa070e0439b9a9117978a039d0037b2f42223b2934d  ./.zenodo.json
-a460de823fa1f8597974e27479f893ec9c64c2e5a82219f93e13529823e8e232  ./CITATION.cff
+2839e359f0fa2d9d27476e4144ed5b0facd7c3b5f5367ec1409b8baa7506ab70  ./CITATION.cff
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  ./LICENSE
 52afe9e2e53deb50772bb71423e7c4c07676501dcd92b7d1648ccf22791eed1e  ./LICENSE-DATA.md
-759f4dccece84aef7c46f95101e11979e435661bbf7129598e3adb53df976fa6  ./README.md
+9132382acd33e5dd1285c64502268588a1b95badf606f188491ffb07fa3da8df  ./README.md
 f408ef4c68f0a8e5c194d4acdfd83de5d22030cc9b596d95e817f3de5dc792f1  ./code/RUN_A_pypi_weighting.py
 bdb731ac3e4c1c9d37ca42d021f5bafc78bae98e41879b0230770911c7909274  ./code/docker_pulls.py
 52b8eba075db211e26e6973b4630659f17a29549a8c6751775a2f59d908d9626  ./code/enumerate_mcp.py
+1dd7a99e674bd9b97a320913d29cca95c2affe9c93a3caba646a0394dfc8dfd1  ./code/frame_bias_test.py
+a1c2dd82ba247033ef51399fa91c987946c9acb6fce7cad84412476ca9b5038a  ./code/frame_complete.py
+9df2591f67a89570b9476478efd02c95260ecc493d9737adede313e14a3c65a2  ./code/maintainer_harvest.py
 7b9fd77a5b6f868ebedec75a2c5a7e729b257081f832d9b5077d1b490626827f  ./code/mcp_confound_tests.py
 cd87dee61c6f92de3a9435847020970cf870475279ae27f5fe6dadb30669c0a5  ./code/mcp_controls.py
 98ef4c51e3b4f0bf42aa793afc1ba75861396174406121fc5d06a9c73f2e27f0  ./code/mcp_resolve.py
@@ -20,12 +23,15 @@ dd6677fb1319c95f1a7610104988ba47876d440771e45bffee0eb673d14f8a66  ./code/mcp_stu
 06fa89d98fa6d91bb62403c8526ad2c14459fc1d85272140ade541f2ece0bc72  ./code/mcp_variance_study.py
 6dac4e5226826552884d79ca50f83441472cc1c6b5c534ac69a9c951437aae36  ./code/mcplib.py
 88d9a54ab152f642fb754568bfd7e7f15081414971278745e9e55254482f83ea  ./code/rerun_rows_1_4.py
+6a4312e4af6044925b7cc44b5acf859d4ae666b0757892c54143cde1427da9d0  ./code/stratum_measure.py
+88aa60ded5e6de4f751517524f18abbf0cfbe4eac326fde71c0e58a9040ed187  ./code/tail_walks.py
 1d4d57ca5469b84d0b6be920c67a4e3e4bc971b9c3d52e2d426970d31a13ae20  ./code/usage_weighting.py
 bf24614f191165a23835e735601eb1e953164f60306ea14d48438024eed27e23  ./data/conc_docker.json
 987961a1205eb7fa537bdd26e8dbc962449c343bd68e7c557ac8054aae4fff6b  ./data/conc_docker_INVALID_v1.json
 9b78d1bba3de3018c2e43856470eaba00d0e0766f6910858813c3ab0b92ae515  ./data/docker_mcp_names.json
 67a798104ea2cc893428d41dced7a9bd511253355dff71fd12bfc5d7d96be5ee  ./data/docker_state.json
 52613e51c0f821749f0af4baebeee586cd6acdd22a3e2364435c1b76d654cff4  ./data/fixture.mcp.json
+46c0c4b524a30b822ab951beab574a899195b48e539094846ba0dc4bd4e09fae  ./data/frame_corrected_95.json
 2cca828577d2b5a63eab4ccf2b53d114e8566172cf334f0b2cd50010b24c8fba  ./data/mcp-config.cdx.json
 1b945f96d08687b976b13fe4c3de7544e89ccb0bfc7981b43552b7a034bfcfb6  ./data/mcp-confound-tests.json
 af5e9e7ca470b87b3407eaed1e026ca67624a6903ecc5af13fa0b6aefe3a1d4f  ./data/mcp-controls-data.json
@@ -34,13 +40,18 @@ bb1979b292f83aee658c542bb47eb79ffeae5283da9f046d695a584bbaef2a78  ./data/mcp-stu
 80a97e806ed3848c6062cf002688c377f20ce4863c2f0e1e3ca8d137ba082a83  ./data/mcp-substitutability.json
 937afb9ca231ce840c1c129fd3a2b2076f24dfb5090511c385771d3dd2d218a7  ./data/mcp-variance-dimensions.json
 b6443d0c2322dcf454d8ae6ae10f665586469ee0947c861132e3c437a92f99b5  ./data/mcp_docker.json
+d3c315fc53aefcb5a010b3398872832579b7e4fadf4dbb08f91804ceb0dfb73b  ./data/npm_frame_complete.json
 f1c5db14b68f74775c0ab0f54e748d6560b6aa3526894e9b562429def2c3478a  ./data/npm_frame_wide_6540.json
 5fe773f5da8a5fa60652048d86a838a6f29e68680d23e5a63a67b372027afaea  ./data/pypi_sample_for_weighting.json
 605a1651d328d30f7438879757e92932ab65f3da284bb23d538b29a39d3ecc8c  ./data/pypi_weighted_result.json
 7e0fc8e4ef49f026b61a1c05baef47f4346725def7c3249b44c7d5bb9da0d3e8  ./data/rerun_state_raw.json
 ed70af5c9501fa974dd80f1481b77b273c2bcaa466de49857773a375cd7aa84c  ./data/rows_1_4_rematched.json
+7284a5ed7f94cffa1e55e57138d0ef6fc872708dcf64e185f52fb412bd6952d3  ./data/rows_3_6_corrected.json
+b3232223fe07a8a874df7ed32428799bb10b83d61a1f11ef6366046fb2ac8284  ./data/stratum_b_raw.json
+21dd603b6aa6270136593b65a542f7acd50800b215b53e4e5444eb30ebcaea07  ./data/stratum_c_raw.json
+80f602268de8ffa8d01ec78bb201b1a99b87e4b8707a4c142d726083b4968c7b  ./data/tail_walks_raw.json
 d7272bbd39db9f6851648684c8e4a9be04840e6c8d55ad854d489a4582d45e64  ./data/walk250.jsonl
-55505b210403bc29997a13ef9d3f5aad6f1b3d6d5defde7f95bc1d2edcb65fba  ./paper/mcp-supply-chain-nulls.docx
-c51a613a064eaa9bb8148248a5d0ab4a5a0277a3178f3bcd61168eb304a81c4f  ./paper/mcp-supply-chain-nulls.md
-26b2788431cbeef4b4de95271a470dee9db17a328b21da093f1cc0d1d738bb5e  ./paper/mcp-supply-chain-nulls.pdf
+c927ae29579a4418ee1bdb0692e9f8fca433fe5b94ea9470869bf7c8ac9433aa  ./paper/mcp-supply-chain-nulls.docx
+455a13daaca7e3b10f3e8249a18bff86154570ecec65826e8648dcbc26f3ac89  ./paper/mcp-supply-chain-nulls.md
+664e22d1d262c741d89d63ec21db9d66c8a83976e1c069c7887fc023e612ef69  ./paper/mcp-supply-chain-nulls.pdf
 ```

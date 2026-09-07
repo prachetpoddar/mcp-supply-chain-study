@@ -4,9 +4,11 @@ Data and code for *No Elevated Risk on the Dimensions a Registry Exposes, and
 a Population That Is Not the Population*, a measurement study of supply-chain risk in Model Context Protocol
 servers. Measurements run 6 to 7 September 2026.
 
-**Version 1.0.1** corrects four rows of the main table that version 1.0.0
-measured against an invalid control, one of which changed sign. Section 11 of
-the paper lists every change. Read that first if you saw 1.0.0.
+**Version 1.0.2** enumerates 95.1% of the npm population instead of the 63.8%
+a search frame reaches, which turns four identification bounds into findings and
+shows that one previously reported null was an artifact of the frame. Sections
+11 and 12 of the paper list every change since 1.0.0. Read those first if you
+saw an earlier version.
 
 Paper: [`paper/mcp-supply-chain-nulls.md`](paper/mcp-supply-chain-nulls.md), also as `.docx` and `.pdf` in the same folder.
 
@@ -19,13 +21,17 @@ age-adjusted controls, across 250 npm-distributed servers, 2,868 transitive
 dependencies, 400 published packages, 247 PyPI-distributed servers and the
 328-entry Docker MCP catalog.
 
-**No dimension shows elevated risk.** Against coverage-matched controls, MCP
-servers are indistinguishable on install-script execution and single-version
-publication, sit between two comparable ecosystems on name collision, and are
-lower on license-file absence and deprecated dependencies. They publish more
-often than the controls, not less. Our MCP frame covers 64% against controls at
-74% and 100%, so the licensing figures are reported as bounds rather than as
-estimates.
+**No dimension shows elevated risk.** At 95.1% enumeration of the npm
+population, MCP servers ship license files more reliably than either control
+(23.5% absent against 36.4% and 50.0%), carry deprecated dependencies no more
+often, and are a strict null on install-script execution. Identification bounds
+on the unreached 4.9% do not reach the control values, so these hold whatever
+that remainder contains.
+
+**Enumeration changed one result.** Single-version publication, called a null in
+earlier versions, is 45.2% against langchain's 21.2%. Nearly half the published
+population published exactly once. The frame bias is metric-specific: publishing
+behaviour moved by up to 20 points, dependency-tree properties by less than one.
 
 **The eighth survived every control and then dissolved.** PyPI-distributed
 servers carry no license metadata at 32.8% against an age-matched PyPI baseline
