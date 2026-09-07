@@ -1,8 +1,12 @@
 # Measuring the MCP Supply Chain
 
-Data and code for *Eight Null Results and a Population That Is Not the
-Population*, a measurement study of supply-chain risk in Model Context Protocol
+Data and code for *No Elevated Risk on the Dimensions a Registry Exposes, and
+a Population That Is Not the Population*, a measurement study of supply-chain risk in Model Context Protocol
 servers. Measurements run 6 to 7 September 2026.
+
+**Version 1.0.1** corrects four rows of the main table that version 1.0.0
+measured against an invalid control, one of which changed sign. Section 11 of
+the paper lists every change. Read that first if you saw 1.0.0.
 
 Paper: [`paper/mcp-supply-chain-nulls.md`](paper/mcp-supply-chain-nulls.md), also as `.docx` and `.pdf` in the same folder.
 
@@ -15,14 +19,18 @@ age-adjusted controls, across 250 npm-distributed servers, 2,868 transitive
 dependencies, 400 published packages, 247 PyPI-distributed servers and the
 328-entry Docker MCP catalog.
 
-**Seven results are null.** License validity, license text distribution,
-deprecated dependencies, release churn, abandonment, install-script execution
-and name collision are all indistinguishable from matched controls, and on two
-dimensions MCP servers are measurably better.
+**No dimension shows elevated risk.** Against coverage-matched controls, MCP
+servers are indistinguishable on install-script execution and single-version
+publication, sit between two comparable ecosystems on name collision, and are
+lower on license-file absence and deprecated dependencies. They publish more
+often than the controls, not less. Our MCP frame covers 64% against controls at
+74% and 100%, so the licensing figures are reported as bounds rather than as
+estimates.
 
 **The eighth survived every control and then dissolved.** PyPI-distributed
-servers are 2.4 times more likely than age-matched PyPI packages to carry no
-license metadata, 32.8% against 18.0%, z = +3.78, Mantel-Haenszel OR 2.45.
+servers carry no license metadata at 32.8% against an age-matched PyPI baseline
+of 18.0%, a risk ratio of 1.8 with a Mantel-Haenszel odds ratio of 2.45,
+z = +3.78.
 Weighted by actual downloads that rate is 1.9%, a sixteen-fold collapse.
 
 **The result that governs the rest is concentration.** PyPI downloads have a
@@ -65,7 +73,7 @@ resolver rate-limits itself and caches to disk, so a rerun is cheap.
 paginating near 5,000 results. Any frame built from it is a top-slice.
 Comparing top-slices drawn from populations of different sizes produced z =
 7.32 for an effect that does not exist: `keywords:cli` has 104,818 packages and
-we sampled the top 2.4% of it, against 64% coverage of an 8,229-package MCP
+we sampled the top 2.4% of it, against 64% coverage of an 8,227-package MCP
 population. Four results were invalidated before this was caught. Match
 coverage fractions, or use a source that enumerates completely.
 
@@ -75,6 +83,12 @@ repositories. The output looked plausible until three things gave it away: the
 top five differed from each other by 1.7%, the Gini was 0.16 where a power law
 was expected, and `fetch` at 1.7M pulls was absent entirely. Verify that an
 ordering parameter took effect before building anything on it.
+
+**Fixing a sampling error in one place and not the others.** Version 1.0.0 of
+this paper identified the search-frame trap, rebuilt three rows of its main
+table on coverage-matched frames, and left four rows on the invalid one while
+describing the whole table as matched. Re-running those four changed two, and
+one changed sign. Identifying a sampling error is not the same as removing it.
 
 **Skipping on rate limits.** The corrected script skipped any name that
 returned HTTP 429. Docker Hub began throttling partway through and 55 of 328
@@ -102,6 +116,7 @@ source is redistributed.
 
 See [`CITATION.cff`](CITATION.cff).
 
-    Poddar, P. (2026). Measuring the MCP Supply Chain: Eight Null Results and a
-    Population That Is Not the Population. Version 1.0.0. Zenodo.
+    Poddar, P. (2026). Measuring the MCP Supply Chain: No Elevated Risk on the
+    Dimensions a Registry Exposes, and a Population That Is Not the Population.
+    Version 1.0.1. Zenodo.
     https://doi.org/10.5281/zenodo.22641813

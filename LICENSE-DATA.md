@@ -7,8 +7,9 @@ International licence (CC-BY-4.0).
 
 ## Attribution
 
-    Poddar, P. (2026). Measuring the MCP Supply Chain: Eight Null Results and a
-    Population That Is Not the Population. Dataset. CC-BY-4.0.
+    Poddar, P. (2026). Measuring the MCP Supply Chain: No Elevated Risk on the
+    Dimensions a Registry Exposes, and a Population That Is Not the Population.
+    Dataset. CC-BY-4.0.
     https://doi.org/10.5281/zenodo.22641813
 
 ## What the data is, and what it is not

@@ -1,14 +1,14 @@
 # Manifest
 
-SHA-256 of every released file, generated 2026-09-07T10:43:19Z.
+SHA-256 of every released file, generated 2026-09-07T12:41:14Z.
 
 ```
 c0b1058614c0a01655a1635ff793fdbebae05d5e565b29f91867943c58482f5f  ./.gitignore
-7f823e01498ffdd7df21449b6538f8bfae893807c7acaae819a6b82f18d12473  ./.zenodo.json
-3f7cb91b9147922be6c978b4ada6f188a50096cff3d990780e3a9a218c0a7d54  ./CITATION.cff
+fc841f5e9ba1eee9d6816fa070e0439b9a9117978a039d0037b2f42223b2934d  ./.zenodo.json
+a460de823fa1f8597974e27479f893ec9c64c2e5a82219f93e13529823e8e232  ./CITATION.cff
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  ./LICENSE
-f4990c40a5fa976ef00657e36c95ca46755bcafb6999050b7c82ebf15b8937cf  ./LICENSE-DATA.md
-570522e1239c12fbc5721503a145a38a81ce094a7d8104a4d34e08e5769422f2  ./README.md
+52afe9e2e53deb50772bb71423e7c4c07676501dcd92b7d1648ccf22791eed1e  ./LICENSE-DATA.md
+759f4dccece84aef7c46f95101e11979e435661bbf7129598e3adb53df976fa6  ./README.md
 f408ef4c68f0a8e5c194d4acdfd83de5d22030cc9b596d95e817f3de5dc792f1  ./code/RUN_A_pypi_weighting.py
 bdb731ac3e4c1c9d37ca42d021f5bafc78bae98e41879b0230770911c7909274  ./code/docker_pulls.py
 52b8eba075db211e26e6973b4630659f17a29549a8c6751775a2f59d908d9626  ./code/enumerate_mcp.py
@@ -19,6 +19,7 @@ dd6677fb1319c95f1a7610104988ba47876d440771e45bffee0eb673d14f8a66  ./code/mcp_stu
 23d03fb1fd918fe5a1bc8ce8fe5a19c55dc4cb2a4e832cabdeaee2438f122137  ./code/mcp_study_v2_runners.py
 06fa89d98fa6d91bb62403c8526ad2c14459fc1d85272140ade541f2ece0bc72  ./code/mcp_variance_study.py
 6dac4e5226826552884d79ca50f83441472cc1c6b5c534ac69a9c951437aae36  ./code/mcplib.py
+88d9a54ab152f642fb754568bfd7e7f15081414971278745e9e55254482f83ea  ./code/rerun_rows_1_4.py
 1d4d57ca5469b84d0b6be920c67a4e3e4bc971b9c3d52e2d426970d31a13ae20  ./code/usage_weighting.py
 bf24614f191165a23835e735601eb1e953164f60306ea14d48438024eed27e23  ./data/conc_docker.json
 987961a1205eb7fa537bdd26e8dbc962449c343bd68e7c557ac8054aae4fff6b  ./data/conc_docker_INVALID_v1.json
@@ -35,7 +36,11 @@ bb1979b292f83aee658c542bb47eb79ffeae5283da9f046d695a584bbaef2a78  ./data/mcp-stu
 b6443d0c2322dcf454d8ae6ae10f665586469ee0947c861132e3c437a92f99b5  ./data/mcp_docker.json
 f1c5db14b68f74775c0ab0f54e748d6560b6aa3526894e9b562429def2c3478a  ./data/npm_frame_wide_6540.json
 5fe773f5da8a5fa60652048d86a838a6f29e68680d23e5a63a67b372027afaea  ./data/pypi_sample_for_weighting.json
-1b3f43e65393bc56b8f8f4fae01a70db21c71540875454efa68ea8593e112976  ./paper/mcp-supply-chain-nulls.docx
-408c80596ee25b4a62e3b66a1602e38a3c9ebacf11825d4036cb33091db3d281  ./paper/mcp-supply-chain-nulls.md
-c03b12e35a1fcb7eea858d8b472a5f166949fa9f536454d6bf18b1d5f6a3023c  ./paper/mcp-supply-chain-nulls.pdf
+605a1651d328d30f7438879757e92932ab65f3da284bb23d538b29a39d3ecc8c  ./data/pypi_weighted_result.json
+7e0fc8e4ef49f026b61a1c05baef47f4346725def7c3249b44c7d5bb9da0d3e8  ./data/rerun_state_raw.json
+ed70af5c9501fa974dd80f1481b77b273c2bcaa466de49857773a375cd7aa84c  ./data/rows_1_4_rematched.json
+d7272bbd39db9f6851648684c8e4a9be04840e6c8d55ad854d489a4582d45e64  ./data/walk250.jsonl
+55505b210403bc29997a13ef9d3f5aad6f1b3d6d5defde7f95bc1d2edcb65fba  ./paper/mcp-supply-chain-nulls.docx
+c51a613a064eaa9bb8148248a5d0ab4a5a0277a3178f3bcd61168eb304a81c4f  ./paper/mcp-supply-chain-nulls.md
+26b2788431cbeef4b4de95271a470dee9db17a328b21da093f1cc0d1d738bb5e  ./paper/mcp-supply-chain-nulls.pdf
 ```

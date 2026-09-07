@@ -1,0 +1,87 @@
+{
+ "row1_no_license_file": {
+  "mcp": [
+   89,
+   400,
+   22.2,
+   4.1
+  ],
+  "eslint_plugin": [
+   91,
+   250
+  ],
+  "langchain": [
+   125,
+   250
+  ],
+  "z": {
+   "keywords:eslint-plugin": -3.92,
+   "keywords:langchain": -7.32
+  }
+ },
+ "row2_declares_no_text": {
+  "mcp": [
+   85,
+   400,
+   21.2,
+   4.0
+  ],
+  "eslint_plugin": [
+   90,
+   250
+  ],
+  "langchain": [
+   123,
+   250
+  ],
+  "z": {
+   "keywords:eslint-plugin": -4.12,
+   "keywords:langchain": -7.43
+  }
+ },
+ "row3_deprecated_in_tree": {
+  "mcp": [
+   43,
+   250,
+   17.2,
+   4.7
+  ],
+  "eslint_plugin": [
+   51,
+   250
+  ],
+  "langchain": [
+   64,
+   250
+  ],
+  "z": {
+   "keywords:eslint-plugin": -0.92,
+   "keywords:langchain": -2.29
+  }
+ },
+ "row4_released_30d": {
+  "mcp": [
+   114,
+   400,
+   28.5,
+   4.4
+  ],
+  "eslint_plugin": [
+   29,
+   250
+  ],
+  "langchain": [
+   41,
+   250
+  ],
+  "z": {
+   "keywords:eslint-plugin": 5.06,
+   "keywords:langchain": 3.52
+  }
+ },
+ "median_tree": {
+  "keywords:eslint-plugin": 8,
+  "keywords:langchain": 10
+ },
+ "mcp_median_tree": 97
+}
