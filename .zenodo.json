@@ -1,0 +1,21 @@
+{
+  "title": "Measuring the MCP Supply Chain: Eight Null Results and a Population That Is Not the Population",
+  "upload_type": "dataset",
+  "description": "Measurement study of supply-chain risk in Model Context Protocol servers. Eight dimensions tested against coverage-matched, size-adjusted and age-adjusted controls; seven null, the eighth dissolved under download weighting. Includes all raw measurements, both invalidated runs, and the corrections applied to them.",
+  "creators": [
+    {
+      "name": "Poddar, Prachet",
+      "affiliation": "University of California, Los Angeles"
+    }
+  ],
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "keywords": [
+    "software supply chain",
+    "Model Context Protocol",
+    "SBOM",
+    "null results",
+    "measurement study",
+    "sampling bias"
+  ]
+}

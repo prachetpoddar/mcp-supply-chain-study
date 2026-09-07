@@ -1,0 +1,2225 @@
+[
+ {
+  "name": "todo-mcp-server",
+  "version": "2.1.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 11,
+  "age_days": 397,
+  "last_days": 390
+ },
+ {
+  "name": "ibm-watsonx-orchestrate-mcp-server",
+  "version": "2.16.1",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 51,
+  "age_days": 345,
+  "last_days": 3
+ },
+ {
+  "name": "ta-lib-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 179,
+  "last_days": 179
+ },
+ {
+  "name": "gen-workflow-mcp-server",
+  "version": "0.0.3",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 316,
+  "last_days": 316
+ },
+ {
+  "name": "jweather-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 536,
+  "last_days": 536
+ },
+ {
+  "name": "helmfile-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 515,
+  "last_days": 515
+ },
+ {
+  "name": "oracle.oci-vault-key-management-mcp-server",
+  "version": "0.0.0",
+  "has_license": true,
+  "license": "UPL-1.0",
+  "nver": 1,
+  "age_days": 322,
+  "last_days": 322
+ },
+ {
+  "name": "msrashed-postgresql-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 238,
+  "last_days": 238
+ },
+ {
+  "name": "mcp-server-tester",
+  "version": "1.4.3",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 362,
+  "last_days": 360
+ },
+ {
+  "name": "telnyx-mcp-server-fastmcp",
+  "version": "0.1.3",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 213,
+  "last_days": 213
+ },
+ {
+  "name": "iflow-mcp_brlaw-mcp-server",
+  "version": "0.4.2",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 311,
+  "last_days": 311
+ },
+ {
+  "name": "malloy-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 524,
+  "last_days": 524
+ },
+ {
+  "name": "iflow-mcp_cryptopanic-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 313,
+  "last_days": 313
+ },
+ {
+  "name": "quickstarter-mcp-server",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 396,
+  "last_days": 396
+ },
+ {
+  "name": "plane-mcp-server-pro",
+  "version": "0.2.9",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 84,
+  "last_days": 84
+ },
+ {
+  "name": "mcp-server-coverage-report",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 227,
+  "last_days": 227
+ },
+ {
+  "name": "dataforseo-mcp-server",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 317,
+  "last_days": 317
+ },
+ {
+  "name": "zellij-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 516,
+  "last_days": 516
+ },
+ {
+  "name": "iflow-mcp_andr3medeiros-pdf-manipulation-mcp-server",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 192,
+  "last_days": 192
+ },
+ {
+  "name": "unity-mcp-server",
+  "version": "1.0.11",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 12,
+  "age_days": 181,
+  "last_days": 174
+ },
+ {
+  "name": "excel-mcp-server",
+  "version": "0.1.8",
+  "has_license": false,
+  "license": null,
+  "nver": 8,
+  "age_days": 520,
+  "last_days": 147
+ },
+ {
+  "name": "iflow-mcp_pubtator-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 300,
+  "last_days": 296
+ },
+ {
+  "name": "strava-activity-mcp-server",
+  "version": "1.0.4",
+  "has_license": true,
+  "license": "GPL-3.0-or-later",
+  "nver": 21,
+  "age_days": 334,
+  "last_days": 159
+ },
+ {
+  "name": "mcp-server-dpipblock",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 10,
+  "age_days": 459,
+  "last_days": 264
+ },
+ {
+  "name": "orange4-shopify-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 502,
+  "last_days": 502
+ },
+ {
+  "name": "sophonsai-worklog-mcp-server",
+  "version": "0.2.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 53,
+  "last_days": 53
+ },
+ {
+  "name": "orange-raccoonai-mcp-server",
+  "version": "0.0.1",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 1,
+  "age_days": 510,
+  "last_days": 510
+ },
+ {
+  "name": "iflow-mcp_iac-memory-mcp-server",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 310,
+  "last_days": 293
+ },
+ {
+  "name": "mcp-server-nmap",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 155,
+  "last_days": 155
+ },
+ {
+  "name": "iflow-mcp_text-to-sql-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 278,
+  "last_days": 278
+ },
+ {
+  "name": "agntcy-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 163,
+  "last_days": 163
+ },
+ {
+  "name": "iflow-mcp_atlanhq-atlan-mcp-server",
+  "version": "0.3.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 212,
+  "last_days": 212
+ },
+ {
+  "name": "iflow-mcp_supabase-mcp-server",
+  "version": "0.4.2",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 2,
+  "age_days": 311,
+  "last_days": 293
+ },
+ {
+  "name": "oracle.oci-visual-builder-mcp-server",
+  "version": "0.0.0",
+  "has_license": true,
+  "license": "UPL-1.0",
+  "nver": 1,
+  "age_days": 322,
+  "last_days": 322
+ },
+ {
+  "name": "mseep-microsoft-sql-server-mcp",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 438,
+  "last_days": 362
+ },
+ {
+  "name": "purview-mcp-server",
+  "version": "1.15.5",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 19,
+  "age_days": 107,
+  "last_days": 17
+ },
+ {
+  "name": "weibo-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 509,
+  "last_days": 509
+ },
+ {
+  "name": "pos-mcp-server",
+  "version": "1.0.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 172,
+  "last_days": 172
+ },
+ {
+  "name": "mysql-mcp-server3",
+  "version": "1.0.9",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 8,
+  "age_days": 386,
+  "last_days": 298
+ },
+ {
+  "name": "awslabs.billing-cost-management-mcp-server",
+  "version": "0.0.36",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 34,
+  "age_days": 380,
+  "last_days": 6
+ },
+ {
+  "name": "cylera-mcp-server",
+  "version": "1.2.3",
+  "has_license": false,
+  "license": null,
+  "nver": 4,
+  "age_days": 122,
+  "last_days": 41
+ },
+ {
+  "name": "ares-mcp-server",
+  "version": "0.3.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 429,
+  "last_days": 429
+ },
+ {
+  "name": "awslabs.ecs-mcp-server",
+  "version": "0.1.35",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 34,
+  "age_days": 465,
+  "last_days": 11
+ },
+ {
+  "name": "mcp-server-threatbook",
+  "version": "0.1.3",
+  "has_license": false,
+  "license": null,
+  "nver": 4,
+  "age_days": 468,
+  "last_days": 468
+ },
+ {
+  "name": "adbpg-mcp-server-test",
+  "version": "0.1.8",
+  "has_license": false,
+  "license": null,
+  "nver": 9,
+  "age_days": 429,
+  "last_days": 395
+ },
+ {
+  "name": "finedo-lzy-qccd-demo3-mcp-server",
+  "version": "0.2.6",
+  "has_license": false,
+  "license": null,
+  "nver": 16,
+  "age_days": 41,
+  "last_days": 39
+ },
+ {
+  "name": "code-understanding-mcp-server",
+  "version": "0.2.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 8,
+  "age_days": 486,
+  "last_days": 257
+ },
+ {
+  "name": "instagram-mcp-server",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 78,
+  "last_days": 78
+ },
+ {
+  "name": "iflow-mcp_tomekkorbak-strava-mcp-server",
+  "version": "0.1.3",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 1,
+  "age_days": 208,
+  "last_days": 208
+ },
+ {
+  "name": "crossref-academic-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 170,
+  "last_days": 170
+ },
+ {
+  "name": "antd-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 294,
+  "last_days": 294
+ },
+ {
+  "name": "mcp-server-rss",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 453,
+  "last_days": 453
+ },
+ {
+  "name": "iflow-mcp_dan1t0-gophish-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 192,
+  "last_days": 192
+ },
+ {
+  "name": "oracle.oci-object-storage-mcp-server",
+  "version": "2.0.2",
+  "has_license": true,
+  "license": "UPL-1.0",
+  "nver": 7,
+  "age_days": 328,
+  "last_days": 12
+ },
+ {
+  "name": "mcp-server-semanticscholar",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 255,
+  "last_days": 255
+ },
+ {
+  "name": "chatcut-mcp-server",
+  "version": "0.2.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 103,
+  "last_days": 102
+ },
+ {
+  "name": "mcp-server-math",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 1,
+  "age_days": 515,
+  "last_days": 515
+ },
+ {
+  "name": "clipboard-mcp-server",
+  "version": "1.3.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 9,
+  "age_days": 203,
+  "last_days": 175
+ },
+ {
+  "name": "hkopenai.hk-law-mcp-server",
+  "version": "0.1.8",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 449,
+  "last_days": 449
+ },
+ {
+  "name": "xiyan-table-mcp-server",
+  "version": "0.9.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 6,
+  "age_days": 514,
+  "last_days": 510
+ },
+ {
+  "name": "iflow-mcp-nebula-contrib-nebulagraph-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 219,
+  "last_days": 219
+ },
+ {
+  "name": "mysql-mcp-server-plus",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 32,
+  "last_days": 32
+ },
+ {
+  "name": "youtubeinsights-mcp-server-test",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 488,
+  "last_days": 488
+ },
+ {
+  "name": "esg-mcp-servers",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 196,
+  "last_days": 190
+ },
+ {
+  "name": "hwhwang-bom-mcp-server",
+  "version": "0.1.4",
+  "has_license": false,
+  "license": null,
+  "nver": 5,
+  "age_days": 285,
+  "last_days": 285
+ },
+ {
+  "name": "iflow-mcp_mcp-server-obsidian-omnisearch",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 313,
+  "last_days": 306
+ },
+ {
+  "name": "aws-iot-core-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 44,
+  "last_days": 44
+ },
+ {
+  "name": "mcp-server-gac",
+  "version": "0.0.3",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 437,
+  "last_days": 436
+ },
+ {
+  "name": "mcp-server-analyzer",
+  "version": "0.4.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 8,
+  "age_days": 403,
+  "last_days": 7
+ },
+ {
+  "name": "iflow-mcp_gongrzhe-yolo-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 211,
+  "last_days": 211
+ },
+ {
+  "name": "chungoid-mcp-server-git",
+  "version": "0.6.2.dev3",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 460,
+  "last_days": 460
+ },
+ {
+  "name": "iflow-mcp_interactionco-mcp-server-template",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 210,
+  "last_days": 210
+ },
+ {
+  "name": "oracle.oci-announcements-mcp-server",
+  "version": "0.0.0",
+  "has_license": true,
+  "license": "UPL-1.0",
+  "nver": 1,
+  "age_days": 323,
+  "last_days": 323
+ },
+ {
+  "name": "optimade-mcp-server",
+  "version": "0.1.2",
+  "has_license": false,
+  "license": null,
+  "nver": 3,
+  "age_days": 439,
+  "last_days": 438
+ },
+ {
+  "name": "jewei-mysql-mcp-server",
+  "version": "0.2.5",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 15,
+  "age_days": 464,
+  "last_days": 355
+ },
+ {
+  "name": "wxo-bootcamp-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 172,
+  "last_days": 172
+ },
+ {
+  "name": "finout-mcp-server",
+  "version": "0.1.3",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 193,
+  "last_days": 193
+ },
+ {
+  "name": "n8n-mcp-server",
+  "version": "0.1.12",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 13,
+  "age_days": 427,
+  "last_days": 421
+ },
+ {
+  "name": "iflow-mcp_4r9un-mcp-kql-server",
+  "version": "2.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 212,
+  "last_days": 212
+ },
+ {
+  "name": "http-mcp-client-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 151,
+  "last_days": 151
+ },
+ {
+  "name": "iflow-mcp_mcp-server-bigquery",
+  "version": "0.3.1",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 299,
+  "last_days": 299
+ },
+ {
+  "name": "acli-mcp-server",
+  "version": "0.1.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 168,
+  "last_days": 168
+ },
+ {
+  "name": "mcp-server-gdpr-decisions",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 110,
+  "last_days": 110
+ },
+ {
+  "name": "iflow-mcp_fastmcp-data-analysis-server",
+  "version": "0.1.4",
+  "has_license": false,
+  "license": null,
+  "nver": 5,
+  "age_days": 354,
+  "last_days": 354
+ },
+ {
+  "name": "mcp-server-fetch-louiscklaw",
+  "version": "0.0.5",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 5,
+  "age_days": 411,
+  "last_days": 410
+ },
+ {
+  "name": "iflow-mcp-picardraphael-mcp-server-documentation",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 221,
+  "last_days": 221
+ },
+ {
+  "name": "mcp-vision-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 114,
+  "last_days": 114
+ },
+ {
+  "name": "mcp-server-demo-8",
+  "version": "0.8.0",
+  "has_license": false,
+  "license": null,
+  "nver": 7,
+  "age_days": 311,
+  "last_days": 307
+ },
+ {
+  "name": "couchdb-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 37,
+  "last_days": 37
+ },
+ {
+  "name": "iflow-mcp_sshtunnelvision_mcp-tool-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 234,
+  "last_days": 234
+ },
+ {
+  "name": "yunxin-mcp-server",
+  "version": "0.1.6",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 7,
+  "age_days": 501,
+  "last_days": 496
+ },
+ {
+  "name": "iflow-mcp_rossshannon-things3-mcp-server",
+  "version": "2.0.7",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 1,
+  "age_days": 205,
+  "last_days": 205
+ },
+ {
+  "name": "cgx-mcp-server-docker",
+  "version": "0.3.0",
+  "has_license": true,
+  "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007  Copyright (C) 2007 Free Soft",
+  "nver": 4,
+  "age_days": 410,
+  "last_days": 402
+ },
+ {
+  "name": "mseep-arithmo-mcp-server",
+  "version": "0.1.3",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 4,
+  "age_days": 508,
+  "last_days": 438
+ },
+ {
+  "name": "casual-mcp-server-weather",
+  "version": "1.0.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 447,
+  "last_days": 447
+ },
+ {
+  "name": "adversary-mcp-server",
+  "version": "1.11.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 67,
+  "age_days": 427,
+  "last_days": 378
+ },
+ {
+  "name": "matlab-mcp-server",
+  "version": "0.2.3",
+  "has_license": true,
+  "license": "MIT License  Copyright (c) 2025 Subspace Lab  Permission is hereby granted, free",
+  "nver": 4,
+  "age_days": 315,
+  "last_days": 309
+ },
+ {
+  "name": "wx-mcp-server-test",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 465,
+  "last_days": 465
+ },
+ {
+  "name": "awslabs.postgres-mcp-server",
+  "version": "1.2.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 36,
+  "age_days": 485,
+  "last_days": 11
+ },
+ {
+  "name": "vcosmos-mcp-server",
+  "version": "0.1.8",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 9,
+  "age_days": 379,
+  "last_days": 377
+ },
+ {
+  "name": "otp-mcp-server",
+  "version": "0.3.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 439,
+  "last_days": 436
+ },
+ {
+  "name": "yt-mcp-server",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 173,
+  "last_days": 173
+ },
+ {
+  "name": "mcp-server-biliscribe",
+  "version": "0.9.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 10,
+  "age_days": 496,
+  "last_days": 486
+ },
+ {
+  "name": "iflow-mcp_kubernetes-mcp-server",
+  "version": "0.0.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 282,
+  "last_days": 282
+ },
+ {
+  "name": "memory-journal-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 588,
+  "last_days": 588
+ },
+ {
+  "name": "mcp-server-pliakh",
+  "version": "0.1.9",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 8,
+  "age_days": 291,
+  "last_days": 283
+ },
+ {
+  "name": "frappe-mcp-server",
+  "version": "1.2.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 39,
+  "last_days": 39
+ },
+ {
+  "name": "nanobanana-2-polzaia-mcp-server",
+  "version": "0.5.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 6,
+  "age_days": 139,
+  "last_days": 137
+ },
+ {
+  "name": "energy-grid-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 170,
+  "last_days": 170
+ },
+ {
+  "name": "cuc-mcp-time-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 1,
+  "age_days": 254,
+  "last_days": 254
+ },
+ {
+  "name": "rosettahub-mcp-server",
+  "version": "0.2.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 199,
+  "last_days": 199
+ },
+ {
+  "name": "ragflow-mcp-server-aider",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 321,
+  "last_days": 321
+ },
+ {
+  "name": "mcp-server-esignatures",
+  "version": "0.2.0",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 589,
+  "last_days": 110
+ },
+ {
+  "name": "iflow-mcp_office-powerpoint-mcp-server",
+  "version": "2.0.7",
+  "has_license": true,
+  "license": "MIT License  Copyright (c) 2025 GongRzhe  Permission is hereby granted, free of ",
+  "nver": 2,
+  "age_days": 389,
+  "last_days": 363
+ },
+ {
+  "name": "mcp-server-kaggle",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 87,
+  "last_days": 87
+ },
+ {
+  "name": "arcgis-mcp-server",
+  "version": "1.1.5",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 7,
+  "age_days": 328,
+  "last_days": 325
+ },
+ {
+  "name": "mseep-mindmap-mcp-server",
+  "version": "0.1.5",
+  "has_license": true,
+  "license": "MIT License\n        \n        Copyright (c) 2025 YuChenSSR\n        \n        Permi",
+  "nver": 5,
+  "age_days": 508,
+  "last_days": 362
+ },
+ {
+  "name": "aliyun-mcp-server-rabbitmq",
+  "version": "0.4.0",
+  "has_license": false,
+  "license": null,
+  "nver": 4,
+  "age_days": 285,
+  "last_days": 279
+ },
+ {
+  "name": "mcp-server-ssh",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 202,
+  "last_days": 202
+ },
+ {
+  "name": "cnpj-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 400,
+  "last_days": 400
+ },
+ {
+  "name": "mcpbind-mcp-server-motherduck",
+  "version": "3.311.29.9145",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 368,
+  "last_days": 368
+ },
+ {
+  "name": "discopop-mcp-server",
+  "version": "0.0.1a8",
+  "has_license": true,
+  "license": "BSD License",
+  "nver": 7,
+  "age_days": 110,
+  "last_days": 72
+ },
+ {
+  "name": "mcp-server-yandex-metrika",
+  "version": "0.2.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 6,
+  "age_days": 131,
+  "last_days": 118
+ },
+ {
+  "name": "ray-mcp-server",
+  "version": "0.2.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 439,
+  "last_days": 439
+ },
+ {
+  "name": "pal-mcp-server",
+  "version": "10.6.0",
+  "has_license": false,
+  "license": null,
+  "nver": 4,
+  "age_days": 25,
+  "last_days": 1
+ },
+ {
+  "name": "mseep-mcp-server-memos",
+  "version": "0.1.19",
+  "has_license": true,
+  "license": "MIT License\n        \n        Copyright (c) 2024 RyoJerryYu\n        \n        Perm",
+  "nver": 5,
+  "age_days": 507,
+  "last_days": 362
+ },
+ {
+  "name": "iflow-mcp_mcp-server-data-wrangler",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 312,
+  "last_days": 312
+ },
+ {
+  "name": "pexels-mcp-server",
+  "version": "0.0.4",
+  "has_license": false,
+  "license": null,
+  "nver": 4,
+  "age_days": 384,
+  "last_days": 356
+ },
+ {
+  "name": "mcp-server-dpo",
+  "version": "0.0.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 110,
+  "last_days": 110
+ },
+ {
+  "name": "xhs-bailian-mcp-server-zeng",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 114,
+  "last_days": 114
+ },
+ {
+  "name": "iflow-mcp_mcp-server-mas-sequential-thinking",
+  "version": "0.7.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 283,
+  "last_days": 283
+ },
+ {
+  "name": "epmp-igen-document-search-mcp-server",
+  "version": "0.2.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 263,
+  "last_days": 262
+ },
+ {
+  "name": "tidb-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 232,
+  "last_days": 232
+ },
+ {
+  "name": "translate-mcp-server",
+  "version": "1.0.13",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 6,
+  "age_days": 436,
+  "last_days": 432
+ },
+ {
+  "name": "bitbucket-mcp-server-datacenter",
+  "version": "0.1.3",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 4,
+  "age_days": 94,
+  "last_days": 93
+ },
+ {
+  "name": "mcpbind-openstack-mcp-server",
+  "version": "3.395.27.2984",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 368,
+  "last_days": 368
+ },
+ {
+  "name": "iflow-mcp_huaweiclouddeveloper-huaweicloud-mcp-server",
+  "version": "0.3.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 209,
+  "last_days": 209
+ },
+ {
+  "name": "iflow-mcp_pixeltable-pixeltable-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 207,
+  "last_days": 207
+ },
+ {
+  "name": "mcp-servers1234-demo",
+  "version": "0.1.10",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 426,
+  "last_days": 426
+ },
+ {
+  "name": "mseep-mcp-server-bigquery",
+  "version": "0.3.5",
+  "has_license": false,
+  "license": null,
+  "nver": 6,
+  "age_days": 502,
+  "last_days": 362
+ },
+ {
+  "name": "iflow-mcp_fhoffa_geotab-ace-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 221,
+  "last_days": 221
+ },
+ {
+  "name": "awslabs.amazon-neptune-mcp-server",
+  "version": "1.1.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 23,
+  "age_days": 479,
+  "last_days": 11
+ },
+ {
+  "name": "iflow-mcp_quentincody-github-graphql-mcp-server",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 211,
+  "last_days": 211
+ },
+ {
+  "name": "mcp-transcriptions-server",
+  "version": "0.1.2",
+  "has_license": false,
+  "license": null,
+  "nver": 3,
+  "age_days": 338,
+  "last_days": 338
+ },
+ {
+  "name": "python-alfresco-mcp-server",
+  "version": "1.2.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 2,
+  "age_days": 408,
+  "last_days": 31
+ },
+ {
+  "name": "topease-customs-mcp-server",
+  "version": "0.3.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 95,
+  "last_days": 95
+ },
+ {
+  "name": "iflow-mcp_excel-mcp-server",
+  "version": "1.1.9",
+  "has_license": false,
+  "license": null,
+  "nver": 3,
+  "age_days": 390,
+  "last_days": 314
+ },
+ {
+  "name": "word-mcp-server",
+  "version": "0.0.3",
+  "has_license": true,
+  "license": "MIT License\n        \n        Copyright (c) 2025 GongRzhe\n        \n        Permis",
+  "nver": 3,
+  "age_days": 459,
+  "last_days": 445
+ },
+ {
+  "name": "libralm-mcp-server",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 399,
+  "last_days": 399
+ },
+ {
+  "name": "mseep-mcp-server-pubmed",
+  "version": "0.1.3",
+  "has_license": true,
+  "license": "MIT License",
+  "nver": 4,
+  "age_days": 509,
+  "last_days": 438
+ },
+ {
+  "name": "agent-workflow-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 171,
+  "last_days": 171
+ },
+ {
+  "name": "mcp-server-architect",
+  "version": "0.2.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 11,
+  "age_days": 528,
+  "last_days": 523
+ },
+ {
+  "name": "iflow-mcp_singlestore-labs_singlestore_mcp_server",
+  "version": "0.4.14",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 216,
+  "last_days": 216
+ },
+ {
+  "name": "ubox-mcp-server",
+  "version": "0.1.6",
+  "has_license": false,
+  "license": null,
+  "nver": 5,
+  "age_days": 163,
+  "last_days": 160
+ },
+ {
+  "name": "mcp-server-pe",
+  "version": "0.0.3",
+  "has_license": false,
+  "license": null,
+  "nver": 3,
+  "age_days": 518,
+  "last_days": 516
+ },
+ {
+  "name": "cad-mcp-server",
+  "version": "0.10.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 33,
+  "last_days": 33
+ },
+ {
+  "name": "datark-py-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 442,
+  "last_days": 442
+ },
+ {
+  "name": "iflow-mcp_piebro_vlc-mcp-server",
+  "version": "0.2.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 242,
+  "last_days": 241
+ },
+ {
+  "name": "iflow-mcp_rosingul-mcp-active-directory-server",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 211,
+  "last_days": 211
+ },
+ {
+  "name": "iflow-mcp_dstreefkerk-mcp-server-sentinel",
+  "version": "1.0.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 207,
+  "last_days": 207
+ },
+ {
+  "name": "mcp-server-spectrum-stravision",
+  "version": "2.0.12",
+  "has_license": false,
+  "license": null,
+  "nver": 19,
+  "age_days": 181,
+  "last_days": 141
+ },
+ {
+  "name": "chat-mcp-servers",
+  "version": "0.2.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 14,
+  "last_days": 14
+ },
+ {
+  "name": "iflow-mcp-ckreiling-mcp-server-docker",
+  "version": "0.2.1",
+  "has_license": true,
+  "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007  Copyright (C) 2007 Free Soft",
+  "nver": 1,
+  "age_days": 211,
+  "last_days": 211
+ },
+ {
+  "name": "mcp-wyze-server",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 389,
+  "last_days": 385
+ },
+ {
+  "name": "learn-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 98,
+  "last_days": 98
+ },
+ {
+  "name": "mcp-server-trello",
+  "version": "0.5.2",
+  "has_license": false,
+  "license": null,
+  "nver": 18,
+  "age_days": 335,
+  "last_days": 117
+ },
+ {
+  "name": "mcp-server-bigquery-kosshii2",
+  "version": "0.2.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 490,
+  "last_days": 490
+ },
+ {
+  "name": "mseep-mcp-server-unitycatalog",
+  "version": "0.1.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 5,
+  "age_days": 508,
+  "last_days": 362
+ },
+ {
+  "name": "activitywatch-mcp-server-py",
+  "version": "2.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 206,
+  "last_days": 205
+ },
+ {
+  "name": "mcp-server-rapid-rag",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 197,
+  "last_days": 197
+ },
+ {
+  "name": "geoserver-mcp",
+  "version": "0.4.0",
+  "has_license": true,
+  "license": "MIT License\n        \n        Copyright (c) 2025 GeoServer MCP Contributors\n     ",
+  "nver": 5,
+  "age_days": 497,
+  "last_days": 267
+ },
+ {
+  "name": "ybl-mcp-server",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 522,
+  "last_days": 522
+ },
+ {
+  "name": "teamcenter-mcp-server",
+  "version": "0.2.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 418,
+  "last_days": 410
+ },
+ {
+  "name": "sceptre-mcp-server",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 2,
+  "age_days": 167,
+  "last_days": 167
+ },
+ {
+  "name": "iflow-mcp_dlwjdtn535_mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 219,
+  "last_days": 219
+ },
+ {
+  "name": "strayl-mcp-server",
+  "version": "0.3.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 12,
+  "age_days": 298,
+  "last_days": 288
+ },
+ {
+  "name": "root-mcp-server",
+  "version": "0.1.6",
+  "has_license": false,
+  "license": null,
+  "nver": 7,
+  "age_days": 288,
+  "last_days": 287
+ },
+ {
+  "name": "mcp-server-image-upload",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 499,
+  "last_days": 499
+ },
+ {
+  "name": "bonito-mcp-server",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 1,
+  "last_days": 1
+ },
+ {
+  "name": "aapt-mcp-server",
+  "version": "1.0.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 478,
+  "last_days": 478
+ },
+ {
+  "name": "shotgrid-mcp-server",
+  "version": "0.15.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 31,
+  "age_days": 609,
+  "last_days": 221
+ },
+ {
+  "name": "polymarket-mcp-server",
+  "version": "0.1.3",
+  "has_license": false,
+  "license": null,
+  "nver": 3,
+  "age_days": 145,
+  "last_days": 138
+ },
+ {
+  "name": "iflow-mcp_walidfaour-pwndoc-mcp-server",
+  "version": "1.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 209,
+  "last_days": 209
+ },
+ {
+  "name": "amfs-mcp-server",
+  "version": "0.7.17",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 32,
+  "age_days": 151,
+  "last_days": 12
+ },
+ {
+  "name": "expenselm-mcp-server",
+  "version": "0.3.1",
+  "has_license": false,
+  "license": null,
+  "nver": 9,
+  "age_days": 398,
+  "last_days": 292
+ },
+ {
+  "name": "iflow-mcp_nicholasgoh-mcp-server",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 211,
+  "last_days": 211
+ },
+ {
+  "name": "cloudtruth-mcp-server",
+  "version": "1.0.3",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 4,
+  "age_days": 317,
+  "last_days": 316
+ },
+ {
+  "name": "mcp-sqlserver-filesystem",
+  "version": "1.0.3",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 25,
+  "age_days": 379,
+  "last_days": 376
+ },
+ {
+  "name": "remote_mcp_server_test",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 520,
+  "last_days": 520
+ },
+ {
+  "name": "vmware-workstation-pro-mcp-server",
+  "version": "0.1.11",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 9,
+  "age_days": 309,
+  "last_days": 308
+ },
+ {
+  "name": "qiskit-ibm-transpiler-mcp-server",
+  "version": "0.4.1",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 6,
+  "age_days": 262,
+  "last_days": 55
+ },
+ {
+  "name": "iflow-mcp_jztan_redmine-mcp-server",
+  "version": "0.10.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 216,
+  "last_days": 216
+ },
+ {
+  "name": "mcp-time-servercuclsy",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT License\r\n        \r\n        Copyright (c) 2026 Your Name\r\n        \r\n        P",
+  "nver": 1,
+  "age_days": 220,
+  "last_days": 220
+ },
+ {
+  "name": "mseep-mcp-yfinance-server",
+  "version": "0.1.4",
+  "has_license": false,
+  "license": null,
+  "nver": 5,
+  "age_days": 491,
+  "last_days": 362
+ },
+ {
+  "name": "mcp-server-elastic",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 555,
+  "last_days": 555
+ },
+ {
+  "name": "mcp-server-tochka-bank",
+  "version": "0.6.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 9,
+  "age_days": 142,
+  "last_days": 118
+ },
+ {
+  "name": "q-mem-mcp-server",
+  "version": "2.2.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 23,
+  "age_days": 424,
+  "last_days": 421
+ },
+ {
+  "name": "rapidocr-mcp-server",
+  "version": "0.1.7",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 6,
+  "age_days": 527,
+  "last_days": 527
+ },
+ {
+  "name": "mseep-mcp-server-pacman",
+  "version": "0.2.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 363,
+  "last_days": 362
+ },
+ {
+  "name": "tuskr-mcp-server",
+  "version": "0.1.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 5,
+  "age_days": 394,
+  "last_days": 14
+ },
+ {
+  "name": "qinglong-mcp-server",
+  "version": "0.1.5",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 6,
+  "age_days": 278,
+  "last_days": 271
+ },
+ {
+  "name": "pgsql-mcp-server",
+  "version": "1.4.6",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 17,
+  "age_days": 514,
+  "last_days": 193
+ },
+ {
+  "name": "mseep-mcp-server-gemini-image-generator",
+  "version": "0.1.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 5,
+  "age_days": 491,
+  "last_days": 362
+ },
+ {
+  "name": "mlops-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 146,
+  "last_days": 146
+ },
+ {
+  "name": "mcp-server-macos-defaults",
+  "version": "0.1.2",
+  "has_license": false,
+  "license": null,
+  "nver": 3,
+  "age_days": 647,
+  "last_days": 647
+ },
+ {
+  "name": "mcp-server-hch",
+  "version": "0.0.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 522,
+  "last_days": 522
+ },
+ {
+  "name": "patent-mcp-server",
+  "version": "1.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 15,
+  "age_days": 531,
+  "last_days": 32
+ },
+ {
+  "name": "azure-fhir-mcp-server",
+  "version": "1.2.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 9,
+  "age_days": 482,
+  "last_days": 331
+ },
+ {
+  "name": "mseep-mcp-server-pox",
+  "version": "0.1.2",
+  "has_license": false,
+  "license": null,
+  "nver": 3,
+  "age_days": 509,
+  "last_days": 474
+ },
+ {
+  "name": "oracle.oci-logging-mcp-server",
+  "version": "2.0.3",
+  "has_license": true,
+  "license": "UPL-1.0",
+  "nver": 8,
+  "age_days": 328,
+  "last_days": 12
+ },
+ {
+  "name": "awslabs.github-actions-mcp-server",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 326,
+  "last_days": 326
+ },
+ {
+  "name": "air-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 103,
+  "last_days": 103
+ },
+ {
+  "name": "iflow-mcp_mcp-server-memos",
+  "version": "0.1.15",
+  "has_license": true,
+  "license": "MIT License  Copyright (c) 2024 RyoJerryYu  Permission is hereby granted, free o",
+  "nver": 1,
+  "age_days": 292,
+  "last_days": 292
+ },
+ {
+  "name": "artifacts-mcp-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 398,
+  "last_days": 398
+ },
+ {
+  "name": "muawyiya-math-mcp-server",
+  "version": "1.0.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 208,
+  "last_days": 208
+ },
+ {
+  "name": "iflow-mcp_amidabuddha-unichat-mcp-server",
+  "version": "0.2.19",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 209,
+  "last_days": 209
+ },
+ {
+  "name": "mcp-server-airoom",
+  "version": "0.4.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 487,
+  "last_days": 487
+ },
+ {
+  "name": "mcp-server-kubestash",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 72,
+  "last_days": 72
+ },
+ {
+  "name": "iflow-mcp_luxshan2000-fastmcp-file-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 192,
+  "last_days": 192
+ },
+ {
+  "name": "iflow-mcp_iotdb-mcp-server",
+  "version": "0.2.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 307,
+  "last_days": 307
+ },
+ {
+  "name": "mcp-server-pubtator3",
+  "version": "0.2.1",
+  "has_license": true,
+  "license": "MIT AND (Apache-2.0 OR BSD-2-Clause)",
+  "nver": 8,
+  "age_days": 496,
+  "last_days": 458
+ },
+ {
+  "name": "iflow-mcp_apache-iotdb-mcp-server",
+  "version": "0.2.0",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 1,
+  "age_days": 192,
+  "last_days": 192
+ },
+ {
+  "name": "mcp-server-jl",
+  "version": "0.1.8",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 8,
+  "age_days": 480,
+  "last_days": 480
+ },
+ {
+  "name": "timecamp-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 406,
+  "last_days": 406
+ },
+ {
+  "name": "yudeshi1314520-mcp-add-server",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 3,
+  "age_days": 41,
+  "last_days": 39
+ },
+ {
+  "name": "mcp-testaserver",
+  "version": "0.1.3",
+  "has_license": false,
+  "license": null,
+  "nver": 4,
+  "age_days": 203,
+  "last_days": 201
+ },
+ {
+  "name": "mseep-python-server-mcp",
+  "version": "0.1.2",
+  "has_license": false,
+  "license": null,
+  "nver": 3,
+  "age_days": 508,
+  "last_days": 474
+ },
+ {
+  "name": "mcp-redis-server",
+  "version": "0.1.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 159,
+  "last_days": 159
+ },
+ {
+  "name": "iso-mcp-server",
+  "version": "0.1.2",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 307,
+  "last_days": 307
+ },
+ {
+  "name": "signnow-mcp-server",
+  "version": "3.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 35,
+  "age_days": 360,
+  "last_days": 41
+ },
+ {
+  "name": "mcp-server-toggl",
+  "version": "0.1.2",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 385,
+  "last_days": 385
+ },
+ {
+  "name": "opensearch-knowledge-base-mcp-server",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 297,
+  "last_days": 297
+ },
+ {
+  "name": "mcp-server-bailian-image",
+  "version": "1.0.4",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 388,
+  "last_days": 386
+ },
+ {
+  "name": "linkedin-mcp-server",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT License\n        \n        Copyright (c) 2026 SARAM ALI\n        \n        Permi",
+  "nver": 1,
+  "age_days": 236,
+  "last_days": 236
+ },
+ {
+  "name": "desktop_access_mcp_server",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 379,
+  "last_days": 379
+ },
+ {
+  "name": "nara-mcp-server",
+  "version": "1.3.3",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 9,
+  "age_days": 222,
+  "last_days": 150
+ },
+ {
+  "name": "iflow-mcp_tedlikeskix_alpaca-mcp-server",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 220,
+  "last_days": 220
+ },
+ {
+  "name": "e2b-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "Apache-2.0",
+  "nver": 2,
+  "age_days": 527,
+  "last_days": 249
+ },
+ {
+  "name": "mseep-oracledb-mcp-server",
+  "version": "0.1.3",
+  "has_license": false,
+  "license": null,
+  "nver": 4,
+  "age_days": 509,
+  "last_days": 362
+ },
+ {
+  "name": "fiverr-mcp-server",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 195,
+  "last_days": 195
+ },
+ {
+  "name": "mcp-server-jira",
+  "version": "0.1.1",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 2,
+  "age_days": 342,
+  "last_days": 341
+ },
+ {
+  "name": "oracle.oci-marketplace-publisher-service-mcp-server",
+  "version": "0.0.0",
+  "has_license": true,
+  "license": "UPL-1.0",
+  "nver": 1,
+  "age_days": 322,
+  "last_days": 322
+ },
+ {
+  "name": "lulab-convert-mcp-server",
+  "version": "1.1.13",
+  "has_license": true,
+  "license": "MIT License\n        \n        Copyright (c) 2025 GongRzhe\n        \n        Permis",
+  "nver": 4,
+  "age_days": 310,
+  "last_days": 310
+ },
+ {
+  "name": "mcp-server-beehiiv",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 465,
+  "last_days": 465
+ },
+ {
+  "name": "iflow-mcp_jguimera-securitycopilotmcpserver",
+  "version": "0.1.0",
+  "has_license": false,
+  "license": null,
+  "nver": 1,
+  "age_days": 212,
+  "last_days": 212
+ },
+ {
+  "name": "multimedia-mcp-server",
+  "version": "1.0.0",
+  "has_license": true,
+  "license": "MIT",
+  "nver": 1,
+  "age_days": 94,
+  "last_days": 94
+ },
+ {
+  "name": "iflow-mcp-rajeevchandra-mcp-client-server-example",
+  "version": "0.1.1",
+  "has_license": false,
+  "license": null,
+  "nver": 2,
+  "age_days": 219,
+  "last_days": 219
+ }
+]

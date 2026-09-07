@@ -1,0 +1,3579 @@
+{
+ "study": "MCP supply-chain, dimensions with variance (round B)",
+ "date": "2026-09-07",
+ "note": "A (download weighting) could not run: api.npmjs.org, pypistats.org, pepy.tech, ecosyste.ms and libraries.io are all blocked by this container's egress policy. Script delivered separately for local execution.",
+ "install_scripts": {
+  "definition": "preinstall/install/postinstall declared in package.json; npx -y executes these for the root and every dependency",
+  "mcp": {
+   "n": 250,
+   "root_hook_pct": 3.2,
+   "tree_hook_pct": 15.6,
+   "median_tree": 96
+  },
+  "langchain": {
+   "n": 120,
+   "root_hook_pct": 0.8,
+   "tree_hook_pct": 14.2,
+   "median_tree": 6
+  },
+  "eslint_plugin": {
+   "n": 120,
+   "root_hook_pct": 0.0,
+   "tree_hook_pct": 2.5,
+   "median_tree": 8
+  },
+  "z_vs_langchain": 0.36,
+  "mh_or_size_adjusted_vs_langchain": 0.79,
+  "verdict": "NULL. Install-hook exposure tracks tree size, not MCP.",
+  "absolute_fact_that_stands": "15.6% of npx -y MCP invocations execute third-party install-time code; 57.7% when the tree exceeds 120 packages",
+  "most_common_hook_packages": [
+   "protobufjs",
+   "sharp",
+   "better-sqlite3",
+   "onnxruntime-node",
+   "tree-sitter-*"
+  ]
+ },
+ "name_collisions": {
+  "definition": "packages sharing a normalised stem after stripping scope, separators and the ecosystem's own token",
+  "mcp_pct": 14.1,
+  "langchain_pct": 20.7,
+  "eslint_plugin_pct": 9.1,
+  "z_vs_langchain": -6.83,
+  "z_vs_eslint": 8.01,
+  "verdict": "NULL. MCP sits between two comparable keyword ecosystems.",
+  "structure_that_stands": {
+   "groups_with_rank_gap_over_1500": "169/274 = 62%",
+   "groups_containing_an_unscoped_name": "126/274",
+   "example": "13 packages are effectively 'mysql MCP server', one of them unscoped as mcp-server-mysql"
+  }
+ },
+ "meritocracy": {
+  "pooled_top20_clean_pct": 93.7,
+  "pooled_tail_clean_pct": 98.7,
+  "z": -3.19,
+  "clusters_with_a_clean_option_in_top5": "13/15 at 5/5",
+  "verdict": "License quality does not vary with popularity, so download weighting cannot change the npm conclusions"
+ },
+ "cumulative": "Six dimensions tested on npm with coverage-matched controls: license validity, license text, deprecation, churn, abandonment, install hooks, name collisions. All null.",
+ "hooks_mcp": [
+  {
+   "name": "graphweft",
+   "nodes": 91,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "onnxruntime-node@1.24.3": {
+     "postinstall": "node ./script/install"
+    },
+    "sharp@0.34.5": {
+     "install": "node install/check.js || npm run build"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "@kahflane/whatsapp-mcp",
+   "nodes": 495,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "@innovatorssoft/baileys@7.4.7": {
+     "preinstall": "node engine-requirements.js"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    },
+    "protobufjs@6.8.8": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "@pipeworx/mcp-senate-lobbying",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "fiatdock-mcp",
+   "nodes": 115,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-stocktwits",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-pipeworx-catalog",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@toolyour/sdk",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@sargonpiraev/confluence-mcp-server",
+   "nodes": 137,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@apicircle/mcp-server",
+   "nodes": 115,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "kaomoji-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@mseep/magic-mcp",
+   "nodes": 113,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@cyanheads/federal-reserve-mcp-server",
+   "nodes": 50,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mysql-mcp-x",
+   "nodes": 105,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@balacode/mental",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@noticed/cli",
+   "nodes": 56,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-server-db",
+   "nodes": 247,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "tldjs@2.3.2": {
+     "postinstall": "node ./bin/postinstall.js"
+    }
+   }
+  },
+  {
+   "name": "@felixisaac/tandem",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@apps-in-toss/ax",
+   "nodes": 24,
+   "root_hooks": {
+    "postinstall": "node scripts/postinstall.js"
+   },
+   "tree_hook_pkgs": {
+    "@apps-in-toss/ax@0.7.1": {
+     "postinstall": "node scripts/postinstall.js"
+    }
+   }
+  },
+  {
+   "name": "sleep-tracker-ai-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "pythia-lcs",
+   "nodes": 342,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@12.6.2": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    },
+    "node-llama-cpp@3.18.1": {
+     "postinstall": "node ./dist/cli/cli.js postinstall"
+    },
+    "tree-sitter@0.25.1": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-c-sharp@0.23.5": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-css@0.25.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-go@0.25.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-java@0.23.5": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-javascript@0.25.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-php@0.24.2": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-python@0.25.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-ruby@0.23.1": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-rust@0.24.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-typescript@0.23.2": {
+     "install": "node-gyp-build"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    },
+    "@derekstride/tree-sitter-sql@0.3.5": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-javascript@0.23.1": {
+     "install": "node-gyp-build"
+    }
+   }
+  },
+  {
+   "name": "@pipeworx/mcp-barcelona-events",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "secure-vault-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@theyahia/yandex-direct-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@insnapsprakhar/world-bank-economic-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@wonsukchoi/crondex",
+   "nodes": 98,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "selvedge-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@scriptmasterlabs/mcp-x402",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "create-modelfetch",
+   "nodes": 14,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@tocharianou/mcp-virustotal",
+   "nodes": 123,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "openeagleeye",
+   "nodes": 108,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@thecodesaiyan/tcs-n8n-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "jurisd",
+   "nodes": 186,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-us-auctions",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@damoqiongqiu/mcp-local-rag",
+   "nodes": 334,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "onnxruntime-node@1.24.3": {
+     "postinstall": "node ./script/install"
+    },
+    "sharp@0.34.5": {
+     "install": "node install/check.js || npm run build"
+    },
+    "tree-sitter-go@0.25.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-java@0.23.5": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-javascript@0.25.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-python@0.25.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-rust@0.24.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-typescript@0.23.2": {
+     "install": "node-gyp-build"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    },
+    "sharp@0.33.5": {
+     "install": "node install/check"
+    },
+    "onnxruntime-node@1.19.2": {
+     "postinstall": "node ./script/install"
+    },
+    "tree-sitter-javascript@0.23.1": {
+     "install": "node-gyp-build"
+    }
+   }
+  },
+  {
+   "name": "@cyanheads/chembl-mcp-server",
+   "nodes": 61,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@limelink/mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "vidlens-mcp",
+   "nodes": 153,
+   "root_hooks": {
+    "postinstall": "node -e \"console.log('\\nVidLens MCP installed. Run: npx vidlens-mcp setup. Start the server with: npx vidlens-mcp serve. Docs: https://github.com/thatsrajan/vidlens-mcp\\n')\""
+   },
+   "tree_hook_pkgs": {
+    "vidlens-mcp@1.5.1": {
+     "postinstall": "node -e \"console.log('\\nVidLens MCP installed. Run: npx vidlens-mcp setup. Start the server with: npx vidlens-mcp serve. Docs: https://github.com/thatsrajan/vidlens-mcp\\n')\""
+    },
+    "@google/genai@1.52.0": {
+     "preinstall": "echo 'preinstall: no-op'"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "grpvn-cli",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "icon-composer-mcp",
+   "nodes": 128,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "sharp@0.34.5": {
+     "install": "node install/check.js || npm run build"
+    }
+   }
+  },
+  {
+   "name": "@mseep/mcp-file-downloader",
+   "nodes": 26,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-czso-cz",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@obscuraai/mcp-server",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "cntx-ui",
+   "nodes": 117,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@12.11.1": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    },
+    "tree-sitter@0.21.1": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-css@0.21.1": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-html@0.20.4": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-javascript@0.23.1": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-json@0.21.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-rust@0.21.0": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-typescript@0.23.2": {
+     "install": "node-gyp-build"
+    },
+    "tree-sitter-sql@0.1.0": {
+     "install": "node-gyp rebuild"
+    },
+    "tree-sitter-markdown@0.7.1": {
+     "install": "node-gyp rebuild"
+    },
+    "tree-sitter-toml@0.5.1": {
+     "install": "node-gyp rebuild"
+    },
+    "sharp@0.32.6": {
+     "install": "(node install/libvips && node install/dll-copy && prebuild-install) || (node install/can-compile && node-gyp rebuild && node install/dll-copy)"
+    },
+    "tree-sitter@0.20.6": {
+     "install": "prebuild-install || node-gyp rebuild"
+    },
+    "protobufjs@6.11.6": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "taufunctions",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-close-crm",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-rncp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "ppspy-mcp-server",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@weppy/roblox-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@moneolabs/mcp",
+   "nodes": 115,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pv-bhat/vibe-check-mcp",
+   "nodes": 175,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@florexlabs/docs-to-mcp-server",
+   "nodes": 93,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "freelo-mcp",
+   "nodes": 156,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@htetoowaiyan/colors-mcp-server",
+   "nodes": 124,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@filcuk/planka-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "phoenixd-mcp-server",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "real-browser-mcp-server",
+   "nodes": 115,
+   "root_hooks": {
+    "postinstall": "patchright install chromium"
+   },
+   "tree_hook_pkgs": {
+    "real-browser-mcp-server@3.3.1": {
+     "postinstall": "patchright install chromium"
+    },
+    "fsevents@2.3.2": {
+     "install": "node-gyp rebuild"
+    }
+   }
+  },
+  {
+   "name": "@getmcpads/google-analytics-mcp-server",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "agentcard-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "ccmultihelper",
+   "nodes": 162,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "fsevents@2.3.3": {
+     "install": "node-gyp rebuild"
+    }
+   }
+  },
+  {
+   "name": "@tocharianou/jira-mcp",
+   "nodes": 119,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-arcgis-eagan",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@jarciahdz111/dokploy-mcp",
+   "nodes": 110,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@luno-cms/mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@runapi.ai/qwen-2-mcp",
+   "nodes": 98,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "perf-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "agentrank-mcp-server",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@ytsuda/ripple",
+   "nodes": 4,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "markitup-mcp-server",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@novalux12/spotify-mcp",
+   "nodes": 109,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "syndicate-links-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "multi-cloud-docs-search",
+   "nodes": 118,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-data-detroit",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-data-pipeline-connector",
+   "nodes": 112,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@taprun/from-puppeteer",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "manasx",
+   "nodes": 11,
+   "root_hooks": {
+    "postinstall": "echo '\n\ud83d\ude80 ManasX Enterprise Code Governance installed successfully!\n\ud83d\udcd6 Get started: manasx --help\n\ud83d\udd27 Setup: manasx init-rules\n\ud83d\udc40 Monitor: manasx watch-all\n'"
+   },
+   "tree_hook_pkgs": {
+    "manasx@2.0.1": {
+     "postinstall": "echo '\n\ud83d\ude80 ManasX Enterprise Code Governance installed successfully!\n\ud83d\udcd6 Get started: manasx --help\n\ud83d\udd27 Setup: manasx init-rules\n\ud83d\udc40 Monitor: manasx watch-all\n'"
+    }
+   }
+  },
+  {
+   "name": "vaults-diagram-tools",
+   "nodes": 151,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@mseep/mcp-obsidian",
+   "nodes": 51,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "patchxnote-agent",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@michelabboud/visual-forge-mcp",
+   "nodes": 217,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "@michelabboud/visual-forge-fonts-code@1.0.1": {
+     "postinstall": "node postinstall.js || true"
+    },
+    "@michelabboud/visual-forge-fonts-full@1.0.1": {
+     "postinstall": "node postinstall.js || true"
+    },
+    "@michelabboud/visual-forge-fonts-standard@1.0.1": {
+     "postinstall": "node postinstall.js || true"
+    },
+    "sharp@0.33.5": {
+     "install": "node install/check"
+    },
+    "@michelabboud/visual-forge-fonts-minimal@1.0.0": {
+     "postinstall": "node postinstall.js || true"
+    }
+   }
+  },
+  {
+   "name": "mcpx-framework",
+   "nodes": 100,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "api-tester-ai-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@frangelbarrera/osint-agent-skills",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@automate-io/api-testing-mcp",
+   "nodes": 95,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "fsevents@2.3.2": {
+     "install": "node-gyp rebuild"
+    }
+   }
+  },
+  {
+   "name": "@mhrj/whatsapp-mcp",
+   "nodes": 244,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "@vugu/mcp-aggregator",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@cgdevs/pigi",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "whooshly-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@actionproxy/mcp-wrapper",
+   "nodes": 2,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "kvk-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mythsensus-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-tcgdex",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@smails/cli",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "cursor-memory",
+   "nodes": 211,
+   "root_hooks": {
+    "preinstall": "node scripts/preinstall.cjs",
+    "postinstall": "node scripts/postinstall.cjs"
+   },
+   "tree_hook_pkgs": {
+    "cursor-memory@1.0.4": {
+     "preinstall": "node scripts/preinstall.cjs",
+     "postinstall": "node scripts/postinstall.cjs"
+    },
+    "better-sqlite3@12.11.1": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    },
+    "sharp@0.34.5": {
+     "install": "node install/check.js || npm run build"
+    },
+    "onnxruntime-node@1.21.0": {
+     "postinstall": "node ./script/install"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "@pipeworx/mcp-idf-events",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "math-solver-ai-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@watzon/tgmcp",
+   "nodes": 182,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@12.11.1": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    }
+   }
+  },
+  {
+   "name": "@pipeworx/mcp-19hz",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@npm_xiyuan/mcp-model-radar",
+   "nodes": 160,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@12.11.1": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    }
+   }
+  },
+  {
+   "name": "@yawlabs/caddy-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-test-mcp",
+   "nodes": 1,
+   "root_hooks": {
+    "postinstall": "node scripts/postinstall.js"
+   },
+   "tree_hook_pkgs": {
+    "mcp-test-mcp@0.5.2": {
+     "postinstall": "node scripts/postinstall.js"
+    }
+   }
+  },
+  {
+   "name": "@mseep/atlas-mcp-server",
+   "nodes": 158,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@agentsid/guard",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-or-dmv",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@ordinaryfuture/agent-readiness-mcp",
+   "nodes": 119,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@vision_123/email-sender-server",
+   "nodes": 98,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@usedomshot/cli",
+   "nodes": 99,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "wikimedia-image-search-mcp",
+   "nodes": 129,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "sharp@0.34.5": {
+     "install": "node install/check.js || npm run build"
+    }
+   }
+  },
+  {
+   "name": "shopify-multi-store-mcp-server",
+   "nodes": 51,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@theyahia/bitrix24-mcp",
+   "nodes": 98,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@cablate/mcp-google-map",
+   "nodes": 243,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "noodle-perplexity-mcp",
+   "nodes": 193,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "guardz-generator-mcp",
+   "nodes": 55,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "companies-house-cli",
+   "nodes": 7,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "local-dfw-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@turbot/steampipe-mcp",
+   "nodes": 118,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@echosaw/mcp-server",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "novada-mcp",
+   "nodes": 242,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@wubaoqi/guanmcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@apiscoach/mcp-server-weather",
+   "nodes": 98,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "macbeth",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@platfone/mcp",
+   "nodes": 126,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "iw-spine-network",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "healthcare-mcp",
+   "nodes": 216,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "sqlite3@5.1.7": {
+     "install": "prebuild-install -r napi || node-gyp rebuild"
+    }
+   }
+  },
+  {
+   "name": "abapilot",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "agent-costcenter-mcp",
+   "nodes": 134,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@12.11.1": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    }
+   }
+  },
+  {
+   "name": "mcp-mapmyindia",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "codescan-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@iflow-mcp/12306-mcp",
+   "nodes": 112,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-url",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@cyanheads/gbif-biodiversity-mcp-server",
+   "nodes": 50,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "base-flash-arb-mcp",
+   "nodes": 106,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-server-security-audit",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@mbeato/apimesh-mcp-server",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@onivoro/server-mcp",
+   "nodes": 2,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "aifastdb-devplan",
+   "nodes": 124,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "lanhu-context-mcp",
+   "nodes": 188,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "fsevents@2.3.3": {
+     "install": "node-gyp rebuild"
+    }
+   }
+  },
+  {
+   "name": "@icogenie/mcp",
+   "nodes": 120,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "imap-email-mcp",
+   "nodes": 138,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-read-file-server",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pranavchavda/shopify-feature-box-mcp",
+   "nodes": 15,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "llmmcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-mitre-attck",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "gardening-ai-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "swagger-mcp-tools",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-stat-gl",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "xiaoflow-mcp-server",
+   "nodes": 110,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-wtf",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@lancernix/mcp-adapter",
+   "nodes": 98,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "shieldnet-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "ai-ads-os",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@dangahagan/weather-mcp",
+   "nodes": 165,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "insite-mcp",
+   "nodes": 18,
+   "root_hooks": {
+    "postinstall": "npx playwright install chromium"
+   },
+   "tree_hook_pkgs": {
+    "insite-mcp@1.2.4": {
+     "postinstall": "npx playwright install chromium"
+    }
+   }
+  },
+  {
+   "name": "xunao-erp-mcp-proxy",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-ca-procurement",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "jupyterlab-collab-mcp",
+   "nodes": 136,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "leveldown@5.6.0": {
+     "install": "node-gyp-build"
+    }
+   }
+  },
+  {
+   "name": "@pipeworx/mcp-cocktails",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@frontlinesystems/rason-mcp-server",
+   "nodes": 110,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "tabedata-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "bridgeguard-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@100xpercent/mcp-server-pop-pay",
+   "nodes": 165,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@11.10.0": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    },
+    "keytar@7.9.0": {
+     "install": "prebuild-install || npm run build"
+    }
+   }
+  },
+  {
+   "name": "@hypawave/mcp",
+   "nodes": 114,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "email-playbook-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@mseep/starlight-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "clenzer",
+   "nodes": 106,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "create-opc-wiki",
+   "nodes": 17,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@mseep/telegram-api-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@iflow-mcp/weather-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "quanters-akshare-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@shaykec/appxray-mcp-server",
+   "nodes": 101,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@coti-io/coti-sdk-private-messaging",
+   "nodes": 109,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-selenium-webdriver",
+   "nodes": 141,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-nrel",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "backendless-console-sdk-mcp-server",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@sgpdirectory/mcp",
+   "nodes": 85,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "alienmail-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "sms-florin-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@sealgate/mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-imagetovideoai-server",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "no2bounce-mcp",
+   "nodes": 111,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-citybikes",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "engram-wiki-mcp",
+   "nodes": 378,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "node-pty@1.1.0": {
+     "install": "node scripts/prebuild.js || node-gyp rebuild",
+     "postinstall": "node scripts/post-install.js"
+    },
+    "onnxruntime-node@1.24.3": {
+     "postinstall": "node ./script/install"
+    },
+    "sharp@0.34.5": {
+     "install": "node install/check.js || npm run build"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    },
+    "sharp@0.33.5": {
+     "install": "node install/check"
+    },
+    "onnxruntime-node@1.19.2": {
+     "postinstall": "node ./script/install"
+    }
+   }
+  },
+  {
+   "name": "@andersonfda/springy",
+   "nodes": 489,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@12.11.1": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    },
+    "esbuild@0.28.1": {
+     "postinstall": "node install.js"
+    }
+   }
+  },
+  {
+   "name": "vault-cortex",
+   "nodes": 8,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@garvae/mcp-mcphub",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@codegiveness/mssql-mcp",
+   "nodes": 6,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "clawaimail-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-peopledatalabs",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "prodcheck",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "starwell-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcpscope",
+   "nodes": 155,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "repomap-mcp-server",
+   "nodes": 99,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "@gjczone/repomap-linux-x64@2.7.0": {
+     "postinstall": "node install.js"
+    }
+   }
+  },
+  {
+   "name": "keycloak-mcp",
+   "nodes": 126,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@zensystemai/zengram-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@cyanheads/openalex-mcp-server",
+   "nodes": 50,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "job-searchoor",
+   "nodes": 156,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "context-fabric",
+   "nodes": 131,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@12.8.0": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    }
+   }
+  },
+  {
+   "name": "@cg3/prior-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@fluxweave/cli",
+   "nodes": 206,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-sarb-za",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-creatio",
+   "nodes": 133,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@whoisxmlapidotcom/mcp-whoisxmlapi_darwin_arm64",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@aiwerk/mcp-server-wheel-size",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-devto",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@cyanheads/earthquake-mcp-server",
+   "nodes": 50,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-medicare-coverage",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@fre4x/hn",
+   "nodes": 109,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@cyanheads/oecd-mcp-server",
+   "nodes": 61,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@mseep/mcp_server_mysql",
+   "nodes": 139,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "claude-prompts",
+   "nodes": 165,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "@cyanheads/docgen-mcp-server",
+   "nodes": 136,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "research-swarm",
+   "nodes": 191,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@11.10.0": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    }
+   }
+  },
+  {
+   "name": "@vk0/agent-claim-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-sports-game-odds",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-web-recon-agent",
+   "nodes": 116,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@malikmalikayesha/azure-image-generation-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-arcgis-durham",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@aicanvas/mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "sentiment-analysis-ai-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-data-strasbourg",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "mcp-db-bridge",
+   "nodes": 152,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@9.6.0": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    }
+   }
+  },
+  {
+   "name": "@craft-ng/mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@moleculer/mcp-server",
+   "nodes": 98,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-arcgis-chatham",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@ranklancer/uptime-kuma-mcp",
+   "nodes": 104,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "true-solar-time-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "hyros-mcp",
+   "nodes": 145,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "core-js-pure@3.50.0": {
+     "postinstall": "node -e \"try{require('./postinstall')}catch(e){}\""
+    }
+   }
+  },
+  {
+   "name": "frc-mcp",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@cyanheads/faa-aircraft-registry-mcp-server",
+   "nodes": 51,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@devinwangd/cloak-browser-mcp",
+   "nodes": 105,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@gogogadgetbytes/smart-connections-mcp",
+   "nodes": 171,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "sharp@0.34.5": {
+     "install": "node install/check.js || npm run build"
+    },
+    "onnxruntime-node@1.21.0": {
+     "postinstall": "node ./script/install"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    }
+   }
+  },
+  {
+   "name": "@mseep/mcp-shodan",
+   "nodes": 47,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "turk-hukuku-mevzuat-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-faa-regulations",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@mseep/grok-build-x-search-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "openpanel-mcp-server",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-arcgis-phoenix",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "krx-cli",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "linkydy-mcp",
+   "nodes": 98,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-rfc-editor",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "pushci",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@ohos-ports/agentic-flow",
+   "nodes": 589,
+   "root_hooks": {
+    "postinstall": "node scripts/postinstall.js || true"
+   },
+   "tree_hook_pkgs": {
+    "@ohos-ports/agentic-flow@2.1.2-beta.1": {
+     "postinstall": "node scripts/postinstall.js || true"
+    },
+    "agentdb@3.0.0-alpha.20": {
+     "postinstall": "node scripts/postinstall.cjs || true"
+    },
+    "@google/genai@1.52.0": {
+     "preinstall": "echo 'preinstall: no-op'"
+    },
+    "@ohos-ports/sharp@0.34.5-beta.3": {
+     "install": "node install/check.js || npm run build"
+    },
+    "@ohos-ports/better-sqlite3@12.11.2-beta.1": {
+     "install": "node install.js"
+    },
+    "@ohos-ports/onnxruntime-node@1.24.3-beta.12": {
+     "postinstall": "node ./script/install"
+    },
+    "argon2@0.44.0": {
+     "install": "cross-env ZERO_AR_DATE=1 node-gyp-build"
+    },
+    "hnswlib-node@3.0.0": {
+     "install": "node-gyp rebuild"
+    },
+    "better-sqlite3@11.10.0": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    },
+    "protobufjs@7.6.6": {
+     "postinstall": "node scripts/postinstall"
+    },
+    "onnxruntime-node@1.24.3": {
+     "postinstall": "node ./script/install"
+    },
+    "sharp@0.34.5": {
+     "install": "node install/check.js || npm run build"
+    },
+    "@ohos-ports/onnxruntime-node@1.24.3-beta.0": {
+     "postinstall": "node ./script/install"
+    },
+    "@ohos-ports/sharp@0.34.5-beta.11": {
+     "install": "node install/check.js || npm run build"
+    },
+    "tldjs@2.3.2": {
+     "postinstall": "node ./bin/postinstall.js"
+    },
+    "@ohos-ports/img-sharp-libvips-openharmony-arm64@1.2.4-beta.8": {
+     "postinstall": "node install/create-symlinks.js || true"
+    }
+   }
+  },
+  {
+   "name": "datalikers-mcp",
+   "nodes": 96,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "focus-timer-ai-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "goaltracker",
+   "nodes": 131,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@12.11.1": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    }
+   }
+  },
+  {
+   "name": "aishield-mcp-server",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "lorg-mcp-server",
+   "nodes": 97,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@csmodding/gameface-devtools-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "402verify-mcp",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "@pipeworx/mcp-arcgis-kamloops",
+   "nodes": 1,
+   "root_hooks": {},
+   "tree_hook_pkgs": {}
+  },
+  {
+   "name": "bugpack-mcp",
+   "nodes": 238,
+   "root_hooks": {},
+   "tree_hook_pkgs": {
+    "better-sqlite3@11.10.0": {
+     "install": "prebuild-install || node-gyp rebuild --release"
+    }
+   }
+  }
+ ],
+ "hooks_control": {
+  "langchain": [
+   {
+    "name": "@meyje/meyje-setup",
+    "nodes": 70,
+    "root_hooks": {
+     "postinstall": "node scripts/postinstall.js"
+    },
+    "tree_hook_pkgs": {
+     "@meyje/meyje-setup@1.1.11": {
+      "postinstall": "node scripts/postinstall.js"
+     }
+    }
+   },
+   {
+    "name": "n8n-nodes-neo4j",
+    "nodes": 162,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "isolated-vm@6.2.0": {
+      "install": "node-gyp-build || node-gyp rebuild --release -j max"
+     },
+     "protobufjs@7.6.6": {
+      "postinstall": "node scripts/postinstall"
+     }
+    }
+   },
+   {
+    "name": "@weave_protocol/api",
+    "nodes": 131,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "roast-ts",
+    "nodes": 148,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@mzhub/portal-server",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "owthorize",
+    "nodes": 6,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@elephantasm/client",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@farukada/langchain-ts-gms",
+    "nodes": 130,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@illuma-ai/observability-core",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@techdigger/humanode-agentlink-langchain",
+    "nodes": 28,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@functional-systems/langchain-lambdadb",
+    "nodes": 32,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@behalfid/sdk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "n8n-nodes-nils-codex",
+    "nodes": 102,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "orbis-langchain",
+    "nodes": 20,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@mwaung/n8n-nodes-stream-respond-extended",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "signet-agent",
+    "nodes": 79,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@dltech/nestjs-langfuse",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@leap0/langchain-leap0",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@genkit-ai/express",
+    "nodes": 48,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@tokenomiapro/agentkit-langchain",
+    "nodes": 30,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "brouter-langchain",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@libertasinception/cortex",
+    "nodes": 9,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@intrvls/n8n-nodes-google-gemini",
+    "nodes": 45,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "@google/genai@2.21.0": {
+      "preinstall": "echo 'preinstall: no-op'"
+     },
+     "protobufjs@7.6.6": {
+      "postinstall": "node scripts/postinstall"
+     }
+    }
+   },
+   {
+    "name": "openwork",
+    "nodes": 330,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "electron@39.8.10": {
+      "postinstall": "node install.js"
+     }
+    }
+   },
+   {
+    "name": "n8n-nodes-multi-model",
+    "nodes": 30,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@wiscale/velesdb-sdk",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "agent-recall-core",
+    "nodes": 128,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "protobufjs@7.6.6": {
+      "postinstall": "node scripts/postinstall"
+     }
+    }
+   },
+   {
+    "name": "@playvideo/langchain",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@scrappey/langchain",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "n8n-nodes-routerai",
+    "nodes": 48,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "ai-scanner",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@shivam.dixit/token-budget",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "proxql",
+    "nodes": 4,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "langchain-talordata",
+    "nodes": 31,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@circuitwall/github-langchain",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "n8n-nodes-intersystems-iris",
+    "nodes": 15,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@skroyc/langgraph-supabase-store",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@0xzap/flash-langchain",
+    "nodes": 418,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "puppeteer@24.43.1": {
+      "postinstall": "node install.mjs"
+     },
+     "ssh2@1.17.0": {
+      "install": "node install.js"
+     },
+     "cpu-features@0.0.10": {
+      "install": "node buildcheck.js > buildcheck.gypi && node-gyp rebuild"
+     },
+     "sharp@0.32.6": {
+      "install": "(node install/libvips && node install/dll-copy && prebuild-install) || (node install/can-compile && node-gyp rebuild && node install/dll-copy)"
+     },
+     "bufferutil@4.1.0": {
+      "install": "node-gyp-build"
+     },
+     "es5-ext@0.10.64": {
+      "postinstall": " node -e \"try{require('./_postinstall')}catch(e){}\" || exit 0"
+     },
+     "utf-8-validate@5.0.10": {
+      "install": "node-gyp-build"
+     },
+     "utf-8-validate@6.0.6": {
+      "install": "node-gyp-build"
+     },
+     "protobufjs@6.11.6": {
+      "postinstall": "node scripts/postinstall"
+     }
+    }
+   },
+   {
+    "name": "create-strale-agent",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "n8n-nodes-semantic-splitter-with-context",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@rubric-protocol/sdk",
+    "nodes": 4,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "webcontext-ai",
+    "nodes": 134,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "fsevents@2.3.2": {
+      "install": "node-gyp rebuild"
+     }
+    }
+   },
+   {
+    "name": "@remembr/sdk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@intertrace-runtime/runtime",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "checkpointai",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@autonomaai/agent-core",
+    "nodes": 253,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "opensea-js@7.4.0": {
+      "postinstall": "husky install || exit 0"
+     },
+     "@opensea/seaport-js@4.3.0": {
+      "postinstall": "husky || exit 0"
+     },
+     "secp256k1@5.0.2": {
+      "install": "node-gyp-build || exit 0"
+     },
+     "bufferutil@4.1.0": {
+      "install": "node-gyp-build"
+     },
+     "utf-8-validate@6.0.6": {
+      "install": "node-gyp-build"
+     },
+     "bigint-buffer@1.1.5": {
+      "install": "npm run rebuild || echo \"Couldn't build bindings. Non-native version used.\""
+     }
+    }
+   },
+   {
+    "name": "langchainjs-codex-oauth",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "mirage-langchain",
+    "nodes": 9,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@exemplar-dev/exemplar-harness-typescript-sdk",
+    "nodes": 14,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@eggjs/agent-tracing",
+    "nodes": 40,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@tetsuo-ai/marketplace-tools",
+    "nodes": 3,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "n8n-nodes-niyoos",
+    "nodes": 32,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@openjobs/langchain",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "arango-typed",
+    "nodes": 34,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@atbash/langgraph",
+    "nodes": 101,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "secp256k1@4.0.5": {
+      "install": "node-gyp-build || exit 0"
+     }
+    }
+   },
+   {
+    "name": "flicdesk-memory-sdk",
+    "nodes": 42,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@kyyn/llm-stream",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "n8n-nodes-imap-agent",
+    "nodes": 47,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "spraay-agent-wallet",
+    "nodes": 10,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "x402-agent-suite-preflight",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@agentos-sdk/core",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@gladiator1st/n8n-nodes-mem0",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "pdf-digestor",
+    "nodes": 26,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@nlux/core",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@rends/agent-sdk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "w2a-client",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "langforge",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "tensaikit",
+    "nodes": 127,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "bufferutil@4.1.0": {
+      "install": "node-gyp-build"
+     },
+     "utf-8-validate@6.0.6": {
+      "install": "node-gyp-build"
+     }
+    }
+   },
+   {
+    "name": "@wardenprotocol/agent-kit",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@pensyve/langchain",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@nlux/hf-react",
+    "nodes": 5,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "universal-agent-skills",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "sandpy",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@gladiator1st/n8n-nodes-dub",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "flowise-to-langchain",
+    "nodes": 234,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "bcrypt@6.0.0": {
+      "install": "node-gyp-build"
+     }
+    }
+   },
+   {
+    "name": "@governmyai/sdk-langchain",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@immuva/langchain",
+    "nodes": 35,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "alaii-engage",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@agentsecretstore/sdk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@execlave/sdk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@aarushdixit73/zest",
+    "nodes": 112,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "knowledge-universe",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "langgraph-db",
+    "nodes": 13,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "n8n-nodes-aliyun-oss-vector",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@atrib/agent",
+    "nodes": 37,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "cbor-extract@2.2.2": {
+      "install": "node-gyp-build-optional-packages"
+     }
+    }
+   },
+   {
+    "name": "devtools-llm",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@blackunicorn/bonklm-langchain",
+    "nodes": 13,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "svelte-langgraph",
+    "nodes": 36,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@maximai/maxim-js-langchain",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@leanroute/langchain",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "beacon-mcp",
+    "nodes": 125,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "prompt-fluent-js",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@bluebag/langchain",
+    "nodes": 14,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@zkortam/wingman-sdk",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@kynth/ai-tools",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@apijack/core",
+    "nodes": 107,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "agentgate-sdk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@cashcatio/robinhood-ai-kit",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@avatarfirst/agent-ui",
+    "nodes": 97,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@qomodome/node-red-agent-ai",
+    "nodes": 133,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@langchain/managed-deepagents",
+    "nodes": 9,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@reminix/langchain",
+    "nodes": 98,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "lexic-sdk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@nodeproxy/langchain",
+    "nodes": 20,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "skillbroker",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "ecomsearch",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "n8n-nodes-better-ai-agent-dual-llm",
+    "nodes": 352,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "ssh2@1.15.0": {
+      "install": "node install.js"
+     },
+     "cpu-features@0.0.10": {
+      "install": "node buildcheck.js > buildcheck.gypi && node-gyp rebuild"
+     },
+     "isolated-vm@7.0.1": {
+      "install": "node-gyp-build 'node-gyp rebuild -j 4 --release -v' || node-gyp rebuild --release -j max"
+     },
+     "protobufjs@7.6.6": {
+      "postinstall": "node scripts/postinstall"
+     }
+    }
+   },
+   {
+    "name": "openport-ai-utils",
+    "nodes": 161,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "turnchunk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@pathlight/sdk",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@sowonai/sowonflow",
+    "nodes": 489,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "puppeteer@24.43.1": {
+      "postinstall": "node install.mjs"
+     },
+     "protobufjs@7.6.6": {
+      "postinstall": "node scripts/postinstall"
+     }
+    }
+   },
+   {
+    "name": "tossitin",
+    "nodes": 77,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@agent-pulse/middleware",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "dexai",
+    "nodes": 289,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "ccxt@4.4.78": {
+      "postinstall": "node postinstall.js"
+     },
+     "bigint-buffer@1.1.5": {
+      "install": "npm run rebuild || echo \"Couldn't build bindings. Non-native version used.\""
+     },
+     "core-js-pure@3.50.0": {
+      "postinstall": "node -e \"try{require('./postinstall')}catch(e){}\""
+     },
+     "bufferutil@4.1.0": {
+      "install": "node-gyp-build"
+     },
+     "utf-8-validate@6.0.6": {
+      "install": "node-gyp-build"
+     },
+     "esbuild@0.21.5": {
+      "postinstall": "node install.js"
+     },
+     "fsevents@2.3.3": {
+      "install": "node-gyp rebuild"
+     }
+    }
+   },
+   {
+    "name": "@theorvane/type-chain",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "toolgovern-integration-langgraph",
+    "nodes": 3,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@struktoai/mirage-server",
+    "nodes": 286,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "tree-sitter-bash@0.25.1": {
+      "install": "node-gyp-build"
+     }
+    }
+   },
+   {
+    "name": "agentic-browser-cli",
+    "nodes": 206,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "fsevents@2.3.2": {
+      "install": "node-gyp rebuild"
+     }
+    }
+   },
+   {
+    "name": "prompt-template",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "devquarks-langchain-imagegen-tool",
+    "nodes": 110,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   }
+  ],
+  "eslint-plugin": [
+   {
+    "name": "eslint-plugin-strict-nullable-numbers",
+    "nodes": 42,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@avv/eslint-plugin",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-moxio",
+    "nodes": 5,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@tianjos/eslint-plugin-elegant",
+    "nodes": 21,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-fsd-path-checker-by-mp",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-sort-keys-fix",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@thomaflette/eslint-plugin-solid-2",
+    "nodes": 21,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-nick-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@codecb/eslint-plugin",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-avircut-plugin",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-better-tailwindcss",
+    "nodes": 24,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@wemnyelezxnpm/odio-sapiente-totam",
+    "nodes": 115,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@shipsecure/eslint-plugin-next",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-andrews",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@ryniaubenpm/architecto-debitis-incidunt",
+    "nodes": 74,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-path",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@a-2-c-2-anpm/incidunt-unde-laboriosam",
+    "nodes": 65,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-ko-react",
+    "nodes": 23,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@sap/eslint-plugin-cds",
+    "nodes": 12,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "tree-sitter@0.21.1": {
+      "install": "node-gyp-build"
+     },
+     "tree-sitter-java@0.23.5": {
+      "install": "node-gyp-build"
+     }
+    }
+   },
+   {
+    "name": "eslint-plugin-absolute-imports",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-bia",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@wemnyelezxnpm/soluta-eaque-minus",
+    "nodes": 115,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-maxpow1776-custom",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@gingerhendrix/eslint-plugin-react-intl",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-ilyar-path-checker",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@odczynflnpm/modi-fuga-possimus",
+    "nodes": 107,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-glorious-plugin",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "checkstyle-filter-by-name",
+    "nodes": 5,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@tsrx/eslint-plugin",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-artur11",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-no-direct-export-of-imports",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-dc",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-joyent",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@qawolf/eslint-plugin-pom",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-smartprocure",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-gettext",
+    "nodes": 11,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-id-match",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-harmony",
+    "nodes": 54,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@a-2-c-2-anpm/sunt-deleniti-dolores",
+    "nodes": 71,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-enact",
+    "nodes": 103,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-file-contains",
+    "nodes": 10,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@hutechwebsite/neque-repudiandae-cum-minus",
+    "nodes": 28,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-code-standards",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-vue-unused-autofix",
+    "nodes": 26,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-imports-perfectionist-order",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-skate0909-plugin",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@ryniaubenpm2/fugiat-officiis-beatae",
+    "nodes": 35,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-paytmxxx",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-no-em-dash",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-require-duplicate",
+    "nodes": 9,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@ffras4vnpm/ipsum-praesentium-ipsam",
+    "nodes": 78,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@ben_12/eslint-plugin-dprint",
+    "nodes": 6,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@patrikvalkovic/eslint-plugin-import-rule",
+    "nodes": 87,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-vue-test-utils",
+    "nodes": 3,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-astro-explicit-wrapper",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@allenwu06/agentguard",
+    "nodes": 19,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-enchanted-curly",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-nicodim-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-nx-local-workspace",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-nazarii-dmytrak-plugin",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-custom-eslint-rule",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-ember-data-sync-relationships",
+    "nodes": 3,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-lazy-init",
+    "nodes": 4,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@thalorlabs/dev-config",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-path-import-validation-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-production-best-project-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-arttraf-eslint-fsd-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@ffras4vnpm/maxime-perferendis-nihil",
+    "nodes": 78,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-dialect",
+    "nodes": 3,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "bdg-eslint-plugin-import-esm",
+    "nodes": 3,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-moment",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-macaron",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-ubgbigtv-fsd",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-config-czarofscripts-allman",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-restrict-callers",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@crabas0npm/possimus-fugit-nulla",
+    "nodes": 76,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@pepperi-addons/eslint-plugin-pepperi-lint",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@eslint-plugin-feature-flags/core",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-instawork",
+    "nodes": 255,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "core-js-pure@3.50.0": {
+      "postinstall": "node -e \"try{require('./postinstall')}catch(e){}\""
+     }
+    }
+   },
+   {
+    "name": "@xdanangelxoqenpm/ratione-modi-a",
+    "nodes": 129,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-neket54-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@crabas0npm/ex-corrupti-aspernatur",
+    "nodes": 75,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-ringcentral",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-react-hooks-demo",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-speller",
+    "nodes": 10,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-kdujs-accessibility",
+    "nodes": 16,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-prod-project-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-lambda-security",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@ryniaubenpm2/omnis-placeat-nostrum",
+    "nodes": 10,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-pluto-labs-next",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-banner-indentation-style",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@pequity/eslint-config",
+    "nodes": 245,
+    "root_hooks": {},
+    "tree_hook_pkgs": {
+     "unrs-resolver@1.12.2": {
+      "postinstall": "node postinstall.js"
+     }
+    }
+   },
+   {
+    "name": "@xdanangelxoqenpm/nulla-aut-aliquid",
+    "nodes": 129,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-a11y",
+    "nodes": 72,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@euberdeveloper/eslint-plugin",
+    "nodes": 186,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-trn-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-import-line-sorter",
+    "nodes": 22,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@nagi-labs/eslint-plugin-nagi-css",
+    "nodes": 95,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-musovvir-dev",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-okezik-plugin",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-clean-code",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-testing",
+    "nodes": 41,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@ryniaubenpm2/ut-commodi-quidem",
+    "nodes": 35,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@a-2-c-2-anpm/non-inventore-maiores",
+    "nodes": 71,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@duro-app/eslint-plugin",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-react-zalora",
+    "nodes": 126,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-path-checker-julitara",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-unicode-comments",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@babel/eslint-plugin-development",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-alexandr-plugin",
+    "nodes": 8,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "expo-consistency-kit",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@acahet/playwright-rules",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@fluffyfox/eslint-plugin",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-liferayportal",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@zibuthe7j11/quo-facilis-commodi",
+    "nodes": 4,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-benderthecrime",
+    "nodes": 2,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "eslint-plugin-redux-saga",
+    "nodes": 1,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@a-2-c-2-anpm/iste-explicabo-maxime",
+    "nodes": 71,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@lambrioanpm/quasi-dolor-inventore",
+    "nodes": 247,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   },
+   {
+    "name": "@osjwnpm/veniam-esse-impedit",
+    "nodes": 126,
+    "root_hooks": {},
+    "tree_hook_pkgs": {}
+   }
+  ]
+ }
+}

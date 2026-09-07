@@ -1,0 +1,1094 @@
+[
+ {
+  "name": "playwright",
+  "pull_count": 2085015,
+  "star_count": 39,
+  "last_updated": "2026-06-26T07:39:31.811123Z"
+ },
+ {
+  "name": "fetch",
+  "pull_count": 1818053,
+  "star_count": 58,
+  "last_updated": "2026-07-07T07:28:12.922484Z"
+ },
+ {
+  "name": "sonarqube",
+  "pull_count": 1293565,
+  "star_count": 23,
+  "last_updated": "2026-07-08T07:11:02.881371Z"
+ },
+ {
+  "name": "time",
+  "pull_count": 926347,
+  "star_count": 9,
+  "last_updated": "2025-06-17T16:00:45.757862Z"
+ },
+ {
+  "name": "grafana",
+  "pull_count": 914118,
+  "star_count": 21,
+  "last_updated": "2026-07-08T07:08:25.532745Z"
+ },
+ {
+  "name": "duckduckgo",
+  "pull_count": 845393,
+  "star_count": 11,
+  "last_updated": "2026-07-02T07:17:10.104695Z"
+ },
+ {
+  "name": "context7",
+  "pull_count": 588078,
+  "star_count": 23,
+  "last_updated": "2025-06-16T19:18:29.995325Z"
+ },
+ {
+  "name": "memory",
+  "pull_count": 535680,
+  "star_count": 27,
+  "last_updated": "2025-05-02T14:31:01.345819Z"
+ },
+ {
+  "name": "sequentialthinking",
+  "pull_count": 399365,
+  "star_count": 30,
+  "last_updated": "2025-05-02T14:31:32.557551Z"
+ },
+ {
+  "name": "slack",
+  "pull_count": 309090,
+  "star_count": 25,
+  "last_updated": "2025-06-17T16:00:33.852798Z"
+ },
+ {
+  "name": "dynatrace-mcp-server",
+  "pull_count": 292255,
+  "star_count": 0,
+  "last_updated": "2026-07-01T07:49:51.840059Z"
+ },
+ {
+  "name": "clickhouse",
+  "pull_count": 274722,
+  "star_count": 3,
+  "last_updated": "2025-10-31T21:30:07.158526Z"
+ },
+ {
+  "name": "filesystem",
+  "pull_count": 260789,
+  "star_count": 29,
+  "last_updated": "2025-09-09T20:33:28.042877Z"
+ },
+ {
+  "name": "puppeteer",
+  "pull_count": 259437,
+  "star_count": 34,
+  "last_updated": "2025-05-27T08:18:17.280091Z"
+ },
+ {
+  "name": "docker",
+  "pull_count": 249034,
+  "star_count": 47,
+  "last_updated": "2025-07-22T23:08:31.158811Z"
+ },
+ {
+  "name": "notion",
+  "pull_count": 244712,
+  "star_count": 37,
+  "last_updated": "2026-06-24T22:40:37.465867Z"
+ },
+ {
+  "name": "desktop-commander",
+  "pull_count": 224965,
+  "star_count": 23,
+  "last_updated": "2026-07-02T07:17:53.178586Z"
+ },
+ {
+  "name": "wikipedia-mcp",
+  "pull_count": 180752,
+  "star_count": 10,
+  "last_updated": "2026-05-01T07:17:15.338801Z"
+ },
+ {
+  "name": "dockerhub",
+  "pull_count": 156389,
+  "star_count": 10,
+  "last_updated": "2026-06-24T22:32:43.340023Z"
+ },
+ {
+  "name": "node-code-sandbox",
+  "pull_count": 153828,
+  "star_count": 6,
+  "last_updated": "2025-12-03T16:48:43.255866Z"
+ },
+ {
+  "name": "mongodb",
+  "pull_count": 152583,
+  "star_count": 11,
+  "last_updated": "2026-07-08T07:08:39.754884Z"
+ },
+ {
+  "name": "git",
+  "pull_count": 151723,
+  "star_count": 30,
+  "last_updated": "2025-06-16T19:22:35.133934Z"
+ },
+ {
+  "name": "atlassian",
+  "pull_count": 151066,
+  "star_count": 23,
+  "last_updated": "2026-07-08T07:00:24.24919Z"
+ },
+ {
+  "name": "kubernetes",
+  "pull_count": 143883,
+  "star_count": 19,
+  "last_updated": "2026-07-07T07:33:52.897408Z"
+ },
+ {
+  "name": "markitdown",
+  "pull_count": 143538,
+  "star_count": 5,
+  "last_updated": "2026-06-24T22:40:49.300866Z"
+ },
+ {
+  "name": "github",
+  "pull_count": 141437,
+  "star_count": 20,
+  "last_updated": "2025-06-16T19:22:33.231289Z"
+ },
+ {
+  "name": "n8n",
+  "pull_count": 139965,
+  "star_count": 22,
+  "last_updated": "2025-12-03T16:46:39.517497Z"
+ },
+ {
+  "name": "redis",
+  "pull_count": 136304,
+  "star_count": 14,
+  "last_updated": "2026-06-24T22:43:10.099577Z"
+ },
+ {
+  "name": "obsidian",
+  "pull_count": 132264,
+  "star_count": 30,
+  "last_updated": "2025-06-16T19:29:21.399437Z"
+ },
+ {
+  "name": "firecrawl",
+  "pull_count": 124135,
+  "star_count": 20,
+  "last_updated": "2026-07-02T07:17:25.397681Z"
+ },
+ {
+  "name": "aws-core-mcp-server",
+  "pull_count": 119931,
+  "star_count": 3,
+  "last_updated": "2026-04-16T06:53:49.987173Z"
+ },
+ {
+  "name": "aws-documentation",
+  "pull_count": 113809,
+  "star_count": 2,
+  "last_updated": "2026-07-08T07:01:25.236604Z"
+ },
+ {
+  "name": "arxiv-mcp-server",
+  "pull_count": 109700,
+  "star_count": 4,
+  "last_updated": "2025-08-21T06:15:38.548038Z"
+ },
+ {
+  "name": "ast-grep",
+  "pull_count": 99738,
+  "star_count": 2,
+  "last_updated": "2025-10-03T20:24:37.112298Z"
+ },
+ {
+  "name": "google-maps",
+  "pull_count": 82177,
+  "star_count": 16,
+  "last_updated": "2025-06-16T19:23:31.432714Z"
+ },
+ {
+  "name": "perplexity-ask",
+  "pull_count": 77119,
+  "star_count": 17,
+  "last_updated": "2025-06-16T19:30:38.522318Z"
+ },
+ {
+  "name": "gitlab",
+  "pull_count": 75496,
+  "star_count": 26,
+  "last_updated": "2025-06-16T19:23:11.505321Z"
+ },
+ {
+  "name": "markdownify",
+  "pull_count": 69751,
+  "star_count": 2,
+  "last_updated": "2026-05-02T06:57:03.877948Z"
+ },
+ {
+  "name": "azure",
+  "pull_count": 68697,
+  "star_count": 12,
+  "last_updated": "2025-06-16T19:18:03.418293Z"
+ },
+ {
+  "name": "sqlite",
+  "pull_count": 66709,
+  "star_count": 17,
+  "last_updated": "2025-06-16T19:14:18.657946Z"
+ },
+ {
+  "name": "sentry",
+  "pull_count": 66040,
+  "star_count": 8,
+  "last_updated": "2025-06-16T19:34:13.894322Z"
+ },
+ {
+  "name": "openweather",
+  "pull_count": 65534,
+  "star_count": 4,
+  "last_updated": "2025-08-09T06:16:48.617272Z"
+ },
+ {
+  "name": "neo4j-cypher",
+  "pull_count": 63711,
+  "star_count": 2,
+  "last_updated": "2026-04-11T06:45:26.316495Z"
+ },
+ {
+  "name": "edubase",
+  "pull_count": 61031,
+  "star_count": 1,
+  "last_updated": "2026-06-24T22:31:49.438336Z"
+ },
+ {
+  "name": "npm-sentinel",
+  "pull_count": 59674,
+  "star_count": 1,
+  "last_updated": "2026-06-25T07:36:01.574932Z"
+ },
+ {
+  "name": "aws-diagram",
+  "pull_count": 58717,
+  "star_count": 1,
+  "last_updated": "2026-04-15T06:50:36.739318Z"
+ },
+ {
+  "name": "jetbrains",
+  "pull_count": 57641,
+  "star_count": 2,
+  "last_updated": "2025-06-16T19:25:51.764318Z"
+ },
+ {
+  "name": "aws-terraform",
+  "pull_count": 57399,
+  "star_count": 0,
+  "last_updated": "2026-04-16T06:53:43.125996Z"
+ },
+ {
+  "name": "chroma",
+  "pull_count": 57281,
+  "star_count": 5,
+  "last_updated": "2025-09-18T06:14:13.09762Z"
+ },
+ {
+  "name": "camunda",
+  "pull_count": 57024,
+  "star_count": 1,
+  "last_updated": "2025-09-02T20:37:00.933216Z"
+ },
+ {
+  "name": "onlyoffice-docspace",
+  "pull_count": 56037,
+  "star_count": 0,
+  "last_updated": "2026-05-05T07:05:04.892956Z"
+ },
+ {
+  "name": "mcp-code-interpreter",
+  "pull_count": 55458,
+  "star_count": 2,
+  "last_updated": "2025-09-02T20:40:37.589719Z"
+ },
+ {
+  "name": "tavily",
+  "pull_count": 53208,
+  "star_count": 8,
+  "last_updated": "2026-07-07T07:30:23.13998Z"
+ },
+ {
+  "name": "next-devtools-mcp",
+  "pull_count": 52186,
+  "star_count": 0,
+  "last_updated": "2025-10-22T16:14:00.438832Z"
+ },
+ {
+  "name": "metabase",
+  "pull_count": 48897,
+  "star_count": 3,
+  "last_updated": "2025-08-29T06:21:39.501197Z"
+ },
+ {
+  "name": "elevenlabs",
+  "pull_count": 48292,
+  "star_count": 7,
+  "last_updated": "2026-07-07T07:28:17.304115Z"
+ },
+ {
+  "name": "aws-cdk-mcp-server",
+  "pull_count": 47829,
+  "star_count": 0,
+  "last_updated": "2026-04-16T06:50:32.311621Z"
+ },
+ {
+  "name": "wolfram-alpha",
+  "pull_count": 46825,
+  "star_count": 6,
+  "last_updated": "2025-08-19T06:22:32.618825Z"
+ },
+ {
+  "name": "neo4j",
+  "pull_count": 45550,
+  "star_count": 0,
+  "last_updated": "2026-07-08T07:08:53.959804Z"
+ },
+ {
+  "name": "cyreslab-ai-shodan",
+  "pull_count": 45245,
+  "star_count": 8,
+  "last_updated": "2025-06-16T19:18:33.157678Z"
+ },
+ {
+  "name": "github-chat",
+  "pull_count": 44520,
+  "star_count": 4,
+  "last_updated": "2025-06-16T19:22:58.302493Z"
+ },
+ {
+  "name": "stripe",
+  "pull_count": 43902,
+  "star_count": 9,
+  "last_updated": "2026-02-06T06:22:22.071641Z"
+ },
+ {
+  "name": "osp_marketing_tools",
+  "pull_count": 43287,
+  "star_count": 2,
+  "last_updated": "2025-06-16T19:30:03.172531Z"
+ },
+ {
+  "name": "openapi",
+  "pull_count": 42488,
+  "star_count": 1,
+  "last_updated": "2025-09-15T16:10:35.105371Z"
+ },
+ {
+  "name": "postman",
+  "pull_count": 42198,
+  "star_count": 6,
+  "last_updated": "2026-07-07T07:29:59.484729Z"
+ },
+ {
+  "name": "rust-mcp-filesystem",
+  "pull_count": 41631,
+  "star_count": 2,
+  "last_updated": "2026-05-19T07:37:51.616538Z"
+ },
+ {
+  "name": "elasticsearch",
+  "pull_count": 41368,
+  "star_count": 16,
+  "last_updated": "2025-07-07T14:20:38.608436Z"
+ },
+ {
+  "name": "circleci",
+  "pull_count": 41120,
+  "star_count": 0,
+  "last_updated": "2025-07-09T18:18:33.101516Z"
+ },
+ {
+  "name": "audiense-insights",
+  "pull_count": 40653,
+  "star_count": 0,
+  "last_updated": "2025-06-16T19:14:43.61542Z"
+ },
+ {
+  "name": "hyperbrowser",
+  "pull_count": 40568,
+  "star_count": 3,
+  "last_updated": "2025-06-16T19:24:49.750698Z"
+ },
+ {
+  "name": "cloud-run-mcp",
+  "pull_count": 40564,
+  "star_count": 0,
+  "last_updated": "2026-06-29T07:56:33.250251Z"
+ },
+ {
+  "name": "scrapezy",
+  "pull_count": 40334,
+  "star_count": 3,
+  "last_updated": "2025-06-16T19:33:36.336074Z"
+ },
+ {
+  "name": "temporal",
+  "pull_count": 40090,
+  "star_count": 2,
+  "last_updated": "2026-06-25T07:53:13.997141Z"
+ },
+ {
+  "name": "bitrefill",
+  "pull_count": 38844,
+  "star_count": 0,
+  "last_updated": "2026-01-22T06:07:10.152091Z"
+ },
+ {
+  "name": "paper-search",
+  "pull_count": 38636,
+  "star_count": 5,
+  "last_updated": "2026-07-02T07:19:00.199107Z"
+ },
+ {
+  "name": "unreal-engine-mcp-server",
+  "pull_count": 38481,
+  "star_count": 4,
+  "last_updated": "2026-06-24T22:46:57.27386Z"
+ },
+ {
+  "name": "oxylabs",
+  "pull_count": 38434,
+  "star_count": 3,
+  "last_updated": "2025-09-12T16:45:04.313025Z"
+ },
+ {
+  "name": "mcp-discord",
+  "pull_count": 38341,
+  "star_count": 15,
+  "last_updated": "2025-06-16T19:27:25.012483Z"
+ },
+ {
+  "name": "google-maps-comprehensive",
+  "pull_count": 37959,
+  "star_count": 0,
+  "last_updated": "2025-09-28T06:09:43.323971Z"
+ },
+ {
+  "name": "browserbase",
+  "pull_count": 37455,
+  "star_count": 1,
+  "last_updated": "2026-05-06T07:14:09.922302Z"
+ },
+ {
+  "name": "vizro",
+  "pull_count": 36980,
+  "star_count": 1,
+  "last_updated": "2025-12-03T16:57:50.327744Z"
+ },
+ {
+  "name": "couchbase",
+  "pull_count": 36065,
+  "star_count": 4,
+  "last_updated": "2026-07-04T07:09:30.634679Z"
+ },
+ {
+  "name": "quantconnect",
+  "pull_count": 35346,
+  "star_count": 1,
+  "last_updated": "2026-05-08T06:57:38.267576Z"
+ },
+ {
+  "name": "securenote-link-mcp-server",
+  "pull_count": 35323,
+  "star_count": 2,
+  "last_updated": "2026-03-08T06:15:22.345119Z"
+ },
+ {
+  "name": "pluggedin-mcp-proxy",
+  "pull_count": 35238,
+  "star_count": 3,
+  "last_updated": "2025-11-03T23:28:22.475915Z"
+ },
+ {
+  "name": "neo4j-memory",
+  "pull_count": 35110,
+  "star_count": 10,
+  "last_updated": "2026-04-11T06:46:35.505703Z"
+ },
+ {
+  "name": "minecraft-wiki",
+  "pull_count": 35096,
+  "star_count": 3,
+  "last_updated": "2025-09-15T06:16:06.779584Z"
+ },
+ {
+  "name": "mapbox",
+  "pull_count": 35010,
+  "star_count": 2,
+  "last_updated": "2026-06-24T22:38:23.481624Z"
+ },
+ {
+  "name": "mcp-python-refactoring",
+  "pull_count": 34424,
+  "star_count": 2,
+  "last_updated": "2025-09-07T06:13:34.136552Z"
+ },
+ {
+  "name": "apify-mcp-server",
+  "pull_count": 34201,
+  "star_count": 0,
+  "last_updated": "2026-07-08T07:04:28.839511Z"
+ },
+ {
+  "name": "exa",
+  "pull_count": 34126,
+  "star_count": 7,
+  "last_updated": "2026-07-08T07:07:37.509554Z"
+ },
+ {
+  "name": "tigris",
+  "pull_count": 33892,
+  "star_count": 0,
+  "last_updated": "2025-12-03T16:56:03.147962Z"
+ },
+ {
+  "name": "ramparts",
+  "pull_count": 33888,
+  "star_count": 0,
+  "last_updated": "2025-09-11T17:03:37.968181Z"
+ },
+ {
+  "name": "zen",
+  "pull_count": 33701,
+  "star_count": 0,
+  "last_updated": "2026-03-03T06:42:31.849172Z"
+ },
+ {
+  "name": "omi",
+  "pull_count": 33488,
+  "star_count": 1,
+  "last_updated": "2025-12-03T16:51:06.769196Z"
+ },
+ {
+  "name": "pref-editor",
+  "pull_count": 33159,
+  "star_count": 0,
+  "last_updated": "2025-10-31T22:46:55.154946Z"
+ },
+ {
+  "name": "okta-mcp-fctr",
+  "pull_count": 32984,
+  "star_count": 0,
+  "last_updated": "2026-04-26T06:47:53.669883Z"
+ },
+ {
+  "name": "testkube",
+  "pull_count": 32793,
+  "star_count": 0,
+  "last_updated": "2026-07-08T07:11:34.553425Z"
+ },
+ {
+  "name": "sqlite-mcp-server",
+  "pull_count": 32161,
+  "star_count": 1,
+  "last_updated": "2025-10-30T01:46:38.024598Z"
+ },
+ {
+  "name": "openbnb-airbnb",
+  "pull_count": 31796,
+  "star_count": 3,
+  "last_updated": "2026-04-14T07:02:30.946857Z"
+ },
+ {
+  "name": "maestro-mcp-server",
+  "pull_count": 31188,
+  "star_count": 1,
+  "last_updated": "2026-03-13T06:30:41.471911Z"
+ },
+ {
+  "name": "stackhawk",
+  "pull_count": 30948,
+  "star_count": 0,
+  "last_updated": "2026-04-14T07:05:19.083491Z"
+ },
+ {
+  "name": "openapi-schema",
+  "pull_count": 30583,
+  "star_count": 7,
+  "last_updated": "2025-06-16T19:29:38.172583Z"
+ },
+ {
+  "name": "firewalla-mcp-server",
+  "pull_count": 30502,
+  "star_count": 0,
+  "last_updated": "2025-07-29T13:57:30.766242Z"
+ },
+ {
+  "name": "google-flights",
+  "pull_count": 25822,
+  "star_count": 0,
+  "last_updated": "2025-11-19T23:17:55.333494Z"
+ },
+ {
+  "name": "kubectl-mcp-server",
+  "pull_count": 23969,
+  "star_count": 0,
+  "last_updated": "2026-04-09T06:55:42.729475Z"
+ },
+ {
+  "name": "line",
+  "pull_count": 23913,
+  "star_count": 0,
+  "last_updated": "2026-07-08T07:09:13.354163Z"
+ },
+ {
+  "name": "atlas-docs",
+  "pull_count": 23535,
+  "star_count": 2,
+  "last_updated": "2025-06-16T19:14:17.439398Z"
+ },
+ {
+  "name": "neon",
+  "pull_count": 22603,
+  "star_count": 3,
+  "last_updated": "2025-06-16T19:28:57.879943Z"
+ },
+ {
+  "name": "aws-kb-retrieval-server",
+  "pull_count": 21745,
+  "star_count": 6,
+  "last_updated": "2025-06-16T19:16:16.176618Z"
+ },
+ {
+  "name": "e2b",
+  "pull_count": 21693,
+  "star_count": 2,
+  "last_updated": "2026-04-17T06:47:46.853964Z"
+ },
+ {
+  "name": "neo4j-data-modeling",
+  "pull_count": 21596,
+  "star_count": 1,
+  "last_updated": "2026-04-11T06:47:03.291714Z"
+ },
+ {
+  "name": "databutton",
+  "pull_count": 21273,
+  "star_count": 1,
+  "last_updated": "2025-06-16T19:19:09.55324Z"
+ },
+ {
+  "name": "resend",
+  "pull_count": 20971,
+  "star_count": 5,
+  "last_updated": "2025-06-16T19:32:54.044928Z"
+ },
+ {
+  "name": "proxmox",
+  "pull_count": 19958,
+  "star_count": 3,
+  "last_updated": "2026-06-24T22:43:50.904828Z"
+ },
+ {
+  "name": "heroku",
+  "pull_count": 19470,
+  "star_count": 2,
+  "last_updated": "2025-06-16T19:26:15.437675Z"
+ },
+ {
+  "name": "kagisearch",
+  "pull_count": 19142,
+  "star_count": 1,
+  "last_updated": "2026-05-16T07:05:41.340391Z"
+ },
+ {
+  "name": "airtable-mcp-server",
+  "pull_count": 19088,
+  "star_count": 1,
+  "last_updated": "2026-07-03T07:15:18.512923Z"
+ },
+ {
+  "name": "glif",
+  "pull_count": 19086,
+  "star_count": 2,
+  "last_updated": "2025-10-31T21:37:58.504817Z"
+ },
+ {
+  "name": "redis-cloud",
+  "pull_count": 19021,
+  "star_count": 1,
+  "last_updated": "2025-06-16T19:33:03.877514Z"
+ },
+ {
+  "name": "kong",
+  "pull_count": 18865,
+  "star_count": 0,
+  "last_updated": "2025-06-16T19:26:30.067214Z"
+ },
+ {
+  "name": "astra-db",
+  "pull_count": 18794,
+  "star_count": 0,
+  "last_updated": "2026-01-31T06:10:25.246908Z"
+ },
+ {
+  "name": "scrapegraph",
+  "pull_count": 18563,
+  "star_count": 4,
+  "last_updated": "2025-12-03T16:52:17.941706Z"
+ },
+ {
+  "name": "lara",
+  "pull_count": 18400,
+  "star_count": 3,
+  "last_updated": "2026-06-24T22:36:50.268036Z"
+ },
+ {
+  "name": "aks",
+  "pull_count": 18375,
+  "star_count": 2,
+  "last_updated": "2025-11-12T20:54:06.278091Z"
+ },
+ {
+  "name": "handwriting-ocr",
+  "pull_count": 18295,
+  "star_count": 2,
+  "last_updated": "2025-06-16T19:24:04.716625Z"
+ },
+ {
+  "name": "everart",
+  "pull_count": 18210,
+  "star_count": 3,
+  "last_updated": "2025-06-16T19:21:02.755869Z"
+ },
+ {
+  "name": "box",
+  "pull_count": 18081,
+  "star_count": 3,
+  "last_updated": "2025-09-17T06:13:15.2555Z"
+ },
+ {
+  "name": "pulumi",
+  "pull_count": 18037,
+  "star_count": 3,
+  "last_updated": "2025-09-23T06:16:01.180797Z"
+ },
+ {
+  "name": "veyrax",
+  "pull_count": 17883,
+  "star_count": 4,
+  "last_updated": "2025-05-02T10:06:41.053283Z"
+ },
+ {
+  "name": "descope",
+  "pull_count": 17365,
+  "star_count": 0,
+  "last_updated": "2025-06-16T19:19:48.165857Z"
+ },
+ {
+  "name": "devhub-cms",
+  "pull_count": 17083,
+  "star_count": 0,
+  "last_updated": "2025-06-16T19:20:29.084052Z"
+ },
+ {
+  "name": "dappier",
+  "pull_count": 17078,
+  "star_count": 2,
+  "last_updated": "2025-06-27T13:53:45.322561Z"
+ },
+ {
+  "name": "webflow",
+  "pull_count": 16962,
+  "star_count": 0,
+  "last_updated": "2025-05-02T13:46:23.698052Z"
+ },
+ {
+  "name": "oracle",
+  "pull_count": 16652,
+  "star_count": 3,
+  "last_updated": "2026-06-28T07:30:53.686435Z"
+ },
+ {
+  "name": "razorpay",
+  "pull_count": 16629,
+  "star_count": 1,
+  "last_updated": "2026-04-03T06:47:07.430575Z"
+ },
+ {
+  "name": "dart",
+  "pull_count": 16577,
+  "star_count": 3,
+  "last_updated": "2026-01-29T06:15:13.748494Z"
+ },
+ {
+  "name": "opik",
+  "pull_count": 16467,
+  "star_count": 1,
+  "last_updated": "2025-12-03T16:49:07.98752Z"
+ },
+ {
+  "name": "gyazo",
+  "pull_count": 16192,
+  "star_count": 0,
+  "last_updated": "2026-06-24T22:34:37.066796Z"
+ },
+ {
+  "name": "multiversx-mx",
+  "pull_count": 16112,
+  "star_count": 0,
+  "last_updated": "2025-06-16T19:28:03.287882Z"
+ },
+ {
+  "name": "husqvarna-automower",
+  "pull_count": 16065,
+  "star_count": 0,
+  "last_updated": "2026-04-21T06:56:32.518719Z"
+ },
+ {
+  "name": "iaptic",
+  "pull_count": 15857,
+  "star_count": 0,
+  "last_updated": "2026-04-25T06:47:54.601696Z"
+ },
+ {
+  "name": "hyperspell",
+  "pull_count": 15781,
+  "star_count": 0,
+  "last_updated": "2026-06-30T07:38:40.553849Z"
+ },
+ {
+  "name": "hackle",
+  "pull_count": 15678,
+  "star_count": 0,
+  "last_updated": "2026-06-24T22:34:56.629214Z"
+ },
+ {
+  "name": "fibery",
+  "pull_count": 15677,
+  "star_count": 0,
+  "last_updated": "2026-05-14T07:21:55.966058Z"
+ },
+ {
+  "name": "neo4j-cloud-aura-api",
+  "pull_count": 15497,
+  "star_count": 2,
+  "last_updated": "2026-04-11T06:45:25.974018Z"
+ },
+ {
+  "name": "nasdaq-data-link",
+  "pull_count": 15369,
+  "star_count": 3,
+  "last_updated": "2025-10-31T22:29:41.563074Z"
+ },
+ {
+  "name": "risken",
+  "pull_count": 15314,
+  "star_count": 0,
+  "last_updated": "2025-08-24T06:16:16.125216Z"
+ },
+ {
+  "name": "render",
+  "pull_count": 14951,
+  "star_count": 1,
+  "last_updated": "2026-07-08T07:09:31.096305Z"
+ },
+ {
+  "name": "mapbox-devkit",
+  "pull_count": 13924,
+  "star_count": 1,
+  "last_updated": "2026-06-24T22:39:18.8795Z"
+ },
+ {
+  "name": "text-to-graphql",
+  "pull_count": 13522,
+  "star_count": 0,
+  "last_updated": "2026-03-11T06:41:05.872444Z"
+ },
+ {
+  "name": "smartbear",
+  "pull_count": 13432,
+  "star_count": 0,
+  "last_updated": "2026-07-08T07:11:00.736541Z"
+ },
+ {
+  "name": "keboola-mcp",
+  "pull_count": 13259,
+  "star_count": 0,
+  "last_updated": "2026-07-03T07:23:26.65022Z"
+ },
+ {
+  "name": "vuln-nist-mcp-server",
+  "pull_count": 13139,
+  "star_count": 1,
+  "last_updated": "2025-09-24T06:16:09.808496Z"
+ },
+ {
+  "name": "ros2",
+  "pull_count": 12888,
+  "star_count": 0,
+  "last_updated": "2026-02-04T06:25:18.486643Z"
+ },
+ {
+  "name": "pia",
+  "pull_count": 12860,
+  "star_count": 1,
+  "last_updated": "2026-06-25T07:36:47.138977Z"
+ },
+ {
+  "name": "pinecone",
+  "pull_count": 12823,
+  "star_count": 3,
+  "last_updated": "2025-06-16T19:31:46.761617Z"
+ },
+ {
+  "name": "buildkite",
+  "pull_count": 12732,
+  "star_count": 0,
+  "last_updated": "2026-07-07T07:27:52.103915Z"
+ },
+ {
+  "name": "inspektor-gadget",
+  "pull_count": 12584,
+  "star_count": 2,
+  "last_updated": "2026-07-21T07:00:33.001526Z"
+ },
+ {
+  "name": "schemacrawler-ai",
+  "pull_count": 12546,
+  "star_count": 2,
+  "last_updated": "2026-07-01T07:52:35.274478Z"
+ },
+ {
+  "name": "explorium",
+  "pull_count": 12461,
+  "star_count": 0,
+  "last_updated": "2026-01-31T06:15:14.924824Z"
+ },
+ {
+  "name": "effect-mcp",
+  "pull_count": 12370,
+  "star_count": 0,
+  "last_updated": "2025-10-16T15:58:21.442223Z"
+ },
+ {
+  "name": "hdx",
+  "pull_count": 12096,
+  "star_count": 0,
+  "last_updated": "2025-09-04T06:18:14.259017Z"
+ },
+ {
+  "name": "triplewhale",
+  "pull_count": 11955,
+  "star_count": 0,
+  "last_updated": "2025-05-02T10:06:04.73329Z"
+ },
+ {
+  "name": "atlan",
+  "pull_count": 11758,
+  "star_count": 0,
+  "last_updated": "2026-06-24T22:21:19.775127Z"
+ },
+ {
+  "name": "flexprice",
+  "pull_count": 11525,
+  "star_count": 1,
+  "last_updated": "2025-06-16T19:22:36.600864Z"
+ },
+ {
+  "name": "cockroachdb",
+  "pull_count": 11432,
+  "star_count": 1,
+  "last_updated": "2025-07-30T06:17:22.705366Z"
+ },
+ {
+  "name": "charmhealth-mcp-server",
+  "pull_count": 11429,
+  "star_count": 0,
+  "last_updated": "2026-06-24T22:30:43.951585Z"
+ },
+ {
+  "name": "needle-mcp",
+  "pull_count": 11301,
+  "star_count": 1,
+  "last_updated": "2025-07-29T13:59:26.012966Z"
+ },
+ {
+  "name": "tembo",
+  "pull_count": 11240,
+  "star_count": 0,
+  "last_updated": "2025-05-02T13:40:35.895705Z"
+ },
+ {
+  "name": "vectra-ai-rux-mcp-server",
+  "pull_count": 11172,
+  "star_count": 0,
+  "last_updated": "2025-11-12T21:02:09.527893Z"
+ },
+ {
+  "name": "teamwork",
+  "pull_count": 11022,
+  "star_count": 0,
+  "last_updated": "2026-07-10T07:20:45.879556Z"
+ },
+ {
+  "name": "zerodha-kite",
+  "pull_count": 10948,
+  "star_count": 0,
+  "last_updated": "2025-09-24T20:01:11.439117Z"
+ },
+ {
+  "name": "cylera-mcp-server",
+  "pull_count": 10235,
+  "star_count": 0,
+  "last_updated": "2026-05-20T07:33:39.228866Z"
+ },
+ {
+  "name": "singlestore",
+  "pull_count": 10205,
+  "star_count": 0,
+  "last_updated": "2026-06-24T22:44:23.273011Z"
+ },
+ {
+  "name": "novita",
+  "pull_count": 10122,
+  "star_count": 0,
+  "last_updated": "2025-06-16T19:30:01.078709Z"
+ },
+ {
+  "name": "sequa",
+  "pull_count": 9934,
+  "star_count": 1,
+  "last_updated": "2026-03-11T06:37:41.435812Z"
+ },
+ {
+  "name": "thingsboard",
+  "pull_count": 9456,
+  "star_count": 0,
+  "last_updated": "2025-10-30T01:48:16.51485Z"
+ },
+ {
+  "name": "pomodash",
+  "pull_count": 9188,
+  "star_count": 0,
+  "last_updated": "2025-09-08T19:02:33.174166Z"
+ },
+ {
+  "name": "cdata-connectcloud",
+  "pull_count": 8467,
+  "star_count": 3,
+  "last_updated": "2025-06-16T19:17:32.441322Z"
+ },
+ {
+  "name": "zscaler-mcp-server",
+  "pull_count": 6798,
+  "star_count": 0,
+  "last_updated": "2026-06-24T22:48:16.901561Z"
+ },
+ {
+  "name": "okta-mcp-server",
+  "pull_count": 6031,
+  "star_count": 0,
+  "last_updated": "2026-07-08T07:09:50.298167Z"
+ }
+]

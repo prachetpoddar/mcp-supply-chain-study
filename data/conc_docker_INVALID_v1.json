@@ -1,0 +1,15 @@
+{
+ "label": "INVALID - v1 pagination run, superseded. Do not cite.",
+ "invalid_reason": "Docker Hub ignored ordering=-pull_count and returned an arbitrary 100 of 245 repositories.",
+ "superseded_by": "conc_docker.json produced by docker_pulls.py v3",
+ "original_bad_values": {
+  "label": "Docker Hub mcp/ (top 100 of 245, bounded)",
+  "n": 245,
+  "total": 1252112,
+  "gini": 0.1635,
+  "top1": 1.5,
+  "top5": 7.3,
+  "top10": 14.3,
+  "median": 12608
+ }
+}

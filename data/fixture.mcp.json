@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "filesystem": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem", "/tmp"] },
+    "memory":     { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-memory"] },
+    "sequential": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"] },
+    "playwright": { "command": "npx", "args": ["-y", "@playwright/mcp@latest"] },
+    "context7":   { "command": "npx", "args": ["-y", "@upstash/context7-mcp"] },
+    "firecrawl":  { "command": "npx", "args": ["-y", "firecrawl-mcp"], "env": {"FIRECRAWL_API_KEY": "REDACTED"} },
+    "notion":     { "command": "npx", "args": ["-y", "@notionhq/notion-mcp-server"] },
+    "dbhub":      { "command": "npx", "args": ["-y", "@bytebase/dbhub"] },
+    "github":     { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-github@2025.4.8"] },
+    "fetch":      { "command": "uvx", "args": ["mcp-server-fetch"] },
+    "git":        { "command": "uvx", "args": ["mcp-server-git", "--repository", "/tmp"] },
+    "grafana":    { "command": "docker", "args": ["run", "--rm", "-i", "mcp/grafana:latest"] },
+    "localdev":   { "command": "node", "args": ["./build/index.js"] },
+    "remote":     { "type": "http", "url": "https://mcp.example.com/sse" }
+  }
+}

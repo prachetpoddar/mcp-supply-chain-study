@@ -1,0 +1,39 @@
+# Manifest
+
+SHA-256 of every released file, generated 2026-09-07T09:53:27Z.
+
+```
+c0b1058614c0a01655a1635ff793fdbebae05d5e565b29f91867943c58482f5f  ./.gitignore
+7f823e01498ffdd7df21449b6538f8bfae893807c7acaae819a6b82f18d12473  ./.zenodo.json
+211fdf5ded3e9b615d681f29ecb8b29721d4c2d992876d85587222cb49cb563a  ./CITATION.cff
+cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  ./LICENSE
+9c7cddc9824da70296787b45fdd2bc4acdb5e70628eb9f8dd5b0142f57c81932  ./LICENSE-DATA.md
+320fcfdfb7c163bc556238b53872cbec87bfbb1134524bbee62d7bd39746b6d3  ./README.md
+f408ef4c68f0a8e5c194d4acdfd83de5d22030cc9b596d95e817f3de5dc792f1  ./code/RUN_A_pypi_weighting.py
+bdb731ac3e4c1c9d37ca42d021f5bafc78bae98e41879b0230770911c7909274  ./code/docker_pulls.py
+52b8eba075db211e26e6973b4630659f17a29549a8c6751775a2f59d908d9626  ./code/enumerate_mcp.py
+7b9fd77a5b6f868ebedec75a2c5a7e729b257081f832d9b5077d1b490626827f  ./code/mcp_confound_tests.py
+cd87dee61c6f92de3a9435847020970cf870475279ae27f5fe6dadb30669c0a5  ./code/mcp_controls.py
+98ef4c51e3b4f0bf42aa793afc1ba75861396174406121fc5d06a9c73f2e27f0  ./code/mcp_resolve.py
+dd6677fb1319c95f1a7610104988ba47876d440771e45bffee0eb673d14f8a66  ./code/mcp_study.py
+23d03fb1fd918fe5a1bc8ce8fe5a19c55dc4cb2a4e832cabdeaee2438f122137  ./code/mcp_study_v2_runners.py
+06fa89d98fa6d91bb62403c8526ad2c14459fc1d85272140ade541f2ece0bc72  ./code/mcp_variance_study.py
+6dac4e5226826552884d79ca50f83441472cc1c6b5c534ac69a9c951437aae36  ./code/mcplib.py
+1d4d57ca5469b84d0b6be920c67a4e3e4bc971b9c3d52e2d426970d31a13ae20  ./code/usage_weighting.py
+bf24614f191165a23835e735601eb1e953164f60306ea14d48438024eed27e23  ./data/conc_docker.json
+987961a1205eb7fa537bdd26e8dbc962449c343bd68e7c557ac8054aae4fff6b  ./data/conc_docker_INVALID_v1.json
+9b78d1bba3de3018c2e43856470eaba00d0e0766f6910858813c3ab0b92ae515  ./data/docker_mcp_names.json
+67a798104ea2cc893428d41dced7a9bd511253355dff71fd12bfc5d7d96be5ee  ./data/docker_state.json
+52613e51c0f821749f0af4baebeee586cd6acdd22a3e2364435c1b76d654cff4  ./data/fixture.mcp.json
+2cca828577d2b5a63eab4ccf2b53d114e8566172cf334f0b2cd50010b24c8fba  ./data/mcp-config.cdx.json
+1b945f96d08687b976b13fe4c3de7544e89ccb0bfc7981b43552b7a034bfcfb6  ./data/mcp-confound-tests.json
+af5e9e7ca470b87b3407eaed1e026ca67624a6903ecc5af13fa0b6aefe3a1d4f  ./data/mcp-controls-data.json
+65c2f5a2bffaa6af1daa714311a844f23bfaea56cb73776efb1dfc2a87e59633  ./data/mcp-study-data.json
+bb1979b292f83aee658c542bb47eb79ffeae5283da9f046d695a584bbaef2a78  ./data/mcp-study-v2-data.json
+80a97e806ed3848c6062cf002688c377f20ce4863c2f0e1e3ca8d137ba082a83  ./data/mcp-substitutability.json
+937afb9ca231ce840c1c129fd3a2b2076f24dfb5090511c385771d3dd2d218a7  ./data/mcp-variance-dimensions.json
+b6443d0c2322dcf454d8ae6ae10f665586469ee0947c861132e3c437a92f99b5  ./data/mcp_docker.json
+f1c5db14b68f74775c0ab0f54e748d6560b6aa3526894e9b562429def2c3478a  ./data/npm_frame_wide_6540.json
+5fe773f5da8a5fa60652048d86a838a6f29e68680d23e5a63a67b372027afaea  ./data/pypi_sample_for_weighting.json
+921a6ec10a7770e412cd1097540fe185c77aa45dbd900940081d05899616b375  ./paper/mcp-supply-chain-nulls.md
+```

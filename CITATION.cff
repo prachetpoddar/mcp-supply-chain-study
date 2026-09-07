@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: >-
+  Measuring the MCP Supply Chain: Eight Null Results and a Population
+  That Is Not the Population
+message: If you use this dataset or these results, please cite it as below.
+type: dataset
+authors:
+  - family-names: Poddar
+    given-names: Prachet
+    email: prachetpoddar@gmail.com
+    affiliation: University of California, Los Angeles
+version: 1.0.0
+date-released: 2026-09-07
+license: Apache-2.0
+license-url: https://www.apache.org/licenses/LICENSE-2.0
+abstract: >-
+  A measurement study of supply-chain risk in Model Context Protocol servers.
+  Eight dimensions were tested against coverage-matched, size-adjusted and
+  age-adjusted controls across 250 npm-distributed servers, 2,868 transitive
+  dependencies, 400 published packages, 247 PyPI-distributed servers and the
+  328-entry Docker MCP catalog. Seven results are null. The eighth survived
+  every control and then dissolved under download weighting, falling from
+  32.8% to 1.9%. The governing result is usage concentration: a Gini
+  coefficient of 0.9611 on PyPI downloads, with one package taking 63.6% of
+  installs, so the published population and the installed population are
+  almost disjoint. The paper also documents two sampling errors that produced
+  false positives in the authors' own data.
+keywords:
+  - software supply chain
+  - Model Context Protocol
+  - SBOM
+  - null results
+  - measurement study
+  - sampling bias
+# After archiving on Zenodo, uncomment and fill in:
+# doi: 10.5281/zenodo.XXXXXXX
+# repository-code: https://github.com/YOURUSER/mcp-supply-chain-study
