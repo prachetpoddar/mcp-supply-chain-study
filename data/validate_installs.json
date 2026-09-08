@@ -1,0 +1,36 @@
+{
+ "mcp": {
+  "n": 30,
+  "npm_nodes": 3267,
+  "agreement_pct": 99.8,
+  "median_per_package_pct": 100.0,
+  "worst_per_package_pct": 99.1,
+  "npm_only_total": 6,
+  "mine_only_total": 74,
+  "skipped": 0
+ },
+ "langchain": {
+  "n": 29,
+  "npm_nodes": 1974,
+  "agreement_pct": 98.7,
+  "median_per_package_pct": 100.0,
+  "worst_per_package_pct": 85.0,
+  "npm_only_total": 25,
+  "mine_only_total": 52,
+  "skipped": 1
+ },
+ "eslint-plugin": {
+  "n": 26,
+  "npm_nodes": 2056,
+  "agreement_pct": 99.7,
+  "median_per_package_pct": 100.0,
+  "worst_per_package_pct": 95.5,
+  "npm_only_total": 7,
+  "mine_only_total": 174,
+  "skipped": 4
+ },
+ "overall": {
+  "n": 85,
+  "agreement_pct": 99.5
+ }
+}

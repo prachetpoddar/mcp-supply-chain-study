@@ -1,0 +1,30 @@
+{
+ "n": 249,
+ "verdict_differs": 1,
+ "missed_servers": 1,
+ "missed_findings": 3,
+ "missed_by_severity": {
+  "moderate": 2,
+  "high": 1
+ },
+ "phantom_servers": 0,
+ "phantom_findings": 0,
+ "phantom_by_severity": {},
+ "total_depsdev": 175,
+ "total_live": 178,
+ "top_missed": [
+  [
+   "uuid",
+   1
+  ],
+  [
+   "music-metadata",
+   1
+  ],
+  [
+   "file-type",
+   1
+  ]
+ ],
+ "note": "both arms pair-keyed; no flattening on either side, so this is identified"
+}

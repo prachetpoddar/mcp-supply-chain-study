@@ -1,0 +1,50 @@
+{
+ "@pipeworx": {
+  "sampled": 120,
+  "tested": 120,
+  "collisions": 4,
+  "pct": 3.3,
+  "errors": 0,
+  "examples": [
+   "mcp-hubspot",
+   "mcp-scryfall",
+   "mcp-youtube"
+  ]
+ },
+ "@mseep": {
+  "sampled": 120,
+  "tested": 115,
+  "collisions": 65,
+  "pct": 56.5,
+  "errors": 0,
+  "examples": [
+   "powertools-for-aws-mcp",
+   "git-mcp-server",
+   "mcp-summarizer"
+  ]
+ },
+ "@iflow-mcp": {
+  "sampled": 120,
+  "tested": 109,
+  "collisions": 5,
+  "pct": 4.6,
+  "errors": 0,
+  "examples": [
+   "vibe-check-mcp",
+   "unity-mcp-server",
+   "elasticsearch-mcp"
+  ]
+ },
+ "@cyanheads": {
+  "sampled": 115,
+  "tested": 115,
+  "collisions": 27,
+  "pct": 23.5,
+  "errors": 0,
+  "examples": [
+   "tmdb-mcp-server",
+   "coingecko-mcp-server",
+   "calculator-mcp-server"
+  ]
+ }
+}

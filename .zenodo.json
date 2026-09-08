@@ -1,7 +1,7 @@
 {
-  "title": "Measuring the MCP Supply Chain: No Elevated Risk on the Dimensions a Registry Exposes, and a Population That Is Not the Population",
+  "title": "Keyword Frames Are Cluster Samples: How a Third of an npm Ecosystem Stayed Invisible",
   "upload_type": "dataset",
-  "description": "Measurement study of supply-chain risk in Model Context Protocol servers. Eight dimensions tested against coverage-matched, size-adjusted and age-adjusted controls; seven null, the eighth dissolved under download weighting. Includes all raw measurements, both invalidated runs, and the corrections applied to them.",
+  "description": "Measurement study of Model Context Protocol servers on npm. A keyword-built frame samples publishers rather than packages; the population size moves by a factor of 8.6 with the keyword chosen; a third of the enumerated population is machine-generated. The dependency resolver had four silent defects found only against a real npm install. No dimension shows elevated supply-chain risk. Includes all raw measurements, every invalidated run, and a record of each withdrawn figure.",
   "creators": [
     {
       "name": "Poddar, Prachet",
@@ -17,5 +17,6 @@
     "null results",
     "measurement study",
     "sampling bias"
-  ]
+  ],
+  "version": "3.3.0"
 }

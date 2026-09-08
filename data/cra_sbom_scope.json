@@ -1,0 +1,11 @@
+{
+ "servers": 250,
+ "median_direct": 2.0,
+ "median_installed": 93.0,
+ "median_share_named_pct": 2.2,
+ "mean_share_pct": 3.8,
+ "servers_under_10pct": 234,
+ "total_direct": 844,
+ "total_installed": 22943,
+ "note": "CRA Annex I requires an SBOM covering at least the top-level dependencies; this is how much of a real install that names"
+}

@@ -1,0 +1,14 @@
+{
+ "pilot": true,
+ "n": 200,
+ "provenance_attestations": 35,
+ "registry_signatures": 200,
+ "median_age_days": 90.5,
+ "stale_over_365d": 17,
+ "stale_over_182d": 43,
+ "caveats": [
+  "convenience sample",
+  "latest-version only",
+  "attestation presence is not provenance verification"
+ ]
+}

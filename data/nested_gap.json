@@ -1,0 +1,30 @@
+{
+ "trees": 250,
+ "dup_trees": 170,
+ "dup_packages_total": 834,
+ "median_published": 96.0,
+ "median_installed": 96.5,
+ "total_instance_delta_pct": 1.7,
+ "trees_install_set_differs": 173,
+ "trees_with_live_findings": 44,
+ "verdict_differs": 154,
+ "missed_trees": 3,
+ "missed_findings": 3,
+ "missed_by_severity": {
+  "moderate": 3
+ },
+ "phantom_trees": 154,
+ "phantom_findings": 3768,
+ "phantom_by_severity": {
+  "high": 1266,
+  "moderate": 2223,
+  "low": 273,
+  "critical": 6
+ },
+ "top_missed": [
+  [
+   "qs",
+   3
+  ]
+ ]
+}

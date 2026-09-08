@@ -1,0 +1,37 @@
+{
+ "Deprecated in tree": {
+  "mcp_pct": 16.8,
+  "eslint_pct": 27.5,
+  "langchain_pct": 33.3,
+  "z_vs_eslint": -2.4,
+  "z_vs_langchain": -3.58,
+  "mh_vs_eslint": 0.27,
+  "mh_vs_langchain": 0.32
+ },
+ "Install hook in tree": {
+  "mcp_pct": 15.6,
+  "eslint_pct": 3.3,
+  "langchain_pct": 27.5,
+  "z_vs_eslint": 3.45,
+  "z_vs_langchain": -2.71,
+  "mh_vs_eslint": 5.05,
+  "mh_vs_langchain": 0.31
+ },
+ "tree_size": {
+  "mcp": {
+   "median": 93.0,
+   "mean": 91.8,
+   "n": 250
+  },
+  "eslint-plugin": {
+   "median": 79.0,
+   "mean": 86.3,
+   "n": 120
+  },
+  "langchain": {
+   "median": 32.0,
+   "mean": 79.7,
+   "n": 120
+  }
+ }
+}

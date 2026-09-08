@@ -1,0 +1,50 @@
+{
+ "strata": {
+  "A": 5250,
+  "BC": 2588,
+  "D": 400,
+  "population": 8238
+ },
+ "median_tree_A": 93,
+ "median_tree_tail": 93,
+ "deprecated in tree": {
+  "A": [
+   42,
+   250
+  ],
+  "tail": [
+   51,
+   250
+  ],
+  "corrected": 18.0,
+  "bounds": [
+   17.1,
+   22.0
+  ],
+  "published_corrected": 18.1,
+  "published_bounds": [
+   17.3,
+   22.2
+  ]
+ },
+ "install hook in tree": {
+  "A": [
+   39,
+   250
+  ],
+  "tail": [
+   40,
+   250
+  ],
+  "corrected": 15.7,
+  "bounds": [
+   15.0,
+   19.8
+  ],
+  "published_corrected": 14.8,
+  "published_bounds": [
+   14.1,
+   19.0
+  ]
+ }
+}

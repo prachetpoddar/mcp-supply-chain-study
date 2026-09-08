@@ -1,0 +1,1994 @@
+{
+ "trees": 250,
+ "trees_with_findings_installed": 44,
+ "trees_verdict_differs": 154,
+ "missed_trees": 3,
+ "missed_findings": 3,
+ "missed_by_severity": {
+  "moderate": 3
+ },
+ "phantom_trees": 154,
+ "phantom_findings": 3747,
+ "phantom_by_severity": {
+  "moderate": 2216,
+  "high": 1258,
+  "low": 267,
+  "critical": 6
+ },
+ "total_findings_published": 3908,
+ "total_findings_installed": 164,
+ "top_missed_packages_findings": [
+  [
+   "qs",
+   3
+  ]
+ ],
+ "top_phantom_packages_findings": [
+  [
+   "hono",
+   1479
+  ],
+  [
+   "fast-uri",
+   740
+  ],
+  [
+   "qs",
+   368
+  ],
+  [
+   "axios",
+   270
+  ],
+  [
+   "ip-address",
+   200
+  ],
+  [
+   "@hono/node-server",
+   136
+  ],
+  [
+   "body-parser",
+   95
+  ],
+  [
+   "undici",
+   90
+  ],
+  [
+   "path-to-regexp",
+   85
+  ],
+  [
+   "@modelcontextprotocol/sdk",
+   48
+  ],
+  [
+   "brace-expansion",
+   37
+  ],
+  [
+   "protobufjs",
+   31
+  ],
+  [
+   "tar",
+   21
+  ],
+  [
+   "ajv",
+   19
+  ],
+  [
+   "form-data",
+   15
+  ],
+  [
+   "js-yaml",
+   14
+  ],
+  [
+   "minimatch",
+   12
+  ],
+  [
+   "express-rate-limit",
+   11
+  ],
+  [
+   "ws",
+   10
+  ],
+  [
+   "nanoid",
+   10
+  ],
+  [
+   "follow-redirects",
+   10
+  ],
+  [
+   "postcss",
+   6
+  ],
+  [
+   "mysql2",
+   5
+  ],
+  [
+   "lodash",
+   5
+  ],
+  [
+   "browserslist",
+   4
+  ]
+ ],
+ "per_tree": [
+  {
+   "root": "graphweft",
+   "n_published_findings": 2,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@kahflane/whatsapp-mcp",
+   "n_published_findings": 50,
+   "n_installed_findings": 4,
+   "missed": 0,
+   "phantom": 46
+  },
+  {
+   "root": "@pipeworx/mcp-senate-lobbying",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "fiatdock-mcp",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "@pipeworx/mcp-stocktwits",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@pipeworx/mcp-pipeworx-catalog",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@toolyour/sdk",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@sargonpiraev/confluence-mcp-server",
+   "n_published_findings": 2,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@apicircle/mcp-server",
+   "n_published_findings": 17,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 17
+  },
+  {
+   "root": "kaomoji-mcp",
+   "n_published_findings": 35,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 35
+  },
+  {
+   "root": "@mseep/magic-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@cyanheads/federal-reserve-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "mysql-mcp-x",
+   "n_published_findings": 21,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 21
+  },
+  {
+   "root": "@balacode/mental",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@noticed/cli",
+   "n_published_findings": 4,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 4
+  },
+  {
+   "root": "mcp-server-db",
+   "n_published_findings": 11,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 11
+  },
+  {
+   "root": "@felixisaac/tandem",
+   "n_published_findings": 30,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 30
+  },
+  {
+   "root": "@apps-in-toss/ax",
+   "n_published_findings": 5,
+   "n_installed_findings": 5,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "sleep-tracker-ai-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "pythia-lcs",
+   "n_published_findings": 76,
+   "n_installed_findings": 6,
+   "missed": 0,
+   "phantom": 70
+  },
+  {
+   "root": "@pipeworx/mcp-barcelona-events",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "secure-vault-mcp",
+   "n_published_findings": 35,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 35
+  },
+  {
+   "root": "@theyahia/yandex-direct-mcp",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "@insnapsprakhar/world-bank-economic-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@wonsukchoi/crondex",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "selvedge-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@scriptmasterlabs/mcp-x402",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "create-modelfetch",
+   "n_published_findings": 7,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 7
+  },
+  {
+   "root": "@tocharianou/mcp-virustotal",
+   "n_published_findings": 80,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 80
+  },
+  {
+   "root": "openeagleeye",
+   "n_published_findings": 72,
+   "n_installed_findings": 28,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "@thecodesaiyan/tcs-n8n-mcp",
+   "n_published_findings": 50,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 50
+  },
+  {
+   "root": "jurisd",
+   "n_published_findings": 21,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 21
+  },
+  {
+   "root": "@pipeworx/mcp-us-auctions",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@damoqiongqiu/mcp-local-rag",
+   "n_published_findings": 24,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 22
+  },
+  {
+   "root": "@cyanheads/chembl-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@limelink/mcp",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "vidlens-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "grpvn-cli",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "icon-composer-mcp",
+   "n_published_findings": 43,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 42
+  },
+  {
+   "root": "@mseep/mcp-file-downloader",
+   "n_published_findings": 3,
+   "n_installed_findings": 3,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@pipeworx/mcp-czso-cz",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@obscuraai/mcp-server",
+   "n_published_findings": 36,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 36
+  },
+  {
+   "root": "cntx-ui",
+   "n_published_findings": 19,
+   "n_installed_findings": 12,
+   "missed": 0,
+   "phantom": 7
+  },
+  {
+   "root": "taufunctions",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@pipeworx/mcp-close-crm",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "mcp-rncp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "ppspy-mcp-server",
+   "n_published_findings": 42,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 42
+  },
+  {
+   "root": "@weppy/roblox-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@moneolabs/mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@pv-bhat/vibe-check-mcp",
+   "n_published_findings": 49,
+   "n_installed_findings": 2,
+   "missed": 1,
+   "phantom": 48
+  },
+  {
+   "root": "@florexlabs/docs-to-mcp-server",
+   "n_published_findings": 7,
+   "n_installed_findings": 3,
+   "missed": 0,
+   "phantom": 4
+  },
+  {
+   "root": "freelo-mcp",
+   "n_published_findings": 71,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 69
+  },
+  {
+   "root": "@htetoowaiyan/colors-mcp-server",
+   "n_published_findings": 50,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 50
+  },
+  {
+   "root": "@filcuk/planka-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "phoenixd-mcp-server",
+   "n_published_findings": 44,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "real-browser-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@getmcpads/google-analytics-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "agentcard-mcp",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "ccmultihelper",
+   "n_published_findings": 14,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 14
+  },
+  {
+   "root": "@tocharianou/jira-mcp",
+   "n_published_findings": 5,
+   "n_installed_findings": 3,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "@pipeworx/mcp-arcgis-eagan",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@jarciahdz111/dokploy-mcp",
+   "n_published_findings": 72,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 72
+  },
+  {
+   "root": "@luno-cms/mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@runapi.ai/qwen-2-mcp",
+   "n_published_findings": 10,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 10
+  },
+  {
+   "root": "perf-mcp",
+   "n_published_findings": 51,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 51
+  },
+  {
+   "root": "agentrank-mcp-server",
+   "n_published_findings": 44,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "@ytsuda/ripple",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "markitup-mcp-server",
+   "n_published_findings": 25,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 25
+  },
+  {
+   "root": "@novalux12/spotify-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "syndicate-links-mcp",
+   "n_published_findings": 25,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 25
+  },
+  {
+   "root": "multi-cloud-docs-search",
+   "n_published_findings": 32,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 32
+  },
+  {
+   "root": "@pipeworx/mcp-data-detroit",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "mcp-data-pipeline-connector",
+   "n_published_findings": 47,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 47
+  },
+  {
+   "root": "@taprun/from-puppeteer",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "manasx",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "vaults-diagram-tools",
+   "n_published_findings": 32,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 32
+  },
+  {
+   "root": "@mseep/mcp-obsidian",
+   "n_published_findings": 10,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 9
+  },
+  {
+   "root": "patchxnote-agent",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@michelabboud/visual-forge-mcp",
+   "n_published_findings": 66,
+   "n_installed_findings": 4,
+   "missed": 1,
+   "phantom": 63
+  },
+  {
+   "root": "mcpx-framework",
+   "n_published_findings": 25,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 25
+  },
+  {
+   "root": "api-tester-ai-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@frangelbarrera/osint-agent-skills",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@automate-io/api-testing-mcp",
+   "n_published_findings": 13,
+   "n_installed_findings": 4,
+   "missed": 0,
+   "phantom": 9
+  },
+  {
+   "root": "@mhrj/whatsapp-mcp",
+   "n_published_findings": 23,
+   "n_installed_findings": 3,
+   "missed": 0,
+   "phantom": 20
+  },
+  {
+   "root": "@vugu/mcp-aggregator",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "@cgdevs/pigi",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "whooshly-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@actionproxy/mcp-wrapper",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "kvk-mcp",
+   "n_published_findings": 46,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 46
+  },
+  {
+   "root": "mythsensus-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@pipeworx/mcp-tcgdex",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@smails/cli",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "cursor-memory",
+   "n_published_findings": 41,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 40
+  },
+  {
+   "root": "@pipeworx/mcp-idf-events",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "math-solver-ai-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@watzon/tgmcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@pipeworx/mcp-19hz",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@npm_xiyuan/mcp-model-radar",
+   "n_published_findings": 19,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 19
+  },
+  {
+   "root": "@yawlabs/caddy-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "mcp-test-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@mseep/atlas-mcp-server",
+   "n_published_findings": 14,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 13
+  },
+  {
+   "root": "@agentsid/guard",
+   "n_published_findings": 35,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 35
+  },
+  {
+   "root": "@pipeworx/mcp-or-dmv",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@ordinaryfuture/agent-readiness-mcp",
+   "n_published_findings": 56,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 56
+  },
+  {
+   "root": "@vision_123/email-sender-server",
+   "n_published_findings": 19,
+   "n_installed_findings": 8,
+   "missed": 0,
+   "phantom": 11
+  },
+  {
+   "root": "@usedomshot/cli",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "wikimedia-image-search-mcp",
+   "n_published_findings": 23,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 22
+  },
+  {
+   "root": "shopify-multi-store-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@theyahia/bitrix24-mcp",
+   "n_published_findings": 33,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 33
+  },
+  {
+   "root": "@cablate/mcp-google-map",
+   "n_published_findings": 7,
+   "n_installed_findings": 3,
+   "missed": 0,
+   "phantom": 4
+  },
+  {
+   "root": "noodle-perplexity-mcp",
+   "n_published_findings": 101,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 99
+  },
+  {
+   "root": "guardz-generator-mcp",
+   "n_published_findings": 12,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 11
+  },
+  {
+   "root": "companies-house-cli",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "local-dfw-mcp",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "@turbot/steampipe-mcp",
+   "n_published_findings": 19,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 19
+  },
+  {
+   "root": "@echosaw/mcp-server",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "novada-mcp",
+   "n_published_findings": 3,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "@wubaoqi/guanmcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@apiscoach/mcp-server-weather",
+   "n_published_findings": 19,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 19
+  },
+  {
+   "root": "macbeth",
+   "n_published_findings": 10,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 10
+  },
+  {
+   "root": "@platfone/mcp",
+   "n_published_findings": 36,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 34
+  },
+  {
+   "root": "iw-spine-network",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "healthcare-mcp",
+   "n_published_findings": 35,
+   "n_installed_findings": 13,
+   "missed": 0,
+   "phantom": 22
+  },
+  {
+   "root": "abapilot",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "agent-costcenter-mcp",
+   "n_published_findings": 35,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 35
+  },
+  {
+   "root": "mcp-mapmyindia",
+   "n_published_findings": 44,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "codescan-mcp",
+   "n_published_findings": 35,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 35
+  },
+  {
+   "root": "@iflow-mcp/12306-mcp",
+   "n_published_findings": 44,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "@pipeworx/mcp-url",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@cyanheads/gbif-biodiversity-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "base-flash-arb-mcp",
+   "n_published_findings": 47,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 47
+  },
+  {
+   "root": "mcp-server-security-audit",
+   "n_published_findings": 50,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 50
+  },
+  {
+   "root": "@mbeato/apimesh-mcp-server",
+   "n_published_findings": 35,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 35
+  },
+  {
+   "root": "@onivoro/server-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "aifastdb-devplan",
+   "n_published_findings": 52,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 52
+  },
+  {
+   "root": "lanhu-context-mcp",
+   "n_published_findings": 18,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 18
+  },
+  {
+   "root": "@icogenie/mcp",
+   "n_published_findings": 50,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 50
+  },
+  {
+   "root": "imap-email-mcp",
+   "n_published_findings": 30,
+   "n_installed_findings": 9,
+   "missed": 0,
+   "phantom": 21
+  },
+  {
+   "root": "mcp-read-file-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@pranavchavda/shopify-feature-box-mcp",
+   "n_published_findings": 1,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "llmmcp",
+   "n_published_findings": 50,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 50
+  },
+  {
+   "root": "@pipeworx/mcp-mitre-attck",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "gardening-ai-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "swagger-mcp-tools",
+   "n_published_findings": 51,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 51
+  },
+  {
+   "root": "@pipeworx/mcp-stat-gl",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "xiaoflow-mcp-server",
+   "n_published_findings": 15,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 15
+  },
+  {
+   "root": "mcp-wtf",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@lancernix/mcp-adapter",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "shieldnet-mcp",
+   "n_published_findings": 42,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 42
+  },
+  {
+   "root": "ai-ads-os",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@dangahagan/weather-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "insite-mcp",
+   "n_published_findings": 3,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 1
+  },
+  {
+   "root": "xunao-erp-mcp-proxy",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@pipeworx/mcp-ca-procurement",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "jupyterlab-collab-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@pipeworx/mcp-cocktails",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@frontlinesystems/rason-mcp-server",
+   "n_published_findings": 26,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 26
+  },
+  {
+   "root": "tabedata-mcp",
+   "n_published_findings": 10,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 10
+  },
+  {
+   "root": "bridgeguard-mcp",
+   "n_published_findings": 42,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 42
+  },
+  {
+   "root": "@100xpercent/mcp-server-pop-pay",
+   "n_published_findings": 36,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 36
+  },
+  {
+   "root": "@hypawave/mcp",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "email-playbook-mcp",
+   "n_published_findings": 25,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 25
+  },
+  {
+   "root": "@mseep/starlight-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "clenzer",
+   "n_published_findings": 22,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 22
+  },
+  {
+   "root": "create-opc-wiki",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@mseep/telegram-api-mcp",
+   "n_published_findings": 19,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 19
+  },
+  {
+   "root": "@iflow-mcp/weather-mcp",
+   "n_published_findings": 17,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 17
+  },
+  {
+   "root": "quanters-akshare-mcp",
+   "n_published_findings": 25,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 25
+  },
+  {
+   "root": "@shaykec/appxray-mcp-server",
+   "n_published_findings": 49,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 49
+  },
+  {
+   "root": "@coti-io/coti-sdk-private-messaging",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "mcp-selenium-webdriver",
+   "n_published_findings": 11,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 11
+  },
+  {
+   "root": "@pipeworx/mcp-nrel",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "backendless-console-sdk-mcp-server",
+   "n_published_findings": 20,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 20
+  },
+  {
+   "root": "@sgpdirectory/mcp",
+   "n_published_findings": 21,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 19
+  },
+  {
+   "root": "alienmail-mcp",
+   "n_published_findings": 25,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 25
+  },
+  {
+   "root": "sms-florin-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@sealgate/mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "mcp-imagetovideoai-server",
+   "n_published_findings": 10,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 10
+  },
+  {
+   "root": "no2bounce-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@pipeworx/mcp-citybikes",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "engram-wiki-mcp",
+   "n_published_findings": 8,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@andersonfda/springy",
+   "n_published_findings": 14,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 14
+  },
+  {
+   "root": "vault-cortex",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@garvae/mcp-mcphub",
+   "n_published_findings": 24,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 24
+  },
+  {
+   "root": "@codegiveness/mssql-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "clawaimail-mcp",
+   "n_published_findings": 44,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "@pipeworx/mcp-peopledatalabs",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "prodcheck",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "starwell-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "mcpscope",
+   "n_published_findings": 8,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 8
+  },
+  {
+   "root": "repomap-mcp-server",
+   "n_published_findings": 30,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 30
+  },
+  {
+   "root": "keycloak-mcp",
+   "n_published_findings": 18,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 18
+  },
+  {
+   "root": "@zensystemai/zengram-mcp",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "@cyanheads/openalex-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "job-searchoor",
+   "n_published_findings": 30,
+   "n_installed_findings": 2,
+   "missed": 0,
+   "phantom": 28
+  },
+  {
+   "root": "context-fabric",
+   "n_published_findings": 15,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 15
+  },
+  {
+   "root": "@cg3/prior-mcp",
+   "n_published_findings": 29,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 29
+  },
+  {
+   "root": "@fluxweave/cli",
+   "n_published_findings": 11,
+   "n_installed_findings": 7,
+   "missed": 0,
+   "phantom": 4
+  },
+  {
+   "root": "@pipeworx/mcp-sarb-za",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "mcp-creatio",
+   "n_published_findings": 20,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 20
+  },
+  {
+   "root": "@whoisxmlapidotcom/mcp-whoisxmlapi_darwin_arm64",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@aiwerk/mcp-server-wheel-size",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "@pipeworx/mcp-devto",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@cyanheads/earthquake-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@pipeworx/mcp-medicare-coverage",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@fre4x/hn",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@cyanheads/oecd-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@mseep/mcp_server_mysql",
+   "n_published_findings": 10,
+   "n_installed_findings": 2,
+   "missed": 1,
+   "phantom": 9
+  },
+  {
+   "root": "claude-prompts",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@cyanheads/docgen-mcp-server",
+   "n_published_findings": 1,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "research-swarm",
+   "n_published_findings": 52,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 51
+  },
+  {
+   "root": "@vk0/agent-claim-mcp",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "@pipeworx/mcp-sports-game-odds",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "mcp-web-recon-agent",
+   "n_published_findings": 44,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "@malikmalikayesha/azure-image-generation-mcp",
+   "n_published_findings": 12,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 12
+  },
+  {
+   "root": "@pipeworx/mcp-arcgis-durham",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@aicanvas/mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "sentiment-analysis-ai-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@pipeworx/mcp-data-strasbourg",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "mcp-db-bridge",
+   "n_published_findings": 14,
+   "n_installed_findings": 3,
+   "missed": 0,
+   "phantom": 11
+  },
+  {
+   "root": "@craft-ng/mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@moleculer/mcp-server",
+   "n_published_findings": 44,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "@pipeworx/mcp-arcgis-chatham",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@ranklancer/uptime-kuma-mcp",
+   "n_published_findings": 39,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 39
+  },
+  {
+   "root": "true-solar-time-mcp",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "hyros-mcp",
+   "n_published_findings": 9,
+   "n_installed_findings": 3,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "frc-mcp",
+   "n_published_findings": 6,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "@cyanheads/faa-aircraft-registry-mcp-server",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@devinwangd/cloak-browser-mcp",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "@gogogadgetbytes/smart-connections-mcp",
+   "n_published_findings": 41,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 40
+  },
+  {
+   "root": "@mseep/mcp-shodan",
+   "n_published_findings": 33,
+   "n_installed_findings": 1,
+   "missed": 0,
+   "phantom": 32
+  },
+  {
+   "root": "turk-hukuku-mevzuat-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@pipeworx/mcp-faa-regulations",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@mseep/grok-build-x-search-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "openpanel-mcp-server",
+   "n_published_findings": 50,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 50
+  },
+  {
+   "root": "@pipeworx/mcp-arcgis-phoenix",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "krx-cli",
+   "n_published_findings": 44,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 44
+  },
+  {
+   "root": "linkydy-mcp",
+   "n_published_findings": 16,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 16
+  },
+  {
+   "root": "@pipeworx/mcp-rfc-editor",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "pushci",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@ohos-ports/agentic-flow",
+   "n_published_findings": 10,
+   "n_installed_findings": 4,
+   "missed": 0,
+   "phantom": 6
+  },
+  {
+   "root": "datalikers-mcp",
+   "n_published_findings": 35,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 35
+  },
+  {
+   "root": "focus-timer-ai-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "goaltracker",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "aishield-mcp-server",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "lorg-mcp-server",
+   "n_published_findings": 2,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 2
+  },
+  {
+   "root": "@csmodding/gameface-devtools-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "402verify-mcp",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "@pipeworx/mcp-arcgis-kamloops",
+   "n_published_findings": 0,
+   "n_installed_findings": 0,
+   "missed": 0,
+   "phantom": 0
+  },
+  {
+   "root": "bugpack-mcp",
+   "n_published_findings": 29,
+   "n_installed_findings": 3,
+   "missed": 0,
+   "phantom": 26
+  }
+ ],
+ "interpretation": "the published-graph arm freezes ranges at the root's publish date, modelling a lockfile or SBOM produced at release; it is the worst case for staleness and bounds rather than estimates the crawl-lag gap of a graph service",
+ "limits": [
+  "advisory data read today for both arms, isolating the version delta; advisories published after a root shipped are a separate and additive effect",
+  "cap-truncated trees excluded",
+  "optional dependencies included without os/cpu evaluation"
+ ],
+ "top_phantom_packages_distinct_trees": [
+  [
+   "qs",
+   144
+  ],
+  [
+   "fast-uri",
+   125
+  ],
+  [
+   "hono",
+   88
+  ],
+  [
+   "@hono/node-server",
+   86
+  ],
+  [
+   "body-parser",
+   82
+  ],
+  [
+   "ip-address",
+   81
+  ],
+  [
+   "path-to-regexp",
+   45
+  ],
+  [
+   "@modelcontextprotocol/sdk",
+   20
+  ],
+  [
+   "ajv",
+   19
+  ],
+  [
+   "form-data",
+   14
+  ],
+  [
+   "brace-expansion",
+   11
+  ],
+  [
+   "express-rate-limit",
+   11
+  ],
+  [
+   "axios",
+   10
+  ],
+  [
+   "follow-redirects",
+   10
+  ],
+  [
+   "undici",
+   9
+  ],
+  [
+   "js-yaml",
+   6
+  ],
+  [
+   "protobufjs",
+   5
+  ],
+  [
+   "ws",
+   5
+  ],
+  [
+   "nanoid",
+   5
+  ],
+  [
+   "minimatch",
+   4
+  ],
+  [
+   "mysql2",
+   3
+  ],
+  [
+   "tar",
+   3
+  ],
+  [
+   "@protobufjs/utf8",
+   3
+  ],
+  [
+   "postcss",
+   3
+  ],
+  [
+   "browserslist",
+   2
+  ]
+ ],
+ "top_missed_packages_distinct_trees": [
+  [
+   "qs",
+   3
+  ]
+ ]
+}

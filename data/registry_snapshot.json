@@ -1,0 +1,5 @@
+{
+ "registry_snapshot_utc": "2026-09-08T03:46:09.148161Z",
+ "packages_refreshed": 2883,
+ "note": "every packument in the corpus re-fetched in one pass; all downstream resolution reads this snapshot"
+}

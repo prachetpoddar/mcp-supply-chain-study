@@ -1,0 +1,131 @@
+{
+ "trees_measured": 250,
+ "trees_differing": 173,
+ "trees_differing_pct": 69.2,
+ "median_nodes_published": 95.0,
+ "median_nodes_installed": 95.0,
+ "total_instance_delta_pct": 1.3,
+ "added_trees": 32,
+ "dropped_trees": 28,
+ "moved_trees": 173,
+ "added_total": 317,
+ "dropped_total": 51,
+ "moved_total": 3138,
+ "wrong_share_median_pct": 9.5,
+ "wrong_share_p90_pct": 28.0,
+ "optional_only_total": 1048,
+ "platform_constrained_total": 497,
+ "edge_stats": {
+  "range_edges": 63246,
+  "tag_edges": 12,
+  "tag_edges_approximated": 6
+ },
+ "top_added": [
+  [
+   "hono",
+   19
+  ],
+  [
+   "ip-address",
+   19
+  ],
+  [
+   "json-schema-typed",
+   16
+  ],
+  [
+   "@hono/node-server",
+   15
+  ],
+  [
+   "jose",
+   13
+  ],
+  [
+   "ajv-formats",
+   10
+  ],
+  [
+   "async-function",
+   10
+  ],
+  [
+   "async-generator-function",
+   10
+  ],
+  [
+   "generator-function",
+   10
+  ],
+  [
+   "agent-base",
+   9
+  ],
+  [
+   "https-proxy-agent",
+   9
+  ],
+  [
+   "fast-uri",
+   8
+  ],
+  [
+   "require-from-string",
+   8
+  ],
+  [
+   "ajv",
+   4
+  ],
+  [
+   "fast-deep-equal",
+   4
+  ],
+  [
+   "json-schema-traverse",
+   4
+  ],
+  [
+   "argparse",
+   2
+  ],
+  [
+   "js-yaml",
+   2
+  ],
+  [
+   "sql-escaper",
+   2
+  ],
+  [
+   "@emnapi/runtime",
+   1
+  ],
+  [
+   "@img/colour",
+   1
+  ],
+  [
+   "@img/sharp-darwin-arm64",
+   1
+  ],
+  [
+   "@img/sharp-darwin-x64",
+   1
+  ],
+  [
+   "@img/sharp-freebsd-wasm32",
+   1
+  ],
+  [
+   "@img/sharp-libvips-darwin-arm64",
+   1
+  ]
+ ],
+ "limits": [
+  "dist-tag edges cannot be time-travelled; approximated by highest non-prerelease version at or before cutoff, counted above",
+  "cap-truncated trees excluded from all statistics",
+  "optional edges included without evaluating os/cpu, so the installed arm is an upper bound for any single machine",
+  "none of the 250 source configurations pins a version, so there is no lockfile state to model"
+ ]
+}

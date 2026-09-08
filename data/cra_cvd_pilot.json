@@ -1,0 +1,14 @@
+{
+ "pilot": true,
+ "n": 120,
+ "with_repo": 101,
+ "no_repo": 19,
+ "with_bugs_field": 105,
+ "with_security_md": 25,
+ "caveats": [
+  "SECURITY.md checked at 4 paths x 2 branches only",
+  "monorepos and non-GitHub forges not handled",
+  "presence is not the same as an Annex I Part II(5) compliant CVD policy",
+  "convenience sample, not the stratified frame"
+ ]
+}

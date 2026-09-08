@@ -1,0 +1,70 @@
+{
+ "trees": 250,
+ "hook_trees": 39,
+ "hook_pct": 15.6,
+ "instances": 124,
+ "distinct": 52,
+ "max": 15,
+ "top": [
+  [
+   "protobufjs",
+   14
+  ],
+  [
+   "better-sqlite3",
+   14
+  ],
+  [
+   "sharp",
+   11
+  ],
+  [
+   "onnxruntime-node",
+   7
+  ],
+  [
+   "fsevents",
+   4
+  ],
+  [
+   "tldjs",
+   3
+  ],
+  [
+   "tree-sitter-rust",
+   3
+  ],
+  [
+   "tree-sitter-javascript",
+   3
+  ],
+  [
+   "tree-sitter-typescript",
+   3
+  ],
+  [
+   "@google/genai",
+   3
+  ],
+  [
+   "tree-sitter-java",
+   2
+  ],
+  [
+   "tree-sitter",
+   2
+  ],
+  [
+   "tree-sitter-python",
+   2
+  ],
+  [
+   "tree-sitter-css",
+   2
+  ],
+  [
+   "tree-sitter-go",
+   2
+  ]
+ ]
+}

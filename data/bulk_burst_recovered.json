@@ -1,0 +1,90 @@
+{
+ "@pipeworx": {
+  "n_pool": 1257,
+  "n_sampled": 120,
+  "dated": 120,
+  "missing": 0,
+  "distinct_days": 34,
+  "top3_days": [
+   [
+    "2026-04-15",
+    25
+   ],
+   [
+    "2026-06-26",
+    22
+   ],
+   [
+    "2026-06-25",
+    7
+   ]
+  ],
+  "top3_share_pct": 45.0
+ },
+ "@mseep": {
+  "n_pool": 1065,
+  "n_sampled": 120,
+  "dated": 120,
+  "missing": 0,
+  "distinct_days": 12,
+  "top3_days": [
+   [
+    "2026-06-22",
+    32
+   ],
+   [
+    "2025-04-16",
+    32
+   ],
+   [
+    "2025-04-15",
+    20
+   ]
+  ],
+  "top3_share_pct": 70.0
+ },
+ "@iflow-mcp": {
+  "n_pool": 255,
+  "n_sampled": 120,
+  "dated": 120,
+  "missing": 0,
+  "distinct_days": 52,
+  "top3_days": [
+   [
+    "2026-03-11",
+    11
+   ],
+   [
+    "2026-03-10",
+    8
+   ],
+   [
+    "2026-04-08",
+    6
+   ]
+  ],
+  "top3_share_pct": 20.8
+ },
+ "@cyanheads": {
+  "n_pool": 115,
+  "n_sampled": 115,
+  "dated": 115,
+  "missing": 0,
+  "distinct_days": 30,
+  "top3_days": [
+   [
+    "2026-06-05",
+    17
+   ],
+   [
+    "2026-05-23",
+    10
+   ],
+   [
+    "2026-06-13",
+    9
+   ]
+  ],
+  "top3_share_pct": 31.3
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "strata": {
+  "A": 5250,
+  "B": 1290,
+  "C": 1293,
+  "D": 405,
+  "population": 8238
+ },
+ "n": {
+  "A": 1200,
+  "B": 600,
+  "C": 600
+ },
+ "  registry signature present": {
+  "A_pct": 100.0,
+  "B_pct": 100.0,
+  "C_pct": 100.0,
+  "corrected_pct": 100.0,
+  "bounds": [
+   95.1,
+   100.0
+  ]
+ },
+ "  SLSA build provenance present": {
+  "A_pct": 18.1,
+  "B_pct": 0.8,
+  "C_pct": 2.3,
+  "corrected_pct": 12.6,
+  "bounds": [
+   12.0,
+   16.9
+  ]
+ },
+ "  no release in over 6 months": {
+  "A_pct": 13.8,
+  "B_pct": 40.0,
+  "C_pct": 39.2,
+  "corrected_pct": 22.3,
+  "bounds": [
+   21.2,
+   26.1
+  ]
+ },
+ "  no release in over 12 months": {
+  "A_pct": 4.1,
+  "B_pct": 24.5,
+  "C_pct": 27.2,
+  "corrected_pct": 11.3,
+  "bounds": [
+   10.7,
+   15.6
+  ]
+ },
+ "median_age_days_pooled": 112.0,
+ "_note": "stratified over observed strata A/B/C with Manski bounds over the unreached stratum D, the same estimator as the paper's other rows. Provenance is dist.attestations.provenance.predicateType == slsa.dev/provenance/v1. Support period is a proxy: a registry cannot show a declared support period."
+}

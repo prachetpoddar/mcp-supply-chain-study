@@ -1,128 +1,75 @@
-# Measuring the MCP Supply Chain
+# Keyword Frames Are Cluster Samples
 
-Data and code for *No Elevated Risk on the Dimensions a Registry Exposes, and
-a Population That Is Not the Population*, a measurement study of supply-chain risk in Model Context Protocol
-servers. Measurements run 6 to 7 September 2026.
+Data and code for *Keyword Frames Are Cluster Samples: How a Third of an npm
+Ecosystem Stayed Invisible*, a measurement study of Model Context Protocol
+servers on npm. Measurements run 6 to 8 September 2026.
 
-**Version 1.0.2** enumerates 95.1% of the npm population instead of the 63.8%
-a search frame reaches, which turns four identification bounds into findings and
-shows that one previously reported null was an artifact of the frame. Sections
-11 and 12 of the paper list every change since 1.0.0. Read those first if you
-saw an earlier version.
+**Version 3.3.** The study began as a supply-chain risk comparison and became a
+paper about why that comparison kept failing. Two causes: a keyword-built frame
+that sampled publishers rather than packages, and a dependency resolver that was
+never validated against the tool it modelled. Section 12 of the paper lists every
+change across all versions. Read it first if you saw an earlier one, because
+several headline figures have been withdrawn.
 
-Paper: [`paper/mcp-supply-chain-nulls.md`](paper/mcp-supply-chain-nulls.md), also as `.docx` and `.pdf` in the same folder.
+Paper: [`paper/mcp-frame-paper-v3.md`](paper/mcp-frame-paper-v3.md), also as
+`.docx` and `.pdf`. Superseded versions ship alongside it.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22641813.svg)](https://doi.org/10.5281/zenodo.22641813)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22664719.svg)](https://doi.org/10.5281/zenodo.22664719)
+
+Cite `10.5281/zenodo.22664719` for version 3.3. The earlier DOI
+`10.5281/zenodo.22641813` archives version 1.0.0 only, under its original title
+and with findings this version corrects.
 
 ## What it found
 
-Eight dimensions tested against coverage-matched, size-adjusted and
-age-adjusted controls, across 250 npm-distributed servers, 2,868 transitive
-dependencies, 400 published packages, 247 PyPI-distributed servers and the
-328-entry Docker MCP catalog.
+**A keyword frame is a cluster sample of publishers.** npm's search API orders by
+score and stops near 5,000 results, so a keyword frame is a top-slice, and which
+packages land in it is decided largely by who published them. Across eleven npm
+keyword ecosystems, publishers are entirely in or entirely out of a co-occurring
+keyword far more often than independent tagging would produce.
 
-**No dimension shows elevated risk.** At 95.1% enumeration of the npm
-population, MCP servers ship license files more reliably than either control
-(23.5% absent against 36.4% and 50.0%), carry deprecated dependencies no more
-often, and are a strict null on install-script execution. Identification bounds
-on the unreached 4.9% do not reach the control values, so these hold whatever
-that remainder contains.
+**The population has no single size.** `keywords:mcp-server` returns 8,249
+packages and `mcp` returns 70,922, a factor of 8.6. Which one is the population
+is a choice, and every rate in the study is conditional on it.
 
-**Enumeration changed one result.** Single-version publication, called a null in
-earlier versions, is 45.2% against langchain's 21.2%. Nearly half the published
-population published exactly once. The frame bias is metric-specific: publishing
-behaviour moved by up to 20 points, dependency-tree properties by less than one.
+**A third of the enumerated population is machine-generated** by four scopes.
+Enumeration to 95.1% does not fix the frame problem; it changes the composition
+of what you are measuring, and the deeper you enumerate the more of the
+population is generated.
 
-**The eighth survived every control and then dissolved.** PyPI-distributed
-servers carry no license metadata at 32.8% against an age-matched PyPI baseline
-of 18.0%, a risk ratio of 1.8 with a Mantel-Haenszel odds ratio of 2.45,
-z = +3.78.
-Weighted by actual downloads that rate is 1.9%, a sixteen-fold collapse.
+**Nothing shows elevated supply-chain risk.** Two results are firm: MCP servers
+ship license files more reliably than either control, on both the corrected and
+the uncorrected rate. Single-version publication is higher than langchain's on a
+coverage-matched comparison, and that one rests on the coverage correction rather
+than surviving without it. The remaining rows are unresolved or favour MCP.
 
-**The result that governs the rest is concentration.** PyPI downloads have a
-Gini coefficient of 0.9611 and one package takes 63.6% of installs. The
-published population and the installed population are almost disjoint, so
-per-package rates describe software that is measured but not run. Docker's
-curated catalog, measured the same way, has a Gini of 0.7094 and a top item at
-11.4%, which suggests the tail is a property of open publication rather than of
-MCP.
+**The measuring instrument was wrong.** The dependency resolver had four silent
+defects, each of which changed a published number, and all four fell out of the
+first comparison against a real `npm install`. The corrected resolver agrees with
+real installs on 99.97% of nodes, and on 100% over the 45 packages it was never
+debugged against.
+
+## Reproducing the validation figure
+
+`data/raw_validate_oos.json`, `raw_validate_oos3.json` and
+`raw_validate_installs.json` are the per-package records. The union of the first
+two, de-duplicated by package, gives 75 packages and 6,144 of 6,146 nodes.
+Removing the 30 packages that also appear in the third gives 45 packages and
+3,790 of 3,790. Summing the arm-level totals instead double-counts the 39
+packages the two runs share, which is the error revision 3.1 corrects.
+
+## Withdrawn figures
+
+Several numbers in earlier versions had no artifact behind them and are withdrawn
+rather than restated: the pre-correction resolver agreement rate, the per-scope
+name-duplication column, and the original Docker catalog statistics. Where a
+measurement could be redone it was, and the replacement ships with it
+(`bulk_name_collisions.json`, `bulk_burst_recovered.json`,
+`docker_pulls_recovered.json`). Section 12 records each one.
 
 ## Layout
 
-```
-paper/   the writeup
-data/    every measurement, as JSON, including the runs that turned out invalid
-code/    the scripts that produced it
-```
-
-## Reproducing
-
-Python 3.11 or later. The only third-party dependency is `nodesemver`, used to
-apply npm range semantics rather than taking `latest`.
-
-```
-pip install nodesemver
-cd code
-python3 mcp_study_v2_runners.py     # the main round
-python3 mcp_controls.py             # control arms
-python3 mcp_confound_tests.py       # coverage-matched frames, age stratification
-python3 RUN_A_pypi_weighting.py     # download weighting
-python3 docker_pulls.py ../data/docker_mcp_names.json
-```
-
-Everything hits public registry APIs only. No credentials are needed. The
-resolver rate-limits itself and caches to disk, so a rerun is cheap.
-
-## Three mistakes documented here on purpose
-
-**The npm search frame trap.** npm's search API orders by score and stops
-paginating near 5,000 results. Any frame built from it is a top-slice.
-Comparing top-slices drawn from populations of different sizes produced z =
-7.32 for an effect that does not exist: `keywords:cli` has 104,818 packages and
-we sampled the top 2.4% of it, against 64% coverage of an 8,227-package MCP
-population. Four results were invalidated before this was caught. Match
-coverage fractions, or use a source that enumerates completely.
-
-**Silently ignored query parameters.** Docker Hub accepts
-`ordering=-pull_count` and ignores it, returning an arbitrary 100 of 245
-repositories. The output looked plausible until three things gave it away: the
-top five differed from each other by 1.7%, the Gini was 0.16 where a power law
-was expected, and `fetch` at 1.7M pulls was absent entirely. Verify that an
-ordering parameter took effect before building anything on it.
-
-**Fixing a sampling error in one place and not the others.** Version 1.0.0 of
-this paper identified the search-frame trap, rebuilt three rows of its main
-table on coverage-matched frames, and left four rows on the invalid one while
-describing the whole table as matched. Re-running those four changed two, and
-one changed sign. Identifying a sampling error is not the same as removing it.
-
-**Skipping on rate limits.** The corrected script skipped any name that
-returned HTTP 429. Docker Hub began throttling partway through and 55 of 328
-entries were lost, running alphabetically from `scorecard` to `zscaler`. That
-block contained six of the ten largest repositories, so it was not random with
-respect to the quantity being measured. Retry with backoff and save state after
-every response.
-
-Both invalid outputs are kept in `data/` rather than deleted.
-
-## What this does not cover
-
-License and maintenance metadata only. Not malware, not typosquatting outcomes,
-not prompt injection, not tool poisoning, not runtime capability scope, which is
-where most published MCP security work sits. The nulls here say nothing about
-any of those.
-
-## Licence
-
-Code under `code/` is Apache-2.0, see [`LICENSE`](LICENSE). Data under `data/`
-is CC-BY-4.0, see [`LICENSE-DATA.md`](LICENSE-DATA.md). No third-party package
-source is redistributed.
-
-## Citing
-
-See [`CITATION.cff`](CITATION.cff).
-
-    Poddar, P. (2026). Measuring the MCP Supply Chain: No Elevated Risk on the
-    Dimensions a Registry Exposes, and a Population That Is Not the Population.
-    Version 1.0.1. Zenodo.
-    https://doi.org/10.5281/zenodo.22641813
+- `paper/` the current paper and its superseded versions
+- `data/` every result file, including both invalidated runs
+- `code/` the measurement scripts and the release assembler
+- `MANIFEST.md` SHA-256 of every released file

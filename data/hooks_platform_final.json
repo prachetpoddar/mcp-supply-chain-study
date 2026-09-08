@@ -1,0 +1,91 @@
+{
+ "trees": 250,
+ "hook_trees": 39,
+ "hook_instances": 124,
+ "hook_distinct": 52,
+ "hook_max": 15,
+ "top": [
+  [
+   "protobufjs",
+   14
+  ],
+  [
+   "better-sqlite3",
+   14
+  ],
+  [
+   "sharp",
+   11
+  ],
+  [
+   "onnxruntime-node",
+   7
+  ],
+  [
+   "fsevents",
+   4
+  ],
+  [
+   "tldjs",
+   3
+  ],
+  [
+   "tree-sitter-typescript",
+   3
+  ],
+  [
+   "tree-sitter-javascript",
+   3
+  ],
+  [
+   "tree-sitter-rust",
+   3
+  ],
+  [
+   "@google/genai",
+   3
+  ],
+  [
+   "tree-sitter-go",
+   2
+  ],
+  [
+   "tree-sitter",
+   2
+  ],
+  [
+   "tree-sitter-python",
+   2
+  ],
+  [
+   "tree-sitter-java",
+   2
+  ],
+  [
+   "tree-sitter-css",
+   2
+  ],
+  [
+   "agentdb",
+   2
+  ],
+  [
+   "hnswlib-node",
+   2
+  ],
+  [
+   "argon2",
+   2
+  ],
+  [
+   "@innovatorssoft/baileys",
+   1
+  ],
+  [
+   "@apps-in-toss/ax",
+   1
+  ]
+ ],
+ "platform_constrained_total": 759,
+ "platform_trees": 35
+}

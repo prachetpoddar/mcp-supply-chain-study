@@ -7,10 +7,12 @@ International licence (CC-BY-4.0).
 
 ## Attribution
 
-    Poddar, P. (2026). Measuring the MCP Supply Chain: No Elevated Risk on the
-    Dimensions a Registry Exposes, and a Population That Is Not the Population.
-    Dataset. CC-BY-4.0.
-    https://doi.org/10.5281/zenodo.22641813
+    Poddar, P. (2026). Keyword Frames Are Cluster Samples: How a Third of an
+    npm Ecosystem Stayed Invisible. Version 3.3. Dataset. CC-BY-4.0.
+    https://doi.org/10.5281/zenodo.22664719
+
+The earlier DOI 10.5281/zenodo.22641813 archives version 1.0.0 only and should
+not be used to cite this dataset.
 
 ## What the data is, and what it is not
 

@@ -1,0 +1,32 @@
+{
+ "note": "raw arm rates on the corrected resolver; the paper's MCP row 3 is additionally coverage-corrected across strata, so the MCP figure here is the raw sample rate and not directly the published 18.1%",
+ "arms": {
+  "mcp": {
+   "n": 250,
+   "median_tree": 97.0,
+   "deprecated_in_tree_pct": 16.8,
+   "hook_in_tree_pct": 15.6,
+   "paper_deprecated_pct": 18.1,
+   "paper_hook_pct": 14.8,
+   "paper_median_tree": 96
+  },
+  "eslint-plugin": {
+   "n": 120,
+   "median_tree": 79.0,
+   "deprecated_in_tree_pct": 28.3,
+   "hook_in_tree_pct": 3.3,
+   "paper_deprecated_pct": 20.4,
+   "paper_hook_pct": 2.5,
+   "paper_median_tree": 8
+  },
+  "langchain": {
+   "n": 120,
+   "median_tree": 33.0,
+   "deprecated_in_tree_pct": 28.3,
+   "hook_in_tree_pct": 27.5,
+   "paper_deprecated_pct": 25.6,
+   "paper_hook_pct": 14.2,
+   "paper_median_tree": 6
+  }
+ }
+}

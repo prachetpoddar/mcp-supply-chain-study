@@ -1,0 +1,60 @@
+{
+ "nested": {
+  "trees": 250,
+  "trees_with_dupes": 169,
+  "dupe_packages_total": 517,
+  "trees_with_hidden_vulnerable_copy": 2,
+  "packages": [
+   [
+    "protobufjs",
+    1
+   ],
+   [
+    "@modelcontextprotocol/sdk",
+    1
+   ]
+  ]
+ },
+ "depsdev_vs_verified": {
+  "n": 249,
+  "differ": 13,
+  "missed_servers": 11,
+  "missed_findings": 29,
+  "missed_by_severity": {
+   "moderate": 25,
+   "high": 3,
+   "low": 1
+  },
+  "phantom_servers": 2,
+  "phantom_findings": 14,
+  "phantom_by_severity": {
+   "moderate": 5,
+   "high": 8,
+   "critical": 1
+  },
+  "total_depsdev": 149,
+  "total_live": 164,
+  "top_missed": [
+   [
+    "qs",
+    9
+   ],
+   [
+    "file-type",
+    1
+   ],
+   [
+    "uuid",
+    1
+   ],
+   [
+    "music-metadata",
+    1
+   ],
+   [
+    "nodemailer",
+    1
+   ]
+  ]
+ }
+}

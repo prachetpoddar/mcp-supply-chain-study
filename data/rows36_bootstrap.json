@@ -1,0 +1,47 @@
+{
+ "deprecated in tree": {
+  "mcp": {
+   "rate": 16.8,
+   "bootstrap_se": 2.92,
+   "clusters": 200,
+   "n": 250
+  },
+  "eslint-plugin": {
+   "rate": 27.5,
+   "bootstrap_se": 4.86,
+   "clusters": 110,
+   "n": 120
+  },
+  "langchain": {
+   "rate": 33.3,
+   "bootstrap_se": 4.4,
+   "clusters": 118,
+   "n": 120
+  },
+  "z_vs_eslint_clustered": -1.89,
+  "z_vs_langchain_clustered": -3.13
+ },
+ "install hook in tree": {
+  "mcp": {
+   "rate": 15.6,
+   "bootstrap_se": 2.97,
+   "clusters": 200,
+   "n": 250
+  },
+  "eslint-plugin": {
+   "rate": 3.3,
+   "bootstrap_se": 1.63,
+   "clusters": 110,
+   "n": 120
+  },
+  "langchain": {
+   "rate": 27.5,
+   "bootstrap_se": 4.18,
+   "clusters": 118,
+   "n": 120
+  },
+  "z_vs_eslint_clustered": 3.62,
+  "z_vs_langchain_clustered": -2.32
+ },
+ "note": "cluster bootstrap over publishers, 4000 resamples; 'GitHub Actions' treated as no publisher and those packages as singleton clusters; resolver validated at 99.5% against 85 real npm installs"
+}
