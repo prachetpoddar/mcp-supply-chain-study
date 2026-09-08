@@ -1,0 +1,5899 @@
+{
+ "mcp-server": {
+  "response_keys": [
+   "keyword_url",
+   "name",
+   "packages",
+   "packages_count",
+   "related_keywords"
+  ],
+  "packages_count_field": null,
+  "rows": [
+   {
+    "name": "org.noear:solon-ai-repo-redis",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:24.214Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-config-snack3",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:25.180Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-jakarta-parent",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:26.065Z",
+    "latest": "3.8.0"
+   },
+   {
+    "name": "org.noear:solon.mvc",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:27.564Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:solon-ai-repo-tcvectordb",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:27.592Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-security-validation",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:27.591Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:kubernetes-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:27.981Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.security.vault",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:29.106Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:solon-cloud-eventplus",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:29.287Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:captcha-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:31.936Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-boot-jetty",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:32.973Z",
+    "latest": "3.10.7"
+   },
+   {
+    "name": "org.noear:solon.boot",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:38.344Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:mybatis-tkmapper-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:39.412Z",
+    "latest": "3.10.7"
+   },
+   {
+    "name": "org.noear:nami-coder-fastjson",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:39.861Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:qiniu-kodo-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:41.090Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:hibernate-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:42.360Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-test",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:42.945Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-config-banner",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:44.577Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.net",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:44.578Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:easypoi-wps-solon",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:44.722Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:mybatis-sqlhelper-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:46.220Z",
+    "latest": "3.10.7"
+   },
+   {
+    "name": "org.noear:solon-scheduling-quartz",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:46.730Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.cloud.metrics",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:49.243Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:solon-ai-repo-weaviate",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:47.210Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-ai-repo-chroma",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:47.211Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:fastmybatis-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:47.290Z",
+    "latest": "3.10.7"
+   },
+   {
+    "name": "org.noear:solon-serialization-jackson",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:47.947Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.boot.undertow.add.jsp",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:48.601Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:xxl-job-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:49.666Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-server-undertow-add-jsp",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:50.361Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:resilience4j-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:51.516Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-ai-harness",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:52.004Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-server-undertow",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:52.866Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:nami-coder-fury",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:53.496Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-web-sdl",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:55.508Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-lib",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:57.299Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.logging",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:32:57.415Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:solon-server-jetty",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:01.823Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:sentinel-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:02.752Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:mybatis-plus-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:03.780Z",
+    "latest": "3.10.7"
+   },
+   {
+    "name": "org.noear:solon-serialization-javabin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:04.222Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-data-shardingds",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:04.438Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-boot-smarthttp",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:05.231Z",
+    "latest": "3.10.7"
+   },
+   {
+    "name": "promptspeak-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "ai-governance",
+     "agent-governance",
+     "ai-safety",
+     "pre-execution-governance",
+     "human-in-the-loop",
+     "drift-detection",
+     "model-context-protocol",
+     "ai-agent-framework",
+     "circuit-breaker",
+     "tool-validation",
+     "claude",
+     "anthropic"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:34:53.818Z",
+    "latest": "0.3.0"
+   },
+   {
+    "name": "org.noear:solon-server-tomcat-add-websocket",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:06.356Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "@iflow-mcp/systemprompt-mcp-notion",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "systemprompt",
+     "mcp",
+     "model-context-protocol",
+     "notion"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-27T17:34:55.276Z",
+    "latest": "1.0.9"
+   },
+   {
+    "name": "org.noear:aws-s3-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:08.266Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "@pictify/mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "pictify",
+     "image-generation",
+     "screenshot",
+     "og-image",
+     "social-card",
+     "gif",
+     "pdf",
+     "html-to-image",
+     "html-to-pdf",
+     "template",
+     "batch-render",
+     "ab-testing",
+     "ai",
+     "claude",
+     "cursor",
+     "windsurf"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:34:56.877Z",
+    "latest": "1.5.1"
+   },
+   {
+    "name": "apple-dev-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "apple",
+     "design",
+     "hig",
+     "human-interface-guidelines",
+     "technical-documentation",
+     "api-documentation",
+     "content-fusion",
+     "swiftui",
+     "uikit",
+     "appkit",
+     "ai",
+     "developer-tools",
+     "unified-search",
+     "implementation-guide"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-09T22:49:00.920Z",
+    "latest": "2.1.9"
+   },
+   {
+    "name": "org.noear:solon-serialization-hessian",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:08.364Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:lettuce-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:08.406Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.boot.smarthttp",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:08.712Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:solon-view-beetl",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:12.987Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "@mseep/workers-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mseep",
+     "mcp-server"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:34:57.830Z",
+    "latest": "0.0.13"
+   },
+   {
+    "name": "org.noear:hibernate-jakarta-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:16.169Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-ai-search-baidu",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:12.448Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:rabbitmq-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:12.801Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-ai-acp",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:13.648Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-web-webdav",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:13.913Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-swagger2-knife4j",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:13.950Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:file-s3-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:17.495Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-admin-client",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:18.219Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-view-enjoy",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:21.511Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-sessionstate-jedis",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:21.637Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:local-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:25.372Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-server-socketd",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:25.935Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-configuration-processor",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:26.858Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "@socialneuron/mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "ai",
+     "social-media",
+     "social-media-management",
+     "content-creation",
+     "content-scheduling",
+     "marketing",
+     "automation",
+     "analytics",
+     "youtube",
+     "tiktok",
+     "instagram",
+     "linkedin",
+     "claude",
+     "anthropic",
+     "content-marketing",
+     "llm-tools",
+     "agent-tools"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T10:33:28.010Z",
+    "latest": "2.0.2"
+   },
+   {
+    "name": "org.noear:solon-mvc",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:28.884Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-serialization-fastjson",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:52.796Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-server-tomcat-add-websocket-jakarta",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:29.874Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-expression-to-dashvector",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:31.296Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.web.servlet",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:31.745Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:sms4j-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:32.181Z",
+    "latest": "3.10.7"
+   },
+   {
+    "name": "org.noear:solon-serialization-snack4",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:32.206Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:opentelemetry-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:33.171Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:seata-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:35.748Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.view.thymeleaf",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:35.852Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:solon-flow-workflow",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:40.549Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-ai-load-excel",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:40.010Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:snowflake-id-solon-cloud-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:40.260Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:nami-coder-protostuff",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:44.052Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:nami.channel.http.hutool",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:45.865Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:nami-coder-snack4",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:46.126Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.web.rx",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:46.113Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:solon-serialization-properties",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:47.878Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-web-rx",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:50.598Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-test-junit4",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:53.055Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-web-stop",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:53.623Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-ai-load-word",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:58.481Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-ai",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:33:59.203Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-scheduling-simple",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:34:02.752Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solonx-licence",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:34:13.252Z",
+    "latest": "1.3.1"
+   },
+   {
+    "name": "org.noear:hasor-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:34:19.898Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon-web-webservices-jakarta",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:34:20.475Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:quartz-solon-plugin",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:34:25.808Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.logging.log4j2",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:34:26.010Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "org.noear:solon-ai-repo-milvus",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:34:27.264Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "org.noear:solon.cloud.gateway",
+    "ecosystem": "maven",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:34:27.450Z",
+    "latest": "3.6.8"
+   },
+   {
+    "name": "difflens-cli",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "claude",
+     "visual-diff",
+     "screenshot",
+     "ui-testing",
+     "visual-regression",
+     "playwright"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:35:29.582Z",
+    "latest": "1.1.2"
+   }
+  ]
+ },
+ "model-context-protocol": {
+  "response_keys": [
+   "keyword_url",
+   "name",
+   "packages",
+   "packages_count",
+   "related_keywords"
+  ],
+  "packages_count_field": null,
+  "rows": [
+   {
+    "name": "autoheal-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "autoheal",
+     "ai",
+     "error-monitoring",
+     "claude",
+     "production-errors",
+     "bug-fix",
+     "claude-code"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T07:36:38.606Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "mcp-omni-tool",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "ai-agent",
+     "api-discovery",
+     "agentclear",
+     "llm",
+     "claude",
+     "openai",
+     "cursor",
+     "ai-tools",
+     "universal-api",
+     "api-marketplace",
+     "omni-tool"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-30T05:45:36.381Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "@pdfdancer/pdfdancer-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "pdfdancer",
+     "pdf",
+     "documentation",
+     "ai",
+     "coding-agent",
+     "sdk",
+     "pdf-manipulation",
+     "pdf-editing"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-09T22:45:14.324Z",
+    "latest": "0.1.2"
+   },
+   {
+    "name": "hotskills",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "claude-code",
+     "skills",
+     "security",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T18:36:59.924Z",
+    "latest": "0.1.4"
+   },
+   {
+    "name": "promptspeak-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "ai-governance",
+     "agent-governance",
+     "ai-safety",
+     "pre-execution-governance",
+     "human-in-the-loop",
+     "drift-detection",
+     "model-context-protocol",
+     "ai-agent-framework",
+     "circuit-breaker",
+     "tool-validation",
+     "claude",
+     "anthropic"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:34:53.818Z",
+    "latest": "0.3.0"
+   },
+   {
+    "name": "@iflow-mcp/systemprompt-mcp-notion",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "systemprompt",
+     "mcp",
+     "model-context-protocol",
+     "notion"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:34:55.276Z",
+    "latest": "1.0.9"
+   },
+   {
+    "name": "@pictify/mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "pictify",
+     "image-generation",
+     "screenshot",
+     "og-image",
+     "social-card",
+     "gif",
+     "pdf",
+     "html-to-image",
+     "html-to-pdf",
+     "template",
+     "batch-render",
+     "ab-testing",
+     "ai",
+     "claude",
+     "cursor",
+     "windsurf"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:34:56.877Z",
+    "latest": "1.5.1"
+   },
+   {
+    "name": "@findyourai/mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "findyourai",
+     "mcp",
+     "model-context-protocol",
+     "claude",
+     "cursor",
+     "ai-agents"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-04T08:09:33.243Z",
+    "latest": "0.1.1"
+   },
+   {
+    "name": "glimx",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "ai",
+     "coding-assistant",
+     "terminal",
+     "cli",
+     "chatgpt",
+     "claude",
+     "llm",
+     "mcp",
+     "model-context-protocol",
+     "free-ai",
+     "groq",
+     "openrouter",
+     "qwen",
+     "deepseek",
+     "code-generation",
+     "developer-tools",
+     "productivity",
+     "tui",
+     "bun",
+     "typescript"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T06:28:54.992Z",
+    "latest": "1.3.0"
+   },
+   {
+    "name": "@socialneuron/mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "ai",
+     "social-media",
+     "social-media-management",
+     "content-creation",
+     "content-scheduling",
+     "marketing",
+     "automation",
+     "analytics",
+     "youtube",
+     "tiktok",
+     "instagram",
+     "linkedin",
+     "claude",
+     "anthropic",
+     "content-marketing",
+     "llm-tools",
+     "agent-tools"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T10:33:28.010Z",
+    "latest": "2.0.2"
+   },
+   {
+    "name": "arch-aware-review",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "architecture",
+     "code-review",
+     "pr-review",
+     "typescript",
+     "dependency-graph",
+     "tree-sitter",
+     "claude",
+     "anthropic"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:35:13.504Z",
+    "latest": "1.0.8"
+   },
+   {
+    "name": "awp-protocol-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "awp",
+     "agentwork-protocol",
+     "base-sepolia",
+     "ai-agent",
+     "web3",
+     "smart-contract",
+     "viem",
+     "claude",
+     "anthropic"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:35:15.142Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "mcp-server-context",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "geolocation",
+     "ip",
+     "claude"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-07-25T23:03:05.172Z",
+    "latest": "1.0.4"
+   },
+   {
+    "name": "turul-rpc-core",
+    "ecosystem": "cargo",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-10T16:15:14.711Z",
+    "latest": "0.2.3"
+   },
+   {
+    "name": "thedailyworkflow-mcp",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "ai",
+     "anthropic",
+     "claude",
+     "cursor",
+     "directory",
+     "discovery",
+     "mcp",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-28T04:52:51.770Z",
+    "latest": "0.3.1"
+   },
+   {
+    "name": "@artymaximus/zephyr-scale-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "zephyr",
+     "zephyr-scale",
+     "test-management",
+     "test-cases",
+     "atlassian",
+     "jira",
+     "bdd",
+     "testing",
+     "qa",
+     "automation"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T07:30:39.944Z",
+    "latest": "0.2.5"
+   },
+   {
+    "name": "@iflow-mcp/bsmi021-congress_gov_server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T07:28:36.643Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "@gomcp/analytics",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "analytics",
+     "observability",
+     "opentelemetry"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-03-24T16:18:27.307Z",
+    "latest": "0.2.0"
+   },
+   {
+    "name": "easy-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "ai-native",
+     "ai-first",
+     "ai-era",
+     "mcp",
+     "model-context-protocol",
+     "llm",
+     "openai",
+     "claude",
+     "anthropic",
+     "agent",
+     "ai-agent",
+     "autonomous",
+     "express",
+     "nodejs",
+     "api",
+     "framework",
+     "zero-config",
+     "file-based-routing",
+     "hot-reload",
+     "dynamic-api",
+     "chatgpt-plugin",
+     "ai-tools",
+     "intelligent-api",
+     "ai-integration"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:35:28.935Z",
+    "latest": "1.2.0"
+   },
+   {
+    "name": "lotw-mcp",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "amateur-radio",
+     "arrl",
+     "dxcc",
+     "ham-radio",
+     "logbook-of-the-world",
+     "lotw",
+     "mcp",
+     "model-context-protocol",
+     "qsl"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-28T02:17:26.622Z",
+    "latest": "0.3.3"
+   },
+   {
+    "name": "malt-mcp",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "ai",
+     "anthropic",
+     "automation",
+     "claude",
+     "freelance",
+     "llm",
+     "malt",
+     "mcp",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-28T02:16:57.565Z",
+    "latest": "0.4.2"
+   },
+   {
+    "name": "@365businessdev/albuild-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "business-central",
+     "dynamics-365",
+     "al",
+     "albuild",
+     "bccontainerhelper"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-03T21:57:00.103Z",
+    "latest": "0.4.27696"
+   },
+   {
+    "name": "@crosscom/toolkit",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "claude-code",
+     "codex",
+     "gemini-cli",
+     "cursor",
+     "ai-agents",
+     "agent-communication",
+     "multi-agent"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T10:34:52.404Z",
+    "latest": "0.4.10"
+   },
+   {
+    "name": "@cmsmcp/woocommerce",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "woocommerce",
+     "woocommerce-api",
+     "ecommerce",
+     "wordpress",
+     "cms",
+     "model-context-protocol",
+     "ai",
+     "claude",
+     "cursor",
+     "mcp-server",
+     "online-store",
+     "products",
+     "orders",
+     "shopify-alternative"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T07:34:20.660Z",
+    "latest": "0.3.2"
+   },
+   {
+    "name": "@cookie223/wger-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "wger",
+     "fitness",
+     "workout",
+     "exercise",
+     "ai",
+     "claude",
+     "health",
+     "training",
+     "gym"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T07:26:23.630Z",
+    "latest": "1.1.3"
+   },
+   {
+    "name": "@mimdb/mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mimdb",
+     "mcp",
+     "model-context-protocol",
+     "ai",
+     "baas"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-05T01:07:11.529Z",
+    "latest": "0.1.6"
+   },
+   {
+    "name": "@shotstack/shotstack-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "shotstack",
+     "video",
+     "ai",
+     "claude"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-11T07:14:41.505Z",
+    "latest": "1.1.0"
+   },
+   {
+    "name": "shadcndashboard-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "tailwind",
+     "ui-components",
+     "shadcndashboard",
+     "shadcn",
+     "dashboard",
+     "ai-tools"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-11T07:15:02.923Z",
+    "latest": "1.0.1"
+   },
+   {
+    "name": "supabase-self-hosted-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "supabase",
+     "postgres",
+     "postgresql",
+     "database",
+     "claude",
+     "ai",
+     "llm",
+     "self-hosted",
+     "coolify",
+     "docker"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-24T12:35:12.362Z",
+    "latest": "2.0.0"
+   },
+   {
+    "name": "@coretext-ai/public-airtable-mcp-a1b2c3d4-e5f6-4789-a012-123456789012",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "ai",
+     "server",
+     "airtable",
+     "claude",
+     "ai-tools",
+     "api-integration"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-24T12:29:34.109Z",
+    "latest": "1.0.1"
+   },
+   {
+    "name": "bulkhead-runtime",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "ai-agent",
+     "ai-agents",
+     "agent",
+     "agent-runtime",
+     "autonomous-agent",
+     "multi-agent",
+     "ai",
+     "llm",
+     "ai-infrastructure",
+     "ai-security",
+     "agent-security",
+     "mcp",
+     "model-context-protocol",
+     "tool-use",
+     "sandbox",
+     "secure-sandbox",
+     "sandboxing",
+     "runtime",
+     "isolation",
+     "process-isolation",
+     "tenant-isolation",
+     "multi-tenant",
+     "multitenant",
+     "security",
+     "credentials",
+     "encrypted-credentials",
+     "containerless"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-05-10T21:17:54.964Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "mcp-databnf",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "bnf",
+     "data-bnf",
+     "sparql",
+     "linked-data",
+     "bibliography",
+     "authority-records"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T17:11:55.093Z",
+    "latest": "2.1.0"
+   },
+   {
+    "name": "safari-devtools-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "safari",
+     "safari-devtools",
+     "devtools",
+     "debugging",
+     "browser-automation",
+     "model-context-protocol",
+     "ai-agents",
+     "ai-coding",
+     "macos",
+     "webkit",
+     "webdriver",
+     "network-interception",
+     "dom-inspection",
+     "claude",
+     "cursor",
+     "copilot"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T19:41:36.726Z",
+    "latest": "1.8.1"
+   },
+   {
+    "name": "@ar-agents/anses",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "anses",
+     "mi-anses",
+     "asignaciones-familiares",
+     "jubilacion",
+     "ar-agents",
+     "argentina",
+     "ai-sdk",
+     "vercel-ai",
+     "agent",
+     "social-security"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-27T17:36:20.355Z",
+    "latest": "0.2.3"
+   },
+   {
+    "name": "@waldzellai/structured-argumentation",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "thinking",
+     "model-enhancement"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:36:20.836Z",
+    "latest": "0.1.3"
+   },
+   {
+    "name": "couchbase-mcp-server",
+    "ecosystem": "pypi",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-04T08:11:54.142Z",
+    "latest": "1.0.1"
+   },
+   {
+    "name": "aptean-azure-devops-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "azure-devops",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-09-14T16:36:02.059Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "@iflow-mcp/warpdev-mcp-hub-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T11:15:24.941Z",
+    "latest": "1.3.1"
+   },
+   {
+    "name": "spacetrack-mcp",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "astronomy",
+     "mcp",
+     "model-context-protocol",
+     "orbital-mechanics",
+     "satellite",
+     "sgp4",
+     "space-track",
+     "tle"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T16:15:22.241Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "easy-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "ai",
+     "typescript",
+     "server"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:36:41.812Z",
+    "latest": "0.0.0-development"
+   },
+   {
+    "name": "@datalayer-sh/mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "mcp-server",
+     "b2b",
+     "enrichment",
+     "lead-enrichment",
+     "data-enrichment",
+     "company-data",
+     "contact-data",
+     "people-search",
+     "company-search",
+     "email-finder",
+     "work-email",
+     "phone-number",
+     "linkedin",
+     "sales-intelligence",
+     "lead-generation",
+     "prospecting",
+     "technographics",
+     "intent-signals",
+     "buying-intent",
+     "ai-agent",
+     "claude",
+     "cursor",
+     "windsurf",
+     "crm-enrichment",
+     "sales-automation",
+     "gtm"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:36:42.688Z",
+    "latest": "0.1.3"
+   },
+   {
+    "name": "@iflow-mcp/tomnagengast-mcp-server-salesforce",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "salesforce",
+     "crm",
+     "model-context-protocol",
+     "ai",
+     "claude",
+     "api",
+     "integration"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:36:48.942Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "dos-kernel",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "agents",
+     "ai-agents",
+     "llm",
+     "multi-agent",
+     "agent-orchestration",
+     "orchestration",
+     "dispatch",
+     "scheduler",
+     "oracle",
+     "leases",
+     "verification",
+     "trust",
+     "mcp",
+     "claude",
+     "claude-code",
+     "mcp-server",
+     "model-context-protocol",
+     "agent-verification",
+     "autonomous-agents",
+     "agent-monitoring"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-18T02:22:58.615Z",
+    "latest": "0.30.0"
+   },
+   {
+    "name": "@oraclaw/mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "ai-agents",
+     "decision-intelligence",
+     "bandits",
+     "optimization",
+     "forecasting",
+     "anomaly-detection",
+     "graph-analytics",
+     "oraclaw"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-27T17:36:55.882Z",
+    "latest": "1.5.1"
+   },
+   {
+    "name": "@tbrgeek/spotify-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "spotify",
+     "mcp",
+     "model-context-protocol",
+     "ai",
+     "claude",
+     "music"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-07T02:57:33.667Z",
+    "latest": "1.1.0"
+   },
+   {
+    "name": "@mgcrea/mcp-keycloak",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "admin",
+     "iam",
+     "keycloak",
+     "mcp",
+     "model-context-protocol",
+     "oidc"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T14:13:12.340Z",
+    "latest": "0.2.1"
+   },
+   {
+    "name": "@buildrlab/mcp-registry-sdk",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "registry",
+     "sdk"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-01-26T09:55:06.222Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "@kunihiros/claude-code-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "claude",
+     "claude-code",
+     "mcp",
+     "anthropic",
+     "ai",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:37:14.183Z",
+    "latest": "0.1.9"
+   },
+   {
+    "name": "aiya-todo-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "todo",
+     "task-management",
+     "model-context-protocol",
+     "server",
+     "productivity"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T07:32:32.907Z",
+    "latest": "0.4.0"
+   },
+   {
+    "name": "@iflow-mcp/ddg-search",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "duckduckgo",
+     "felo",
+     "search",
+     "web-search",
+     "ai-search",
+     "claude",
+     "ai",
+     "llm"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-03T13:29:37.671Z",
+    "latest": "1.1.2"
+   },
+   {
+    "name": "fastmcp-jira-server",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "fastmcp",
+     "jira",
+     "jira-api",
+     "jql",
+     "mcp",
+     "model-context-protocol",
+     "self-hosted",
+     "workflow"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T08:26:07.185Z",
+    "latest": "0.6.2"
+   },
+   {
+    "name": "jobseek-employer-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "claude",
+     "ai",
+     "recruiting",
+     "hiring",
+     "ats",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T20:01:10.654Z",
+    "latest": "0.1.1"
+   },
+   {
+    "name": "perspection",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "analytics",
+     "tracking",
+     "attribution",
+     "ecommerce",
+     "mmm",
+     "marketing-mix-modeling",
+     "ad-platforms",
+     "data-pipelines",
+     "kedro",
+     "meta-capi",
+     "google-ads",
+     "shopify",
+     "mcp",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T16:15:25.252Z",
+    "latest": "0.0.1"
+   },
+   {
+    "name": "@elchika-inc/maven-package-readme-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "maven",
+     "java",
+     "readme",
+     "package",
+     "documentation",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-06-21T15:21:26.882Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "@workover/mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "workover",
+     "mcp",
+     "model-context-protocol",
+     "claude",
+     "documents"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T10:38:00.061Z",
+    "latest": "0.5.1"
+   },
+   {
+    "name": "@haneeshpld/csp-entitlements-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "watson-orchestrate",
+     "csp",
+     "entitlements"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T11:15:30.105Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "sketchfab-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "sketchfab",
+     "3d",
+     "models",
+     "3d-models",
+     "3d-assets",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:37:57.794Z",
+    "latest": "1.0.10"
+   },
+   {
+    "name": "github.com/krutsko/istio-mcp-server",
+    "ecosystem": "go",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-27T17:38:01.052Z",
+    "latest": "v0.0.32"
+   },
+   {
+    "name": "@seekdaseek/agentfeed-algo",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "x402",
+     "algorand",
+     "usdc",
+     "mcp",
+     "agent",
+     "micropayments",
+     "market-data",
+     "liquidations",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-05T15:51:47.218Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "x402-trust-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "x402",
+     "trust",
+     "reputation",
+     "agent",
+     "ai-agent",
+     "base",
+     "usdc",
+     "crypto",
+     "onchain"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T10:38:20.908Z",
+    "latest": "1.11.2"
+   },
+   {
+    "name": "mcp-sight",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "vision",
+     "image-description",
+     "model-context-protocol",
+     "claude-code"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-24T13:31:11.404Z",
+    "latest": "1.0.4"
+   },
+   {
+    "name": "posturecheck-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "dmarc",
+     "spf",
+     "dkim",
+     "ssl",
+     "tls",
+     "email-security",
+     "domain-security",
+     "security-headers",
+     "claude",
+     "ai-agent"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-05T15:51:37.098Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "@tailscale-mcp/tailscale-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "tailscale",
+     "mcp",
+     "model-context-protocol",
+     "agent",
+     "tailnet"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T10:38:41.495Z",
+    "latest": "1.3.0"
+   },
+   {
+    "name": "@miraigent/free-ai-ops-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "ai-operations",
+     "human-review",
+     "support-automation",
+     "customer-support",
+     "prompt-risk",
+     "faq-review",
+     "ai-safety",
+     "crm",
+     "faq",
+     "ai-agent",
+     "workflow-automation",
+     "review-gate",
+     "human-in-the-loop",
+     "developer-tools",
+     "claude-desktop",
+     "cursor-mcp",
+     "mcp-tools",
+     "ai-agent-tools",
+     "npx",
+     "json-rpc",
+     "mcp-json-rpc"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-20T05:58:00.954Z",
+    "latest": "0.1.72"
+   },
+   {
+    "name": "@opencodehub/cli",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "opencodehub",
+     "code-intelligence",
+     "mcp",
+     "model-context-protocol",
+     "ai",
+     "code-graph",
+     "static-analysis",
+     "cli",
+     "codehub",
+     "developer-tools",
+     "code-analysis"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:38:29.048Z",
+    "latest": "0.10.8"
+   },
+   {
+    "name": "smbcloud-model",
+    "ecosystem": "cargo",
+    "keywords_array": [
+     "cli",
+     "cloud",
+     "web3",
+     "web2",
+     "smbcloud"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-25T14:14:48.824Z",
+    "latest": "0.5.2"
+   },
+   {
+    "name": "@gizmo3d/mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gizmo",
+     "mcp",
+     "model-context-protocol",
+     "3d",
+     "automation",
+     "agents"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:38:38.181Z",
+    "latest": "0.3.4"
+   },
+   {
+    "name": "pmwiki-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "pmwiki",
+     "wiki",
+     "claude",
+     "ai",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-05T17:03:56.621Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "@thetanuts-finance/mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "thetanuts",
+     "mcp",
+     "model-context-protocol",
+     "options",
+     "defi",
+     "ethereum",
+     "base",
+     "sdk",
+     "claude",
+     "anthropic",
+     "llm"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-26T19:03:26.282Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "fms-odata-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "filemaker",
+     "filemaker-server",
+     "odata",
+     "odata-4",
+     "rest-api",
+     "ai",
+     "claude",
+     "chatgpt",
+     "windsurf",
+     "cursor",
+     "cline",
+     "llm"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:38:38.638Z",
+    "latest": "0.1.2"
+   },
+   {
+    "name": "@kozou/introspect",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-25T05:07:38.206Z",
+    "latest": "1.19.0"
+   },
+   {
+    "name": "s3-mcp-server-pks",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "aws",
+     "s3",
+     "server",
+     "model-context-protocol",
+     "claude",
+     "credentials",
+     "aws-access-key",
+     "storage",
+     "bucket"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T11:15:33.975Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "hesi-q",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "cli",
+     "terminal",
+     "browser-terminal",
+     "web-terminal",
+     "xterm",
+     "pty",
+     "node-pty",
+     "xterm.js",
+     "devtools",
+     "ai-agent",
+     "opencode",
+     "mcp",
+     "model-context-protocol",
+     "devops"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-25T07:18:45.883Z",
+    "latest": "1.1.4"
+   },
+   {
+    "name": "obsidian-mcp-ultra",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "obsidian",
+     "markdown",
+     "knowledge-graph",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-09T22:46:05.494Z",
+    "latest": "2.0.0"
+   },
+   {
+    "name": "es-eli-mcp",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "boe",
+     "eli",
+     "law",
+     "legaltech",
+     "mcp",
+     "spain"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-17T06:38:15.965Z",
+    "latest": "0.4.2"
+   },
+   {
+    "name": "@stianselland/itx-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "itx",
+     "mcp",
+     "model-context-protocol",
+     "claude",
+     "ticketing",
+     "crm"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T08:35:57.506Z",
+    "latest": "0.2.0"
+   },
+   {
+    "name": "@ebowwa/lmdb-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "lmdb",
+     "database",
+     "key-value",
+     "typescript"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-03-13T01:18:22.481Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "@iflow-mcp/win8428-smartlead-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "smartlead",
+     "smartlead-api",
+     "smartlead-mcp",
+     "cold-email",
+     "email-marketing",
+     "campaign-management",
+     "lead-generation",
+     "email-automation",
+     "outreach",
+     "claude",
+     "cursor",
+     "windsurf",
+     "continue",
+     "ai-tools",
+     "typescript",
+     "production-ready",
+     "zero-config",
+     "enterprise",
+     "api-client",
+     "nodejs",
+     "sdk",
+     "automation",
+     "sales-automation",
+     "email-sequences",
+     "analytics",
+     "webhooks",
+     "smart-delivery",
+     "deliverability",
+     "purple-gradient",
+     "react-ink",
+     "interactive-installer",
+     "leadmagic",
+     "bun-optimized"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:39:38.398Z",
+    "latest": "1.6.2"
+   },
+   {
+    "name": "@mcpfusion/oauth",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcpfusion",
+     "oauth",
+     "device-flow",
+     "rfc-8628",
+     "authentication",
+     "token-manager",
+     "ai",
+     "llm"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-27T17:41:20.202Z",
+    "latest": "5.0.8"
+   },
+   {
+    "name": "@0gzk/mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "zk",
+     "zero-knowledge",
+     "circom",
+     "groth16",
+     "0g",
+     "0gzk"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-04T08:17:04.553Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "@ar-agents/iva-retenciones",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "iva",
+     "retenciones",
+     "rg-2854",
+     "afip",
+     "arca",
+     "ar-agents",
+     "argentina",
+     "ai-sdk",
+     "vercel-ai",
+     "agent",
+     "tax"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-27T17:39:40.513Z",
+    "latest": "0.2.5"
+   },
+   {
+    "name": "istio-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "istio",
+     "kubernetes",
+     "service-mesh",
+     "envoy",
+     "proxy",
+     "virtual-service",
+     "destination-rule",
+     "gateway",
+     "authorization-policy",
+     "telemetry",
+     "ai-assistant",
+     "cli-tool",
+     "read-only",
+     "safe-operations",
+     "microservices",
+     "networking",
+     "security",
+     "observability"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:39:40.668Z",
+    "latest": "0.0.32"
+   },
+   {
+    "name": "mason-context",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "mcp-server",
+     "claude",
+     "claude-code",
+     "cursor",
+     "windsurf",
+     "context-engineering",
+     "code-analysis",
+     "concept-map",
+     "snapshot",
+     "confluence",
+     "ai"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T10:42:28.878Z",
+    "latest": "0.14.0"
+   },
+   {
+    "name": "@traits-dev/mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "traits-dev",
+     "mcp",
+     "model-context-protocol",
+     "voice-profile",
+     "llm",
+     "prompt-engineering"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T09:27:25.749Z",
+    "latest": "0.2.1"
+   },
+   {
+    "name": "@j0hanz/thinkseq-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "thinking",
+     "reasoning"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:40:16.167Z",
+    "latest": "2.2.0"
+   },
+   {
+    "name": "@ostico/bruno-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "bruno",
+     "bruno-mcp",
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "api-testing",
+     "api-client",
+     "bru",
+     "bru-files",
+     "opencollection",
+     "http-client",
+     "rest-client",
+     "test-automation",
+     "integration-testing",
+     "claude",
+     "claude-code",
+     "cursor",
+     "ai-agent",
+     "llm-tools",
+     "postman-alternative",
+     "authorization-testing",
+     "api-security-testing",
+     "bru-format"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-19T23:57:26.626Z",
+    "latest": "2.4.0"
+   },
+   {
+    "name": "6a-workflow-mcp-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "6a-workflow",
+     "project-management",
+     "ai-assistant",
+     "workflow",
+     "step-by-step"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-04-30T15:40:06.381Z",
+    "latest": "1.1.0"
+   },
+   {
+    "name": "github.com/grokify/google-mcp-server",
+    "ecosystem": "go",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:43:02.832Z",
+    "latest": "v0.3.0"
+   },
+   {
+    "name": "@iflow-mcp/cakerepository-1password-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "1password",
+     "password-manager",
+     "secrets",
+     "vault",
+     "service-account"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:40:26.438Z",
+    "latest": "2.4.1"
+   },
+   {
+    "name": "winremote-mcp",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "automation",
+     "desktop",
+     "mcp",
+     "remote",
+     "windows"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-28T05:00:04.507Z",
+    "latest": "0.4.23"
+   },
+   {
+    "name": "wems-mcp-server",
+    "ecosystem": "pypi",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "natural-disasters",
+     "earthquake",
+     "tsunami",
+     "volcano",
+     "solar-weather",
+     "monitoring",
+     "alerts",
+     "webhooks",
+     "usgs",
+     "noaa",
+     "ai",
+     "automation",
+     "emergency-management",
+     "real-time-data"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-28T04:59:33.837Z",
+    "latest": "1.13.6"
+   },
+   {
+    "name": "@markexport/mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "markdown",
+     "pdf",
+     "export",
+     "claude",
+     "cursor",
+     "ai-agent",
+     "model-context-protocol"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-25T07:21:40.725Z",
+    "latest": "0.2.2"
+   },
+   {
+    "name": "@sukep/engram",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "memory",
+     "claude",
+     "conversation-log",
+     "embedding",
+     "vector-search",
+     "fts5",
+     "sqlite",
+     "turso",
+     "zettelkasten",
+     "a-mem"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T20:01:23.521Z",
+    "latest": "0.7.0"
+   },
+   {
+    "name": "@qianjue/mcp-memory-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "memory",
+     "ai",
+     "server",
+     "vector-search",
+     "semantic-search",
+     "embedding",
+     "similarity",
+     "nlp",
+     "machine-learning",
+     "ollama",
+     "gemini",
+     "openai"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T18:45:22.287Z",
+    "latest": "1.2.0"
+   },
+   {
+    "name": "file-share-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "file-sharing",
+     "claude",
+     "cursor",
+     "ai"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T09:28:47.231Z",
+    "latest": "1.0.10"
+   },
+   {
+    "name": "@sokardys/mcp-poc",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "claude",
+     "anthropic",
+     "ai",
+     "calculator",
+     "datetime",
+     "greeting",
+     "server",
+     "typescript"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-11T07:15:37.121Z",
+    "latest": "0.1.5"
+   },
+   {
+    "name": "linkdbots-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "linkdbots",
+     "agents",
+     "benchmarks",
+     "playbooks"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-22T13:43:55.659Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "blackwellsystems.gcf",
+    "ecosystem": "nuget",
+    "keywords_array": [
+     "gcf",
+     "serialization",
+     "llm",
+     "tokens",
+     "json",
+     "compact"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T08:19:20.281Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "@propstreet/agenthub",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "orchestrator",
+     "multi-agent",
+     "coordination"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T09:29:37.092Z",
+    "latest": "1.1.1"
+   },
+   {
+    "name": "taiwan-flight-mcp",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "model-context-protocol",
+     "taiwan",
+     "flight",
+     "uniair",
+     "mandarin",
+     "claude",
+     "booking"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T11:15:14.946Z",
+    "latest": "0.1.0"
+   }
+  ]
+ },
+ "gatsby-plugin": {
+  "response_keys": [
+   "keyword_url",
+   "name",
+   "packages",
+   "packages_count",
+   "related_keywords"
+  ],
+  "packages_count_field": null,
+  "rows": [
+   {
+    "name": "gatsby-plugin-i18n",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "i18n"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-04T08:51:57.241Z",
+    "latest": "1.0.1"
+   },
+   {
+    "name": "@maiertech/gatsby-plugin-blog",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-06-29T20:39:15.986Z",
+    "latest": "0.2.1"
+   },
+   {
+    "name": "@maiertech/gatsby-theme-pages-core",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-06-29T20:38:54.006Z",
+    "latest": "0.8.0"
+   },
+   {
+    "name": "gatsby-plugin-graphql-loader",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "graphql",
+     "gql",
+     "loader"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T07:27:40.740Z",
+    "latest": "1.0.3"
+   },
+   {
+    "name": "gatsby-plugin-provide-react",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "plugin",
+     "gatsby-plugin",
+     "provide",
+     "dependency",
+     "module",
+     "global",
+     "import",
+     "webpack"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-19T23:36:09.394Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "@sukka/style9",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "styles",
+     "css",
+     "css-in-js",
+     "babel",
+     "babel-plugin",
+     "gatsby",
+     "gatsby-plugin",
+     "next",
+     "nextjs",
+     "nextjs-plugin",
+     "webpack",
+     "rollup",
+     "rollup-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T17:38:16.099Z",
+    "latest": "0.16.0-canary.0"
+   },
+   {
+    "name": "gatsby-remark-static-images",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "remark",
+     "images"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T07:32:13.273Z",
+    "latest": "1.2.1"
+   },
+   {
+    "name": "gatsby-plugin-svgr-loader",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "svg",
+     "react",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T08:37:18.568Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "gatsby-remark-emoji",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "emoji",
+     "markdown"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T09:31:12.505Z",
+    "latest": "0.0.3"
+   },
+   {
+    "name": "@jbseo/gatsby-plugin-react-i18next",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "react",
+     "gatsby",
+     "gatsbyjs",
+     "gatsby-plugin",
+     "gatsby-component",
+     "i18next",
+     "react-i18next",
+     "gatsby-i18n",
+     "i18n",
+     "i18next",
+     "localization",
+     "localisation",
+     "translation",
+     "translate"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T20:01:29.561Z",
+    "latest": "0.0.30"
+   },
+   {
+    "name": "gatsby-plugin-google-gapi",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T16:15:25.593Z",
+    "latest": "0.0.11"
+   },
+   {
+    "name": "gatsby-theme-insutanto-code-notes",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme",
+     "markdown",
+     "mdx"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-27T08:04:57.818Z",
+    "latest": "2.2.0"
+   },
+   {
+    "name": "gatsby-remark-wiki-link",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-03T08:33:30.955Z",
+    "latest": "0.4.1"
+   },
+   {
+    "name": "gatsby-source-elasticsearch",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "elasticsearch"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-03T10:35:45.912Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "gatsby-source-pollenvarsel",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "pollen"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-07-05T03:53:13.134Z",
+    "latest": "1.0.1"
+   },
+   {
+    "name": "gatsby-source-spreaker",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "spreaker",
+     "podcast"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-03T10:37:21.880Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "@sekmet/gatsby-source-wordpress",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-03T06:17:32.338Z",
+    "latest": "0.1.46"
+   },
+   {
+    "name": "@ptimson/gatsby-source-strapi",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T09:27:37.581Z",
+    "latest": "4.6.2"
+   },
+   {
+    "name": "gatsby-source-netlify",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "netlify",
+     "gatsby-plugin",
+     "gatsby-source"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T10:32:54.899Z",
+    "latest": "2.0.0"
+   },
+   {
+    "name": "@petulant-penguin/gatsby-plugin-yoast-sitemap",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T15:15:37.262Z",
+    "latest": "0.0.1"
+   },
+   {
+    "name": "gatsby-ts",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby-plugin",
+     "gatsby-config",
+     "gatsby",
+     "typescript"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-08T17:10:40.904Z",
+    "latest": "1.0.0-rc.1"
+   },
+   {
+    "name": "@vtex/gatsby-plugin-graphql",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-plugin-graphql",
+     "vtex"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T22:13:41.059Z",
+    "latest": "1.2.13"
+   },
+   {
+    "name": "gatsby-theme-i18n-prime",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "i18n",
+     "gatsby-theme",
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-20T06:39:45.457Z",
+    "latest": "3.0.2"
+   },
+   {
+    "name": "@zbyfe/zby-sentry-gatsby",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T11:07:06.589Z",
+    "latest": "0.0.2"
+   },
+   {
+    "name": "gatsby-source-ghost",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "ghost",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T00:37:15.146Z",
+    "latest": "5.0.3"
+   },
+   {
+    "name": "gatsby-transformer-xsjzip",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-plugin-transformer",
+     "xiaoshujiang",
+     "xsjzip",
+     "story-writer",
+     "markdown"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-26T20:45:24.141Z",
+    "latest": "1.2.15"
+   },
+   {
+    "name": "gatsby-intro",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme",
+     "gatsby-theme-intro",
+     "personal",
+     "react",
+     "website"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-26T02:43:55.235Z",
+    "latest": "1.0.14"
+   },
+   {
+    "name": "@tylerb/gatsby-source-contentstack",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-24T11:55:15.373Z",
+    "latest": "2.3.4"
+   },
+   {
+    "name": "gatsby-theme-timeline",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-theme",
+     "gatsby-plugin",
+     "react",
+     "blog",
+     "timeline"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-06T03:45:34.433Z",
+    "latest": "4.0.6"
+   },
+   {
+    "name": "gatsby-plugin-styled-jsx",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "styled-jsx"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T11:11:48.792Z",
+    "latest": "6.16.0"
+   },
+   {
+    "name": "gatsby-plugin-imgix-legacy",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "imgix",
+     "images"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-28T04:15:29.387Z",
+    "latest": "1.2.1"
+   },
+   {
+    "name": "gatsby-source-plugin-zoega",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin",
+     "old-icelandic",
+     "zoega"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T20:15:34.177Z",
+    "latest": "1.0.7"
+   },
+   {
+    "name": "gatsby-plugin-breakpoints-gatsby-5-patch",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-plugin-breakpoints",
+     "breakpoints",
+     "media query",
+     "media queries",
+     "hooks",
+     "responsive"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T20:15:34.988Z",
+    "latest": "1.3.9"
+   },
+   {
+    "name": "gatsby-theme-launch",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-theme",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-21T15:47:57.543Z",
+    "latest": "0.0.1"
+   },
+   {
+    "name": "@suin/gatsby-rehype-replace-urls",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "rehype"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-31T14:15:38.992Z",
+    "latest": "3.0.0"
+   },
+   {
+    "name": "@maiertech/gatsby-theme-theme-ui",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-06-29T20:39:10.533Z",
+    "latest": "0.5.2"
+   },
+   {
+    "name": "@maiertech/gatsby-theme-base",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-06-29T20:38:56.649Z",
+    "latest": "0.7.2"
+   },
+   {
+    "name": "@maiertech/gatsby-theme-tags-core",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-06-29T20:38:47.473Z",
+    "latest": "0.6.3"
+   },
+   {
+    "name": "sc-firebase-comments",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "stackcheats"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-22T07:05:33.236Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "gatsby-source-twitter-threads",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source",
+     "gatsby-source-plugin",
+     "twitter",
+     "v2"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-07T03:02:09.135Z",
+    "latest": "1.0.9"
+   },
+   {
+    "name": "gatsby-plugin-paypal",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "paypal",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-07T03:02:10.587Z",
+    "latest": "1.1.6"
+   },
+   {
+    "name": "gatsby-remark-markmap",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "markdown",
+     "markmap"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T16:15:24.758Z",
+    "latest": "0.5.0"
+   },
+   {
+    "name": "gatsby-plugin-endpoints",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "plugin",
+     "gatsby-plugin",
+     "list",
+     "all",
+     "pages",
+     "endpoints",
+     "urls",
+     "api"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-28T22:15:16.085Z",
+    "latest": "1.0.9"
+   },
+   {
+    "name": "gatsby-theme-contact",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme",
+     "gatsby-theme-contact",
+     "contact",
+     "theme",
+     "form",
+     "forms",
+     "netlify",
+     "react-netlify-forms"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-26T06:52:02.690Z",
+    "latest": "3.0.0"
+   },
+   {
+    "name": "gatsby-source-wagtail-master",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "graphql",
+     "universal"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-29T11:34:50.618Z",
+    "latest": "1.0.3"
+   },
+   {
+    "name": "flexport-gatsby-source-contentful",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-03T06:11:12.946Z",
+    "latest": "2.0.28"
+   },
+   {
+    "name": "@rasahq/gatsby-source-datocms",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T00:30:25.128Z",
+    "latest": "2.6.12"
+   },
+   {
+    "name": "abhi-source-datocms",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T11:39:06.136Z",
+    "latest": "2.6.10"
+   },
+   {
+    "name": "gatsby-source-datocms",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T11:39:06.440Z",
+    "latest": "5.1.5"
+   },
+   {
+    "name": "canary-gatsby-source-datocms",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T11:39:06.216Z",
+    "latest": "2.6.1-6.2"
+   },
+   {
+    "name": "@joshdcuneo/gatsby-source-strapi",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin",
+     "strapi"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T20:30:41.860Z",
+    "latest": "0.1.1"
+   },
+   {
+    "name": "gatsby-remark-reading-time-2",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "remark",
+     "reading time",
+     "node",
+     "medium",
+     "estimate"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2024-01-23T05:02:25.907Z",
+    "latest": "1.1.1"
+   },
+   {
+    "name": "gatsby-source-mastodon",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "GatsbyJS",
+     "Mastodon",
+     "gatsby-plugin",
+     "gatsby"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T11:36:32.261Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "gatsby-source-google-photos",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source",
+     "gatsby-source-plugin",
+     "google",
+     "google-photos",
+     "photos"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-25T08:11:57.244Z",
+    "latest": "3.1.1"
+   },
+   {
+    "name": "gatsby-drupal-preview",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "jsonapi",
+     "drupal",
+     "preview"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-17T12:31:28.151Z",
+    "latest": "0.2.2"
+   },
+   {
+    "name": "@cangir/gatsby-theme-blog-core",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme",
+     "blog"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-10T09:04:42.374Z",
+    "latest": "0.2.0"
+   },
+   {
+    "name": "@redocly/gatsby-remark-images",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "image",
+     "markdown",
+     "remark",
+     "responsive images"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-04T09:16:54.847Z",
+    "latest": "4.2.0"
+   },
+   {
+    "name": "gatsby-source-atom",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsbyjs",
+     "gatsby-plugin",
+     "gatsby-source-plugin",
+     "atom"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-11T07:15:27.487Z",
+    "latest": "0.3.0"
+   },
+   {
+    "name": "gatsby-source-silverstripe",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-28T04:30:50.882Z",
+    "latest": "1.5.1"
+   },
+   {
+    "name": "gatsby-plugin-static-page-modal",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "static",
+     "modal",
+     "page",
+     "static-page",
+     "static-modal",
+     "static-page-modal"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-10T05:33:21.975Z",
+    "latest": "1.0.4"
+   },
+   {
+    "name": "gatsby-plugin-gitalk",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsbyjs",
+     "plugin",
+     "gitalk",
+     "comments"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-20T09:46:30.456Z",
+    "latest": "1.2.6"
+   },
+   {
+    "name": "gatsby-remark-pretty-link-card",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "remark",
+     "opengraph",
+     "link",
+     "preview",
+     "card"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-27T05:01:10.603Z",
+    "latest": "1.0.1"
+   },
+   {
+    "name": "gatsby-source-tune",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-28T04:45:16.011Z",
+    "latest": "2.0.0"
+   },
+   {
+    "name": "gatsby-plugin-hooked-head",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "hooked-head",
+     "gatsby",
+     "gatsby-plugin",
+     "head",
+     "seo"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-06-15T02:32:54.393Z",
+    "latest": "0.1.1"
+   },
+   {
+    "name": "@inspired-agency/gatsby-awesome-pagination",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "pagination"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-12T01:45:13.687Z",
+    "latest": "0.3.10"
+   },
+   {
+    "name": "gatsby-theme-notes",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-theme",
+     "gatsby-plugin",
+     "react",
+     "notes",
+     "digital-garden"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-08T00:29:49.437Z",
+    "latest": "4.0.0"
+   },
+   {
+    "name": "gatsby-images-s3",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2023-09-23T21:15:48.722Z",
+    "latest": "0.0.10"
+   },
+   {
+    "name": "gatsby-plugin-xillio-docs",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2023-09-23T21:15:56.006Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "@clamped90/gatsby-theme-wedding",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-theme",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-17T12:57:39.594Z",
+    "latest": "1.2.7"
+   },
+   {
+    "name": "@basvasilich/gatsby-plugin-facebook-pixel",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "facebook pixel"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-02T05:17:56.633Z",
+    "latest": "1.0.5"
+   },
+   {
+    "name": "gatsby-parser-markdown",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "remark"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2024-01-24T06:02:09.516Z",
+    "latest": "1.0.0-alpha11-alpha.cb563442"
+   },
+   {
+    "name": "style9",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "styles",
+     "css",
+     "css-in-js",
+     "babel",
+     "babel-plugin",
+     "gatsby",
+     "gatsby-plugin",
+     "next",
+     "nextjs",
+     "nextjs-plugin",
+     "webpack",
+     "rollup",
+     "rollup-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-27T18:44:01.958Z",
+    "latest": "0.18.2"
+   },
+   {
+    "name": "@jd-carroll/gatsby-remark-external-links",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "remark"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-06-11T17:34:36.970Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "gatsby-plugin-canonical-urls",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T11:56:12.741Z",
+    "latest": "5.16.0"
+   },
+   {
+    "name": "gatsby-plugin-babel-react-live",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "react",
+     "react live"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T11:56:27.874Z",
+    "latest": "1.4.5"
+   },
+   {
+    "name": "gatsby-plugin-smartlook-tracking",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "smartlook"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T21:00:52.153Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "gatsby-plugin-datadog-logs",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "datadog",
+     "logs"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-28T05:00:41.685Z",
+    "latest": "1.0.1"
+   },
+   {
+    "name": "gatsby-theme-catalyst-onepage",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-theme",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T16:45:39.011Z",
+    "latest": "0.2.5"
+   },
+   {
+    "name": "gatsby-plugin-local-search",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "search",
+     "lunr",
+     "flexsearch"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-10T06:19:52.233Z",
+    "latest": "2.0.1"
+   },
+   {
+    "name": "@kytha/gatsby-plugin-dark-mode",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "theming",
+     "dark-mode"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-20T09:51:58.457Z",
+    "latest": "1.1.2"
+   },
+   {
+    "name": "gatsby-remark-jargon",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "remark",
+     "mdx",
+     "jargon",
+     "gatsby",
+     "gatsby-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-22T05:24:00.393Z",
+    "latest": "2.22.2"
+   },
+   {
+    "name": "gatsby-source-google-sheets-raw",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T10:01:13.683Z",
+    "latest": "1.1.2"
+   },
+   {
+    "name": "gatsby-plugin-realfavicongenerator",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "realfavicongenerator"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-05-24T13:17:48.212Z",
+    "latest": "0.1.2"
+   },
+   {
+    "name": "gatsby-plugin-security-txt",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsbyjs",
+     "gatsby-plugin",
+     "security",
+     "security.txt"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-17T11:24:26.246Z",
+    "latest": "1.2.1"
+   },
+   {
+    "name": "gatsby-plugin-feed-generator",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "rss",
+     "atom",
+     "jsonfeed",
+     "feed"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-01-21T14:27:03.477Z",
+    "latest": "2.0.5"
+   },
+   {
+    "name": "gatsby-plugin-tailwindcss",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "tailwind",
+     "tailwindcss",
+     "emotion",
+     "styled-components"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-02T21:34:52.491Z",
+    "latest": "1.0.3"
+   },
+   {
+    "name": "gatsby-typegen-remark-exponent-autolink",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "remark"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-02T21:37:15.224Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "@bond-london/gatsby-source-hubspot-forms",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "data",
+     "gatsby",
+     "gatsby-plugin",
+     "hubspot",
+     "graphql",
+     "source"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T21:15:30.607Z",
+    "latest": "2.11.0"
+   },
+   {
+    "name": "gatsby-remark-prismjs-title",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-remark-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-16T18:06:27.341Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "gatsby-remark-series",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsbyjs",
+     "gatsby-plugin",
+     "gatsby-remark",
+     "remark",
+     "series",
+     "toc",
+     "table of content",
+     "plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-26T04:30:41.593Z",
+    "latest": "1.0.3"
+   },
+   {
+    "name": "gatsby-remark-katex",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "katex",
+     "remark"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-04T10:08:59.477Z",
+    "latest": "7.16.0"
+   },
+   {
+    "name": "gatsby-plugin-okta",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-theme",
+     "gatsby-plugin",
+     "okta",
+     "authentication",
+     "okta-authentication",
+     "okta-react",
+     "react"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-26T18:15:33.084Z",
+    "latest": "0.0.9"
+   },
+   {
+    "name": "gatsby-plugin-express",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "express",
+     "gatsby-plugin",
+     "redirects"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-20T09:59:07.140Z",
+    "latest": "1.1.6"
+   },
+   {
+    "name": "gatsby-source-shopfiy",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-source-plugin",
+     "shopify"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-22T20:21:42.479Z",
+    "latest": "0.1.1"
+   },
+   {
+    "name": "gatsby-source-ecwid",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "ecwid",
+     "ecommerce"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2023-12-22T18:02:33.964Z",
+    "latest": "1.0.3"
+   },
+   {
+    "name": "gatsby-theme-ghost-contact",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "gatsby-theme",
+     "gatsby-theme-try-ghost",
+     "contact",
+     "form",
+     "jamify",
+     "ghost",
+     "ghost-cms"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-18T00:38:31.772Z",
+    "latest": "2.0.2"
+   },
+   {
+    "name": "@lwjerri/gatsby-plugin-decap-cms",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "decap",
+     "decap-cms",
+     "cms"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-10-03T13:21:52.363Z",
+    "latest": "4.0.5"
+   },
+   {
+    "name": "gatsby-plugin-mailgo",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "mailto",
+     "mail",
+     "tel",
+     "callto",
+     "gmail",
+     "outlook",
+     "telegram",
+     "whatsapp",
+     "skype",
+     "yahoo"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-15T12:21:35.990Z",
+    "latest": "0.12.2"
+   },
+   {
+    "name": "gatsby-source-fridge",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "fridge",
+     "cms",
+     "graphql"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-14T07:18:20.245Z",
+    "latest": "0.0.3"
+   },
+   {
+    "name": "@dylanvann/gatsby-transformer-cloudinary",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "gatsby",
+     "gatsby-plugin",
+     "image",
+     "sharp"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-03T06:16:38.566Z",
+    "latest": "1.0.36"
+   }
+  ]
+ },
+ "fastify-plugin": {
+  "response_keys": [
+   "keyword_url",
+   "name",
+   "packages",
+   "packages_count",
+   "related_keywords"
+  ],
+  "packages_count_field": null,
+  "rows": [
+   {
+    "name": "@fastify/middie",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "middleware",
+     "webframework",
+     "performances"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-05T09:10:07.287Z",
+    "latest": "9.3.4"
+   },
+   {
+    "name": "@fastify/fetch",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fetch",
+     "web-standard",
+     "request",
+     "response"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:53:41.823Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "@jafps/storage",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-20T07:20:51.487Z",
+    "latest": "1.0.4"
+   },
+   {
+    "name": "fastify-vite",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T11:29:34.021Z",
+    "latest": "2.3.1"
+   },
+   {
+    "name": "@fastify/vite",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "vite"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-07T11:24:19.300Z",
+    "latest": "10.0.0"
+   },
+   {
+    "name": "@fastify/htmx",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "vite",
+     "htmx"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-07T11:24:31.296Z",
+    "latest": "0.4.1"
+   },
+   {
+    "name": "@fastify/react",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "react",
+     "vite"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-07T11:28:04.436Z",
+    "latest": "1.2.2"
+   },
+   {
+    "name": "@jafps/plugin-schema",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-28T04:16:19.970Z",
+    "latest": "1.2.9"
+   },
+   {
+    "name": "@fastify/vue",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "vite",
+     "vue"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-07T11:33:30.371Z",
+    "latest": "2.0.1"
+   },
+   {
+    "name": "adminjs-fastify",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "plugin",
+     "admin",
+     "adminjs",
+     "admin-panel"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-10T16:30:53.419Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "fastify-vite-solid",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T11:42:43.615Z",
+    "latest": "3.0.0-next.8"
+   },
+   {
+    "name": "fastify-live-refresh",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "websocket",
+     "hot-reload",
+     "live-reload",
+     "hot-client",
+     "fastify-plugin",
+     "auto-reload",
+     "development-tool",
+     "frontend-reload",
+     "websocket-refresh",
+     "fastify-hot-client",
+     "fastify-websocket",
+     "automatic-reload"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2025-03-08T01:04:34.607Z",
+    "latest": "0.0.1-beta.1"
+   },
+   {
+    "name": "@c9h/fastify",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "config",
+     "c9h",
+     "environment",
+     "variables",
+     "env-var",
+     "envvar",
+     "configuration",
+     "typescript",
+     "fastify",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2024-02-07T21:16:03.997Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "@wii/fastify-webpack",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "plugin",
+     "fastify-plugin",
+     "webpack",
+     "webpack-dev-middleware",
+     "webpack-hot-middleware",
+     "hmr"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-09T23:45:36.069Z",
+    "latest": "1.0.3"
+   },
+   {
+    "name": "@axiomify/metrics",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "axiomify",
+     "metrics",
+     "prometheus",
+     "observability",
+     "latency",
+     "histograms",
+     "websocket-metrics"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-14T17:52:36.681Z",
+    "latest": "7.1.0"
+   },
+   {
+    "name": "@fastify/csrf-protection",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-06T09:11:00.693Z",
+    "latest": "8.0.1"
+   },
+   {
+    "name": "@mongoloquent/fastify",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "javascript",
+     "typescript",
+     "database",
+     "mongodb",
+     "nosql",
+     "orm",
+     "mongoloquent",
+     "nodejs",
+     "fastify",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-18T03:51:39.085Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "fastify-websocket",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T10:19:26.624Z",
+    "latest": "4.3.0"
+   },
+   {
+    "name": "@fastify/kafka",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "kafka",
+     "events",
+     "sourcing"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:17:21.437Z",
+    "latest": "4.0.0"
+   },
+   {
+    "name": "@fastify/url-data",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:18:42.362Z",
+    "latest": "6.0.4"
+   },
+   {
+    "name": "@fastify/circuit-breaker",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "circuit breaker",
+     "circuit",
+     "breaker",
+     "overhead",
+     "speed"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:22:10.977Z",
+    "latest": "4.0.3"
+   },
+   {
+    "name": "@fastify/request-context",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "plugin",
+     "request",
+     "context",
+     "http-context",
+     "request-context",
+     "fastify-http-context",
+     "fastify-request-context",
+     "asynchronouslocalstorage",
+     "asynchronous-local-storage"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:18:53.173Z",
+    "latest": "7.0.0"
+   },
+   {
+    "name": "@fastify/mysql",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "mysql",
+     "database",
+     "connection",
+     "sql"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:20:17.528Z",
+    "latest": "5.0.3"
+   },
+   {
+    "name": "@fastify/etag",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "etag",
+     "generate",
+     "caching",
+     "http"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:21:22.836Z",
+    "latest": "6.2.0"
+   },
+   {
+    "name": "@asjas/fastify-nodemailer",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "nodejs",
+     "fastify",
+     "fastify-plugin",
+     "nodemailer",
+     "email",
+     "typescript"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-01T01:13:27.464Z",
+    "latest": "1.0.8"
+   },
+   {
+    "name": "@fastify/elasticsearch",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "elastic",
+     "elasticsearch",
+     "elastic search",
+     "ES"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:25:28.122Z",
+    "latest": "4.0.3"
+   },
+   {
+    "name": "@fastify/helmet",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "helmet",
+     "security",
+     "headers",
+     "x-frame-options",
+     "csp",
+     "hsts",
+     "clickjack"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-05T21:16:24.120Z",
+    "latest": "13.1.1"
+   },
+   {
+    "name": "fastify-shopify-auth",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-14T15:20:50.895Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "@fastify/awilix",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "plugin",
+     "di",
+     "dependency-injection",
+     "dependency",
+     "injection",
+     "inversion",
+     "control",
+     "awilix"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:31:07.382Z",
+    "latest": "8.2.1"
+   },
+   {
+    "name": "@fastify/valkey-glide",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "valkey",
+     "valkey-glide",
+     "redis",
+     "database",
+     "speed",
+     "cache"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:34:00.461Z",
+    "latest": "0.2.0"
+   },
+   {
+    "name": "@fastify/hotwire",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "hotwire",
+     "turbo",
+     "html",
+     "websocket"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:44:51.782Z",
+    "latest": "3.1.0"
+   },
+   {
+    "name": "@fastify/response-validation",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "validation",
+     "response",
+     "json",
+     "schema"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:45:51.017Z",
+    "latest": "3.0.4"
+   },
+   {
+    "name": "@fastify/caching",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "cache",
+     "caching"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:47:12.215Z",
+    "latest": "9.0.4"
+   },
+   {
+    "name": "@fastify/throttle",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "throttle",
+     "stream",
+     "leaky",
+     "bucket"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:49:11.601Z",
+    "latest": "3.0.3"
+   },
+   {
+    "name": "@fastify/sse",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "sse",
+     "server-sent-events",
+     "streaming",
+     "real-time"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:50:26.989Z",
+    "latest": "0.6.0"
+   },
+   {
+    "name": "@fastify/routes-stats",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "perf",
+     "hooks",
+     "perf_hooks",
+     "routes",
+     "stats",
+     "apm"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:44:36.692Z",
+    "latest": "4.0.3"
+   },
+   {
+    "name": "@fastify/zipkin",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "zipkin",
+     "trace",
+     "distributed",
+     "tracing",
+     "timing"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:53:09.500Z",
+    "latest": "4.0.3"
+   },
+   {
+    "name": "@fastify/formbody",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "x-www-form-urlencoded"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:53:17.775Z",
+    "latest": "9.0.0"
+   },
+   {
+    "name": "@fracabu/fastify-api-key",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "api-key",
+     "authentication",
+     "auth",
+     "security",
+     "scopes",
+     "permissions",
+     "authorization",
+     "api-authentication",
+     "typescript"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T17:45:28.028Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "fastify-websocket-server",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "ws",
+     "websocket"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-28T05:44:26.400Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "fastify-c9h",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2024-03-06T19:00:45.792Z",
+    "latest": "0.1.0"
+   },
+   {
+    "name": "fastify-oracle",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "oracle"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-06-25T10:56:55.094Z",
+    "latest": "5.0.0"
+   },
+   {
+    "name": "fastify-peekaboo",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "cache"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-07-08T16:26:10.447Z",
+    "latest": "2.3.1"
+   },
+   {
+    "name": "fastify-moleculer",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-07-25T08:45:53.885Z",
+    "latest": "0.1.4"
+   },
+   {
+    "name": "@fastify/funky",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "plugin",
+     "typescript",
+     "algebraic-data-types",
+     "functional-programming",
+     "functional",
+     "fp-ts",
+     "either",
+     "task"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T12:19:12.144Z",
+    "latest": "4.0.3"
+   },
+   {
+    "name": "fastify-permissions-policy",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "permissions-policy",
+     "feature-policy",
+     "fastify",
+     "fastify-plugin",
+     "middleware"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-30T02:59:21.078Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "@ariodev/fastify-redis-session",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-24T08:28:35.105Z",
+    "latest": "0.1.2"
+   },
+   {
+    "name": "github.com/fastify/fastify-compress",
+    "ecosystem": "go",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-04T17:38:12.404Z",
+    "latest": "v9.2.0+incompatible"
+   },
+   {
+    "name": "@mateonunez/fastify-lyra",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "lyra",
+     "database",
+     "search",
+     "engine"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2023-09-24T02:08:48.850Z",
+    "latest": "0.2.1"
+   },
+   {
+    "name": "@fastify-userland/typeorm-query-runner",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "typeorm",
+     "transaction",
+     "queryrunner",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-21T15:16:24.042Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "fastify-ses-mailer",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "aws",
+     "ses",
+     "email"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-02T23:02:08.291Z",
+    "latest": "1.0.1"
+   },
+   {
+    "name": "@fastify/autoload",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "require",
+     "folder",
+     "directory",
+     "plugin",
+     "plugins",
+     "automatically",
+     "load",
+     "auto"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T12:51:10.772Z",
+    "latest": "6.5.0"
+   },
+   {
+    "name": "fastify-piscina",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "piscina",
+     "fastify",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-07T04:14:58.987Z",
+    "latest": "5.0.0"
+   },
+   {
+    "name": "@piscina/fastify",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "piscina",
+     "fastify",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-07T04:14:59.190Z",
+    "latest": "6.0.2"
+   },
+   {
+    "name": "@crcastle/fastify-piscina",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "piscina",
+     "fastify"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-06T10:09:53.090Z",
+    "latest": "2.0.0"
+   },
+   {
+    "name": "fastify-zod-query-coercion",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "zod",
+     "query",
+     "coercion",
+     "parameter",
+     "validation",
+     "plugin",
+     "schema",
+     "parser",
+     "type-safe",
+     "querystring",
+     "preprocessing",
+     "fastify-plugin",
+     "zod-validation",
+     "url-params",
+     "typescript",
+     "middleware",
+     "request-validation"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T18:30:37.772Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "fastify-racing",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "racing",
+     "fastify-racing",
+     "http",
+     "server",
+     "abortcontroller",
+     "abort-controller",
+     "abort-signal"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-02T23:45:22.032Z",
+    "latest": "4.0.0"
+   },
+   {
+    "name": "fastify-request-context",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-10T01:22:17.050Z",
+    "latest": "2.3.0"
+   },
+   {
+    "name": "@jcx0/fastify-openapi-glue",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "swagger",
+     "openapi",
+     "generator"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-25T12:58:05.924Z",
+    "latest": "4.6.1"
+   },
+   {
+    "name": "fastify-telemetry",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "plugin",
+     "telemetry",
+     "open-telemetry",
+     "opentelemetry"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T06:24:41.680Z",
+    "latest": "1.1.0"
+   },
+   {
+    "name": "fastify-swagger-mod-baguse",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "swagger",
+     "openapi",
+     "serve",
+     "generate",
+     "static"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-05T05:30:37.457Z",
+    "latest": "4.7.1"
+   },
+   {
+    "name": "@connectrpc/connect-node",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T06:46:29.113Z",
+    "latest": "2.2.0"
+   },
+   {
+    "name": "fastify-server-timing",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "plugin",
+     "server-timing"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-09-07T12:20:26.691Z",
+    "latest": "1.0.3"
+   },
+   {
+    "name": "@fastify-userland/request-id",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-userland",
+     "headers",
+     "request-id",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2023-12-27T01:39:48.520Z",
+    "latest": "2.0.1"
+   },
+   {
+    "name": "fastify-http-context",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "http-context",
+     "express-http-context"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-08T14:02:16.929Z",
+    "latest": "2.0.0"
+   },
+   {
+    "name": "fastify-oas",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "openapi",
+     "oas3",
+     "oas",
+     "swagger"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-24T11:15:04.206Z",
+    "latest": "3.0.8"
+   },
+   {
+    "name": "@knou/fastify-bcrypt",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "auth",
+     "bcrypt",
+     "plugin",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-06T00:31:06.152Z",
+    "latest": "1.0.0"
+   },
+   {
+    "name": "fastify-ie-no-open",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "helmet",
+     "ie-no-open"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T01:45:33.617Z",
+    "latest": "0.2.1"
+   },
+   {
+    "name": "apitally",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "adonisjs",
+     "analytics",
+     "api",
+     "apitally",
+     "bun",
+     "elysia",
+     "express",
+     "fastify",
+     "h3",
+     "hapi",
+     "hono",
+     "koa",
+     "logging",
+     "metrics",
+     "middleware",
+     "monitor",
+     "monitoring",
+     "nestjs",
+     "node",
+     "nodejs",
+     "plugin",
+     "rest",
+     "restful"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T03:20:06.739Z",
+    "latest": "0.25.8"
+   },
+   {
+    "name": "@fastify/csrf",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "csrf",
+     "tokens"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:40:31.222Z",
+    "latest": "8.1.0"
+   },
+   {
+    "name": "fastify-app",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "api",
+     "server",
+     "template",
+     "web server",
+     "http server"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T15:56:29.635Z",
+    "latest": "2.2.2"
+   },
+   {
+    "name": "@mahhoura/fastify-autoroutes",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "fastify-autoroutes",
+     "autoroute",
+     "autorouting",
+     "autoroutes"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-07-31T04:15:40.428Z",
+    "latest": "3.1.1"
+   },
+   {
+    "name": "@fastify/routes",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:48:03.723Z",
+    "latest": "6.0.3"
+   },
+   {
+    "name": "fastify-custom-healthcheck",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "health",
+     "healthchecks"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-25T15:12:12.316Z",
+    "latest": "4.0.0"
+   },
+   {
+    "name": "fastify-zod-schema",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "zod",
+     "schema",
+     "validation"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-07-25T16:01:11.138Z",
+    "latest": "2.0.3"
+   },
+   {
+    "name": "fastify-slonik",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "pg",
+     "postgres",
+     "slonik",
+     "postgresql",
+     "database",
+     "connection",
+     "sql"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-06T11:45:38.738Z",
+    "latest": "2.0.0"
+   },
+   {
+    "name": "fastify-color-printer",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "plugin",
+     "fastify-plugin",
+     "colors",
+     "colorate",
+     "console",
+     "terminal",
+     "prompt"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-11T12:08:14.325Z",
+    "latest": "1.0.2"
+   },
+   {
+    "name": "fastify-auth0-login",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "auth",
+     "authentication",
+     "authorization",
+     "auth0"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-15T18:21:25.839Z",
+    "latest": "0.2.0"
+   },
+   {
+    "name": "fastify-accepts-serializer",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-22T18:22:48.433Z",
+    "latest": "3.3.0"
+   },
+   {
+    "name": "fastify-compress",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-04T17:35:03.063Z",
+    "latest": "4.1.0"
+   },
+   {
+    "name": "fastify-graphql-voyager",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "graphql"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-15T18:24:41.311Z",
+    "latest": "0.1.2"
+   },
+   {
+    "name": "@danko16/fastify-file-upload",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fileUpload",
+     "multipart",
+     "form"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-03T02:45:27.024Z",
+    "latest": "4.0.1"
+   },
+   {
+    "name": "fastify-call",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "callself"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-07-31T05:30:28.593Z",
+    "latest": "2.0.2"
+   },
+   {
+    "name": "@fgiova/fastify-sqs-consumer",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "sqs",
+     "sqs-consumer",
+     "consumer",
+     "aws",
+     "amazon"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-07-20T14:19:35.284Z",
+    "latest": "3.1.0"
+   },
+   {
+    "name": "fastify-log-controller",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "log",
+     "log-level",
+     "logging",
+     "fastify",
+     "fastify-plugin"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-05T15:45:15.086Z",
+    "latest": "2.0.0"
+   },
+   {
+    "name": "fastify-autoroute",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "require",
+     "folder",
+     "directory",
+     "plugin",
+     "plugins",
+     "automatically",
+     "load",
+     "auto",
+     "next",
+     "route"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-07-27T17:45:57.635Z",
+    "latest": "0.1.4"
+   },
+   {
+    "name": "fastify-wamp-router",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "node.js",
+     "fastify",
+     "wamp",
+     "publish",
+     "subscribe",
+     "rpc",
+     "dealer",
+     "broker"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-07-30T09:35:40.832Z",
+    "latest": "0.4.0"
+   },
+   {
+    "name": "fastify-oauth2-multi",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "oauth2"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-22T16:04:08.112Z",
+    "latest": "2.5.1"
+   },
+   {
+    "name": "@fastify/redis",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "redis",
+     "database",
+     "speed",
+     "cache",
+     "ioredis"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-04T11:19:14.227Z",
+    "latest": "9.0.0"
+   },
+   {
+    "name": "fastify-helmet",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-06T02:51:02.982Z",
+    "latest": "7.1.0"
+   },
+   {
+    "name": "fastify-file-routes",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "cjs",
+     "esm",
+     "fastify",
+     "fastify-plugin",
+     "file-routes",
+     "next",
+     "nextjs",
+     "routes",
+     "typescript"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T03:15:18.204Z",
+    "latest": "1.1.2"
+   },
+   {
+    "name": "fastify-typeorm",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "typeorm"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-28T00:39:23.535Z",
+    "latest": "2.1.2"
+   },
+   {
+    "name": "fastify-typeorm-plugin",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "typeorm"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-08-28T00:45:02.734Z",
+    "latest": "2.2.1"
+   },
+   {
+    "name": "github.com/fastify/csrf-protection",
+    "ecosystem": "go",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-27T03:19:31.207Z",
+    "latest": "v8.0.1+incompatible"
+   },
+   {
+    "name": "@connectrpc/connect-migrate",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-09-07T06:48:24.208Z",
+    "latest": "2.2.0"
+   },
+   {
+    "name": "@fastify/jwt",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "jwt",
+     "json",
+     "token",
+     "jsonwebtoken",
+     "fastify"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2026-09-06T19:13:36.171Z",
+    "latest": "10.2.2"
+   },
+   {
+    "name": "fastify-zipkin",
+    "ecosystem": "npm",
+    "keywords_array": [],
+    "keywords_empty": true,
+    "carries": false,
+    "last_synced_at": "2026-08-07T05:36:22.367Z",
+    "latest": "2.1.0"
+   },
+   {
+    "name": "@mcp-layer/rest",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "mcp",
+     "mcp-layer",
+     "rest",
+     "http",
+     "fastify",
+     "fastify-plugin",
+     "openapi",
+     "swagger",
+     "oas",
+     "plugin",
+     "api",
+     "rest-api",
+     "server",
+     "serverless",
+     "gateway",
+     "proxy",
+     "adapter",
+     "circuit-breaker",
+     "opossum",
+     "observability",
+     "otel",
+     "open-telemetry",
+     "validation"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T03:45:27.747Z",
+    "latest": "1.2.3"
+   },
+   {
+    "name": "@theoptimalpartner/fastify-optiaudit",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "fastify-plugin",
+     "optiaudit",
+     "audit",
+     "page-view",
+     "observability"
+    ],
+    "keywords_empty": false,
+    "carries": true,
+    "last_synced_at": "2026-08-10T21:52:49.273Z",
+    "latest": "0.1.0-beta.3"
+   },
+   {
+    "name": "fastify-lyra",
+    "ecosystem": "npm",
+    "keywords_array": [
+     "fastify",
+     "lyra",
+     "database",
+     "search",
+     "engine"
+    ],
+    "keywords_empty": false,
+    "carries": false,
+    "last_synced_at": "2023-09-24T03:34:51.054Z",
+    "latest": "0.3.1"
+   }
+  ]
+ }
+}

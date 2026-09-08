@@ -439,8 +439,8 @@ is released at:
 > minted from the v1.0.1 tag; the Zenodo concept DOI always resolves to the
 > newest version.
 
-The repository contains eleven analysis scripts plus the resolver library, and
-eighteen data files covering all four rounds of measurement, including the two
+The repository contains sixteen analysis scripts plus the resolver library, and
+twenty-four data files covering all four rounds of measurement, including the two
 runs that were later found invalid and the corrections applied to them. Nothing
 has been removed to make the result look cleaner.
 

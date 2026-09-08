@@ -1,0 +1,1994 @@
+[
+ {
+  "server": "graphweft",
+  "live_n": 90,
+  "depsdev_n": 90,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@kahflane/whatsapp-mcp",
+  "live_n": 474,
+  "depsdev_n": 474,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 6
+ },
+ {
+  "server": "@pipeworx/mcp-senate-lobbying",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "fiatdock-mcp",
+  "live_n": 111,
+  "depsdev_n": 111,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 3
+ },
+ {
+  "server": "@pipeworx/mcp-stocktwits",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@toolyour/sdk",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@sargonpiraev/confluence-mcp-server",
+  "live_n": 113,
+  "depsdev_n": 113,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "@apicircle/mcp-server",
+  "live_n": 112,
+  "depsdev_n": 112,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "kaomoji-mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mseep/magic-mcp",
+  "live_n": 110,
+  "depsdev_n": 110,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@cyanheads/federal-reserve-mcp-server",
+  "live_n": 49,
+  "depsdev_n": 49,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mysql-mcp-x",
+  "live_n": 103,
+  "depsdev_n": 103,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@balacode/mental",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@noticed/cli",
+  "live_n": 51,
+  "depsdev_n": 51,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 4
+ },
+ {
+  "server": "mcp-server-db",
+  "live_n": 231,
+  "depsdev_n": 231,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 4
+ },
+ {
+  "server": "@felixisaac/tandem",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@apps-in-toss/ax",
+  "live_n": 24,
+  "depsdev_n": 24,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "sleep-tracker-ai-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "pythia-lcs",
+  "live_n": 317,
+  "depsdev_n": 317,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 8
+ },
+ {
+  "server": "@pipeworx/mcp-barcelona-events",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "secure-vault-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@theyahia/yandex-direct-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@insnapsprakhar/world-bank-economic-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@wonsukchoi/crondex",
+  "live_n": 97,
+  "depsdev_n": 97,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "selvedge-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@scriptmasterlabs/mcp-x402",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "create-modelfetch",
+  "live_n": 14,
+  "depsdev_n": 14,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@tocharianou/mcp-virustotal",
+  "live_n": 119,
+  "depsdev_n": 119,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "openeagleeye",
+  "live_n": 104,
+  "depsdev_n": 104,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@thecodesaiyan/tcs-n8n-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "jurisd",
+  "live_n": 168,
+  "depsdev_n": 167,
+  "missing_in_depsdev": 1,
+  "extra_in_depsdev": 0,
+  "version_differs": 16
+ },
+ {
+  "server": "@pipeworx/mcp-us-auctions",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@damoqiongqiu/mcp-local-rag",
+  "live_n": 295,
+  "depsdev_n": 295,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@cyanheads/chembl-mcp-server",
+  "live_n": 60,
+  "depsdev_n": 60,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@limelink/mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "vidlens-mcp",
+  "live_n": 150,
+  "depsdev_n": 150,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "grpvn-cli",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "icon-composer-mcp",
+  "live_n": 127,
+  "depsdev_n": 127,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mseep/mcp-file-downloader",
+  "live_n": 26,
+  "depsdev_n": 26,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-czso-cz",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@obscuraai/mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "cntx-ui",
+  "live_n": 110,
+  "depsdev_n": 110,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "taufunctions",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-close-crm",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-rncp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "ppspy-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@weppy/roblox-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@moneolabs/mcp",
+  "live_n": 112,
+  "depsdev_n": 112,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "@pv-bhat/vibe-check-mcp",
+  "live_n": 149,
+  "depsdev_n": 149,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "@florexlabs/docs-to-mcp-server",
+  "live_n": 91,
+  "depsdev_n": 91,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "freelo-mcp",
+  "live_n": 130,
+  "depsdev_n": 130,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 4
+ },
+ {
+  "server": "@htetoowaiyan/colors-mcp-server",
+  "live_n": 121,
+  "depsdev_n": 121,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@filcuk/planka-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "phoenixd-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "real-browser-mcp-server",
+  "live_n": 114,
+  "depsdev_n": 114,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@getmcpads/google-analytics-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "agentcard-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "ccmultihelper",
+  "live_n": 160,
+  "depsdev_n": 160,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@tocharianou/jira-mcp",
+  "live_n": 115,
+  "depsdev_n": 115,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-arcgis-eagan",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@jarciahdz111/dokploy-mcp",
+  "live_n": 106,
+  "depsdev_n": 106,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@luno-cms/mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@runapi.ai/qwen-2-mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "perf-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "agentrank-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@ytsuda/ripple",
+  "live_n": 4,
+  "depsdev_n": 4,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "markitup-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@novalux12/spotify-mcp",
+  "live_n": 107,
+  "depsdev_n": 107,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "syndicate-links-mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "multi-cloud-docs-search",
+  "live_n": 114,
+  "depsdev_n": 114,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-data-detroit",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-data-pipeline-connector",
+  "live_n": 111,
+  "depsdev_n": 111,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@taprun/from-puppeteer",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "manasx",
+  "live_n": 11,
+  "depsdev_n": 11,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "vaults-diagram-tools",
+  "live_n": 149,
+  "depsdev_n": 149,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@mseep/mcp-obsidian",
+  "live_n": 45,
+  "depsdev_n": 45,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "patchxnote-agent",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@michelabboud/visual-forge-mcp",
+  "live_n": 189,
+  "depsdev_n": 189,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 4
+ },
+ {
+  "server": "mcpx-framework",
+  "live_n": 98,
+  "depsdev_n": 98,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "api-tester-ai-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@frangelbarrera/osint-agent-skills",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@automate-io/api-testing-mcp",
+  "live_n": 94,
+  "depsdev_n": 94,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mhrj/whatsapp-mcp",
+  "live_n": 233,
+  "depsdev_n": 201,
+  "missing_in_depsdev": 38,
+  "extra_in_depsdev": 6,
+  "version_differs": 5
+ },
+ {
+  "server": "@vugu/mcp-aggregator",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@cgdevs/pigi",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "whooshly-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@actionproxy/mcp-wrapper",
+  "live_n": 2,
+  "depsdev_n": 2,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "kvk-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mythsensus-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-tcgdex",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@smails/cli",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "cursor-memory",
+  "live_n": 208,
+  "depsdev_n": 208,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "@pipeworx/mcp-idf-events",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "math-solver-ai-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@watzon/tgmcp",
+  "live_n": 179,
+  "depsdev_n": 179,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-19hz",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@npm_xiyuan/mcp-model-radar",
+  "live_n": 157,
+  "depsdev_n": 157,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@yawlabs/caddy-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-test-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mseep/atlas-mcp-server",
+  "live_n": 154,
+  "depsdev_n": 154,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 3
+ },
+ {
+  "server": "@agentsid/guard",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-or-dmv",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@ordinaryfuture/agent-readiness-mcp",
+  "live_n": 114,
+  "depsdev_n": 114,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "@vision_123/email-sender-server",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@usedomshot/cli",
+  "live_n": 98,
+  "depsdev_n": 98,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "wikimedia-image-search-mcp",
+  "live_n": 127,
+  "depsdev_n": 127,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "shopify-multi-store-mcp-server",
+  "live_n": 51,
+  "depsdev_n": 51,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@theyahia/bitrix24-mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@cablate/mcp-google-map",
+  "live_n": 209,
+  "depsdev_n": 209,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 5
+ },
+ {
+  "server": "noodle-perplexity-mcp",
+  "live_n": 181,
+  "depsdev_n": 181,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 9
+ },
+ {
+  "server": "guardz-generator-mcp",
+  "live_n": 49,
+  "depsdev_n": 49,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "companies-house-cli",
+  "live_n": 7,
+  "depsdev_n": 7,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "local-dfw-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@turbot/steampipe-mcp",
+  "live_n": 112,
+  "depsdev_n": 112,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@echosaw/mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "novada-mcp",
+  "live_n": 219,
+  "depsdev_n": 218,
+  "missing_in_depsdev": 1,
+  "extra_in_depsdev": 0,
+  "version_differs": 13
+ },
+ {
+  "server": "@wubaoqi/guanmcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@apiscoach/mcp-server-weather",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "macbeth",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@platfone/mcp",
+  "live_n": 102,
+  "depsdev_n": 102,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "iw-spine-network",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "healthcare-mcp",
+  "live_n": 211,
+  "depsdev_n": 211,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "abapilot",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "agent-costcenter-mcp",
+  "live_n": 132,
+  "depsdev_n": 132,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "mcp-mapmyindia",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "codescan-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@iflow-mcp/12306-mcp",
+  "live_n": 108,
+  "depsdev_n": 108,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-url",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@cyanheads/gbif-biodiversity-mcp-server",
+  "live_n": 49,
+  "depsdev_n": 49,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "base-flash-arb-mcp",
+  "live_n": 104,
+  "depsdev_n": 104,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "mcp-server-security-audit",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mbeato/apimesh-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@onivoro/server-mcp",
+  "live_n": 2,
+  "depsdev_n": 2,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "aifastdb-devplan",
+  "live_n": 118,
+  "depsdev_n": 118,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "lanhu-context-mcp",
+  "live_n": 181,
+  "depsdev_n": 181,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@icogenie/mcp",
+  "live_n": 117,
+  "depsdev_n": 117,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "imap-email-mcp",
+  "live_n": 133,
+  "depsdev_n": 133,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "mcp-read-file-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pranavchavda/shopify-feature-box-mcp",
+  "live_n": 15,
+  "depsdev_n": 15,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "llmmcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-mitre-attck",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "gardening-ai-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "swagger-mcp-tools",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-stat-gl",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "xiaoflow-mcp-server",
+  "live_n": 107,
+  "depsdev_n": 107,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-wtf",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@lancernix/mcp-adapter",
+  "live_n": 97,
+  "depsdev_n": 97,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "shieldnet-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "ai-ads-os",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@dangahagan/weather-mcp",
+  "live_n": 161,
+  "depsdev_n": 161,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "insite-mcp",
+  "live_n": 18,
+  "depsdev_n": 18,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "xunao-erp-mcp-proxy",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-ca-procurement",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "jupyterlab-collab-mcp",
+  "live_n": 132,
+  "depsdev_n": 132,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "@pipeworx/mcp-cocktails",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@frontlinesystems/rason-mcp-server",
+  "live_n": 107,
+  "depsdev_n": 107,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "tabedata-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "bridgeguard-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@100xpercent/mcp-server-pop-pay",
+  "live_n": 159,
+  "depsdev_n": 159,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 5
+ },
+ {
+  "server": "@hypawave/mcp",
+  "live_n": 106,
+  "depsdev_n": 106,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 3
+ },
+ {
+  "server": "email-playbook-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mseep/starlight-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "clenzer",
+  "live_n": 105,
+  "depsdev_n": 105,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "create-opc-wiki",
+  "live_n": 17,
+  "depsdev_n": 17,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mseep/telegram-api-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@iflow-mcp/weather-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "quanters-akshare-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@shaykec/appxray-mcp-server",
+  "live_n": 98,
+  "depsdev_n": 98,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@coti-io/coti-sdk-private-messaging",
+  "live_n": 108,
+  "depsdev_n": 108,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-selenium-webdriver",
+  "live_n": 136,
+  "depsdev_n": 136,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 3
+ },
+ {
+  "server": "@pipeworx/mcp-nrel",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "backendless-console-sdk-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@sgpdirectory/mcp",
+  "live_n": 84,
+  "depsdev_n": 84,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "alienmail-mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "sms-florin-mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@sealgate/mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-imagetovideoai-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "no2bounce-mcp",
+  "live_n": 107,
+  "depsdev_n": 107,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-citybikes",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "engram-wiki-mcp",
+  "live_n": 333,
+  "depsdev_n": 333,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@andersonfda/springy",
+  "live_n": 454,
+  "depsdev_n": 454,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 8
+ },
+ {
+  "server": "vault-cortex",
+  "live_n": 8,
+  "depsdev_n": 8,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@garvae/mcp-mcphub",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@codegiveness/mssql-mcp",
+  "live_n": 6,
+  "depsdev_n": 6,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "clawaimail-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-peopledatalabs",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "prodcheck",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "starwell-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcpscope",
+  "live_n": 148,
+  "depsdev_n": 148,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "repomap-mcp-server",
+  "live_n": 97,
+  "depsdev_n": 97,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "keycloak-mcp",
+  "live_n": 122,
+  "depsdev_n": 122,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "@zensystemai/zengram-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@cyanheads/openalex-mcp-server",
+  "live_n": 49,
+  "depsdev_n": 49,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "job-searchoor",
+  "live_n": 152,
+  "depsdev_n": 152,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "context-fabric",
+  "live_n": 130,
+  "depsdev_n": 130,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@cg3/prior-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@fluxweave/cli",
+  "live_n": 194,
+  "depsdev_n": 194,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-sarb-za",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-creatio",
+  "live_n": 132,
+  "depsdev_n": 132,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@whoisxmlapidotcom/mcp-whoisxmlapi_darwin_arm64",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@aiwerk/mcp-server-wheel-size",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-devto",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@cyanheads/earthquake-mcp-server",
+  "live_n": 49,
+  "depsdev_n": 49,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-medicare-coverage",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@fre4x/hn",
+  "live_n": 106,
+  "depsdev_n": 106,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "@cyanheads/oecd-mcp-server",
+  "live_n": 60,
+  "depsdev_n": 60,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mseep/mcp_server_mysql",
+  "live_n": 114,
+  "depsdev_n": 114,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 2
+ },
+ {
+  "server": "claude-prompts",
+  "live_n": 158,
+  "depsdev_n": 158,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@cyanheads/docgen-mcp-server",
+  "live_n": 129,
+  "depsdev_n": 129,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "research-swarm",
+  "live_n": 185,
+  "depsdev_n": 185,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@vk0/agent-claim-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-sports-game-odds",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-web-recon-agent",
+  "live_n": 115,
+  "depsdev_n": 115,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@malikmalikayesha/azure-image-generation-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-arcgis-durham",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@aicanvas/mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "sentiment-analysis-ai-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-data-strasbourg",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "mcp-db-bridge",
+  "live_n": 151,
+  "depsdev_n": 151,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@craft-ng/mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@moleculer/mcp-server",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-arcgis-chatham",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@ranklancer/uptime-kuma-mcp",
+  "live_n": 102,
+  "depsdev_n": 102,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "true-solar-time-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "hyros-mcp",
+  "live_n": 139,
+  "depsdev_n": 139,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "frc-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@cyanheads/faa-aircraft-registry-mcp-server",
+  "live_n": 50,
+  "depsdev_n": 50,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@devinwangd/cloak-browser-mcp",
+  "live_n": 103,
+  "depsdev_n": 103,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@gogogadgetbytes/smart-connections-mcp",
+  "live_n": 169,
+  "depsdev_n": 169,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@mseep/mcp-shodan",
+  "live_n": 47,
+  "depsdev_n": 47,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "turk-hukuku-mevzuat-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-faa-regulations",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@mseep/grok-build-x-search-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "openpanel-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-arcgis-phoenix",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "krx-cli",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "linkydy-mcp",
+  "live_n": 96,
+  "depsdev_n": 96,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@pipeworx/mcp-rfc-editor",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "pushci",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@ohos-ports/agentic-flow",
+  "live_n": 525,
+  "depsdev_n": 525,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 20
+ },
+ {
+  "server": "datalikers-mcp",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "focus-timer-ai-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "goaltracker",
+  "live_n": 130,
+  "depsdev_n": 130,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "aishield-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "lorg-mcp-server",
+  "live_n": 95,
+  "depsdev_n": 95,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 1
+ },
+ {
+  "server": "@csmodding/gameface-devtools-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "402verify-mcp",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "@pipeworx/mcp-arcgis-kamloops",
+  "live_n": 1,
+  "depsdev_n": 1,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 0
+ },
+ {
+  "server": "bugpack-mcp",
+  "live_n": 201,
+  "depsdev_n": 201,
+  "missing_in_depsdev": 0,
+  "extra_in_depsdev": 0,
+  "version_differs": 4
+ }
+]

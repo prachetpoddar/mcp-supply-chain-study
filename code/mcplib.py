@@ -36,10 +36,17 @@ def _cpath(key):
     h = hashlib.sha256(key.encode()).hexdigest()
     return os.path.join(CACHE, h[:2], h + ".json.gz")
 
+# MCPRES_REFRESH=1 bypasses the on-disk cache for reads and rewrites it.
+# The cache never expires, so a long-running study silently resolves against a
+# snapshot that drifts further from the registry every day. That is fine for
+# reproducibility and fatal for validating against a live `npm install`, where
+# stale entries look like resolver errors. Set it when comparing to npm.
+REFRESH = os.environ.get("MCPRES_REFRESH") == "1"
+
 def fetch_json(url, cache_key=None, tries=4):
     key = cache_key or url
     p = _cpath(key)
-    if os.path.exists(p):
+    if os.path.exists(p) and not REFRESH:
         STATS["cache_hit"] += 1
         with gzip.open(p, "rt") as f: return json.load(f)
     for a in range(tries):

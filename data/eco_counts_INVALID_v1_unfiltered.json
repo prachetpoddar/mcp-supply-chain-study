@@ -1,0 +1,86 @@
+{
+ "mcp-server": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "model-context-protocol": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "mcp": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "eslint-plugin": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "langchain": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "gatsby-plugin": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "vite-plugin": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "babel-plugin": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "ai-tools": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "rag": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "embeddings": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "fastify-plugin": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "strapi-plugin": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ },
+ "serverless-plugin": {
+  "total_count_header": null,
+  "total_pages_header": null,
+  "sample_n": 20,
+  "sample_carrying_keyword": 0
+ }
+}

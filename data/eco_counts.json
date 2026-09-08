@@ -1,0 +1,128 @@
+{
+ "mcp-server": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 5,
+  "keyword_match_rate": 0.05,
+  "sample_npm": 7,
+  "packages_url": null,
+  "verified": false
+ },
+ "model-context-protocol": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 87,
+  "keyword_match_rate": 0.87,
+  "sample_npm": 84,
+  "packages_url": null,
+  "verified": false
+ },
+ "mcp": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 87,
+  "keyword_match_rate": 0.87,
+  "sample_npm": 76,
+  "packages_url": null,
+  "verified": false
+ },
+ "eslint-plugin": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 79,
+  "keyword_match_rate": 0.79,
+  "sample_npm": 98,
+  "packages_url": null,
+  "verified": false
+ },
+ "langchain": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 79,
+  "keyword_match_rate": 0.79,
+  "sample_npm": 41,
+  "packages_url": null,
+  "verified": false
+ },
+ "gatsby-plugin": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 99,
+  "keyword_match_rate": 0.99,
+  "sample_npm": 100,
+  "packages_url": null,
+  "verified": true
+ },
+ "vite-plugin": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 72,
+  "keyword_match_rate": 0.72,
+  "sample_npm": 99,
+  "packages_url": null,
+  "verified": false
+ },
+ "babel-plugin": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 66,
+  "keyword_match_rate": 0.66,
+  "sample_npm": 99,
+  "packages_url": null,
+  "verified": false
+ },
+ "ai-tools": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 59,
+  "keyword_match_rate": 0.59,
+  "sample_npm": 89,
+  "packages_url": null,
+  "verified": false
+ },
+ "rag": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 54,
+  "keyword_match_rate": 0.54,
+  "sample_npm": 38,
+  "packages_url": null,
+  "verified": false
+ },
+ "embeddings": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 45,
+  "keyword_match_rate": 0.45,
+  "sample_npm": 35,
+  "packages_url": null,
+  "verified": false
+ },
+ "fastify-plugin": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 31,
+  "keyword_match_rate": 0.31,
+  "sample_npm": 98,
+  "packages_url": null,
+  "verified": false
+ },
+ "strapi-plugin": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 68,
+  "keyword_match_rate": 0.68,
+  "sample_npm": 100,
+  "packages_url": null,
+  "verified": false
+ },
+ "serverless-plugin": {
+  "packages_count_all_registries": null,
+  "sample_n": 100,
+  "sample_carrying_keyword": 38,
+  "keyword_match_rate": 0.38,
+  "sample_npm": 98,
+  "packages_url": null,
+  "verified": false
+ }
+}

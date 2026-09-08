@@ -1,0 +1,39 @@
+{
+ "cargo": {
+  "n": 2,
+  "median_direct": 7.5,
+  "median_nodes": 49.0,
+  "median_share_pct": 29.3,
+  "mean_share_pct": 29.3,
+  "resolution_model": "majors coexist",
+  "validated_against_real_install": false
+ },
+ "maven": {
+  "n": 12,
+  "median_direct": 1.0,
+  "median_nodes": 2.0,
+  "median_share_pct": 16.7,
+  "mean_share_pct": 28.4,
+  "resolution_model": "nearest-wins, one per coordinate",
+  "validated_against_real_install": false
+ },
+ "npm": {
+  "n": 12,
+  "median_direct": 4.5,
+  "median_nodes": 11.5,
+  "median_share_pct": 39.4,
+  "mean_share_pct": 38.6,
+  "resolution_model": "nests conflicting versions",
+  "validated_against_real_install": true
+ },
+ "pypi": {
+  "n": 12,
+  "median_direct": 1.5,
+  "median_nodes": 2.5,
+  "median_share_pct": 50.0,
+  "mean_share_pct": 41.0,
+  "resolution_model": "flat environment, no duplicates possible",
+  "validated_against_real_install": false
+ },
+ "_caveat": "deps.dev's published graph. Validated against a real install for npm only. Other ecosystems are deps.dev's view and must not be described as what installs until each is checked against its own package manager."
+}
