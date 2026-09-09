@@ -1,0 +1,47 @@
+{
+  "no license file": {
+    "deff_mcp": 1.31,
+    "icc_mcp": 0.444,
+    "pkgs_per_pub_mcp": 1.69,
+    "deff_eslint": 1.3,
+    "deff_langchain": 1.07,
+    "z_eslint": -3.37,
+    "z_langchain": -7.25
+  },
+  "declares, no text": {
+    "deff_mcp": 1.32,
+    "icc_mcp": 0.468,
+    "pkgs_per_pub_mcp": 1.69,
+    "deff_eslint": 1.3,
+    "deff_langchain": 1.07,
+    "z_eslint": -3.67,
+    "z_langchain": -7.47
+  },
+  "deprecated in tree": {
+    "deff_mcp": 1.16,
+    "icc_mcp": 0.289,
+    "pkgs_per_pub_mcp": 1.56,
+    "deff_eslint": 1.25,
+    "deff_langchain": 1.09,
+    "z_eslint": -0.68,
+    "z_langchain": -2.19
+  },
+  "released last 30d": {
+    "deff_mcp": 1.37,
+    "icc_mcp": 0.533,
+    "pkgs_per_pub_mcp": 1.69,
+    "deff_eslint": 1.02,
+    "deff_langchain": 1.0,
+    "z_eslint": 3.08,
+    "z_langchain": 1.11
+  },
+  "exactly one version": {
+    "deff_mcp": 1.6,
+    "icc_mcp": 0.875,
+    "pkgs_per_pub_mcp": 1.69,
+    "deff_eslint": 1.34,
+    "deff_langchain": 1.13,
+    "z_eslint": 4.88,
+    "z_langchain": 6.93
+  }
+}

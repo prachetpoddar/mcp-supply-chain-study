@@ -1,0 +1,374 @@
+{
+ "gatsby-plugin": {
+  "kind": "adapter, established",
+  "n": 3260,
+  "population": 3260,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 1.5,
+  "scopes_over_100": 0,
+  "scope_gini": 0.285,
+  "largest_scopes": [
+   [
+    "@draftbox-co",
+    18
+   ],
+   [
+    "@amory",
+    16
+   ],
+   [
+    "@lekoarts",
+    14
+   ],
+   [
+    "@pittica",
+    14
+   ],
+   [
+    "@reflexjs",
+    14
+   ]
+  ]
+ },
+ "strapi-plugin": {
+  "kind": "adapter, established",
+  "n": 382,
+  "population": 382,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 4.7,
+  "scopes_over_100": 0,
+  "scope_gini": 0.231,
+  "largest_scopes": [
+   [
+    "@tunghtml",
+    7
+   ],
+   [
+    "@qkix",
+    6
+   ],
+   [
+    "@devxcommerce",
+    5
+   ],
+   [
+    "@zachariaz",
+    3
+   ],
+   [
+    "@codeberry",
+    3
+   ]
+  ]
+ },
+ "fastify-plugin": {
+  "kind": "adapter, established",
+  "n": 252,
+  "population": 252,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 8.3,
+  "scopes_over_100": 0,
+  "scope_gini": 0.275,
+  "largest_scopes": [
+   [
+    "@jafps",
+    8
+   ],
+   [
+    "@joshuaavalon",
+    7
+   ],
+   [
+    "@ynode",
+    6
+   ],
+   [
+    "@kne",
+    6
+   ],
+   [
+    "@xenterprises",
+    6
+   ]
+  ]
+ },
+ "serverless-plugin": {
+  "kind": "adapter, established",
+  "n": 154,
+  "population": 154,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 7.8,
+  "scopes_over_100": 0,
+  "scope_gini": 0.24,
+  "largest_scopes": [
+   [
+    "@kalarrs",
+    5
+   ],
+   [
+    "@stellar-apps",
+    4
+   ],
+   [
+    "@interlace",
+    3
+   ],
+   [
+    "@dyecode",
+    2
+   ],
+   [
+    "@govtechsg",
+    1
+   ]
+  ]
+ },
+ "vite-plugin": {
+  "kind": "logic, established",
+  "n": 4046,
+  "population": 4046,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 0.7,
+  "scopes_over_100": 0,
+  "scope_gini": 0.166,
+  "largest_scopes": [
+   [
+    "@vituum",
+    13
+   ],
+   [
+    "@vitejs",
+    9
+   ],
+   [
+    "@depup",
+    7
+   ],
+   [
+    "@nessframework",
+    7
+   ],
+   [
+    "@v43",
+    7
+   ]
+  ]
+ },
+ "babel-plugin": {
+  "kind": "logic, established",
+  "n": 2519,
+  "population": 2519,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 11.6,
+  "scopes_over_100": 1,
+  "scope_gini": 0.499,
+  "largest_scopes": [
+   [
+    "@babel",
+    144
+   ],
+   [
+    "@gerhobbelt",
+    97
+   ],
+   [
+    "@nkduy",
+    51
+   ],
+   [
+    "@ireneliaoliao",
+    17
+   ],
+   [
+    "@startupjs",
+    16
+   ]
+  ]
+ },
+ "ai-tools": {
+  "kind": "AI-adjacent, young",
+  "n": 2510,
+  "population": 2510,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 9.4,
+  "scopes_over_100": 1,
+  "scope_gini": 0.352,
+  "largest_scopes": [
+   [
+    "@iflow-mcp",
+    115
+   ],
+   [
+    "@coretext-ai",
+    95
+   ],
+   [
+    "@clinetools",
+    25
+   ],
+   [
+    "@mcp-mk",
+    24
+   ],
+   [
+    "@cli4ai",
+    20
+   ]
+  ]
+ },
+ "rag": {
+  "kind": "AI-adjacent, young",
+  "n": 3433,
+  "population": 3433,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 3.1,
+  "scopes_over_100": 0,
+  "scope_gini": 0.293,
+  "largest_scopes": [
+   [
+    "@iflow-mcp",
+    49
+   ],
+   [
+    "@mukundakatta",
+    30
+   ],
+   [
+    "@promptbook",
+    29
+   ],
+   [
+    "@vivantel",
+    24
+   ],
+   [
+    "@ragsdk",
+    20
+   ]
+  ]
+ },
+ "embeddings": {
+  "kind": "AI-adjacent, young",
+  "n": 2282,
+  "population": 2282,
+  "coverage_pct": 100.0,
+  "top3_scope_share_pct": 4.8,
+  "scopes_over_100": 0,
+  "scope_gini": 0.324,
+  "largest_scopes": [
+   [
+    "@iflow-mcp",
+    46
+   ],
+   [
+    "@cherrystudio",
+    32
+   ],
+   [
+    "@llm-tools",
+    32
+   ],
+   [
+    "@caspian2026",
+    32
+   ],
+   [
+    "@promptbook",
+    29
+   ]
+  ]
+ },
+ "langchain": {
+  "kind": "AI-adjacent, established",
+  "n": 1973,
+  "population": 1974,
+  "coverage_pct": 99.9,
+  "top3_scope_share_pct": 1.8,
+  "scopes_over_100": 0,
+  "scope_gini": 0.183,
+  "largest_scopes": [
+   [
+    "@nlux",
+    13
+   ],
+   [
+    "@nest-langchain",
+    12
+   ],
+   [
+    "@langchain",
+    10
+   ],
+   [
+    "@iflow-mcp",
+    7
+   ],
+   [
+    "@carbide",
+    6
+   ]
+  ]
+ },
+ "mcp-server": {
+  "kind": "adapter, young",
+  "n": 7833,
+  "population": 8238,
+  "coverage_pct": 95.1,
+  "top3_scope_share_pct": 32.9,
+  "scopes_over_100": 4,
+  "scope_gini": 0.669,
+  "largest_scopes": [
+   [
+    "@pipeworx",
+    1257
+   ],
+   [
+    "@mseep",
+    1065
+   ],
+   [
+    "@iflow-mcp",
+    255
+   ],
+   [
+    "@cyanheads",
+    115
+   ],
+   [
+    "@theyahia",
+    80
+   ]
+  ]
+ },
+ "eslint-plugin": {
+  "kind": "logic, established",
+  "n": 5250,
+  "population": 7078,
+  "coverage_pct": 74.2,
+  "top3_scope_share_pct": 5.4,
+  "scopes_over_100": 1,
+  "scope_gini": 0.547,
+  "largest_scopes": [
+   [
+    "@ryniaubenpm",
+    116
+   ],
+   [
+    "@crabas0npm",
+    99
+   ],
+   [
+    "@ffras4vnpm",
+    69
+   ],
+   [
+    "@wemnyelezxnpm",
+    69
+   ],
+   [
+    "@ryniaubenpm2",
+    67
+   ]
+  ]
+ }
+}

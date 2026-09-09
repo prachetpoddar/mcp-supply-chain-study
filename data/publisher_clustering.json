@@ -1,0 +1,431 @@
+{
+ "mcp-server": {
+  "packages": 7838,
+  "publishers_5plus": 74,
+  "observed_all_or_nothing_pct": 73.2,
+  "null_pct": 18.7,
+  "ratio": 3.91,
+  "per_keyword": [
+   {
+    "keyword": "mcp",
+    "population_rate_pct": 93.1,
+    "observed_pct": 93.2,
+    "null_pct": 52.1
+   },
+   {
+    "keyword": "model-context-protocol",
+    "population_rate_pct": 64.6,
+    "observed_pct": 67.6,
+    "null_pct": 4.7
+   },
+   {
+    "keyword": "claude",
+    "population_rate_pct": 34.1,
+    "observed_pct": 63.5,
+    "null_pct": 5.3
+   },
+   {
+    "keyword": "ai",
+    "population_rate_pct": 21.6,
+    "observed_pct": 70.3,
+    "null_pct": 15.0
+   },
+   {
+    "keyword": "cursor",
+    "population_rate_pct": 20.4,
+    "observed_pct": 71.6,
+    "null_pct": 16.5
+   }
+  ]
+ },
+ "gatsby-plugin": {
+  "packages": 3260,
+  "publishers_5plus": 66,
+  "observed_all_or_nothing_pct": 75.2,
+  "null_pct": 51.5,
+  "ratio": 1.46,
+  "per_keyword": [
+   {
+    "keyword": "gatsby",
+    "population_rate_pct": 99.2,
+    "observed_pct": 97.0,
+    "null_pct": 93.7
+   },
+   {
+    "keyword": "gatsby-theme",
+    "population_rate_pct": 17.2,
+    "observed_pct": 59.1,
+    "null_pct": 23.3
+   },
+   {
+    "keyword": "gatsby-source-plugin",
+    "population_rate_pct": 11.8,
+    "observed_pct": 69.7,
+    "null_pct": 36.2
+   },
+   {
+    "keyword": "remark",
+    "population_rate_pct": 8.9,
+    "observed_pct": 74.2,
+    "null_pct": 46.1
+   },
+   {
+    "keyword": "react",
+    "population_rate_pct": 6.3,
+    "observed_pct": 75.8,
+    "null_pct": 58.2
+   }
+  ]
+ },
+ "strapi-plugin": {
+  "packages": 382,
+  "publishers_5plus": 9,
+  "observed_all_or_nothing_pct": 64.4,
+  "null_pct": 43.3,
+  "ratio": 1.49,
+  "per_keyword": [
+   {
+    "keyword": "strapi",
+    "population_rate_pct": 97.4,
+    "observed_pct": 100.0,
+    "null_pct": 81.9
+   },
+   {
+    "keyword": "plugin",
+    "population_rate_pct": 29.8,
+    "observed_pct": 55.6,
+    "null_pct": 10.9
+   },
+   {
+    "keyword": "strapi-v5",
+    "population_rate_pct": 17.5,
+    "observed_pct": 44.4,
+    "null_pct": 26.6
+   },
+   {
+    "keyword": "cms",
+    "population_rate_pct": 10.5,
+    "observed_pct": 77.8,
+    "null_pct": 45.2
+   },
+   {
+    "keyword": "custom-field",
+    "population_rate_pct": 8.6,
+    "observed_pct": 44.4,
+    "null_pct": 52.0
+   }
+  ]
+ },
+ "fastify-plugin": {
+  "packages": 252,
+  "publishers_5plus": 9,
+  "observed_all_or_nothing_pct": 77.8,
+  "null_pct": 51.0,
+  "ratio": 1.53,
+  "per_keyword": [
+   {
+    "keyword": "fastify",
+    "population_rate_pct": 96.0,
+    "observed_pct": 77.8,
+    "null_pct": 72.0
+   },
+   {
+    "keyword": "plugin",
+    "population_rate_pct": 14.3,
+    "observed_pct": 55.6,
+    "null_pct": 29.8
+   },
+   {
+    "keyword": "typescript",
+    "population_rate_pct": 11.5,
+    "observed_pct": 77.8,
+    "null_pct": 37.4
+   },
+   {
+    "keyword": "nodejs",
+    "population_rate_pct": 7.5,
+    "observed_pct": 77.8,
+    "null_pct": 52.8
+   },
+   {
+    "keyword": "helmet",
+    "population_rate_pct": 5.6,
+    "observed_pct": 100.0,
+    "null_pct": 62.9
+   }
+  ]
+ },
+ "vite-plugin": {
+  "packages": 4046,
+  "publishers_5plus": 32,
+  "observed_all_or_nothing_pct": 76.9,
+  "null_pct": 42.9,
+  "ratio": 1.79,
+  "per_keyword": [
+   {
+    "keyword": "vite",
+    "population_rate_pct": 69.5,
+    "observed_pct": 71.9,
+    "null_pct": 9.0
+   },
+   {
+    "keyword": "react",
+    "population_rate_pct": 10.1,
+    "observed_pct": 78.1,
+    "null_pct": 45.8
+   },
+   {
+    "keyword": "typescript",
+    "population_rate_pct": 8.4,
+    "observed_pct": 75.0,
+    "null_pct": 52.0
+   },
+   {
+    "keyword": "plugin",
+    "population_rate_pct": 8.0,
+    "observed_pct": 81.2,
+    "null_pct": 53.3
+   },
+   {
+    "keyword": "vue",
+    "population_rate_pct": 7.7,
+    "observed_pct": 78.1,
+    "null_pct": 54.2
+   }
+  ]
+ },
+ "babel-plugin": {
+  "packages": 2519,
+  "publishers_5plus": 29,
+  "observed_all_or_nothing_pct": 80.0,
+  "null_pct": 43.6,
+  "ratio": 1.84,
+  "per_keyword": [
+   {
+    "keyword": "babel",
+    "population_rate_pct": 32.4,
+    "observed_pct": 58.6,
+    "null_pct": 5.9
+   },
+   {
+    "keyword": "react",
+    "population_rate_pct": 12.3,
+    "observed_pct": 69.0,
+    "null_pct": 31.7
+   },
+   {
+    "keyword": "plugin",
+    "population_rate_pct": 6.1,
+    "observed_pct": 89.7,
+    "null_pct": 57.4
+   },
+   {
+    "keyword": "import",
+    "population_rate_pct": 5.7,
+    "observed_pct": 89.7,
+    "null_pct": 60.7
+   },
+   {
+    "keyword": "jsx",
+    "population_rate_pct": 5.4,
+    "observed_pct": 93.1,
+    "null_pct": 62.1
+   }
+  ]
+ },
+ "ai-tools": {
+  "packages": 2510,
+  "publishers_5plus": 32,
+  "observed_all_or_nothing_pct": 75.6,
+  "null_pct": 11.8,
+  "ratio": 6.4,
+  "per_keyword": [
+   {
+    "keyword": "mcp",
+    "population_rate_pct": 82.3,
+    "observed_pct": 81.2,
+    "null_pct": 21.6
+   },
+   {
+    "keyword": "model-context-protocol",
+    "population_rate_pct": 68.7,
+    "observed_pct": 68.8,
+    "null_pct": 7.8
+   },
+   {
+    "keyword": "claude",
+    "population_rate_pct": 57.8,
+    "observed_pct": 71.9,
+    "null_pct": 3.6
+   },
+   {
+    "keyword": "cursor",
+    "population_rate_pct": 27.1,
+    "observed_pct": 78.1,
+    "null_pct": 11.1
+   },
+   {
+    "keyword": "mcp-server",
+    "population_rate_pct": 22.7,
+    "observed_pct": 78.1,
+    "null_pct": 15.0
+   }
+  ]
+ },
+ "rag": {
+  "packages": 3433,
+  "publishers_5plus": 46,
+  "observed_all_or_nothing_pct": 66.5,
+  "null_pct": 10.9,
+  "ratio": 6.09,
+  "per_keyword": [
+   {
+    "keyword": "ai",
+    "population_rate_pct": 46.3,
+    "observed_pct": 60.9,
+    "null_pct": 2.9
+   },
+   {
+    "keyword": "llm",
+    "population_rate_pct": 40.8,
+    "observed_pct": 63.0,
+    "null_pct": 4.0
+   },
+   {
+    "keyword": "mcp",
+    "population_rate_pct": 30.1,
+    "observed_pct": 71.7,
+    "null_pct": 9.0
+   },
+   {
+    "keyword": "embeddings",
+    "population_rate_pct": 24.4,
+    "observed_pct": 58.7,
+    "null_pct": 14.4
+   },
+   {
+    "keyword": "memory",
+    "population_rate_pct": 17.5,
+    "observed_pct": 78.3,
+    "null_pct": 24.3
+   }
+  ]
+ },
+ "embeddings": {
+  "packages": 2282,
+  "publishers_5plus": 30,
+  "observed_all_or_nothing_pct": 63.3,
+  "null_pct": 4.7,
+  "ratio": 13.37,
+  "per_keyword": [
+   {
+    "keyword": "ai",
+    "population_rate_pct": 51.4,
+    "observed_pct": 53.3,
+    "null_pct": 1.8
+   },
+   {
+    "keyword": "llm",
+    "population_rate_pct": 37.8,
+    "observed_pct": 66.7,
+    "null_pct": 3.4
+   },
+   {
+    "keyword": "rag",
+    "population_rate_pct": 37.0,
+    "observed_pct": 60.0,
+    "null_pct": 3.5
+   },
+   {
+    "keyword": "semantic-search",
+    "population_rate_pct": 30.2,
+    "observed_pct": 66.7,
+    "null_pct": 6.7
+   },
+   {
+    "keyword": "mcp",
+    "population_rate_pct": 27.6,
+    "observed_pct": 70.0,
+    "null_pct": 8.4
+   }
+  ]
+ },
+ "langchain": {
+  "packages": 1974,
+  "publishers_5plus": 22,
+  "observed_all_or_nothing_pct": 73.6,
+  "null_pct": 13.0,
+  "ratio": 5.65,
+  "per_keyword": [
+   {
+    "keyword": "ai",
+    "population_rate_pct": 50.9,
+    "observed_pct": 68.2,
+    "null_pct": 3.5
+   },
+   {
+    "keyword": "llm",
+    "population_rate_pct": 39.6,
+    "observed_pct": 63.6,
+    "null_pct": 5.9
+   },
+   {
+    "keyword": "openai",
+    "population_rate_pct": 29.5,
+    "observed_pct": 72.7,
+    "null_pct": 12.3
+   },
+   {
+    "keyword": "agent",
+    "population_rate_pct": 22.9,
+    "observed_pct": 72.7,
+    "null_pct": 20.5
+   },
+   {
+    "keyword": "mcp",
+    "population_rate_pct": 21.0,
+    "observed_pct": 90.9,
+    "null_pct": 23.0
+   }
+  ]
+ },
+ "eslint-plugin": {
+  "packages": 5000,
+  "publishers_5plus": 38,
+  "observed_all_or_nothing_pct": 34.7,
+  "null_pct": 14.0,
+  "ratio": 2.48,
+  "per_keyword": [
+   {
+    "keyword": "eslint",
+    "population_rate_pct": 91.0,
+    "observed_pct": 36.8,
+    "null_pct": 32.9
+   },
+   {
+    "keyword": "eslintplugin",
+    "population_rate_pct": 76.2,
+    "observed_pct": 18.4,
+    "null_pct": 8.0
+   },
+   {
+    "keyword": "typescript",
+    "population_rate_pct": 27.0,
+    "observed_pct": 34.2,
+    "null_pct": 6.0
+   },
+   {
+    "keyword": "es6",
+    "population_rate_pct": 19.4,
+    "observed_pct": 39.5,
+    "null_pct": 11.4
+   },
+   {
+    "keyword": "set",
+    "population_rate_pct": 19.0,
+    "observed_pct": 44.7,
+    "null_pct": 11.8
+   }
+  ]
+ }
+}

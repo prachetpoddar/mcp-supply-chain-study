@@ -8,11 +8,12 @@ International licence (CC-BY-4.0).
 ## Attribution
 
     Poddar, P. (2026). Keyword Frames Are Cluster Samples: How a Third of an
-    npm Ecosystem Stayed Invisible. Version 3.3. Dataset. CC-BY-4.0.
-    https://doi.org/10.5281/zenodo.22664719
+    npm Ecosystem Stayed Invisible. Version 3.4. Dataset. CC-BY-4.0.
+    https://doi.org/10.5281/zenodo.22641812
 
-The earlier DOI 10.5281/zenodo.22641813 archives version 1.0.0 only and should
-not be used to cite this dataset.
+That is the concept DOI. The version DOIs 10.5281/zenodo.22641813 and
+10.5281/zenodo.22664719 archive version 1.0.0 and the version 3.1 tree
+respectively, and neither should be used to cite this dataset.
 
 ## What the data is, and what it is not
 

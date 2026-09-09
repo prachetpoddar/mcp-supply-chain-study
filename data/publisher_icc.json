@@ -1,0 +1,98 @@
+{
+ "mcp-server": {
+  "co_keyword": "mcp",
+  "icc": 0.28,
+  "clusters": 346,
+  "n": 4022,
+  "mean_cluster_size": 11.6,
+  "design_effect": 4.0
+ },
+ "gatsby-plugin": {
+  "co_keyword": "gatsby",
+  "icc": 0.397,
+  "clusters": 488,
+  "n": 1687,
+  "mean_cluster_size": 3.5,
+  "design_effect": 2.0
+ },
+ "strapi-plugin": {
+  "co_keyword": "strapi",
+  "icc": 0.557,
+  "clusters": 48,
+  "n": 163,
+  "mean_cluster_size": 3.4,
+  "design_effect": 2.3
+ },
+ "fastify-plugin": {
+  "co_keyword": "fastify",
+  "icc": 0.0,
+  "clusters": 28,
+  "n": 141,
+  "mean_cluster_size": 5.0,
+  "design_effect": 1.0
+ },
+ "serverless-plugin": {
+  "co_keyword": "serverless",
+  "icc": 0.0,
+  "clusters": 23,
+  "n": 66,
+  "mean_cluster_size": 2.9,
+  "design_effect": 1.0
+ },
+ "vite-plugin": {
+  "co_keyword": "vite",
+  "icc": 0.431,
+  "clusters": 416,
+  "n": 1736,
+  "mean_cluster_size": 4.2,
+  "design_effect": 2.4
+ },
+ "babel-plugin": {
+  "co_keyword": "babel",
+  "icc": 0.679,
+  "clusters": 269,
+  "n": 1221,
+  "mean_cluster_size": 4.5,
+  "design_effect": 3.4
+ },
+ "ai-tools": {
+  "co_keyword": "mcp",
+  "icc": 0.619,
+  "clusters": 208,
+  "n": 1088,
+  "mean_cluster_size": 5.2,
+  "design_effect": 3.6
+ },
+ "rag": {
+  "co_keyword": "ai",
+  "icc": 0.459,
+  "clusters": 363,
+  "n": 1568,
+  "mean_cluster_size": 4.3,
+  "design_effect": 2.5
+ },
+ "embeddings": {
+  "co_keyword": "ai",
+  "icc": 0.432,
+  "clusters": 209,
+  "n": 1063,
+  "mean_cluster_size": 5.1,
+  "design_effect": 2.8
+ },
+ "langchain": {
+  "co_keyword": "ai",
+  "icc": 0.456,
+  "clusters": 202,
+  "n": 733,
+  "mean_cluster_size": 3.6,
+  "design_effect": 2.2
+ },
+ "eslint-plugin": {
+  "co_keyword": "eslint",
+  "icc": 0.088,
+  "clusters": 275,
+  "n": 2232,
+  "mean_cluster_size": 8.1,
+  "design_effect": 1.6
+ }
+}

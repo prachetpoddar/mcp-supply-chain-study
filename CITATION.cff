@@ -9,8 +9,8 @@ authors:
     given-names: Prachet
     email: prachetpoddar@gmail.com
     affiliation: University of California, Los Angeles
-version: 3.3.0
-doi: 10.5281/zenodo.22664719
+version: 3.4.0
+doi: 10.5281/zenodo.22641812
 date-released: 2026-09-08
 license: Apache-2.0
 license-url: https://www.apache.org/licenses/LICENSE-2.0
@@ -36,8 +36,13 @@ keywords:
 repository-code: https://github.com/prachetpoddar/mcp-supply-chain-study
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.22641812
+    description: Concept DOI, resolving to the most recent archived version.
+  - type: doi
     value: 10.5281/zenodo.22664719
-    description: Archived snapshot of version 3.3, this version.
+    description: >-
+      Labelled version 3.3 but archives the version 3.1 tree; the tag was
+      placed on the wrong commit.
   - type: doi
     value: 10.5281/zenodo.22641813
     description: >-

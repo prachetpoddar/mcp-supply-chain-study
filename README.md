@@ -4,7 +4,7 @@ Data and code for *Keyword Frames Are Cluster Samples: How a Third of an npm
 Ecosystem Stayed Invisible*, a measurement study of Model Context Protocol
 servers on npm. Measurements run 6 to 8 September 2026.
 
-**Version 3.3.** The study began as a supply-chain risk comparison and became a
+**Version 3.4.** The study began as a supply-chain risk comparison and became a
 paper about why that comparison kept failing. Two causes: a keyword-built frame
 that sampled publishers rather than packages, and a dependency resolver that was
 never validated against the tool it modelled. Section 12 of the paper lists every
@@ -14,11 +14,12 @@ several headline figures have been withdrawn.
 Paper: [`paper/mcp-frame-paper-v3.md`](paper/mcp-frame-paper-v3.md), also as
 `.docx` and `.pdf`. Superseded versions ship alongside it.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22664719.svg)](https://doi.org/10.5281/zenodo.22664719)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22641812.svg)](https://doi.org/10.5281/zenodo.22641812)
 
-Cite `10.5281/zenodo.22664719` for version 3.3. The earlier DOI
-`10.5281/zenodo.22641813` archives version 1.0.0 only, under its original title
-and with findings this version corrects.
+Cite `10.5281/zenodo.22641812`. That is the concept DOI and it resolves to the
+most recent archived version. The version DOIs are `22641813` for v1.0.0 and
+`22664719`, which is labelled v3.3 but archives the v3.1 tree because the tag was
+placed on the wrong commit.
 
 ## What it found
 

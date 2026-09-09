@@ -6,7 +6,7 @@ University of California, Los Angeles
 
 prachetpoddar@gmail.com
 
-*Version 3.3, 8 September 2026*
+*Version 3.4, 8 September 2026*
 
 *This work was conducted independently. It was not funded by, supervised by, or
 carried out under the auspices of any research program, and it should not be
@@ -609,14 +609,20 @@ still exist as files, both invalidated datasets, and the raw per-package records
 behind every corrected figure:
 
 > https://github.com/prachetpoddar/mcp-supply-chain-study
-> Version 3.3, this version, is archived at DOI 10.5281/zenodo.22664719.
+> Archived at DOI 10.5281/zenodo.22641812.
 
-Cite that DOI for this version. DOI 10.5281/zenodo.22641813 archives **version
-1.0.0 only**, under its original title, "Measuring the MCP Supply Chain: Eight
-Null Results and a Population That Is Not the Population". Its findings are
-superseded here, so citing it for this version would cite the paper this one
-exists to correct. Versions 1.0.1, 1.0.2 and 2.0 were never archived; versions of
-this paper before 3.3 stated that 2.0 had its own DOI, which was not true.
+Cite that DOI. It is the concept DOI, which resolves to the most recent archived
+version, so it does not go stale as this paper is revised.
+
+The version DOIs are more specific and, in one case, misleading. 10.5281/zenodo.22641813
+archives version 1.0.0 under its original title, "Measuring the MCP Supply Chain:
+Eight Null Results and a Population That Is Not the Population", whose findings
+are superseded here. 10.5281/zenodo.22664719 is labelled version 3.3 but archives
+the version 3.1 tree, because the `v3.3` git tag was placed on the version 3.1
+commit and Zenodo archives whatever the tag points at. It contains neither the
+Section 6 correction nor the lock format proposal. Versions 1.0.1, 1.0.2 and 2.0
+were never archived, and versions of this paper before 3.3 stated that 2.0 had
+its own DOI, which was not true.
 
 Code is Apache-2.0, data CC-BY-4.0. The resolver uses only the public npm, PyPI
 and Docker Hub APIs. No third-party package source is redistributed.
@@ -738,3 +744,17 @@ named the version 1 paper. It now runs, ships the current paper and both
 superseded ones, and copies the per-package validation records that make the
 validation figure reproducible. The README, `CITATION.cff` and `.zenodo.json`
 described version 1.0.2 under the old title and are rewritten.
+
+**3.4** Corrected the archive references. Version 3.3 cited
+10.5281/zenodo.22664719 as the archive of itself. That record is labelled version
+3.3 but contains the version 3.1 tree, because the `v3.3` tag was placed on the
+version 3.1 commit, and a Zenodo record's files cannot be replaced after minting.
+The paper now cites the concept DOI, 10.5281/zenodo.22641812, which resolves to
+the most recent version and does not need changing at each revision. Also released
+the result files Sections 5 and 6 depend on, which had never been published:
+`cluster_bootstrap.json` and `design_effect_corrected.json` carry the z values
+Section 6 reports, `publisher_clustering.json` and `publisher_icc.json` are the
+whole of Section 5, and the per-package validation records make the 6,144 of
+6,146 figure reproducible rather than requiring a reader to sum two arm summaries,
+which reproduces the figure revision 3.1 retracts. The paper claimed its data was
+released; for those sections it was not.

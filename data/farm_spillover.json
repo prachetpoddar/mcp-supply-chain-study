@@ -1,0 +1,282 @@
+{
+ "mojibake-ai": {
+  "scope": "@pipeworx",
+  "published": 1289,
+  "reported_total": 1289,
+  "in_mcp_frame": 1286,
+  "carries_mcp_server_keyword": 1286,
+  "top_keywords": [
+   [
+    "mcp",
+    1288
+   ],
+   [
+    "pipeworx",
+    1287
+   ],
+   [
+    "mcp-server",
+    1286
+   ],
+   [
+    "model-context-protocol",
+    1286
+   ],
+   [
+    "open-meteo",
+    3
+   ],
+   [
+    "opensky",
+    3
+   ],
+   [
+    "math",
+    3
+   ],
+   [
+    "agents",
+    2
+   ],
+   [
+    "ai",
+    2
+   ],
+   [
+    "tools",
+    2
+   ],
+   [
+    "unicode",
+    2
+   ],
+   [
+    "emoji",
+    2
+   ],
+   [
+    "worldbank",
+    2
+   ],
+   [
+    "currency",
+    2
+   ],
+   [
+    "exchangerate",
+    2
+   ]
+  ],
+  "median_keywords_per_package": 5
+ },
+ "skydeckai": {
+  "scope": "@mseep",
+  "published": 1066,
+  "reported_total": 1066,
+  "in_mcp_frame": 1065,
+  "carries_mcp_server_keyword": 1065,
+  "top_keywords": [
+   [
+    "mcp-server",
+    1065
+   ],
+   [
+    "mseep",
+    1065
+   ],
+   [
+    "mcp",
+    671
+   ],
+   [
+    "model-context-protocol",
+    268
+   ],
+   [
+    "ai",
+    213
+   ],
+   [
+    "claude",
+    199
+   ],
+   [
+    "llm",
+    99
+   ],
+   [
+    "api",
+    66
+   ],
+   [
+    "anthropic",
+    53
+   ],
+   [
+    "server",
+    51
+   ],
+   [
+    "modelcontextprotocol",
+    50
+   ],
+   [
+    "cursor",
+    49
+   ],
+   [
+    "typescript",
+    49
+   ],
+   [
+    "cli",
+    39
+   ],
+   [
+    "automation",
+    38
+   ]
+  ],
+  "median_keywords_per_package": 6
+ },
+ "chatflowdev": {
+  "scope": "@iflow-mcp",
+  "published": 5000,
+  "reported_total": 5285,
+  "in_mcp_frame": 256,
+  "carries_mcp_server_keyword": 256,
+  "top_keywords": [
+   [
+    "mcp",
+    3303
+   ],
+   [
+    "model-context-protocol",
+    1546
+   ],
+   [
+    "ai",
+    1180
+   ],
+   [
+    "claude",
+    1119
+   ],
+   [
+    "llm",
+    461
+   ],
+   [
+    "cursor",
+    305
+   ],
+   [
+    "api",
+    279
+   ],
+   [
+    "typescript",
+    277
+   ],
+   [
+    "automation",
+    268
+   ],
+   [
+    "mcp-server",
+    256
+   ],
+   [
+    "anthropic",
+    209
+   ],
+   [
+    "server",
+    204
+   ],
+   [
+    "modelcontextprotocol",
+    194
+   ],
+   [
+    "cli",
+    167
+   ],
+   [
+    "claude-code",
+    154
+   ]
+  ],
+  "median_keywords_per_package": 5
+ },
+ "cyanheads": {
+  "scope": "@cyanheads",
+  "published": 126,
+  "reported_total": 126,
+  "in_mcp_frame": 121,
+  "carries_mcp_server_keyword": 121,
+  "top_keywords": [
+   [
+    "mcp",
+    124
+   ],
+   [
+    "model-context-protocol",
+    124
+   ],
+   [
+    "mcp-server",
+    121
+   ],
+   [
+    "typescript",
+    111
+   ],
+   [
+    "stdio",
+    108
+   ],
+   [
+    "streamable-http",
+    107
+   ],
+   [
+    "bun",
+    102
+   ],
+   [
+    "ai-agent",
+    57
+   ],
+   [
+    "ai",
+    12
+   ],
+   [
+    "llm",
+    9
+   ],
+   [
+    "bioinformatics",
+    6
+   ],
+   [
+    "open-data",
+    6
+   ],
+   [
+    "agent",
+    5
+   ],
+   [
+    "ai-integration",
+    5
+   ],
+   [
+    "cyanheads",
+    5
+   ]
+  ],
+  "median_keywords_per_package": 15
+ }
+}
