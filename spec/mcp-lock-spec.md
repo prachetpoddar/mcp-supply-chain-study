@@ -37,7 +37,7 @@ Three measurements motivate the format. All are from a corpus of 250
 npm-published MCP servers, released with the study cited in Section 14.
 
 The tree is much larger than the configuration suggests. The median server
-installs 93 packages and the largest installs 618. What the manifest declares is
+installs 94 packages and the largest installs 619. What the manifest declares is
 a median of about 3% of that.
 
 The tree is not flat. 68% of the 250 trees contain at least one package name at

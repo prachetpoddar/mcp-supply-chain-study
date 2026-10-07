@@ -79,9 +79,10 @@ An MCP server is launched by a line in a client configuration file:
 `npx -y` resolves from the public registry at launch, so the code that runs is
 whatever the registry serves at that moment. Nothing is pinned, no lockfile is
 produced, and the resulting tree appears in no manifest a scanner can read.
-Across 250 servers walked with the corrected resolver of Section 2.2, the median
-server installs 93 packages and the largest 618. A quarter install exactly one,
-and roughly two thirds install more than 50. 15.6% of trees contain a
+Across 250 servers walked with the corrected resolver of Section 2.2 against the
+registry of 2026-09-17, the median server installs 94 packages and the largest
+619. A quarter install exactly one, and roughly two thirds install more than 50.
+15.6% of trees contain a
 `preinstall`, `install` or `postinstall` hook, rising to 53.6% once a tree
 exceeds 120 packages.
 
@@ -89,6 +90,41 @@ Earlier versions of this section reported a median of 97 and a maximum of 589.
 Those came from the pre-correction walk and were left in place when Section 2.2
 was rewritten; they are corrected here. Maximum depth was recorded only on the
 pre-correction walk, where it was 11, and is not restated.
+
+Revisions 3.2 to 3.5 reported a median of 93 and a maximum of 618, from a
+corrected walk that was made on a temporary path, never copied into the
+repository, and no longer exists. The figures above come from
+`data/walk250_corrected_today.jsonl`, which a reader can recompute. The same
+roots resolved against the registry of 2026-09-07 give a median of 93.5 and a
+maximum of 586, so ten days moves the largest tree by 33 nodes. The quarter and
+the two thirds are identical on both walks.
+
+How much the absence of pinning matters can be measured rather than asserted.
+Running the same 250 roots through the same resolver against two registry states
+ten days apart, both runs made on 2026-09-17 with the earlier state rebuilt by
+discarding versions published after 2026-09-07, **184 of 250 servers resolve to a
+different set of packages**, 73.6%. The corpus barely changes size: 2,867 distinct
+name-and-version pairs become 2,882, with 171 gone and 186 new, and the node
+counts summed across the 250 trees move by 12, from 21,655 to 21,667. The churn is substitution rather than growth.
+Among affected servers the median is 10 nodes different and the maximum 127.
+Five packages account for most of it: `zod` moves from 4.5.4 to 4.6.5 in 164
+trees, `hono` from 4.13.7 to 4.13.8 in 161, `proxy-addr` from 2.0.7 to 2.0.8 in
+158, `fast-uri` from 3.1.7 to 3.1.8 in 155, and `ip-address` from 10.7.0 to
+10.7.2 in 152. Two cold starts a week and a half apart would therefore resolve
+different code on roughly three servers in four, and no artifact anywhere records
+that they differ.
+
+Three qualifications belong with that number. It is a resolver result: no npm
+install was run on either date, and the resolver's agreement with npm is the
+validation of Section 2.2 together with the selector vectors in
+`code/test_resolver_vectors.py`, which it matches on all thirteen. The rebuilt
+state cannot see versions unpublished since 2026-09-07 and reads current
+deprecation flags rather than that date's; both gaps hide change rather than
+create it, so on those two counts 184 is a floor rather than a ceiling, and
+neither is measured. And the count does not rest on the one defect the rebuilt
+state is known to carry, a dist-tag map that cannot be time-travelled: removing
+`@types/node` and `undici-types` from the comparison leaves 184, and removing
+every `@types/*` package, none of which contains runnable code, also leaves 184.
 
 These are properties of the launch mechanism rather than of any one package, but
 they are not independent of the frame: the 250 servers are drawn from stratum A,
@@ -551,6 +587,18 @@ denominator by a factor of 8.6. Everything in Section 6 is conditional on
 
 405 packages were reached by no method. Bounds set them to both extremes.
 
+**The frame cannot contain a deprecated package.** Enumeration runs through the
+registry search API, and that endpoint does not return deprecated packages at
+all. Across four queries returning 1,825 distinct names, none of the eleven
+deprecated `@modelcontextprotocol/server-*` reference servers appeared, while
+every non-deprecated one did. None of the eleven is anywhere in this corpus,
+as a root or as a transitive node. Any statement here about deprecation at the
+root level is therefore a statement about a population from which deprecated
+roots have been removed by the instrument, and the 0 of 250 servers with a
+deprecated `latest` is a property of the frame rather than of MCP servers.
+Transitive nodes are unaffected, since they arrive through dependency resolution
+rather than search, and the tree-level deprecation row in Section 6 stands.
+
 Control arms are not enumerated to 95%. langchain is complete at 1,973;
 eslint-plugin is a 74% frame carrying the same bias MCP's frame had, so
 eslint-plugin comparisons are provisional and only langchain comparisons are
@@ -579,6 +627,15 @@ were drawn from stratum A. They were not, and the claim is withdrawn.
 
 All resolution reads one registry snapshot. Re-running against a later snapshot
 will move the tree-level rows, since deprecations and publications accumulate.
+Measured over ten days and reported in Section 1, that is 73.6% of servers
+resolving to a different set of packages for a net change of 12 nodes.
+
+**The released code could not be run as published.** `mcplib` imports
+`nodesemver`, the module provided by the PyPI package `node-semver`. That
+package was not vendored, not named in any README or citation file, and not
+listed in a requirements file, because none existed. The scripts also ran with
+the working copy on a temporary path that no longer exists. Both are fixed in
+this revision.
 
 I measured license and maintenance metadata. I did not measure malware,
 typosquatting outcomes, prompt injection, tool poisoning, or runtime capability
@@ -758,3 +815,84 @@ whole of Section 5, and the per-package validation records make the 6,144 of
 6,146 figure reproducible rather than requiring a reader to sum two arm summaries,
 which reproduces the figure revision 3.1 retracts. The paper claimed its data was
 released; for those sections it was not.
+
+**3.5** Four corrections and one new result, none of which changes a published
+number. Prompted by a question from the maintainer of mcp-audit about how often
+an MCP server package's `latest` is deprecated.
+
+**The release shipped the wrong vintage of the corpus walk.** Section 1's
+figures as published in revisions 3.2 to 3.5, a median of 93 packages and a
+maximum of 618, come from a walk made
+with the corrected resolver. That walk lived on a temporary path and was never
+copied into the repository. What `release/data/walk250.jsonl` contains is the
+pre-correction walk, whose median is 96.5 and maximum 589, which are the two
+figures revision 3.2 retracted. A reader reproducing Section 1 from the released
+data recovered the retracted numbers. The corrected walk has been rebuilt and is
+released as `walk250_corrected_today.jsonl`, at a median of 94 and a maximum of
+619 after ten days of registry movement, and revision 3.6 restates Section 1 on
+that file rather than on a walk that no longer exists. A second file,
+`walk250_corrected_asof.jsonl`, resolves the same roots against the original walk
+date's registry, rebuilt by discarding versions published after that date, which
+is what makes the drift measurement below separable from the resolver.
+
+**The sampling frame cannot contain a deprecated package**, which Section 9 now
+states. The registry search API does not return them. Eleven of the reference
+`@modelcontextprotocol/server-*` packages have a deprecated `latest` and every
+published version deprecated, and not one is reachable through the enumeration
+or present in this corpus.
+
+**The released code could not be run.** No requirements file, no mention of
+`node-semver` anywhere, and a working copy on a path that no longer exists. Fixed
+here.
+
+**Two resolvers existed in the repository and only one was validated.**
+`install_gap.resolve_at` implements npm's rule and is what Section 2.2 describes
+and what the 6,144 of 6,146 validation covers. `mcplib.npm_resolve` implements
+neither the dist-tag preference nor the deprecation preference, and the shipped
+`walk250.jsonl` is its output. Rebuilding the corpus through the corrected
+resolver moves 160 of 250 trees and 507 nodes, and confirms the figures Section 1
+already carries.
+
+**New result: ten days of registry movement changes 73.6% of servers**, reported
+in Section 1. The decomposition is exact: 507 nodes from the resolver correction,
+12 from drift, 495 combined and 495 measured directly.
+
+**One Section 6 row was computed on the pre-correction walk.** Of the six rows,
+only "deprecated package in tree" is derived from the resolved node set; the rest
+need tarball contents or root metadata that a walk does not carry. Its MCP
+numerator is 43 of 250, which is the pre-correction figure. The corrected walk
+gives 42, moving the coverage-corrected rate from 18.0% to approximately 17.6%,
+inside the interval already reported and leaving the verdict unchanged. The
+control arm was walked with the same resolver, so the comparison is internally
+consistent and correcting one arm alone would not improve it. The row is left as
+published and the residual is recorded here rather than silently carried.
+
+Two artifacts of the dated re-walk are recorded in `RESOLVER-NOTES.md` rather
+than here, because both were mine and neither reached the paper. The time-travel
+path dropped two roots that publish only prereleases, which read as a 5% corpus
+shrink, and then, once fixed, resolved one of them to a higher prerelease than
+its own tag, which read as the maximum growing to 604. The rule change is small
+and stable; the machinery built to isolate it produced two larger and more
+interesting false results first.
+
+
+**3.6** Two method sentences corrected, Section 1 restated on a released file, and
+three qualifications added to the drift result. No empirical finding changes.
+
+**Section 1 described the drift measurement as two walks ten days apart, and as
+"two cold starts".** Both runs were made on 2026-09-17, and the earlier registry
+state was rebuilt by discarding versions published after 2026-09-07. A reader
+writing about the result copied the sentence in good faith, which is how the
+imprecision surfaced.
+
+**Section 1's tree statistics now come from a file a reader can run.** Revisions
+3.2 to 3.5 reported a median of 93 and a maximum of 618 from a corrected walk that
+no longer exists, which the 3.5 notes above already recorded. Section 1 now reports 94 and
+619 from `data/walk250_corrected_today.jsonl`, and names what the dated walk gives.
+`spec/mcp-lock-spec.md` carried the two figures from the paper and is updated with
+it.
+
+**The drift result now carries its own limits**: that it is a resolver result and
+not an install, that the rebuilt state cannot see unpublished versions or
+historical deprecation flags so 184 is a floor on those two counts, and that the
+count survives removing the packages the dist-tag defect touches.

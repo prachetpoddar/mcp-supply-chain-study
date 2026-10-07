@@ -1,0 +1,9 @@
+# Runtime dependencies for the analysis code in code/.
+#
+# node-semver provides the `nodesemver` module that mcplib and install_gap
+# import. It is the only non-standard-library dependency. Pinned because npm
+# range resolution is the measuring instrument here: a different semver
+# implementation silently changes which versions a walk resolves to, and the
+# original study recorded no version, which is why its corpus can be reproduced
+# rule-for-rule but not byte-for-byte.
+node-semver==0.9.1

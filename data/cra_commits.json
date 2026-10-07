@@ -1,0 +1,152 @@
+{
+ "schema": 2,
+ "design": "volume-stratified, threshold calibrated per stratum",
+ "n_eligible": {
+  "cohort_A": 67,
+  "cohort_B": 188
+ },
+ "n_in_supported_strata": {
+  "cohort_A": 0,
+  "cohort_B": 0
+ },
+ "cohort_A_excluded_no_common_support": 67,
+ "strata": [
+  {
+   "stratum": "[1.0,2.0)",
+   "n_A": 27,
+   "n_B": 36,
+   "drop_reason": "calibration_failed",
+   "min_control_rate": 0.5556,
+   "calibrated_frac": null,
+   "B_fire_at_calibrated": null,
+   "B_fire_at_legacy_0.5": 0.8333,
+   "A_fire_at_legacy_0.5": 0.963,
+   "sensitivity": null
+  },
+  {
+   "stratum": "[2.0,4.0)",
+   "n_A": 19,
+   "n_B": 41,
+   "drop_reason": "insufficient_n",
+   "min_control_rate": 0.4146,
+   "calibrated_frac": null,
+   "B_fire_at_calibrated": null,
+   "B_fire_at_legacy_0.5": 0.8537,
+   "A_fire_at_legacy_0.5": 0.9474,
+   "sensitivity": null
+  },
+  {
+   "stratum": "[4.0,8.0)",
+   "n_A": 12,
+   "n_B": 39,
+   "drop_reason": "insufficient_n",
+   "min_control_rate": 0.359,
+   "calibrated_frac": null,
+   "B_fire_at_calibrated": null,
+   "B_fire_at_legacy_0.5": 0.6923,
+   "A_fire_at_legacy_0.5": 1.0,
+   "sensitivity": null
+  },
+  {
+   "stratum": "[8.0,16.0)",
+   "n_A": 6,
+   "n_B": 23,
+   "drop_reason": "insufficient_n",
+   "min_control_rate": 0.2174,
+   "calibrated_frac": null,
+   "B_fire_at_calibrated": null,
+   "B_fire_at_legacy_0.5": 0.6522,
+   "A_fire_at_legacy_0.5": 0.8333,
+   "sensitivity": null
+  },
+  {
+   "stratum": "[16.0,inf)",
+   "n_A": 3,
+   "n_B": 49,
+   "drop_reason": "insufficient_n",
+   "min_control_rate": 0.0408,
+   "calibrated_frac": null,
+   "B_fire_at_calibrated": null,
+   "B_fire_at_legacy_0.5": 0.551,
+   "A_fire_at_legacy_0.5": 1.0,
+   "sensitivity": null
+  }
+ ],
+ "drops_by_arm": {
+  "stale_by_repo": {
+   "below_rate_floor": 358,
+   "baseline_too_concentrated": 19,
+   "pilot_excluded_by_name": 12
+  },
+  "fresh_by_repo": {
+   "below_rate_floor": 71,
+   "page_cap_incomplete": 1,
+   "baseline_too_concentrated": 11,
+   "pilot_excluded_by_name": 1
+  }
+ },
+ "counters_by_arm": {
+  "stale_by_repo": {
+   "n_merge": 592,
+   "n_bot": 918,
+   "n_null_author": 185,
+   "n_webflow": 959,
+   "n_rows": 7712
+  },
+  "fresh_by_repo": {
+   "n_merge": 11020,
+   "n_bot": 14625,
+   "n_null_author": 3822,
+   "n_webflow": 29652,
+   "n_rows": 99688
+  }
+ },
+ "baseline_distribution": {
+  "stale_by_repo": {
+   "n": 67,
+   "p10": 1.333,
+   "median": 2.417,
+   "p90": 10,
+   "max": 45.083
+  },
+  "fresh_by_repo": {
+   "n": 188,
+   "p10": 1.5,
+   "median": 5.125,
+   "p90": 45.167,
+   "max": 204.583
+  }
+ },
+ "target_false_positive_rate": 0.1,
+ "adequacy_floor": 150,
+ "pilot_excluded": [
+  "bendrucker/postgres-date",
+  "es-shims/String.prototype.trimStart",
+  "evanshortiss/env-var",
+  "graphology/graphology",
+  "gtanner/qrcode-terminal",
+  "inspect-js/is-weakmap",
+  "jonschlinkert/extend-shallow",
+  "joyent/node-verror",
+  "knownasilya/cli-width",
+  "ljharb/object-keys",
+  "nodejs/string_decoder",
+  "stephenplusplus/stream-events"
+ ],
+ "verdict": "negative: the pre-registered false-positive rate is unreachable in strata that had adequate n; separately underpowered in cohort A",
+ "adequate": false,
+ "uncalibratable_strata": [
+  {
+   "stratum": "[1.0,2.0)",
+   "n_A": 27,
+   "n_B": 36,
+   "drop_reason": "calibration_failed",
+   "min_control_rate": 0.5556,
+   "calibrated_frac": null,
+   "B_fire_at_calibrated": null,
+   "B_fire_at_legacy_0.5": 0.8333,
+   "A_fire_at_legacy_0.5": 0.963,
+   "sensitivity": null
+  }
+ ]
+}

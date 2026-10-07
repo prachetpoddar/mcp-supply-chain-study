@@ -89,21 +89,102 @@ def npm_packument(name):
     return fetch_json("https://registry.npmjs.org/" + urllib.parse.quote(name, safe="@"),
                       cache_key="npm:" + name)
 
-def npm_resolve(name, spec):
-    """Return (version, manifest) honouring npm range semantics. None if unresolvable."""
+# npm's dist-tag preference, off by default so the published corpus reproduces
+# bit for bit. See RESOLVER-NOTES.md. Turn on to match npm 10 and 11.
+PREFER_DIST_TAG = False
+# Host node version for the engines condition npm 10 added to the fast path and
+# to its sort. None means the engines condition is NOT evaluated, which makes
+# resolution disagree with npm wherever engines decide the answer; the resolver
+# records that rather than guessing a host.
+NODE_VERSION = None
+
+
+def _satisfies(version, rng):
+    if rng in ("", "*", None):
+        return True
+    try:
+        return bool(sv.satisfies(version, rng, loose=True))
+    except Exception:
+        return False
+
+
+def _engine_ok(mani, node_version):
+    """npm's engineOk. With no host version supplied the condition is not
+    evaluated and every version passes, which is what the pre-change resolver
+    did implicitly."""
+    if not node_version:
+        return True
+    req = ((mani or {}).get("engines") or {}).get("node")
+    if not req:
+        return True
+    return _satisfies(node_version, req)
+
+
+def npm_resolve(name, spec, prefer_dist_tag=None, node_version=None):
+    """Return (version, manifest) honouring npm range semantics. None if unresolvable.
+
+    Selection order, transcribed from npm-pick-manifest 11.0.3 rather than from
+    its README, which still describes 8.0.2:
+
+      1. selector is a dist-tag name          -> that tag
+      2. selector is an exact published version -> that version
+      3. the default tag satisfies the range, and its manifest is neither
+         deprecated nor engine-incompatible   -> the default tag
+      4. otherwise sort the satisfying versions by, in order: not deprecated
+         AND engines satisfied; engines satisfied; not deprecated; then
+         highest semver
+
+    Step 3 and the tiers in step 4 are what this resolver previously lacked.
+    It went straight to max_satisfying, which differs from npm whenever a
+    version above the default tag satisfies the range.
+    """
+    prefer = PREFER_DIST_TAG if prefer_dist_tag is None else prefer_dist_tag
+    nodev = NODE_VERSION if node_version is None else node_version
     d = npm_packument(name)
     tags, vers = d.get("dist-tags", {}), d.get("versions", {})
     s = (spec or "latest").strip()
-    if s in tags: v = tags[s]
-    elif s in vers: v = s
+    if s in tags:
+        v = tags[s]
+        return v, vers.get(v, {})
+    if s in vers:
+        return s, vers[s]
+
+    if prefer:
+        lv = tags.get("latest")
+        mani = vers.get(lv) if lv else None
+        if mani and _satisfies(lv, s) and not mani.get("deprecated") \
+                and _engine_ok(mani, nodev):
+            return lv, mani
+
+    # Tiered fall-through. Using max_satisfying on progressively relaxed
+    # candidate sets reproduces npm's sort priorities without needing a
+    # comparator of our own.
+    base = [x for x in vers if "-" not in x] or list(vers)
+
+    def best(cands):
+        if not cands:
+            return None
+        try:
+            return sv.max_satisfying(cands, s, loose=True)
+        except Exception:
+            return None
+
+    if prefer:
+        clean = [x for x in base if not (vers.get(x) or {}).get("deprecated")]
+        engok = [x for x in base if _engine_ok(vers.get(x), nodev)]
+        both = [x for x in clean if x in set(engok)]
+        for tier in (both, engok, clean, base):
+            v = best(tier)
+            if v is not None:
+                return v, vers.get(v, {})
     else:
-        cands = [x for x in vers if "-" not in x] or list(vers)
-        try: v = sv.max_satisfying(cands, s, loose=True)
-        except Exception: v = None
-        if v is None:
-            try: v = sv.max_satisfying(list(vers), s, loose=True)
-            except Exception: v = None
-        if v is None: v = tags.get("latest")
+        v = best(base)
+        if v is not None:
+            return v, vers.get(v, {})
+
+    v = best(list(vers))
+    if v is None:
+        v = tags.get("latest")
     return v, vers.get(v, {})
 
 def npm_walk(root, root_spec="latest", cap=1500, include_optional=True, include_peer=False):

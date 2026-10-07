@@ -1,7 +1,7 @@
 {
   "title": "Keyword Frames Are Cluster Samples: How a Third of an npm Ecosystem Stayed Invisible",
   "upload_type": "dataset",
-  "description": "Measurement study of Model Context Protocol servers on npm. A keyword-built frame samples publishers rather than packages; the population size moves by a factor of 8.6 with the keyword chosen; a third of the enumerated population is machine-generated. The dependency resolver had four silent defects found only against a real npm install. No dimension shows elevated supply-chain risk. Includes all raw measurements, every invalidated run, and a record of each withdrawn figure.",
+  "description": "Measurement study of Model Context Protocol servers on npm. A keyword-built frame samples publishers rather than packages; the population size moves by a factor of 8.6 with the keyword chosen; a third of the enumerated population is machine-generated. The dependency resolver had four silent defects found only against a real npm install. No dimension shows elevated supply-chain risk. Includes all raw measurements, every invalidated run, and a record of each withdrawn figure. Ten days of registry movement changes the resolved package set for 73.6% of the servers measured.",
   "creators": [
     {
       "name": "Poddar, Prachet",
@@ -18,5 +18,5 @@
     "measurement study",
     "sampling bias"
   ],
-  "version": "3.4.0"
+  "version": "3.6.0"
 }

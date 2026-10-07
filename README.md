@@ -2,9 +2,10 @@
 
 Data and code for *Keyword Frames Are Cluster Samples: How a Third of an npm
 Ecosystem Stayed Invisible*, a measurement study of Model Context Protocol
-servers on npm. Measurements run 6 to 8 September 2026.
+servers on npm. Measurements run 6 to 8 September 2026, with a corrected re-walk
+of the corpus on 17 September 2026.
 
-**Version 3.4.** The study began as a supply-chain risk comparison and became a
+**Version 3.6.** The study began as a supply-chain risk comparison and became a
 paper about why that comparison kept failing. Two causes: a keyword-built frame
 that sampled publishers rather than packages, and a dependency resolver that was
 never validated against the tool it modelled. Section 12 of the paper lists every
@@ -68,9 +69,52 @@ measurement could be redone it was, and the replacement ships with it
 (`bulk_name_collisions.json`, `bulk_burst_recovered.json`,
 `docker_pulls_recovered.json`). Section 12 records each one.
 
+## Running the code
+
+Python 3.9 or later. One non-standard dependency:
+
+    pip install -r requirements.txt
+
+Then, from the repository root:
+
+    python3 code/rewalk_corrected.py run none 3000       # walk the 250 servers
+    python3 code/rewalk_corrected.py diff                # compare walks
+    python3 code/test_resolver_vectors.py                # check the resolver against npm
+
+Scripts that reach GitHub need a token in the environment, and none of them write
+it anywhere:
+
+    read -s GITHUB_TOKEN && export GITHUB_TOKEN
+
+Scripts that reach the npm registry or OSV need no credential.
+
+### Which walk is which
+
+`data/walk250.jsonl` is the pre-correction walk. Its median of 96.5 packages per
+server and maximum of 589 are the figures revision 3.2 of the paper retracted. It
+is kept because several 2026-09-07 result files were computed from it.
+
+`data/walk250_corrected_today.jsonl` is the same 250 servers resolved with the
+corrected resolver of Section 2.2 against the registry of 2026-09-17. Its median
+is 94 packages and its maximum 619, which are the figures Section 1 reports from
+revision 3.6 on. Revisions 3.2 to 3.5 reported 93 and 618, from a corrected walk
+that lived on a temporary path and no longer exists.
+
+`data/walk250_corrected_asof.jsonl` resolves them against the registry of
+2026-09-07, rebuilt by discarding versions published after that date, which is
+what separates the resolver change from ten days of registry movement. Its median
+is 93.5 packages and its maximum 586.
+
 ## Layout
 
 - `paper/` the current paper and its superseded versions
 - `data/` every result file, including both invalidated runs
 - `code/` the measurement scripts and the release assembler
+- `spec/` the `mcp-lock` format proposal and its example files
+- `requirements.txt` the one non-standard Python dependency
+- `RESOLVER-NOTES.md` the working record of the resolver defects, which the
+  paper cites
+- `preregistrations/` the protocols for the pre-registered studies numbered 2 to
+  5, with every amendment, halt and result section as it was written. The first
+  study's protocol is not in this folder and so is not released here
 - `MANIFEST.md` SHA-256 of every released file

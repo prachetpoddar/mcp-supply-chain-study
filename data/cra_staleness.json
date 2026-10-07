@@ -1,0 +1,134 @@
+{
+ "as_of": "2026-09-09T03:26:48Z",
+ "trees": 250,
+ "node_instances": 22943,
+ "distinct_names": 2373,
+ "names_without_release_date": 0,
+ "nodes_unreachable_from_root": 206,
+ "dangling_edges": 29,
+ "thresholds_days": [
+  180,
+  365,
+  730
+ ],
+ "rows": {
+  "180": {
+   "row1_stale_names": [
+    1144,
+    48.2
+   ],
+   "row1_stale_node_instances": [
+    13981,
+    60.9
+   ],
+   "row1_trees_with_stale": 184,
+   "row1_median_ingestion_stale": 1.0,
+   "row1_median_ingestion_fresh": 1,
+   "row2_fully_deprecated_stale": 30,
+   "row2_advisory_affecting_installed_stale": 3,
+   "row2_unfixed_stale": 2,
+   "row2_unfixed_fresh": 0,
+   "row3_median_depth_stale": 3,
+   "row3_median_depth_fresh": 3.0,
+   "row3_p90_depth_stale": 6,
+   "row3_p90_depth_fresh": 5,
+   "row3_share_depth_ge5_stale": 23.4,
+   "row3_share_depth_ge5_fresh": 10.7,
+   "row3_NOT_ADOPTED_name_level_median_diff": 1.0
+  },
+  "365": {
+   "row1_stale_names": [
+    911,
+    38.4
+   ],
+   "row1_stale_node_instances": [
+    11202,
+    48.8
+   ],
+   "row1_trees_with_stale": 182,
+   "row1_median_ingestion_stale": 1,
+   "row1_median_ingestion_fresh": 1.0,
+   "row2_fully_deprecated_stale": 30,
+   "row2_advisory_affecting_installed_stale": 3,
+   "row2_unfixed_stale": 2,
+   "row2_unfixed_fresh": 0,
+   "row3_median_depth_stale": 3,
+   "row3_median_depth_fresh": 3.0,
+   "row3_p90_depth_stale": 6,
+   "row3_p90_depth_fresh": 5,
+   "row3_share_depth_ge5_stale": 25.9,
+   "row3_share_depth_ge5_fresh": 11.2,
+   "row3_NOT_ADOPTED_name_level_median_diff": 1.0
+  },
+  "730": {
+   "row1_stale_names": [
+    654,
+    27.6
+   ],
+   "row1_stale_node_instances": [
+    7614,
+    33.2
+   ],
+   "row1_trees_with_stale": 182,
+   "row1_median_ingestion_stale": 1.0,
+   "row1_median_ingestion_fresh": 1,
+   "row2_fully_deprecated_stale": 27,
+   "row2_advisory_affecting_installed_stale": 3,
+   "row2_unfixed_stale": 2,
+   "row2_unfixed_fresh": 0,
+   "row3_median_depth_stale": 3,
+   "row3_median_depth_fresh": 3.0,
+   "row3_p90_depth_stale": 5,
+   "row3_p90_depth_fresh": 6,
+   "row3_share_depth_ge5_stale": 14.2,
+   "row3_share_depth_ge5_fresh": 20.5,
+   "row3_NOT_ADOPTED_name_level_median_diff": 0.77
+  }
+ },
+ "deprecation": {
+  "fully_deprecated_names": 30,
+  "node_instances": 78,
+  "trees_touched": 37,
+  "most_ingested": [
+   [
+    "node-domexception",
+    16
+   ],
+   [
+    "prebuild-install",
+    15
+   ],
+   [
+    "boolean",
+    7
+   ],
+   [
+    "whatwg-encoding",
+    5
+   ],
+   [
+    "inflight",
+    4
+   ],
+   [
+    "koa-router",
+    3
+   ],
+   [
+    "lodash.isequal",
+    3
+   ],
+   [
+    "fstream",
+    2
+   ]
+  ]
+ },
+ "advisories": {
+  "names_with_advisory_affecting_installed": 28,
+  "names_unfixed": [
+   "request",
+   "xlsx"
+  ]
+ }
+}

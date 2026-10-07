@@ -118,12 +118,43 @@ def resolve_at(name, spec, cutoff):
         if cutoff is None:
             v = tags[s]
         else:
+            # PREFER THE TAGGED VERSION WHEN IT PREDATES THE CUTOFF.
+            # The tag map is today's and cannot be time-travelled, which is why
+            # this branch approximates at all. But if the version the tag points
+            # at today was already published before the cutoff, taking it is at
+            # least as defensible as taking the highest available, and it has the
+            # property that matters here: it agrees with an uncut resolve, so a
+            # dated run differs from an undated one only through the range rule.
+            # Taking the highest instead moved @ohos-ports/agentic-flow from the
+            # tagged 2.1.2-beta.1 to 2.1.2-beta.4 and grew the corpus maximum
+            # from 589 to 604, which read as a resolver effect and was not one.
+            tagged = tags.get(s)
+            if tagged and tagged in avail:
+                TAGSTATS["tag_edges_tag_predates_cutoff"] += 1
+                return tagged, vers.get(tagged, {})
             TAGSTATS["tag_edges_approximated"] += 1
             plain = [v for v in avail if "-" not in v] or avail
             try:
                 v = sv.max_satisfying(plain, "*", loose=True)
             except Exception:
                 v = None
+            if v is None:
+                # `*` does not match a prerelease, so the `or avail` fallback
+                # above defeated itself: for a package whose every version is a
+                # prerelease, plain became the prerelease list and then matched
+                # nothing. The whole subtree was dropped as unresolved. Two of
+                # the 250 roots are in this state (@craft-ng/mcp publishes only
+                # 0.7.0-beta.11) and both produced empty trees, which looked
+                # like a resolver effect and was a time-travel defect.
+                # Only the cutoff branch is affected; resolve_at(.., None) takes
+                # the tag directly and never reaches here.
+                try:
+                    v = sv.max_satisfying(avail, "*", loose=True,
+                                          include_prerelease=True)
+                except Exception:
+                    v = None
+                if v is not None:
+                    TAGSTATS["tag_edges_prerelease_only"] += 1
     elif s in vers:
         v = s if (cutoff is None or (tm.get(s) and tm[s] <= cutoff)) else None
     else:

@@ -9,9 +9,9 @@ authors:
     given-names: Prachet
     email: prachetpoddar@gmail.com
     affiliation: University of California, Los Angeles
-version: 3.4.0
+version: 3.6.0
 doi: 10.5281/zenodo.22641812
-date-released: 2026-09-08
+date-released: 2026-10-06
 license: Apache-2.0
 license-url: https://www.apache.org/licenses/LICENSE-2.0
 abstract: >-
@@ -24,8 +24,10 @@ abstract: >-
   resolver used throughout had four silent defects, found only by comparing
   against a real npm install, and each changed a published number. Nothing
   measured shows elevated supply-chain risk on any dimension a registry
-  exposes. The release documents every withdrawn figure across all versions,
-  including several that had no artifact behind them.
+  exposes. Ten days of registry movement changes the resolved package set for
+  73.6% of the servers measured, with nothing in a launch configuration
+  recording it. The release documents every withdrawn figure across all
+  versions, including several that had no artifact behind them.
 keywords:
   - software supply chain
   - Model Context Protocol
