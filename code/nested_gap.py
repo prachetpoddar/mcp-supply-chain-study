@@ -32,7 +32,7 @@ THE FORMULATION THAT AVOIDS IT
     python3 nested_gap.py run [seconds]
     python3 nested_gap.py report
 """
-import collections, json, os, statistics, sys, time
+import collections, datetime as dt, hashlib, json, os, statistics, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import mcplib
@@ -40,8 +40,20 @@ import install_gap as IG
 import nodesemver as sv
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-STATE = "/tmp/mcpres/nested_gap.json"
-TREES = os.path.join(HERE, "resolved_trees_for_depsdev.json")
+STATE = os.environ.get("NESTED_STATE") or os.path.join(
+    os.path.dirname(HERE), "data", "nested_gap_state.json")
+ADVISORIES = os.environ.get("ADVISORIES") or os.path.join(
+    os.path.dirname(HERE), "data", "advisories_npm.json")
+# Results belong in data/ with everything else the release ships. This file used
+# to write beside the code, which is why the figure it produced was not in the
+# released data directory.
+OUT = os.environ.get("NESTED_OUT") or os.path.join(
+    os.path.dirname(HERE), "data", "nested_gap.json")
+# The repository is organised into code/ and data/; this file lives in data/.
+# The flat-layout path is kept as a fallback so an older checkout still runs.
+TREES = os.path.join(os.path.dirname(HERE), "data", "resolved_trees_for_depsdev.json")
+if not os.path.exists(TREES):
+    TREES = os.path.join(HERE, "resolved_trees_for_depsdev.json")
 CAP = 6000
 
 
@@ -135,7 +147,12 @@ def run(budget):
                 s[name] = {"skip": "no publish time"}
                 continue
             pub, tp = pair_walk(name, ver, cut)
-            now, tn = pair_walk(name, ver, None)
+            # LIVE_CUTOFF time-aligns the live arm with the advisory snapshot.
+            # Resolving the live arm against today's registry while joining to a
+            # month-old advisory export hides any advisory published since the
+            # export, which biases the comparison toward phantom findings. Set
+            # it to the export date to measure how much that costs.
+            now, tn = pair_walk(name, ver, os.environ.get("LIVE_CUTOFF") or None)
         except Exception as e:
             s[name] = {"skip": repr(e)[:120]}
             continue
@@ -160,7 +177,7 @@ def report():
     raw = json.load(open(STATE))
     s = {k: v for k, v in raw.items() if "skip" not in v and not v["truncated"]}
     n = len(s)
-    adv = json.load(open("/tmp/mcpres/advisories.json"))
+    adv = json.load(open(ADVISORIES))
     import nodesemver as sv
 
     def vids(name, ver):
@@ -170,11 +187,28 @@ def report():
             if not r:
                 continue
             try:
-                if sv.satisfies(ver, r, loose=True):
+                if sv.satisfies(ver, r, loose=True, include_prerelease=True):
                     o.append((a.get("id"), a.get("severity")))
             except Exception:
                 pass
         return o
+
+    # severity per (package, advisory), first row wins; built once
+    SEV_OF = {}
+    for _nm, _rows in adv.items():
+        for _r in _rows:
+            SEV_OF.setdefault((_nm, _r.get("id")), _r.get("severity"))
+    pf_phantom, pf_missed = collections.Counter(), collections.Counter()
+    cross = collections.Counter()
+    both_differ = both_same = single_node = pair_ph = pair_ms = 0
+    age_rows = []
+    snap = None
+    try:
+        snap = json.load(open(os.path.join(os.path.dirname(HERE), "data",
+                                           "advisories_npm_meta.json")))
+    except Exception:
+        pass
+    snap_at = (snap or {}).get("source_mtime_utc")
 
     dup_trees, dup_tot = 0, 0
     for v in s.values():
@@ -215,15 +249,35 @@ def report():
             m_tr += 1
         if phantom:
             p_tr += 1
+        cross[(bool(p), bool(q))] += 1
+        if p and q:
+            both_differ += (p != q)
+            both_same += (p == q)
+        if len(v["published"]) == 1 and len(v["installed"]) == 1:
+            single_node += 1
+        pair_ph += len({nm for nm, _ in phantom})
+        pair_ms += len({nm for nm, _ in missed})
+        if snap_at and v.get("root_published"):
+            try:
+                d = (dt.datetime.fromisoformat(snap_at.replace("Z", "+00:00"))
+                     - dt.datetime.fromisoformat(
+                         v["root_published"].replace("Z", "+00:00"))).days
+                age_rows.append((d, len(phantom)))
+            except Exception:
+                pass
+        # One finding per (package, advisory), counted once. The earlier version
+        # incremented per matching advisory ROW, and OSV emits one row per
+        # package-and-range group, so an advisory covering two version ranges of
+        # the same package was counted twice. The tree-level rate above comes
+        # from set differences and was never affected; the finding counts were,
+        # and the figures this file published before today carry that inflation.
         for nm, a in missed:
             mt[nm] += 1
-            for r in adv.get(nm, []):
-                if r.get("id") == a:
-                    msev[r.get("severity")] += 1
+            msev[SEV_OF.get((nm, a))] += 1
+            pf_missed[nm] += 1
         for nm, a in phantom:
-            for r in adv.get(nm, []):
-                if r.get("id") == a:
-                    psev[r.get("severity")] += 1
+            psev[SEV_OF.get((nm, a))] += 1
+            pf_phantom[nm] += 1
 
     print(f"\n=== advisory verdict, frozen vs live, pair-keyed")
     print(f"  trees with a real finding when installed: {live_any} = {100*live_any/n:.1f}%")
@@ -233,8 +287,62 @@ def report():
     print(f"  PHANTOM {p_tr} trees, {sum(psev.values())} findings, "
           + ", ".join(f"{k} {psev.get(k,0)}" for k in SEV))
     print(f"  top missed: {mt.most_common(6)}")
+    print(f"\n=== the crosstab, which is what a scanner's answer actually does")
+    print(f"  frozen flags, live clean : {cross[(True, False)]} = "
+          f"{100*cross[(True, False)]/n:.1f}%   <- the wrong-answer rate")
+    print(f"  live flags, frozen clean : {cross[(False, True)]}")
+    print(f"  both flag                : {cross[(True, True)]} "
+          f"(advisory lists differ in {both_differ}, identical in {both_same})")
+    print(f"  neither flags            : {cross[(False, False)]}")
+    print(f"  trees with no dependencies at all: {single_node} of {n}; the rate among "
+          f"trees with any dependency is {100*differ/max(n-single_node,1):.1f}%")
+    print(f"  (tree, package) pairs: {pair_ph} phantom, {pair_ms} missed. One package "
+          f"with many advisories yields many findings from one version move.")
+    if age_rows:
+        print("  by root age at the advisory snapshot:")
+        for lo, hi, lbl in ((0, 30, "<=30d"), (31, 90, "31-90d"), (91, 180, "91-180d"),
+                            (181, 365, "181-365d"), (366, 10**6, ">365d")):
+            g = [c for d, c in age_rows if lo <= d <= hi]
+            if g:
+                gs = sorted(g)
+                print(f"    {lbl:>9}: {len(g):3d} trees, "
+                      f"{sum(1 for c in g if c):3d} with phantom "
+                      f"({100*sum(1 for c in g if c)/len(g):.0f}%), "
+                      f"median {gs[len(gs)//2]} findings")
+    tot_ph = sum(pf_phantom.values())
+    if tot_ph:
+        top5 = sum(c for _, c in pf_phantom.most_common(5))
+        print(f"  phantom findings concentrate: {len(pf_phantom)} packages carry them, "
+              f"top five hold {100*top5/tot_ph:.0f}%")
+        print(f"  top phantom packages: {pf_phantom.most_common(6)}")
 
-    json.dump({"trees": n, "dup_trees": dup_trees, "dup_packages_total": dup_tot,
+    json.dump({"counting_unit": "one finding per (package, advisory id) per tree",
+               "crosstab": {"frozen_flags_live_clean": cross[(True, False)],
+                            "live_flags_frozen_clean": cross[(False, True)],
+                            "both_flag": cross[(True, True)],
+                            "both_flag_lists_differ": both_differ,
+                            "both_flag_lists_identical": both_same,
+                            "neither_flags": cross[(False, False)]},
+               "wrong_answer_rate_pct": round(100*cross[(True, False)]/n, 1),
+               "trees_without_dependencies": single_node,
+               "rate_among_trees_with_dependencies_pct":
+                   round(100*differ/max(n-single_node, 1), 1),
+               "phantom_pairs_tree_package": pair_ph,
+               "missed_pairs_tree_package": pair_ms,
+               "phantom_by_root_age": [[d, c] for d, c in sorted(age_rows)],
+               "live_cutoff": os.environ.get("LIVE_CUTOFF") or None,
+               "advisory_snapshot": {
+                   "file": os.path.basename(ADVISORIES),
+                   "sha256": hashlib.sha256(open(ADVISORIES, "rb").read()).hexdigest(),
+                   "source_mtime_utc": snap_at,
+                   "basis": (snap or {}).get("basis")},
+               "state_file": os.path.basename(STATE),
+               "prerelease_join": "include_prerelease=True",
+               "advisory_basis": os.path.basename(ADVISORIES),
+               "phantom_by_package": dict(pf_phantom.most_common(20)),
+               "phantom_packages": len(pf_phantom),
+               "missed_by_package": dict(pf_missed.most_common(20)),
+               "trees": n, "dup_trees": dup_trees, "dup_packages_total": dup_tot,
                "median_published": statistics.median(npub),
                "median_installed": statistics.median(nnow),
                "total_instance_delta_pct": round(100*(sum(nnow)-sum(npub))/sum(npub), 1),
@@ -246,8 +354,8 @@ def report():
                "phantom_trees": p_tr, "phantom_findings": sum(psev.values()),
                "phantom_by_severity": dict(psev),
                "top_missed": mt.most_common(20)},
-              open(os.path.join(HERE, "nested_gap.json"), "w"), indent=1)
-    print("\nwrote nested_gap.json")
+              open(OUT, "w"), indent=1)
+    print(f"\nwrote {OUT}")
 
 
 if __name__ == "__main__":

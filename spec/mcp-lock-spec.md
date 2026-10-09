@@ -345,10 +345,17 @@ stop being reviewable.
 **Staleness is the failure mode nobody plans for.** A validly signed document
 with no lifetime replays forever and nothing notices. This is the argument behind
 TUF's timestamp role, and it applies to any artifact describing a dependency
-state at a point in time. In the study corpus, comparing a tree frozen at release
-against the tree installed today changed the advisory verdict for 64.8% of
-servers, almost entirely by accumulating findings the running system does not
-have. `capturedUtc` exists so that a consumer can tell how old the description is.
+state at a point in time. In the study corpus, an advisory scanner reading a
+tree frozen at the root's release date flags 130 of 249 servers, 52.2%, that are
+clean when installed, and flags no server that is clean in the frozen tree and
+affected when installed. The advisory list differs for 164 of 249, and for 87.7%
+of the servers that have any dependency at all, 62 having none. The effect runs
+one way because an install resolves ranges forward onto versions published after
+the root shipped, and the advisory set attached to a version shrinks as the
+version advances. Counts of individual findings are not quoted here: they are
+dominated by a few advisory-dense packages, with five packages holding 82% of
+them, so the rate is the stable quantity and the count is not. `capturedUtc`
+exists so that a consumer can tell how old the description is.
 
 ## 14. Reference implementation and conformance
 

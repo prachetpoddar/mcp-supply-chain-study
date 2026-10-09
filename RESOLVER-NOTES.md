@@ -397,3 +397,99 @@ so the walk it read was an earlier build again. The vintages in this project wer
 never tracked, which is the root cause of all of this and is fixed by the
 `requirements.txt`, the walk naming in the README, and the environment stamp the
 re-walk script now writes.
+
+## The frozen-versus-live advisory gap, recomputed 2026-10-09
+
+The figure the lock spec carried, 64.8% of servers changing advisory verdict
+between a tree frozen at release and a tree installed today, could not be
+reproduced and should not have been quoted. Three reasons, each verified before
+this re-run started.
+
+**It was the superseded measurement.** `install_gap.py` keys each tree by package
+name at one version each and gave 162 of 250. `nested_gap.py` was written to
+replace exactly that, because flattening forces an arbitrary pick among duplicate
+versions and the pick follows traversal order; it gave 154 of 250. The spec cited
+the flat figure.
+
+**Its two arms used different resolvers.** `final_verified.json` is stamped
+2026-09-08. The dist-tag preference, the deprecation preference and both
+time-travel fixes landed between 11 and 17 September, so the frozen arm came from
+a `resolve_at` with two known defects and the live arm from the pre-correction
+walk.
+
+**Its inputs were on a temporary path.** The per-tree state and the advisory
+snapshot both lived in `/tmp/mcpres`, which is gone, so no reader could have
+checked it. The same defect as the corrected corpus walk, in a second place.
+
+### What the re-run does differently
+
+Both arms resolve through the same corrected resolver in one pass. State lands in
+`data/nested_gap_state.json` and ships. The advisory snapshot is rebuilt from the
+OSV npm export by `code/build_advisories.py` into `data/advisories_npm.json`,
+which also ships, with its hash and the export's date recorded in the result. The
+snapshot is GHSA only: the export carries 221,191 MAL rows, one per reported
+malicious package, against 9,522 GHSA rows, and a malicious-package report is a
+different object from a version-range advisory. Exclusions are counted rather
+than dropped quietly.
+
+### Two defects found in the measurement itself
+
+**Findings were double counted.** The severity loop incremented once per matching
+advisory row, and OSV emits one row per package-and-range group, so an advisory
+covering two version ranges of the same package counted twice. On this snapshot
+that inflated the phantom count from 4,442 to 6,791. Every finding count this
+file published before today carries the same inflation, including 3,768. The
+tree-level rates come from set differences and were never affected.
+
+**Prereleases evaded every range.** `>=0.0.0` does not match `1.4.5-lts.2`, so
+`multer@1.4.5-lts.2` was reported clean while sitting inside 11 advisories. The
+join now passes `include_prerelease=True`, which moved one tree from frozen-only
+to both-arms-flagged.
+
+### The result, 249 trees, one root skipped on a registry 404
+
+| | count | of 249 |
+|---|---|---|
+| frozen description flags it, clean when installed | **130** | **52.2%** |
+| flagged when installed, clean in the frozen description | **0** | 0% |
+| both flag it (advisory lists differ in 34, identical in 3) | 37 | 14.9% |
+| neither flags it | 82 | 32.9% |
+| advisory list differs at all | 164 | 65.9% |
+
+62 of the 249 trees have no dependencies and cannot differ; among trees with any
+dependency the list differs for 87.7%.
+
+The zero is the strongest line in the table. Across 249 trees there is no case
+where installing finds something the frozen description missed at the tree level,
+which is the asymmetry the lock format's `capturedUtc` field exists to expose.
+
+**Counts of individual findings are not a stable quantity and are not quoted in
+the spec.** 4,442 phantom findings against 15 missed, but 56 packages carry them
+and five hold 82%, with `hono` alone at 2,017 across 130 trees: it has 50
+advisories, 40 of the form `>=0.0.0 <X`, so one version move yields up to thirty
+findings. In (tree, package) pairs the same data reads 906 against 3. The missed
+side is two trees, 13 of its 15 findings from `@xmldom/xmldom` moving from 0.8.13
+to 0.9.10, where the newer release line carried more open advisories than the
+maintained 0.8.x head, which is the one counter-mechanism observed.
+
+### What stays open
+
+Age dominates the counts and not the rate: at a root age of 30 days or less, 42
+of 75 trees already show phantom findings with a median of 2, rising to 30 of 31
+trees and a median of 53 at 181 to 365 days. Whether a phantom finding exists
+because the install moved to a fixed version, or because the advisory was
+published after the root shipped and no scanner would have reported it either,
+cannot be separated here: `build_advisories.py` keeps no advisory publication
+date. Recording that date is the one change that would turn the mechanism from an
+assertion into a measurement.
+
+Time-aligning the live arm to the export date, in
+`data/nested_gap_aligned.json`, gives 123 flagged-and-clean of 249, 49.4%, still
+zero the other way, and 163 of 249 differing. So the clock gap between a
+2026-09-09 advisory export and a 2026-10-09 registry costs 2.8 points on the
+wrong-answer rate and 0.4 on the list-difference rate. It does not control for
+root age, which is the gap the age table points at.
+
+The OSV export itself is 214MB and does not ship. `data/advisories_npm_meta.json`
+records its date and what was built from it, and the builder regenerates the
+snapshot from a fresh export.

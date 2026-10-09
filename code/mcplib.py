@@ -11,7 +11,7 @@ Improvements over the pilot:
 import json, os, re, time, gzip, hashlib, urllib.request, urllib.parse, collections, threading
 import nodesemver as sv
 
-CACHE = "/tmp/mcpres/cache"
+CACHE = os.environ.get("MCPRES_CACHE") or "/tmp/mcpres/cache"
 UA = {"User-Agent": "mcp-supply-chain-study/0.2 (academic research; contact via github)"}
 
 class Limiter:

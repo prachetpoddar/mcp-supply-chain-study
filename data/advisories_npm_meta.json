@@ -1,0 +1,26 @@
+{
+ "built_utc": "2026-10-09T02:56:43Z",
+ "source": "osv_npm_all.zip",
+ "source_mtime_utc": "2026-09-09T22:15:30Z",
+ "entries_in_zip": 228892,
+ "advisories_kept": 7020,
+ "packages": 3554,
+ "advisory_rows": 9522,
+ "latest_modified_in_export": "2026-09-09T18:15:04.495290489Z",
+ "severity_counts": {
+  "moderate": 2447,
+  "low": 428,
+  "high": 2800,
+  "critical": 1345
+ },
+ "dropped": {
+  "excluded_prefix_EEF": 1,
+  "withdrawn": 679,
+  "excluded_prefix_GSD": 1,
+  "excluded_prefix_MAL": 221191
+ },
+ "max_enumerated_versions": 40,
+ "basis": [
+  "GHSA"
+ ]
+}
