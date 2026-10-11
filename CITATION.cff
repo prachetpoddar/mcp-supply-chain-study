@@ -9,7 +9,7 @@ authors:
     given-names: Prachet
     email: prachetpoddar@gmail.com
     affiliation: University of California, Los Angeles
-version: 3.9.0
+version: 3.10.0
 doi: 10.5281/zenodo.22641812
 date-released: 2026-10-11
 license: Apache-2.0
@@ -41,8 +41,9 @@ identifiers:
     value: 10.5281/zenodo.22641812
     description: >-
       Concept DOI. It resolves to the most recent version Zenodo has archived,
-      which as of 2026-10-11 is record 22664719, labelled 3.3 and carrying the
-      3.1 tree. It does not track the tags in this repository.
+      which as of 2026-10-11 is record 23305683, archiving version 3.9.
+      Versions 3.4 through 3.8 were never archived, so the concept DOI does not
+      necessarily track the newest tag in this repository.
   - type: doi
     value: 10.5281/zenodo.22664719
     description: >-

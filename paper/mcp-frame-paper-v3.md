@@ -668,17 +668,22 @@ behind every corrected figure:
 > https://github.com/prachetpoddar/mcp-supply-chain-study
 > Concept DOI 10.5281/zenodo.22641812.
 
-**Cite the git tag and commit, not the DOI alone, for anything in this paper
-after version 3.3.** The concept DOI resolves to the most recent version Zenodo
-has *archived*, which is not the most recent version tagged in that repository.
-Checked on 2026-10-11, the newest archived version is the record labelled 3.3,
-so versions 3.4 through 3.7 exist as tags and have never reached the archive.
-Zenodo's GitHub integration fires on a published release rather than on a tag,
-and releases published while the integration was inactive do not backfill.
-Nothing archived under this DOI contains the registry-drift result, the resolver
-correction, or the advisory-gap recomputation. This was found by the maintainer
-of mcp-audit, who checked the DOI rather than taking my word for it, after I had
-told him it resolved to the current version.
+**Cite the git tag and commit alongside the DOI.** The concept DOI resolves to
+the most recent version Zenodo has *archived*, which is not necessarily the most
+recent version tagged in that repository. As of 2026-10-11 it resolves to record
+23305683, which archives version 3.9: version DOI 10.5281/zenodo.23305683, file
+`mcp-supply-chain-study-v3.9.zip`, md5 `c37cf3a7d67d5e0f5cad13e64b23354b`. That
+record contains the registry-drift result, the resolver correction and the
+advisory-gap recomputation.
+
+Versions 3.4 through 3.8 were never archived. The integration deposits on a
+published release rather than on a tag, and until 3.9 no release had triggered
+it, so for five revisions this paper cited a DOI that resolved to a record
+labelled 3.3 carrying the 3.1 tree. The maintainer of mcp-audit found that by
+checking the DOI rather than taking my word for it, after I had told him it
+resolved to the current version. Anything tagged in that repository and newer
+than the newest archived record is reachable only by tag and commit, which is
+why both are worth citing.
 
 The version DOIs are more specific and, in one case, misleading. 10.5281/zenodo.22641813
 archives version 1.0.0 under its original title, "Measuring the MCP Supply Chain:
@@ -932,3 +937,16 @@ figure".
 
 This revision exists because 3.8 was published before that edit was made, and a
 published tag is not rewritten to absorb a later correction.
+
+**3.10** No measurement changes. The archive is live. Publishing a GitHub
+release for v3.9 triggered the Zenodo integration for the first time, and the
+concept DOI now resolves to record 23305683, which archives version 3.9.
+Section 11 carries the record id, the version DOI and the archived file's md5.
+
+Revision 3.9 said the integration "appears never to have archived anything",
+resting on a webhook delivery log that showed nothing. GitHub retains those logs
+only for a window, so an empty log could not have shown an attempt at 3.4 either
+way, and that inference was weaker than the sentence implied. What is
+established: nothing between 3.4 and 3.8 reached the archive, and a published
+release does trigger the deposit. Why the earlier releases did not is unknown
+and no longer guessed at here.
