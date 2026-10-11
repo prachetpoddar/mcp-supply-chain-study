@@ -666,10 +666,19 @@ still exist as files, both invalidated datasets, and the raw per-package records
 behind every corrected figure:
 
 > https://github.com/prachetpoddar/mcp-supply-chain-study
-> Archived at DOI 10.5281/zenodo.22641812.
+> Concept DOI 10.5281/zenodo.22641812.
 
-Cite that DOI. It is the concept DOI, which resolves to the most recent archived
-version, so it does not go stale as this paper is revised.
+**Cite the git tag and commit, not the DOI alone, for anything in this paper
+after version 3.3.** The concept DOI resolves to the most recent version Zenodo
+has *archived*, which is not the most recent version tagged in that repository.
+Checked on 2026-10-11, the newest archived version is the record labelled 3.3,
+so versions 3.4 through 3.7 exist as tags and have never reached the archive.
+Zenodo's GitHub integration fires on a published release rather than on a tag,
+and releases published while the integration was inactive do not backfill.
+Nothing archived under this DOI contains the registry-drift result, the resolver
+correction, or the advisory-gap recomputation. This was found by the maintainer
+of mcp-audit, who checked the DOI rather than taking my word for it, after I had
+told him it resolved to the current version.
 
 The version DOIs are more specific and, in one case, misleading. 10.5281/zenodo.22641813
 archives version 1.0.0 under its original title, "Measuring the MCP Supply Chain:
@@ -806,8 +815,10 @@ described version 1.0.2 under the old title and are rewritten.
 10.5281/zenodo.22664719 as the archive of itself. That record is labelled version
 3.3 but contains the version 3.1 tree, because the `v3.3` tag was placed on the
 version 3.1 commit, and a Zenodo record's files cannot be replaced after minting.
-The paper now cites the concept DOI, 10.5281/zenodo.22641812, which resolves to
-the most recent version and does not need changing at each revision. Also released
+The paper cited the concept DOI, 10.5281/zenodo.22641812, on the assumption that
+it resolves to the most recent version and so would not need changing at each
+revision. Revision 3.8 withdraws that assumption: the DOI resolves to the most
+recent *archived* version, and nothing after 3.3 has been archived. Also released
 the result files Sections 5 and 6 depend on, which had never been published:
 `cluster_bootstrap.json` and `design_effect_corrected.json` carry the z values
 Section 6 reports, `publisher_clustering.json` and `publisher_icc.json` are the
@@ -896,3 +907,11 @@ it.
 not an install, that the rebuilt state cannot see unpublished versions or
 historical deprecation flags so 184 is a floor on those two counts, and that the
 count survives removing the packages the dist-tag defect touches.
+
+**3.8** No measurement changes. The archive reference was wrong in a way the
+paper had been asserting since 3.4: the concept DOI resolves to the most recent
+version Zenodo has archived, and the most recent archived version is the record
+labelled 3.3, which carries the 3.1 tree. Everything from 3.4 onward exists only
+as a git tag. Section 11 now says so and tells a reader to cite the tag and the
+commit. `CITATION.cff` and `.zenodo.json` carried version 3.6.0 inside the 3.7
+tree, which is what Zenodo reads when it archives, and now carry 3.7.0.
