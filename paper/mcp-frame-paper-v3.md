@@ -684,8 +684,13 @@ The version DOIs are more specific and, in one case, misleading. 10.5281/zenodo.
 archives version 1.0.0 under its original title, "Measuring the MCP Supply Chain:
 Eight Null Results and a Population That Is Not the Population", whose findings
 are superseded here. 10.5281/zenodo.22664719 is labelled version 3.3 but archives
-the version 3.1 tree, because the `v3.3` git tag was placed on the version 3.1
-commit and Zenodo archives whatever the tag points at. It contains neither the
+the version 3.1 tree. Earlier revisions explained that as the `v3.3` git tag
+having been placed on the version 3.1 commit, with Zenodo archiving whatever the
+tag points at. The tag placement is real and checkable: `v3.3` points at commit
+`e3a4297`, whose message is "v3.1: correct validation figure". The rest of the
+explanation is withdrawn, because it assumes the GitHub integration created the
+record, and the repository's webhook delivery log shows no deliveries. How the
+3.1 tree came to sit in a record labelled 3.3 is therefore not established here. It contains neither the
 Section 6 correction nor the lock format proposal. Versions 1.0.1, 1.0.2 and 2.0
 were never archived, and versions of this paper before 3.3 stated that 2.0 had
 its own DOI, which was not true.
@@ -813,8 +818,8 @@ described version 1.0.2 under the old title and are rewritten.
 
 **3.4** Corrected the archive references. Version 3.3 cited
 10.5281/zenodo.22664719 as the archive of itself. That record is labelled version
-3.3 but contains the version 3.1 tree, because the `v3.3` tag was placed on the
-version 3.1 commit, and a Zenodo record's files cannot be replaced after minting.
+3.3 but contains the version 3.1 tree, and a Zenodo record's files cannot be
+replaced after minting. Revision 3.8 withdraws the stated cause.
 The paper cited the concept DOI, 10.5281/zenodo.22641812, on the assumption that
 it resolves to the most recent version and so would not need changing at each
 revision. Revision 3.8 withdraws that assumption: the DOI resolves to the most
@@ -914,4 +919,16 @@ version Zenodo has archived, and the most recent archived version is the record
 labelled 3.3, which carries the 3.1 tree. Everything from 3.4 onward exists only
 as a git tag. Section 11 now says so and tells a reader to cite the tag and the
 commit. `CITATION.cff` and `.zenodo.json` carried version 3.6.0 inside the 3.7
-tree, which is what Zenodo reads when it archives, and now carry 3.7.0.
+tree, which is what Zenodo reads when it archives, and now carry 3.8.0.
+
+**3.9** No measurement changes. The cause this paper gave for the mislabelled
+3.3 record is withdrawn. It said Zenodo archived whatever the misplaced tag
+pointed at, which assumes the GitHub integration created that record. The
+repository's webhook delivery log shows no deliveries, so the integration
+appears never to have archived anything and the record's provenance is not
+established here. The tag placement itself is checkable and stands: `v3.3`
+points at the version 3.1 commit, whose own message is "v3.1: correct validation
+figure".
+
+This revision exists because 3.8 was published before that edit was made, and a
+published tag is not rewritten to absorb a later correction.
