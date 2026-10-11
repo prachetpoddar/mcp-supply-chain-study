@@ -5,7 +5,7 @@ Ecosystem Stayed Invisible*, a measurement study of Model Context Protocol
 servers on npm. Measurements run 6 to 8 September 2026, with a corrected re-walk
 of the corpus on 17 September 2026.
 
-**Version 3.6.** The study began as a supply-chain risk comparison and became a
+**Version 3.7.** The study began as a supply-chain risk comparison and became a
 paper about why that comparison kept failing. Two causes: a keyword-built frame
 that sampled publishers rather than packages, and a dependency resolver that was
 never validated against the tool it modelled. Section 12 of the paper lists every
@@ -17,8 +17,13 @@ Paper: [`paper/mcp-frame-paper-v3.md`](paper/mcp-frame-paper-v3.md), also as
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22641812.svg)](https://doi.org/10.5281/zenodo.22641812)
 
-Cite `10.5281/zenodo.22641812`. That is the concept DOI and it resolves to the
-most recent archived version. The version DOIs are `22641813` for v1.0.0 and
+Cite `10.5281/zenodo.22641812`, the concept DOI, which resolves to the most
+recent version Zenodo has **archived**. That is not the same as the most recent
+version tagged here. Zenodo's GitHub integration archives a published release
+rather than a tag, and as of 2026-10-11 the concept DOI resolves to record
+22664719, which is labelled 3.3 and carries the 3.1 tree, so nothing archived
+contains the registry-drift result or the resolver correction. Until a release
+for this version has archived, cite the tag and the commit alongside the DOI. The version DOIs are `22641813` for v1.0.0 and
 `22664719`, which is labelled v3.3 but archives the v3.1 tree because the tag was
 placed on the wrong commit.
 
