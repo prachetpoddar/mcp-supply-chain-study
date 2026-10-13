@@ -472,6 +472,19 @@ side is two trees, 13 of its 15 findings from `@xmldom/xmldom` moving from 0.8.1
 to 0.9.10, where the newer release line carried more open advisories than the
 maintained 0.8.x head, which is the one counter-mechanism observed.
 
+Because the count is concentrated, the obvious question is whether the *rate* is
+too. `code/gap_leave_one_out.py` rebuilds the crosstab with packages suppressed
+from the advisory join on both arms, and reproduces the unsuppressed crosstab
+(130 / 0 / 37 / 82) exactly before changing anything. Suppressing `hono`
+entirely moves the frozen-flags-live-clean count from 130 of 249 to 129, a rate
+of 51.8% against 52.2%; adding `@hono/node-server` changes nothing further. So
+the package that carries 45% of the findings carries one tree of the rate. The
+same check over the five packages holding 82% of the findings gives 89 of 249,
+35.7%, which is not a robustness result: removing `hono`, `fast-uri`, `qs`,
+`axios` and `ip-address` from an npm advisory join removes much of what npm
+advisories are about. It is recorded here so the favourable arm is not the only
+one on the record. Output in `data/gap_leave_one_out.json`.
+
 ### What stays open
 
 Age dominates the counts and not the rate: at a root age of 30 days or less, 42

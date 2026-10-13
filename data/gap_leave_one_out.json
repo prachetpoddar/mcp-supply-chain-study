@@ -1,0 +1,38 @@
+{
+ "source_state": "nested_gap_state.json",
+ "advisory_basis": "advisories_npm.json",
+ "results": {
+  "none": {
+   "trees": 249,
+   "frozen_flags_live_clean": 130,
+   "rate_pct": 52.2,
+   "live_flags_frozen_clean": 0,
+   "both_flag": 37,
+   "neither_flags": 82
+  },
+  "hono": {
+   "trees": 249,
+   "frozen_flags_live_clean": 129,
+   "rate_pct": 51.8,
+   "live_flags_frozen_clean": 0,
+   "both_flag": 37,
+   "neither_flags": 83
+  },
+  "hono_and_node_server": {
+   "trees": 249,
+   "frozen_flags_live_clean": 129,
+   "rate_pct": 51.8,
+   "live_flags_frozen_clean": 0,
+   "both_flag": 37,
+   "neither_flags": 83
+  },
+  "top5": {
+   "trees": 249,
+   "frozen_flags_live_clean": 89,
+   "rate_pct": 35.7,
+   "live_flags_frozen_clean": 0,
+   "both_flag": 36,
+   "neither_flags": 124
+  }
+ }
+}
