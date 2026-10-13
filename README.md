@@ -5,7 +5,7 @@ Ecosystem Stayed Invisible*, a measurement study of Model Context Protocol
 servers on npm. Measurements run 6 to 8 September 2026, with a corrected re-walk
 of the corpus on 17 September 2026.
 
-**Version 3.10.** The study began as a supply-chain risk comparison and became a
+**Version 3.11.** The study began as a supply-chain risk comparison and became a
 paper about why that comparison kept failing. Two causes: a keyword-built frame
 that sampled publishers rather than packages, and a dependency resolver that was
 never validated against the tool it modelled. Section 12 of the paper lists every
@@ -18,10 +18,15 @@ Paper: [`paper/mcp-frame-paper-v3.md`](paper/mcp-frame-paper-v3.md), also as
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22641812.svg)](https://doi.org/10.5281/zenodo.22641812)
 
 Cite `10.5281/zenodo.22641812`, the concept DOI, which resolves to the most
-recent version Zenodo has **archived**. As of 2026-10-11 that is record
-23305683, archiving version 3.9 (`10.5281/zenodo.23305683`). Versions 3.4
-through 3.8 were never archived: the integration deposits on a published release
-rather than on a tag, and until 3.9 no release had triggered it. Anything tagged
+recent version Zenodo has **archived**. No version of this file can name its own
+record, since the deposit is created by publishing the release that carries the
+file. The newest record observable before this release is 23305959, archiving
+version 3.10 (`10.5281/zenodo.23305959`), and the deposit for this version
+supersedes it. Versions 3.4 through 3.8 were never archived: the integration
+deposits on a published release rather than on a tag, and until 3.9 no release
+had triggered it. The v3.10 tag is a separate case: it stopped short of its
+branch, so its record is missing `code/gap_leave_one_out.py` and the two files
+that go with it, which v3.11 archives. Anything tagged
 here and newer than the newest archived record is reachable only by tag and
 commit, so cite both alongside the DOI. The version DOIs are `22641813` for v1.0.0 and
 `22664719`, which is labelled v3.3 but archives the v3.1 tree because the tag was

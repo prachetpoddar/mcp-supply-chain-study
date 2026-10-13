@@ -354,8 +354,12 @@ one way because an install resolves ranges forward onto versions published after
 the root shipped, and the advisory set attached to a version shrinks as the
 version advances. Counts of individual findings are not quoted here: they are
 dominated by a few advisory-dense packages, with five packages holding 82% of
-them, so the rate is the stable quantity and the count is not. `capturedUtc`
-exists so that a consumer can tell how old the description is.
+them, so the rate is the stable quantity and the count is not. Suppressing the
+densest of those packages from the advisory join on both arms moves the rate
+from 130 of 249 to 129, which is the check that the rate is not an artifact of
+that one package; `code/gap_leave_one_out.py` runs it and reproduces the
+unsuppressed crosstab before changing anything. `capturedUtc` exists so that a
+consumer can tell how old the description is.
 
 ## 14. Reference implementation and conformance
 

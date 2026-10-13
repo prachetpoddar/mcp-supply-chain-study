@@ -670,11 +670,16 @@ behind every corrected figure:
 
 **Cite the git tag and commit alongside the DOI.** The concept DOI resolves to
 the most recent version Zenodo has *archived*, which is not necessarily the most
-recent version tagged in that repository. As of 2026-10-11 it resolves to record
-23305683, which archives version 3.9: version DOI 10.5281/zenodo.23305683, file
-`mcp-supply-chain-study-v3.9.zip`, md5 `c37cf3a7d67d5e0f5cad13e64b23354b`. That
-record contains the registry-drift result, the resolver correction and the
-advisory-gap recomputation.
+recent version tagged in that repository. No revision can name its own archived
+record, because the deposit is created by publishing the release that carries
+that revision, so every record this section can name is one its own release
+supersedes. At the time of writing the concept DOI resolved to record 23305959,
+which archives version 3.10: version DOI 10.5281/zenodo.23305959, file
+`mcp-supply-chain-study-v3.10.zip`, md5 `9e139123a089fdfe9aa0f183ec38d2f9`. If
+the deposit for this revision fired, the concept DOI now resolves past that
+record; if it did not, 3.10 is the newest archived version and this revision is
+reachable only by tag and commit. Either way the tag and the commit are the
+citation that does not move.
 
 Versions 3.4 through 3.8 were never archived. The integration deposits on a
 published release rather than on a tag, and until 3.9 no release had triggered
@@ -684,6 +689,14 @@ checking the DOI rather than taking my word for it, after I had told him it
 resolved to the current version. Anything tagged in that repository and newer
 than the newest archived record is reachable only by tag and commit, which is
 why both are worth citing.
+
+There is a second way the archive and the repository can disagree, and it is
+quieter. The deposit is built from the tag, so a tag that stops short of its
+branch archives less than the branch holds. That happened at 3.10: `main`
+carried `code/gap_leave_one_out.py`, `data/gap_leave_one_out.json` and the
+paragraph in `RESOLVER-NOTES.md` that reports them, and the tag did not, so the
+3.10 record does not contain them. The tag was already archived by then and was
+not rewritten. Revision 3.11 exists to archive that material.
 
 The version DOIs are more specific and, in one case, misleading. 10.5281/zenodo.22641813
 archives version 1.0.0 under its original title, "Measuring the MCP Supply Chain:
@@ -950,3 +963,23 @@ way, and that inference was weaker than the sentence implied. What is
 established: nothing between 3.4 and 3.8 reached the archive, and a published
 release does trigger the deposit. Why the earlier releases did not is unknown
 and no longer guessed at here.
+
+**3.11** No measurement changes. Revision 3.10's commit reached `main` but its
+tag did not move with it, so the archived v3.10 zip is missing
+`code/gap_leave_one_out.py`, `data/gap_leave_one_out.json` and the paragraph in
+`RESOLVER-NOTES.md` that reports them. This revision archives them. A published
+tag is not rewritten to absorb a later addition, which is why this is a new
+revision rather than a moved tag, for the same reason 3.9 followed 3.8.
+
+Section 11's archive wording is restructured. Through 3.10 it named the record
+the concept DOI resolved to on the day the revision was written, which is a
+statement no revision can keep true: the deposit is created by publishing the
+release that carries the revision, so each one named a record its own release
+superseded. It now states that invariant, names the last record it could
+observe, and says which of the two outcomes the reader is in.
+
+The leave-one-out check itself is reported in section 13 of the lock spec and in
+`RESOLVER-NOTES.md`. Suppressing `hono`, which carries 2,017 of the 4,442
+findings on the frozen side, moves the frozen-flags-live-clean count from 130 of
+249 to 129. Suppressing the five packages that hold 82% of the findings gives 89
+of 249, which is not a robustness result and is recorded as not being one.
