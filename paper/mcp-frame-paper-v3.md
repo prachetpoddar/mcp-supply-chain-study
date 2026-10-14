@@ -983,3 +983,35 @@ The leave-one-out check itself is reported in section 13 of the lock spec and in
 findings on the frozen side, moves the frozen-flags-live-clean count from 130 of
 249 to 129. Suppressing the five packages that hold 82% of the findings gives 89
 of 249, which is not a robustness result and is recorded as not being one.
+
+**3.12** The frozen-versus-live result now says why. Pre-registration 6 and
+`code/gap_cause_split.py` decompose every finding a release-frozen tree reports
+by whether its advisory was published before or after the root shipped. The
+share postdating the root runs from 90.6% at a root age of 30 days or less to
+100.0% past a year, and the bands are **not** monotone: the 91-to-180 band sits
+below the 31-to-90 band, the package-cluster intervals overlap heavily, and the
+inversion is carried by a handful of roots. The pooled 98.4% over 4,638 findings
+is age-exposure weighted and is not quoted as a rate. Re-running the whole
+decomposition against the time-aligned live arm reproduces every band exactly.
+
+The question the post of 13 October left open has a null for an answer. Both
+cells of the crosstab carry a fix-availability condition, in opposite
+directions, so the cell free of either, a pre-ship advisory on a pin that later
+became fixable, holds 10 findings of 4,638 across 7 servers, 4 of them
+indeterminate, and 3 of 3 indeterminate under the aligned arm. A frozen
+description over-reports because advisories accrue against it, not because these
+publishers shipped pins they could have avoided. The cell that looked like a
+publisher result is confounded: in 7 of its 24 pairs the tree installs two
+versions of the flagged package, and which copy the root declared is not
+recoverable from the released data.
+
+Three rounds of independent adversarial review are recorded in amendments two,
+three and four of the pre-registration, and this revision exists partly to
+record what they found. Every arithmetic figure survived all three unchanged.
+Three successive wordings did not: a claim that the pooled population carried no
+fix-timing filter, a claim that a root's own declaration had not selected a
+flagged version, and a claim that the age bands were monotone. The last was
+false in a table this project had already printed. The suite guarding the
+decomposition carries 31 mutations, none designed by the author, three harness
+composites and a meta-test, and the reproduction gate now raises rather than
+asserts, because `python3 -O` had been deleting it in full.

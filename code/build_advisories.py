@@ -9,8 +9,18 @@ WHY THIS EXISTS
     records what it was built from.
 
 OUTPUT
-    data/advisories_npm.json       {package: [{id, severity, vulnerable_versions}]}
+    data/advisories_npm.json       {package: [{id, severity, vulnerable_versions,
+                                   published, modified}]}
     data/advisories_npm_meta.json  what it was built from, and what was dropped
+
+PUBLICATION DATES, AND WHAT THEY ARE NOT
+    `published` and `modified` are carried through verbatim from the OSV entry
+    so that a frozen-side finding can be asked whether its advisory existed when
+    the root shipped. They are OSV's timestamps: `published` is when the advisory
+    entered OSV, which can lag the upstream GHSA publication. Any statement built
+    on them is a bound on knowledge timing and not a measurement of it. Either
+    may be absent, in which case the field is None and the row is counted in the
+    metadata rather than given a substitute date.
 
 RANGE CONVERSION, AND ITS ONE APPROXIMATION
     OSV states affected versions as event lists: an `introduced` bound, then
@@ -26,11 +36,13 @@ import collections, json, os, sys, time, zipfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(os.path.dirname(HERE), "data")
 ZIP = os.path.join(DATA, "osv_npm_all.zip")
-OUT = os.path.join(DATA, "advisories_npm.json")
-META = os.path.join(DATA, "advisories_npm_meta.json")
+OUT = os.environ.get("ADVISORY_OUT") or os.path.join(DATA, "advisories_npm.json")
+META = os.environ.get("ADVISORY_META") or os.path.join(DATA,
+                                                       "advisories_npm_meta.json")
 MAX_ENUMERATED = 40
 
-# WHICH ADVISORIES COUNT. The OSV npm export carries 221,179 MAL rows, one per
+# WHICH ADVISORIES COUNT. The OSV npm export carries 221,191 non-withdrawn MAL
+# rows, one per
 # reported malicious package, against 9,522 GHSA rows. A malicious-package
 # report is a different object from a vulnerability advisory: it says a package
 # should not exist rather than that a version range is affected, and most of
@@ -68,6 +80,7 @@ def main():
     drop = collections.Counter()
     ids, modified = set(), []
     sevs = collections.Counter()
+    undated_ids, undated_rows = set(), 0
     with zipfile.ZipFile(ZIP) as z:
         names = [n for n in z.namelist() if n.endswith(".json")]
         for i, n in enumerate(names):
@@ -107,8 +120,14 @@ def main():
                     else:
                         drop["affected_without_usable_range"] += 1
                         continue
-                out[name].append({"id": aid, "severity": sev, "vulnerable_versions": vr})
+                out[name].append({"id": aid, "severity": sev,
+                                  "vulnerable_versions": vr,
+                                  "published": a.get("published"),
+                                  "modified": a.get("modified")})
                 wrote = True
+                if not a.get("published"):
+                    undated_rows += 1
+                    undated_ids.add(aid)
             if wrote:
                 ids.add(aid)
                 sevs[sev or "none"] += 1
@@ -124,6 +143,8 @@ def main():
         "packages": len(out),
         "advisory_rows": sum(len(v) for v in out.values()),
         "latest_modified_in_export": max(modified) if modified else None,
+        "rows_without_published": undated_rows,
+        "advisories_without_published": len(undated_ids),
         "severity_counts": dict(sevs),
         "dropped": dict(drop),
         "max_enumerated_versions": MAX_ENUMERATED,

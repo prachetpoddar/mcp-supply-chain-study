@@ -485,6 +485,70 @@ same check over the five packages holding 82% of the findings gives 89 of 249,
 advisories are about. It is recorded here so the favourable arm is not the only
 one on the record. Output in `data/gap_leave_one_out.json`.
 
+### Why the frozen tree over-reports
+
+The frozen-versus-live result says a scanner reading a release-frozen tree
+reports advisories the install does not. It does not say why, and the LinkedIn
+post of 13 October named that as the open question: is the finding there because
+the install moved past a fix, or because the advisory did not exist when the
+package shipped? `PREREGISTRATION-6.md` fixes the decision rule,
+`code/build_advisories.py` now carries OSV's `published` and `modified` onto
+every advisory row, and `code/gap_cause_split.py` decomposes the findings.
+`code/test_gap_cause_split.py` is its suite: 31 mutations, every one designed by
+an independent reviewer rather than by the author, plus three harness composites
+and a meta-test.
+
+**The answer is an age effect, and the bands are not monotone.** Over every
+finding the frozen tree reports, the share whose advisory postdates its root runs
+90.6% at a root age of 30 days or less (n=318), 98.8% at 31 to 90 (n=666), 98.2%
+at 91 to 180 (n=1,934), 99.7% at 181 to 365 (n=1,499) and 100.0% past 365
+(n=221). The mechanism is non-decreasing in expectation, because a younger root
+has had less time to accrue advisories against a fixed description, but the
+realisation is not: the third band sits below the second, the package-cluster
+intervals overlap heavily ([94.55, 99.77] against [90.43, 99.72], and the
+youngest band's [28.89, 96.64] overlaps all four others), and the inversion is
+carried by a handful of roots. The safe statement is the pair of endpoints. The
+pooled figure, 98.4% of 4,638 findings, is age-exposure weighted and is not a
+rate.
+
+**The bands do not depend on the walk date.** The published live arm was
+resolved about a month after the advisory snapshot. Re-running the decomposition
+against `data/nested_gap_state_aligned.json`, whose live arm is resolved at the
+snapshot instant, reproduces every band count and every band share exactly, and
+the pooled 98.4% with them.
+
+**The behavioural question is a null.** Both cells of the crosstab carry a
+fix-availability condition, in opposite directions: a frozen-only finding
+requires an in-range fix published after the root shipped, and a both-arms
+finding requires that no in-range fix exists even today. All 66 pre-ship
+findings in the both cell have `frozen_version == live_version`, so that cell
+selects dependencies that have not moved at all. The cell free of either
+condition, a pre-ship advisory on a pin that later became fixable, holds **10
+findings of 4,638, 0.22%, across 7 servers**, of which 4 sit in the indeterminate
+band rather than the stable category. Under the time-aligned arm it is 3 of 3,
+all indeterminate. A frozen tree over-reports because advisories accrue against
+a fixed description, not because these publishers shipped pins they could have
+avoided.
+
+**The cell that looked like a publisher result is confounded.** 58 findings
+across 24 (root, package) pairs are pre-ship and still flagged today. In 7 of
+those pairs, covering 19 findings, the tree installs two versions of the flagged
+package, the flagged one and a strictly newer one the advisory does not cover,
+so the finding cannot be attributed to a single declared pin. Which copy the
+root itself declared is **not in the released data**: the walk state keeps flat
+`(name, version)` sets with no edges or depth, and `nested_gap.py` states that
+it does not model placement. Under the aligned arm this cell is 64 findings
+across 15 servers rather than 58 across 13, so its membership is walk-date
+dependent in a way the bands are not. No server is named in any reported
+quantity. Output in `data/gap_cause_split.json`.
+
+Three rounds of adversarial review are recorded in amendments two, three and
+four of the pre-registration. Every arithmetic figure survived all three
+unchanged. What failed each time was wording: "no fix-timing filter", "the
+root's own declaration did not select the flagged version" and "mechanically
+increasing in root age" were each withdrawn, the last of them visible as false
+in a table this project had already printed.
+
 ### What stays open
 
 Age dominates the counts and not the rate: at a root age of 30 days or less, 42

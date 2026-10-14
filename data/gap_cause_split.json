@@ -1,0 +1,447 @@
+{
+ "preregistration": "PREREGISTRATION-6.md (amendment four)",
+ "headline": "the share is non-decreasing in root age IN EXPECTATION, because a younger root has had less time to accrue advisories; observed it is not monotone and the bands' intervals overlap, so the bands are the result and the pooled figure is a property of this corpus's age mix",
+ "post_ship_share_by_root_age": [
+  {
+   "age_days_from": 0,
+   "age_days_to": 30,
+   "n": 318,
+   "by_category": {
+    "post_ship": 288,
+    "pre_ship_modified": 2,
+    "pre_ship_stable": 28
+   },
+   "post_ship_pct": 90.6,
+   "package_cluster_ci95": [
+    28.89,
+    96.64
+   ],
+   "package_clusters": 18,
+   "leave_out_densest": {
+    "package": "hono",
+    "n": 216,
+    "post_ship_pct": 86.1
+   }
+  },
+  {
+   "age_days_from": 31,
+   "age_days_to": 90,
+   "n": 666,
+   "by_category": {
+    "post_ship": 658,
+    "pre_ship_modified": 4,
+    "pre_ship_stable": 4
+   },
+   "post_ship_pct": 98.8,
+   "package_cluster_ci95": [
+    94.55,
+    99.77
+   ],
+   "package_clusters": 23,
+   "leave_out_densest": {
+    "package": "hono",
+    "n": 423,
+    "post_ship_pct": 98.1
+   }
+  },
+  {
+   "age_days_from": 91,
+   "age_days_to": 180,
+   "n": 1934,
+   "by_category": {
+    "post_ship": 1900,
+    "pre_ship_modified": 2,
+    "pre_ship_stable": 32
+   },
+   "post_ship_pct": 98.2,
+   "package_cluster_ci95": [
+    90.43,
+    99.72
+   ],
+   "package_clusters": 31,
+   "leave_out_densest": {
+    "package": "hono",
+    "n": 883,
+    "post_ship_pct": 96.1
+   }
+  },
+  {
+   "age_days_from": 181,
+   "age_days_to": 365,
+   "n": 1499,
+   "by_category": {
+    "post_ship": 1495,
+    "pre_ship_modified": 4
+   },
+   "post_ship_pct": 99.7,
+   "package_cluster_ci95": [
+    98.94,
+    100.0
+   ],
+   "package_clusters": 47,
+   "leave_out_densest": {
+    "package": "hono",
+    "n": 878,
+    "post_ship_pct": 99.5
+   }
+  },
+  {
+   "age_days_from": 366,
+   "age_days_to": null,
+   "n": 221,
+   "by_category": {
+    "post_ship": 221
+   },
+   "post_ship_pct": 100.0,
+   "package_cluster_ci95": [
+    100.0,
+    100.0
+   ],
+   "package_clusters": 27,
+   "leave_out_densest": {
+    "package": "hono",
+    "n": 221,
+    "post_ship_pct": 100.0
+   }
+  }
+ ],
+ "age_bands_are_monotone": false,
+ "age_band_edges": [
+  [
+   0,
+   30
+  ],
+  [
+   31,
+   90
+  ],
+  [
+   91,
+   180
+  ],
+  [
+   181,
+   365
+  ],
+  [
+   366,
+   null
+  ]
+ ],
+ "findings_outside_every_age_bucket": 0,
+ "all_frozen_side": {
+  "n": 4638,
+  "by_category": {
+   "post_ship": 4562,
+   "pre_ship_modified": 12,
+   "pre_ship_stable": 64
+  },
+  "post_ship_pct": 98.4,
+  "package_cluster_ci95": [
+   94.06,
+   99.4
+  ],
+  "package_clusters": 72,
+  "leave_out_densest": {
+   "package": "hono",
+   "n": 2621,
+   "post_ship_pct": 97.1
+  },
+  "caveat": "age-exposure weighted; read the gradient, not this"
+ },
+ "by_cell": {
+  "frozen_only": {
+   "n": 4442,
+   "by_category": {
+    "post_ship": 4432,
+    "pre_ship_modified": 4,
+    "pre_ship_stable": 6
+   },
+   "post_ship_pct": 99.8,
+   "package_cluster_ci95": [
+    99.01,
+    99.98
+   ],
+   "package_clusters": 56,
+   "leave_out_densest": {
+    "package": "hono",
+    "n": 2425,
+    "post_ship_pct": 99.6
+   },
+   "caveat": "conditional on a fixed version inside the root's range published after the root shipped; post_ship is close to forced here"
+  },
+  "both_arms_flag": {
+   "n": 196,
+   "by_category": {
+    "post_ship": 130,
+    "pre_ship_modified": 8,
+    "pre_ship_stable": 58
+   },
+   "post_ship_pct": 66.3,
+   "package_cluster_ci95": [
+    47.37,
+    80.0
+   ],
+   "package_clusters": 27,
+   "leave_out_densest": {
+    "package": "hono",
+    "n": 196,
+    "post_ship_pct": 66.3
+   }
+  },
+  "live_only": {
+   "n": 15,
+   "by_category": {
+    "post_ship": 15
+   },
+   "post_ship_pct": 100.0,
+   "package_cluster_ci95": [
+    100.0,
+    100.0
+   ],
+   "package_clusters": 3,
+   "leave_out_densest": {
+    "package": "hono",
+    "n": 15,
+    "post_ship_pct": 100.0
+   }
+  }
+ },
+ "pre_ship_and_never_moved": {
+  "definition": "both arms flag, advisory published at or before the root shipped and unchanged since. NOT a publisher result: this cell requires that no in-range fix exists even today, and the flagged copy is often a nested older duplicate the root did not select.",
+  "findings": 58,
+  "servers": 13,
+  "servers_pct_of_corpus": 5.2,
+  "packages": 18,
+  "frozen_version_equals_live_version": 58,
+  "findings_with_a_second_copy_installed": 19,
+  "root_package_pairs_total": 24,
+  "root_package_pairs_with_a_second_copy": 7,
+  "findings_whose_second_copy_is_newer_and_uncovered": 19,
+  "what_this_does_not_establish": "which copy the root itself declared: the walk state carries no edges, so parentage is not in the released data",
+  "by_severity": {
+   "critical": 3,
+   "high": 38,
+   "low": 3,
+   "moderate": 14
+  },
+  "top_packages": [
+   [
+    "multer",
+    14
+   ],
+   [
+    "@modelcontextprotocol/sdk",
+    9
+   ],
+   [
+    "protobufjs",
+    9
+   ],
+   [
+    "fast-xml-parser",
+    4
+   ],
+   [
+    "agents",
+    3
+   ],
+   [
+    "uuid",
+    3
+   ],
+   [
+    "form-data",
+    2
+   ],
+   [
+    "node-fetch",
+    2
+   ],
+   [
+    "tmp",
+    2
+   ],
+   [
+    "xlsx",
+    2
+   ]
+  ]
+ },
+ "behavioural_answer": {
+  "question": "do these servers ship pins already covered by a published advisory, where a fix later became available?",
+  "definition": "frozen-only cell (a fix arrived after ship) AND the advisory predates the root; free of the fix-availability condition carried by either cell",
+  "findings": 10,
+  "by_category": {
+   "pre_ship_modified": 4,
+   "pre_ship_stable": 6
+  },
+  "of_all_frozen_side": 4638,
+  "denominator": "all frozen-side findings",
+  "pct": 0.22,
+  "servers": 7,
+  "reading": "a null. A frozen tree over-reports because advisories accrue against a fixed description, not because publishers ship pins they could have avoided."
+ },
+ "indeterminate_band_pct": 0.3,
+ "verdict": "point_estimate",
+ "trees_all_frozen_side": {
+  "trees": 167,
+  "by_category": {
+   "mixed": 18,
+   "post_ship": 148,
+   "pre_ship_stable": 1
+  }
+ },
+ "trees_frozen_only": {
+  "trees": 164,
+  "by_category": {
+   "mixed": 7,
+   "post_ship": 157
+  }
+ },
+ "trees_note": "trees_frozen_only is 164: the 130 frozen-flags-live-clean trees plus the 34 both-flag trees whose advisory lists differ. trees_all_frozen_side adds the 3 both-flag trees whose lists are identical",
+ "young_cohort": {
+  "days": 30,
+  "asof": "2026-09-09T22:15:30+00:00",
+  "roots": 75,
+  "roots_contributing_a_finding": 42,
+  "n": 318,
+  "by_category": {
+   "post_ship": 288,
+   "pre_ship_modified": 2,
+   "pre_ship_stable": 28
+  },
+  "post_ship_pct": 90.6,
+  "package_cluster_ci95": [
+   28.89,
+   96.64
+  ],
+  "package_clusters": 18,
+  "leave_out_densest": {
+   "package": "hono",
+   "n": 216,
+   "post_ship_pct": 86.1
+  },
+  "boundary": "advisory snapshot mtime minus root_published, the same boundary code/nested_gap.py's age gradient uses",
+  "not_comparable_with": "the published 56% for this cohort, which is the share of TREES carrying any frozen-only finding, not a finding-level share",
+  "interpretation": "none drawn: the package-cluster interval does not exclude a mostly pre-ship cohort, which is the hinge the original protocol named"
+ },
+ "gap_days_advisory_published_minus_root_shipped": {
+  "min": -2172,
+  "p10": 14,
+  "median": 74,
+  "p90": 192,
+  "max": 512,
+  "advisories_predating_their_root": 76,
+  "published_within_24h_after_shipping": 6,
+  "note": "the day count truncates, so a zero gap can be either side of the ship time; the category uses the timestamps"
+ },
+ "pairs_by_category": {
+  "unit": "(tree, package); a pair holding more than one category is reported as mixed",
+  "mixed": 17,
+  "post_ship": 923,
+  "pre_ship_modified": 5,
+  "pre_ship_stable": 16
+ },
+ "undated_sensitivity": {
+  "undated_rows": 0,
+  "post_ship_pct_if_undated_called_post_ship": 98.4,
+  "post_ship_pct_if_undated_called_pre_ship": 98.4
+ },
+ "cluster_robustness": {
+  "note": "reported across units because no single one of them is the binding dependence; scope approximates publisher and the publisher map in this repository keys root packages, not dependency packages, so it cannot be used here",
+  "package": {
+   "clusters": 72,
+   "draws": 10000,
+   "ci95": [
+    94.06,
+    99.4
+   ],
+   "draws_at_100_pct": 0.0
+  },
+  "scope_as_publisher": {
+   "clusters": 71,
+   "draws": 10000,
+   "ci95": [
+    94.23,
+    99.39
+   ],
+   "draws_at_100_pct": 0.0,
+   "caveat": "degenerate on this corpus: it merges exactly one pair of packages, so it is the package interval with two findings moved, not a publisher-level check"
+  },
+  "root": {
+   "clusters": 167,
+   "draws": 10000,
+   "ci95": [
+    97.4,
+    99.17
+   ],
+   "draws_at_100_pct": 0.0
+  },
+  "package_advisory": {
+   "clusters": 292,
+   "draws": 10000,
+   "ci95": [
+    97.65,
+    98.9
+   ],
+   "draws_at_100_pct": 0.0,
+   "caveat": "FINER than package, so it splits the concentration the protocol named as binding. Its tightness is not robustness and must not be quoted as the uncertainty"
+  }
+ },
+ "time_aligned_arm": {
+  "state_file": "nested_gap_state_aligned.json",
+  "all_frozen_side_n": 4638,
+  "frozen_only_n": 4414,
+  "both_arms_flag_n": 224,
+  "live_only_n": 8,
+  "post_ship_pct": 98.4,
+  "age_bands": [
+   {
+    "age_days_from": 0,
+    "n": 318,
+    "post_ship_pct": 90.6
+   },
+   {
+    "age_days_from": 31,
+    "n": 666,
+    "post_ship_pct": 98.8
+   },
+   {
+    "age_days_from": 91,
+    "n": 1934,
+    "post_ship_pct": 98.2
+   },
+   {
+    "age_days_from": 181,
+    "n": 1499,
+    "post_ship_pct": 99.7
+   },
+   {
+    "age_days_from": 366,
+    "n": 221,
+    "post_ship_pct": 100.0
+   }
+  ],
+  "behavioural_findings": 3,
+  "behavioural_servers": 3,
+  "behavioural_by_category": {
+   "pre_ship_modified": 3
+  },
+  "pre_ship_and_never_moved_findings": 64,
+  "pre_ship_and_never_moved_servers": 15,
+  "note": "the age bands are the figure that must not move; the two cells' membership may, and if it does the cells are walk-date dependent and are reported from both arms"
+ },
+ "roots_excluded_no_publication_date": [],
+ "provenance": {
+  "python": "3.10.12",
+  "code_sha256": "a2d802ecae9848b8bd4d3bc278c013f0db05f170614ab8a395e195f4323e4ab6",
+  "advisories_sha256": "d20a25eecd12dc409e6f15a5935e96f8fe5f68cf2615979f550d395949ecfc1d",
+  "state_sha256": "0b52712c09311c57f6b066e6c18f3667db64270063360f7e0b5d8af953a67066",
+  "gap_result_sha256": "4494bc432ebde0e72571d043a40caed814f743bfe9152791cc4dfb2ee59f3c4d",
+  "seed": 20261013,
+  "bootstrap_draws": 10000,
+  "assertions_enabled": true,
+  "checks_run": 14
+ }
+}

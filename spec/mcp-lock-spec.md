@@ -358,7 +358,13 @@ them, so the rate is the stable quantity and the count is not. Suppressing the
 densest of those packages from the advisory join on both arms moves the rate
 from 130 of 249 to 129, which is the check that the rate is not an artifact of
 that one package; `code/gap_leave_one_out.py` runs it and reproduces the
-unsuppressed crosstab before changing anything. `capturedUtc` exists so that a
+unsuppressed crosstab before changing anything. Of the findings the frozen tree
+reports, the share whose advisory was published after the root shipped runs from
+90.6% at a root age of 30 days or less to 100.0% past a year, with the two middle
+bands inverted and their intervals overlapping, so a frozen description
+over-reports because advisories accrue against it rather than because a
+publisher pinned a version already covered: that last case is 10 findings of
+4,638 (`code/gap_cause_split.py`, `PREREGISTRATION-6.md`). `capturedUtc` exists so that a
 consumer can tell how old the description is.
 
 ## 14. Reference implementation and conformance

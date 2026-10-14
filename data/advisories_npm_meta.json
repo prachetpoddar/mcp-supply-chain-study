@@ -1,5 +1,5 @@
 {
- "built_utc": "2026-10-09T02:56:43Z",
+ "built_utc": "2026-10-13T21:49:42Z",
  "source": "osv_npm_all.zip",
  "source_mtime_utc": "2026-09-09T22:15:30Z",
  "entries_in_zip": 228892,
@@ -7,6 +7,8 @@
  "packages": 3554,
  "advisory_rows": 9522,
  "latest_modified_in_export": "2026-09-09T18:15:04.495290489Z",
+ "rows_without_published": 0,
+ "advisories_without_published": 0,
  "severity_counts": {
   "moderate": 2447,
   "low": 428,

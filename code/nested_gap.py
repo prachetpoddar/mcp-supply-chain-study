@@ -168,6 +168,19 @@ def run(budget):
     print(f"\nwalked {sum(1 for v in s.values() if 'skip' not in v)} of {len(s)}")
 
 
+def ranked(counter, n=None):
+    """most_common with ties broken by name, so the output is byte-stable.
+
+    `Counter.most_common` orders equal counts by insertion order, and these
+    counters are filled by iterating sets of tuples, whose order moves with the
+    interpreter's hash seed. Two runs over identical inputs produced two
+    different `top_missed` orderings, which looked like a data change and was
+    not. Sorting by (-count, name) removes the signal entirely.
+    """
+    rows = sorted(counter.items(), key=lambda kv: (-kv[1], kv[0]))
+    return rows[:n] if n else rows
+
+
 def split(x):
     n, _, v = x.rpartition("@@")
     return n, v
@@ -286,7 +299,7 @@ def report():
           + ", ".join(f"{k} {msev.get(k,0)}" for k in SEV))
     print(f"  PHANTOM {p_tr} trees, {sum(psev.values())} findings, "
           + ", ".join(f"{k} {psev.get(k,0)}" for k in SEV))
-    print(f"  top missed: {mt.most_common(6)}")
+    print(f"  top missed: {ranked(mt, 6)}")
     print(f"\n=== the crosstab, which is what a scanner's answer actually does")
     print(f"  frozen flags, live clean : {cross[(True, False)]} = "
           f"{100*cross[(True, False)]/n:.1f}%   <- the wrong-answer rate")
@@ -311,10 +324,10 @@ def report():
                       f"median {gs[len(gs)//2]} findings")
     tot_ph = sum(pf_phantom.values())
     if tot_ph:
-        top5 = sum(c for _, c in pf_phantom.most_common(5))
+        top5 = sum(c for _, c in ranked(pf_phantom, 5))
         print(f"  phantom findings concentrate: {len(pf_phantom)} packages carry them, "
               f"top five hold {100*top5/tot_ph:.0f}%")
-        print(f"  top phantom packages: {pf_phantom.most_common(6)}")
+        print(f"  top phantom packages: {ranked(pf_phantom, 6)}")
 
     json.dump({"counting_unit": "one finding per (package, advisory id) per tree",
                "crosstab": {"frozen_flags_live_clean": cross[(True, False)],
@@ -339,9 +352,9 @@ def report():
                "state_file": os.path.basename(STATE),
                "prerelease_join": "include_prerelease=True",
                "advisory_basis": os.path.basename(ADVISORIES),
-               "phantom_by_package": dict(pf_phantom.most_common(20)),
+               "phantom_by_package": dict(ranked(pf_phantom, 20)),
                "phantom_packages": len(pf_phantom),
-               "missed_by_package": dict(pf_missed.most_common(20)),
+               "missed_by_package": dict(ranked(pf_missed, 20)),
                "trees": n, "dup_trees": dup_trees, "dup_packages_total": dup_tot,
                "median_published": statistics.median(npub),
                "median_installed": statistics.median(nnow),
@@ -350,10 +363,10 @@ def report():
                "trees_with_live_findings": live_any,
                "verdict_differs": differ,
                "missed_trees": m_tr, "missed_findings": sum(msev.values()),
-               "missed_by_severity": dict(msev),
+               "missed_by_severity": dict(sorted(msev.items())),
                "phantom_trees": p_tr, "phantom_findings": sum(psev.values()),
-               "phantom_by_severity": dict(psev),
-               "top_missed": mt.most_common(20)},
+               "phantom_by_severity": dict(sorted(psev.items())),
+               "top_missed": ranked(mt, 20)},
               open(OUT, "w"), indent=1)
     print(f"\nwrote {OUT}")
 

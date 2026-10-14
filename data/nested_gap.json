@@ -1014,7 +1014,7 @@
  "live_cutoff": null,
  "advisory_snapshot": {
   "file": "advisories_npm.json",
-  "sha256": "1032237aea6585755ca8012f6cc2901984e4293ba8b2eb7514dbc6fd8b9e3f95",
+  "sha256": "d20a25eecd12dc409e6f15a5935e96f8fe5f68cf2615979f550d395949ecfc1d",
   "source_mtime_utc": "2026-09-09T22:15:30Z",
   "basis": [
    "GHSA"
@@ -1043,7 +1043,7 @@
   "minimatch": 15,
   "ws": 12,
   "express-rate-limit": 11,
-  "nanoid": 10
+  "@xmldom/xmldom": 10
  },
  "phantom_packages": 56,
  "missed_by_package": {
@@ -1063,16 +1063,16 @@
  "missed_trees": 2,
  "missed_findings": 15,
  "missed_by_severity": {
-  "moderate": 3,
-  "high": 12
+  "high": 12,
+  "moderate": 3
  },
  "phantom_trees": 164,
  "phantom_findings": 4442,
  "phantom_by_severity": {
+  "critical": 8,
   "high": 1346,
-  "moderate": 2805,
   "low": 283,
-  "critical": 8
+  "moderate": 2805
  },
  "top_missed": [
   [
