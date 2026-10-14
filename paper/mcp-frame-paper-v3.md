@@ -672,14 +672,19 @@ behind every corrected figure:
 the most recent version Zenodo has *archived*, which is not necessarily the most
 recent version tagged in that repository. No revision can name its own archived
 record, because the deposit is created by publishing the release that carries
-that revision, so every record this section can name is one its own release
-supersedes. At the time of writing the concept DOI resolved to record 23305959,
-which archives version 3.10: version DOI 10.5281/zenodo.23305959, file
-`mcp-supply-chain-study-v3.10.zip`, md5 `9e139123a089fdfe9aa0f183ec38d2f9`. If
-the deposit for this revision fired, the concept DOI now resolves past that
-record; if it did not, 3.10 is the newest archived version and this revision is
-reachable only by tag and commit. Either way the tag and the commit are the
+that revision, and any record a revision does name is one a later release
+supersedes. Two revisions named one anyway and both were stale before anyone
+read them, the second of them wrongly, since it offered "3.10 is the newest
+archived version" as a live alternative after 3.11 had already been deposited.
+So this revision names none. The versions list under the concept DOI is the only
+current answer to which record is the head, and the tag and the commit are the
 citation that does not move.
+
+Record 23305959, archiving version 3.10 (version DOI 10.5281/zenodo.23305959,
+file `mcp-supply-chain-study-v3.10.zip`, md5
+`9e139123a089fdfe9aa0f183ec38d2f9`), is kept here as a worked example of the lag
+rather than as the head: it was the head when revision 3.11 was written, and
+3.11's own deposit superseded it the moment that release was published.
 
 Versions 3.4 through 3.8 were never archived. The integration deposits on a
 published release rather than on a tag, and until 3.9 no release had triggered
@@ -1015,3 +1020,14 @@ false in a table this project had already printed. The suite guarding the
 decomposition carries 31 mutations, none designed by the author, three harness
 composites and a meta-test, and the reproduction gate now raises rather than
 asserts, because `python3 -O` had been deleting it in full.
+
+**3.13** No measurement changes. Section 11, `README.md` and `CITATION.cff` stop
+naming a current archive record. Every revision from 3.10 named the record the
+concept DOI resolved to when it was written, each went stale on its own release,
+and 3.12 went stale wrongly: it offered "3.10 is the newest archived version" as
+a live alternative when 3.11 had already been deposited. The paragraph now
+states the invariant, points at the versions list under the concept DOI, and
+keeps record 23305959 only as a worked example of the lag. Revision 3.12 was
+published before that edit was made, and a published tag is not rewritten to
+absorb a later correction, which is the same reason 3.9 followed 3.8 and 3.11
+followed 3.10.

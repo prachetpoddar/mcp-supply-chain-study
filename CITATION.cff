@@ -9,7 +9,7 @@ authors:
     given-names: Prachet
     email: prachetpoddar@gmail.com
     affiliation: University of California, Los Angeles
-version: 3.12.0
+version: 3.13.0
 doi: 10.5281/zenodo.22641812
 date-released: 2026-10-11
 license: Apache-2.0
@@ -43,9 +43,10 @@ identifiers:
       Concept DOI. It resolves to the most recent version Zenodo has archived,
       which is not necessarily the newest tag in this repository: versions 3.4
       through 3.8 were never archived, and the v3.10 tag archived less than the
-      v3.10 branch held. The newest record this file could observe before
-      release is 23305959, archiving version 3.10; the deposit for this version
-      supersedes it. Cite the tag and commit alongside the DOI.
+      v3.10 branch held. This file names no current record, because any record
+      it named a later release would supersede; the versions list under the
+      concept DOI is the only current answer. Cite the tag and commit alongside
+      the DOI.
   - type: doi
     value: 10.5281/zenodo.22664719
     description: >-
