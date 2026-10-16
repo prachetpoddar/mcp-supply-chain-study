@@ -352,7 +352,7 @@ affected when installed. The advisory list differs for 164 of 249, and for 87.7%
 of the servers that have any dependency at all, 62 having none. The effect runs
 one way because an install resolves ranges forward onto versions published after
 the root shipped, and the advisory set attached to a version shrinks as the
-version advances. Counts of individual findings are not quoted here: they are
+version advances. Counts of individual phantom findings are not quoted here: they are
 dominated by a few advisory-dense packages, with five packages holding 82% of
 them, so the rate is the stable quantity and the count is not. Suppressing the
 densest of those packages from the advisory join on both arms moves the rate
@@ -364,7 +364,8 @@ reports, the share whose advisory was published after the root shipped runs from
 bands inverted and their intervals overlapping, so a frozen description
 over-reports because advisories accrue against it rather than because a
 publisher pinned a version already covered: that last case is 10 findings of
-4,638 (`code/gap_cause_split.py`, `PREREGISTRATION-6.md`). `capturedUtc` exists so that a
+4,638, a ratio of two populations rather than one of the concentration-dominated
+totals this paragraph declines to quote (`code/gap_cause_split.py`, `PREREGISTRATION-6.md`). `capturedUtc` exists so that a
 consumer can tell how old the description is.
 
 ## 14. Reference implementation and conformance

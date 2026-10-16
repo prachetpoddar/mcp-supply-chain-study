@@ -5,7 +5,7 @@ Ecosystem Stayed Invisible*, a measurement study of Model Context Protocol
 servers on npm. Measurements run 6 to 8 September 2026, with a corrected re-walk
 of the corpus on 17 September 2026.
 
-**Version 3.13.** The study began as a supply-chain risk comparison and became a
+**Version 3.14.** The study began as a supply-chain risk comparison and became a
 paper about why that comparison kept failing. Two causes: a keyword-built frame
 that sampled publishers rather than packages, and a dependency resolver that was
 never validated against the tool it modelled. Section 12 of the paper lists every

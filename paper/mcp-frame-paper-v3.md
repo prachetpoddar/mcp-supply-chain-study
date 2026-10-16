@@ -1031,3 +1031,33 @@ keeps record 23305959 only as a worked example of the lag. Revision 3.12 was
 published before that edit was made, and a published tag is not rewritten to
 absorb a later correction, which is the same reason 3.9 followed 3.8 and 3.11
 followed 3.10.
+
+**3.14** No measurement changes. Two defects a reader of the release found, both
+confirmed here before being accepted.
+
+`MANIFEST.md` hashed every file under `.git`. At 3.13 that was 247 of its 434
+entries and at 3.10 it was 174 of 355, so for several releases most of the
+manifest named files the release archive does not contain and nobody who
+downloaded it could check them. A manifest exists to let a reader verify a
+download, so more than half of this one was failing at the only thing it is for.
+The generator now prunes `.git`, which leaves 187 entries, and the assembler's
+file count says that it excludes `.git` rather than reporting a number nobody
+can reconcile.
+
+One of those entries was `./.git/index 2`, a stray copy of the kind this volume
+produces when a delete is refused. The assembler has had a guard against those
+since 3.6, and the guard let it through for two reasons, both now fixed: its
+patterns were `* 2.*`, `* 3.*` and `* 4.*`, which require an extension, so a
+file named `index 2` never matched; and it ran *after* the manifest was written,
+so a stray was hashed in before anyone was told. The check now runs first and
+covers extensionless names, 20 such files have been removed from the working
+tree, and `.gitignore` carries the patterns so that a `git add -A` cannot sweep
+one in ahead of the check. None of the 20 was ever committed or published: what
+reached the archive was one filename and its hash inside `MANIFEST.md`.
+
+Section 13 of the lock spec said counts of individual findings are not quoted
+there, and the sentence added in 3.12 quotes one. The policy is about the
+phantom totals, which are dominated by a few advisory-dense packages, and the 10
+of 4,638 is a ratio of two populations rather than one of those totals. The
+paragraph now says so. A note sent on 14 October described that sentence as
+carrying no finding counts, which was wrong.
