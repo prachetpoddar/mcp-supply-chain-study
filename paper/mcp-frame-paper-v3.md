@@ -1061,3 +1061,30 @@ phantom totals, which are dominated by a few advisory-dense packages, and the 10
 of 4,638 is a ratio of two populations rather than one of those totals. The
 paragraph now says so. A note sent on 14 October described that sentence as
 carrying no finding counts, which was wrong.
+
+**3.15** The deps.dev divergence bound is recomputed and survives. Its
+right-hand side came from a resolution vintage predating the resolver
+correction, so `PREREGISTRATION-7.md` and `code/depsdev_recompute.py` re-resolve
+the live arm with a cutoff matching the deps.dev fetch window and compare again,
+holding the left side fixed. Raw, the corrected resolver is identical to
+deps.dev's graph on 30.2% of 248 servers against the pre-correction resolver's
+62.1%; one package edge produces that entire gap, and removing it gives 79.4%,
+better than the pre-correction arm. The edge is `get-intrinsic`, where the
+corrected resolver takes `1.3.0`, npm's `latest` tag, and deps.dev carries
+`1.3.1`, which declares three packages `1.3.0` does not and so produces both the
+version disagreement and the whole extra class. Counted the same way on both
+sides, the corrected resolution carries 8.1% more package instances than
+deps.dev lists, because it holds several versions of 817 names that a
+one-version-per-name graph cannot express.
+
+Three readings were withdrawn before that one, in amendments one to three of the
+pre-registration: a flattening of multi-version names that manufactured
+disagreements, a two-day registry gap that measured churn rather than the
+resolver, and a leave-one-out that suppressed three downstream package names
+while leaving the edge that caused them, so the headline sat still and was read
+as reassurance. The third was caught by review rather than by the author. The
+same amendment withdraws three further claims: that the two arms differ only in
+the resolver, when they differ in four rules; an instance delta computed with
+one side reduced and the other not; and a root-version agreement check that
+compared a value against itself, now replaced by a check that no version
+selected in the matched arm postdates the declared cutoff.

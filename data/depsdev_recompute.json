@@ -1,0 +1,337 @@
+{
+ "preregistration": "PREREGISTRATION-7.md",
+ "left_side": "deps.dev graphs, fetched 2026-09-07/08, NOT re-fetched",
+ "comparable_servers": 248,
+ "excluded_absent_from_gap_walk": [
+  "@aiwerk/mcp-server-wheel-size"
+ ],
+ "excluded_root_version_mismatch": [],
+ "published_bound_reproduced": {
+  "comparable": 249,
+  "identical": 154,
+  "identical_pct": 61.8,
+  "version_differs_pct": 38.2,
+  "fewer_pct": 1.2,
+  "misses_pct": 1.2,
+  "extra_pct": 0.4,
+  "median_nodes_resolution": 95,
+  "median_nodes_depsdev": 95,
+  "instances_resolution": 21263,
+  "instances_depsdev_after_exclusions": 21229,
+  "instances_depsdev_unmodified": 21229,
+  "instance_delta_pct_as_compared": 0.2,
+  "instances_resolution_all_pairs": 21263,
+  "instance_delta_pct_comparable": 0.2,
+  "multi_version_names_excluded": 0,
+  "servers_with_a_multi_version_name": 0,
+  "instance_delta_pct": 0.2
+ },
+ "matched_vs_historical_all_four_rules": {
+  "servers": 248,
+  "identical_package_set": 76,
+  "identical_package_set_pct": 30.6,
+  "differing_package_set": 172,
+  "no_version_disagreement": 84,
+  "no_version_disagreement_pct": 33.9,
+  "with_a_version_disagreement": 164,
+  "examples": [
+   {
+    "server": "@100xpercent/mcp-server-pop-pay",
+    "package": "@types/node",
+    "pre_correction": "26.4.1",
+    "corrected": "18.19.130"
+   },
+   {
+    "server": "@100xpercent/mcp-server-pop-pay",
+    "package": "get-intrinsic",
+    "pre_correction": "1.3.1",
+    "corrected": "1.3.0"
+   },
+   {
+    "server": "@agentsid/guard",
+    "package": "get-intrinsic",
+    "pre_correction": "1.3.1",
+    "corrected": "1.3.0"
+   },
+   {
+    "server": "@aicanvas/mcp",
+    "package": "get-intrinsic",
+    "pre_correction": "1.3.1",
+    "corrected": "1.3.0"
+   },
+   {
+    "server": "@aicanvas/mcp",
+    "package": "zod",
+    "pre_correction": "4.5.4",
+    "corrected": "3.25.76"
+   },
+   {
+    "server": "@andersonfda/springy",
+    "package": "@elevenlabs/elevenlabs-js",
+    "pre_correction": "2.66.0",
+    "corrected": "2.67.0"
+   },
+   {
+    "server": "@andersonfda/springy",
+    "package": "@inquirer/checkbox",
+    "pre_correction": "5.2.4",
+    "corrected": "5.2.5"
+   },
+   {
+    "server": "@apicircle/mcp-server",
+    "package": "get-intrinsic",
+    "pre_correction": "1.3.1",
+    "corrected": "1.3.0"
+   }
+  ],
+  "note": "both sides resolve against the registry as of 2026-09-08, so registry drift is controlled. It does NOT isolate the resolver correction: the historical arm is mcplib.npm_walk, which defaults to include_peer=False and is name-keyed, and the matched arm is nested_gap.pair_walk, which includes non-optional peers, is pair-keyed and applies a BFS reuse rule. Four rules differ at once and this figure is their sum."
+ },
+ "extra_class_concentration": [
+  [
+   "async-generator-function",
+   159
+  ],
+  [
+   "async-function",
+   158
+  ],
+  [
+   "generator-function",
+   158
+  ],
+  [
+   "is-fullwidth-code-point",
+   4
+  ],
+  [
+   "color-convert",
+   3
+  ],
+  [
+   "color-name",
+   3
+  ],
+  [
+   "@derekstride/tree-sitter-sql",
+   1
+  ],
+  [
+   "@ohos-ports/huggingface-transformers",
+   1
+  ]
+ ],
+ "arms": {
+  "historical": {
+   "comparable": 248,
+   "identical": 154,
+   "identical_pct": 62.1,
+   "version_differs_pct": 37.9,
+   "fewer_pct": 1.2,
+   "misses_pct": 1.2,
+   "extra_pct": 0.4,
+   "median_nodes_resolution": 95,
+   "median_nodes_depsdev": 95,
+   "instances_resolution": 21168,
+   "instances_depsdev_after_exclusions": 21134,
+   "instances_depsdev_unmodified": 21134,
+   "instance_delta_pct_as_compared": 0.2,
+   "instances_resolution_all_pairs": 21168,
+   "instance_delta_pct_comparable": 0.2,
+   "multi_version_names_excluded": 0,
+   "servers_with_a_multi_version_name": 0,
+   "leave_one_out": {
+    "symptom_only": {
+     "suppressed": [
+      "async-generator-function",
+      "async-function",
+      "generator-function"
+     ],
+     "identical_pct": 62.1,
+     "version_differs_pct": 37.9,
+     "extra_pct": 0.4
+    },
+    "cause_only": {
+     "suppressed": [
+      "get-intrinsic"
+     ],
+     "identical_pct": 62.1,
+     "version_differs_pct": 37.9,
+     "extra_pct": 0.4
+    },
+    "cause_and_symptom": {
+     "suppressed": [
+      "get-intrinsic",
+      "async-generator-function",
+      "async-function",
+      "generator-function"
+     ],
+     "identical_pct": 62.1,
+     "version_differs_pct": 37.9,
+     "extra_pct": 0.4
+    }
+   }
+  },
+  "aligned": {
+   "comparable": 248,
+   "identical": 73,
+   "identical_pct": 29.4,
+   "version_differs_pct": 69.8,
+   "fewer_pct": 7.3,
+   "misses_pct": 10.9,
+   "extra_pct": 64.9,
+   "median_nodes_resolution": 91,
+   "median_nodes_depsdev": 94,
+   "instances_resolution": 21169,
+   "instances_depsdev_after_exclusions": 20361,
+   "instances_depsdev_unmodified": 21134,
+   "instance_delta_pct_as_compared": 4.0,
+   "instances_resolution_all_pairs": 22859,
+   "instance_delta_pct_comparable": 8.2,
+   "multi_version_names_excluded": 827,
+   "servers_with_a_multi_version_name": 170,
+   "leave_one_out": {
+    "symptom_only": {
+     "suppressed": [
+      "async-generator-function",
+      "async-function",
+      "generator-function"
+     ],
+     "identical_pct": 29.4,
+     "version_differs_pct": 69.8,
+     "extra_pct": 2.8
+    },
+    "cause_only": {
+     "suppressed": [
+      "get-intrinsic"
+     ],
+     "identical_pct": 29.4,
+     "version_differs_pct": 47.6,
+     "extra_pct": 64.9
+    },
+    "cause_and_symptom": {
+     "suppressed": [
+      "get-intrinsic",
+      "async-generator-function",
+      "async-function",
+      "generator-function"
+     ],
+     "identical_pct": 50.8,
+     "version_differs_pct": 47.6,
+     "extra_pct": 2.8
+    }
+   }
+  },
+  "october": {
+   "comparable": 248,
+   "identical": 67,
+   "identical_pct": 27.0,
+   "version_differs_pct": 72.2,
+   "fewer_pct": 4.4,
+   "misses_pct": 9.7,
+   "extra_pct": 65.3,
+   "median_nodes_resolution": 91,
+   "median_nodes_depsdev": 94,
+   "instances_resolution": 20728,
+   "instances_depsdev_after_exclusions": 20370,
+   "instances_depsdev_unmodified": 21134,
+   "instance_delta_pct_as_compared": 1.8,
+   "instances_resolution_all_pairs": 22431,
+   "instance_delta_pct_comparable": 6.1,
+   "multi_version_names_excluded": 819,
+   "servers_with_a_multi_version_name": 170,
+   "leave_one_out": {
+    "symptom_only": {
+     "suppressed": [
+      "async-generator-function",
+      "async-function",
+      "generator-function"
+     ],
+     "identical_pct": 27.0,
+     "version_differs_pct": 72.2,
+     "extra_pct": 4.8
+    },
+    "cause_only": {
+     "suppressed": [
+      "get-intrinsic"
+     ],
+     "identical_pct": 27.0,
+     "version_differs_pct": 72.2,
+     "extra_pct": 65.3
+    },
+    "cause_and_symptom": {
+     "suppressed": [
+      "get-intrinsic",
+      "async-generator-function",
+      "async-function",
+      "generator-function"
+     ],
+     "identical_pct": 27.0,
+     "version_differs_pct": 72.2,
+     "extra_pct": 4.8
+    }
+   }
+  },
+  "matched": {
+   "comparable": 248,
+   "identical": 75,
+   "identical_pct": 30.2,
+   "version_differs_pct": 66.1,
+   "fewer_pct": 7.3,
+   "misses_pct": 10.9,
+   "extra_pct": 64.9,
+   "median_nodes_resolution": 91,
+   "median_nodes_depsdev": 94,
+   "instances_resolution": 21179,
+   "instances_depsdev_after_exclusions": 20371,
+   "instances_depsdev_unmodified": 21134,
+   "instance_delta_pct_as_compared": 4.0,
+   "instances_resolution_all_pairs": 22849,
+   "instance_delta_pct_comparable": 8.1,
+   "multi_version_names_excluded": 817,
+   "servers_with_a_multi_version_name": 170,
+   "leave_one_out": {
+    "symptom_only": {
+     "suppressed": [
+      "async-generator-function",
+      "async-function",
+      "generator-function"
+     ],
+     "identical_pct": 30.2,
+     "version_differs_pct": 66.1,
+     "extra_pct": 2.4
+    },
+    "cause_only": {
+     "suppressed": [
+      "get-intrinsic"
+     ],
+     "identical_pct": 30.2,
+     "version_differs_pct": 14.5,
+     "extra_pct": 64.9
+    },
+    "cause_and_symptom": {
+     "suppressed": [
+      "get-intrinsic",
+      "async-generator-function",
+      "async-function",
+      "generator-function"
+     ],
+     "identical_pct": 79.4,
+     "version_differs_pct": 14.5,
+     "extra_pct": 2.4
+    }
+   }
+  }
+ },
+ "what_this_cannot_settle": "the left side is a September snapshot and is not re-fetched, so this measures the gap between that published graph and a corrected resolution, not deps.dev's accuracy today",
+ "provenance": {
+  "python": "3.10.12",
+  "code_sha256": "6fce29026b4a73604877e5db8b897e8bae63c6a3e9a0fa8f7f723a67d5200789",
+  "depsdev_state_sha256": "44cf2ce5b4c573862ec091f64c07e523fb1658f4c8e407a8718fb33642a61bd3",
+  "historical_trees_sha256": "82c5b3ff53daf932be10f71a904f3e2f012faa9b42d38ef174458141e5c32653",
+  "aligned_state_sha256": "3fd696624f41bd252a9028c20113435855f13cdb2c0c0e1bd242dcf7dd94a99a",
+  "matched_state_sha256": "1e66ecd233b64f9728c007c7b6167531c5e0c0c9aa8e7a065b9e9237b62193ed",
+  "october_state_sha256": "0b52712c09311c57f6b066e6c18f3667db64270063360f7e0b5d8af953a67066",
+  "matched_cutoff": "2026-09-08T01:00:00Z",
+  "assertions_enabled": true
+ }
+}

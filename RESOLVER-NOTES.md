@@ -542,6 +542,62 @@ across 15 servers rather than 58 across 13, so its membership is walk-date
 dependent in a way the bands are not. No server is named in any reported
 quantity. Output in `data/gap_cause_split.json`.
 
+### The deps.dev bound, recomputed
+
+`code/depsdev_delta.py` measures deps.dev's published dependency graph for each
+MCP server root against a resolved tree. Its right-hand side came from
+`data/resolved_trees_for_depsdev.json`, a resolution vintage predating the
+resolver correction, and the maintainer of mcp-audit labelled the figure in his
+own documentation as measured on 2026-09-08 and not recomputed.
+`PREREGISTRATION-7.md` and `code/depsdev_recompute.py` recompute it. The left
+side is never re-fetched, so every change is attributable to the right side.
+
+**The bound survives.** The live arm was re-resolved with
+`LIVE_CUTOFF=2026-09-08T01:00:00Z`, matching the deps.dev fetch window, so the
+comparison is not confounded by registry churn. Raw, the corrected resolver is
+identical to deps.dev's graph on 30.2% of 248 comparable servers against the
+pre-correction resolver's 62.1%, which looks like the published bound
+understating the divergence. It is not. One package edge produces the whole
+effect, and removing it takes agreement to **79.4%**, which is better than the
+pre-correction resolver managed.
+
+**The edge.** The corrected resolver selects `get-intrinsic@1.3.0`, npm's own
+`latest` tag; deps.dev and the pre-correction resolver both carry `1.3.1`. From
+the packuments: `1.3.1` declares `async-function`, `async-generator-function`
+and `generator-function`, and `1.3.0` declares none of them, so that one choice
+produces both the version disagreement and the entire `extra_in_depsdev` class
+(those three names, on 158 to 159 servers each, out of nine in the class). 128
+of the 248 servers disagree on nothing else, and all 290 remaining
+disagreements have deps.dev matching the pre-correction pick with none landing
+on a third version. deps.dev's answer being one of the two resolvers' picks
+every time is evidence it performs npm-like selection rather than reporting a
+union over a range.
+
+**One structural difference.** deps.dev's graph is one version per name by
+construction, and the corrected resolution carries several versions of 817
+names across 170 of the 248 servers. Counted the same way on both sides, every
+`(name, version)` pair against every deps.dev node, that is 22,849 against
+21,134, a gap of **8.1%**, where the pre-correction arm gives +0.2%. Those
+duplicates are what the lock format's trees section can express and a deps.dev
+query cannot, and they are the same structure that produced the nested older
+copies in the frozen-SBOM decomposition.
+
+**Three readings were withdrawn getting here**, recorded in amendments one to
+three of the pre-registration. The first flattened multi-version names with
+`setdefault` and manufactured disagreements out of list order. The second
+compared across a two-day registry gap and measured churn: 412 of 413
+disagreements were the corrected arm moving to a newer release. The third
+reported the 30.2% as the bound understating the divergence, on a leave-one-out
+that suppressed the three downstream names and left the causing edge in, so the
+headline sat still and read as reassurance. The third was caught by an
+adversarial review rather than by the author. Also corrected there: the
+comparison of the two arms differs in four rules at once (peers, pair-keying,
+BFS reuse, selection), not in the resolver alone; the instance delta had been
+reported with the left side reduced on one side only; and the root-version
+agreement check was tautological, since both arms read `root_version` from the
+same file. It is replaced by a check that can fail, that no version selected in
+the matched arm was published after the declared cutoff.
+
 Three rounds of adversarial review are recorded in amendments two, three and
 four of the pre-registration. Every arithmetic figure survived all three
 unchanged. What failed each time was wording: "no fix-timing filter", "the

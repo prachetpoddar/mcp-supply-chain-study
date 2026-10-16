@@ -1,15 +1,15 @@
 # Manifest
 
-SHA-256 of every released file, generated 2026-10-16T17:41:17Z.
+SHA-256 of every released file, generated 2026-10-16T19:34:33Z.
 
 ```
 c0b1058614c0a01655a1635ff793fdbebae05d5e565b29f91867943c58482f5f  ./.gitignore
-5dd38e00ec4671cd49ae2458fc8905ea2de9cff59909b9c40c16e7079416ba9b  ./.zenodo.json
-44dec0a7fc4b8372a3c4e30c04bcd0e6c99f71f39d2a8ee4387a97dfd3891706  ./CITATION.cff
+f0f2ee08cd0bc7773c9fc78daf3e8e272fadb609957e48765372c5c053d6c968  ./.zenodo.json
+dd64aed5c1e648e1a5a96b2a350cc7a21d9d04f8ab02dfa3deba0d42fec8cf24  ./CITATION.cff
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  ./LICENSE
 725fca4cb8d4a5a0e9296d87fe46e7160c08ef01cc621494aadca2a2e2084c1c  ./LICENSE-DATA.md
-3556f295811889a6e034acdecd4f1c02bac261e9bcc608839b8491e5e90b7644  ./README.md
-487d9a6f5196fe7af00444752a7288059a44829ca4350bedb6f3c3ae56b8abc5  ./RESOLVER-NOTES.md
+906f0c56dbdebb51a4fe74c9a6ca6c39cabfac8c83364be775c95a76d9a886ab  ./README.md
+9d5ed4723b2c404b319c3eb39cb494fc1740564822fdf0e4f2e1b39a592d9f80  ./RESOLVER-NOTES.md
 f408ef4c68f0a8e5c194d4acdfd83de5d22030cc9b596d95e817f3de5dc792f1  ./code/RUN_A_pypi_weighting.py
 cfcf44bee61993b46e852ec61a6e4036b37513deac23a7374b7b08702976e9c5  ./code/build_advisories.py
 bb55dc718c031e82d4cebe2f0808b7cdecffeaa7f1f0015c3247b8331c512684  ./code/collect_results.sh
@@ -24,6 +24,7 @@ e95d939eebde3f14e84274f91e4b33a98e80d857e28b4b8aa36531a4b0d5fc0b  ./code/cra_reg
 0e6d9dd8a2cb721421db4e8a92d803605812d89493ac0531d656a06de41dd852  ./code/cra_staleness.py
 de37397b242746af57d81e380d5ffcd651a807d146ab931019b412d15aae8a66  ./code/depsdev_delta.py
 9cc0cfd4be91b1ede86ba31150210eb7146df350718434653cc04d30c50a127d  ./code/depsdev_pairs.py
+6fce29026b4a73604877e5db8b897e8bae63c6a3e9a0fa8f7f723a67d5200789  ./code/depsdev_recompute.py
 bdb731ac3e4c1c9d37ca42d021f5bafc78bae98e41879b0230770911c7909274  ./code/docker_pulls.py
 224b69d8c72f6bd8bbb777b4138e21abafb7f9d1eed82420da8a2301e906ef94  ./code/eco_enumerate.py
 1c3254e48bdc978372ff35bf02f152af107db341dca8ad06da882f05cea1aef6  ./code/eco_probe.py
@@ -92,6 +93,7 @@ fef68d75932ba25c194c831ef9610610302e5a801818f740a6e579c48e5e3a1f  ./data/crossec
 dc42f9b85b86848821617b72eed09030c35412e0a1040afd7acfff7fdad35cd5  ./data/depsdev_delta.json
 825ac5f8608a31cde59fce0940ec43c6631187083b9660a2beac60d0e0ca0b76  ./data/depsdev_pairs.json
 abd00f8909e2c7d18e6cb3a19eaac10bd5bb80cbc20a128b849b554075f2ee29  ./data/depsdev_pairs_result.json
+af0ecef61b957ae9990dfed7e4396e0c642986bb7aaaadc9f4f4f0bcaa6d37b3  ./data/depsdev_recompute.json
 44cf2ce5b4c573862ec091f64c07e523fb1658f4c8e407a8718fb33642a61bd3  ./data/depsdev_state.json
 ebdcfa898e229dc705f904dfaf973f4d898183db6e32ca427aca5478e29ad926  ./data/design_effect_corrected.json
 9b78d1bba3de3018c2e43856470eaba00d0e0766f6910858813c3ab0b92ae515  ./data/docker_mcp_names.json
@@ -138,6 +140,7 @@ b6443d0c2322dcf454d8ae6ae10f665586469ee0947c861132e3c437a92f99b5  ./data/mcp_doc
 951fa6fd7597d6d6ef581c03f12c1e86d936b5a7b8dc716e0591a6ab34744599  ./data/nested_gap_aligned.json
 0b52712c09311c57f6b066e6c18f3667db64270063360f7e0b5d8af953a67066  ./data/nested_gap_state.json
 3fd696624f41bd252a9028c20113435855f13cdb2c0c0e1bd242dcf7dd94a99a  ./data/nested_gap_state_aligned.json
+1e66ecd233b64f9728c007c7b6167531c5e0c0c9aa8e7a065b9e9237b62193ed  ./data/nested_gap_state_depsdev_matched.json
 d3c315fc53aefcb5a010b3398872832579b7e4fadf4dbb08f91804ceb0dfb73b  ./data/npm_frame_complete.json
 f1c5db14b68f74775c0ab0f54e748d6560b6aa3526894e9b562429def2c3478a  ./data/npm_frame_wide_6540.json
 ccb7768dc4ffb128cab3bdb5e0201c92cdc6f083b86c47829bbee95b78f73018  ./data/osv_latency_state.json
@@ -175,15 +178,16 @@ f4d107959e26500848415f318e2c0e509669a260f9913479ac33bf69d26aada4  ./data/vuln_ga
 d7272bbd39db9f6851648684c8e4a9be04840e6c8d55ad854d489a4582d45e64  ./data/walk250.jsonl
 8f64850538b2594eb72e7c6ce2a784475317f193b62434aeb13f827d0f433034  ./data/walk250_corrected_asof.jsonl
 70aef4ed0a874ca0019306f63a83731402bdcfb1635d00c7d1b95190518c26a8  ./data/walk250_corrected_today.jsonl
-6a725fb79dbffdd8ea0c95a361c90e5c2a9dd4b9ad9f2500fd191cc1bc0dc2ec  ./paper/mcp-frame-paper-v3.docx
-ccf14d13cda18b79344f18cc4e7b36119ba02484f2a52d08ce2760beb9a43d65  ./paper/mcp-frame-paper-v3.md
-6077ddeab0bfdd40c5d39b69afb19d255080a6b5d51f69a8ec8530200c007bd0  ./paper/mcp-frame-paper-v3.pdf
+c78c1b9e942787f328cd08934ba3720dbe25c68ceb6c2b039e5615e6190f298a  ./paper/mcp-frame-paper-v3.docx
+e5ce123063b005bd5d5ed14bb59ecc733c46b0b346a7a3a676c023118f206ac4  ./paper/mcp-frame-paper-v3.md
+cae3106a331ae12c2142f92f5216396cee7fc07884a290185b1ce8c70bc58ebe  ./paper/mcp-frame-paper-v3.pdf
 c1d5e8b92eae637846a8fb29c9c0b8673bc1d47fac1c00dd5ee94d0c9df92cc5  ./paper/mcp-supply-chain-nulls.md
 bc02d660dfdec9faece251fccf87a7abb195d5b97daaf69cca6286e4469ca069  ./preregistrations/PREREGISTRATION-2.md
 7a8fb5601ec2debed35df3bbf106030f1197ed98306791e50df1e9b3c57e1d31  ./preregistrations/PREREGISTRATION-3.md
 602e44615a0c98d6b530bd32addefaa0d3516bb1141ccccefa0f6d40dc4b4907  ./preregistrations/PREREGISTRATION-4.md
 e2c9617a715b26cbdf0f05904d97dee8e92a1b4f0ede1d54bba55d3799a869a7  ./preregistrations/PREREGISTRATION-5.md
 8c74b540f04ffac85796279a27e535d82dc8e8c0b91be60433b354acece32ba8  ./preregistrations/PREREGISTRATION-6.md
+86c88a023f9873415fab36e3a96673ee21215a37dc275d6cd72f1559664c8227  ./preregistrations/PREREGISTRATION-7.md
 f5f15cbdcf858092419ee51e9bc53093d70a845c9d78c8fa288f2473637fae82  ./requirements.txt
 0ff97b97bdd5cf158656be6437021f9277f6c8511c149daa59be1d7522947ea4  ./spec/mcp-lock-spec.docx
 9cb9bba40010d7fea0fc0566e0aaeb3ecff41b6ae158144be1cbb809f871f6b4  ./spec/mcp-lock-spec.md
