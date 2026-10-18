@@ -1,6 +1,6 @@
 # Manifest
 
-SHA-256 of every released file, generated 2026-10-18T22:56:50Z.
+SHA-256 of every released file, generated 2026-10-18T23:52:07Z.
 
 ```
 709d032522cafe45d2a007170dd3692625886ac0894615de4da76e8f0ec47a0e  ./.gitignore
@@ -65,7 +65,7 @@ c407682e30189477ffff0c6d316fbad8a7db284b3bca0f952a1a0a27f946e930  ./code/test_re
 1d4d57ca5469b84d0b6be920c67a4e3e4bc971b9c3d52e2d426970d31a13ae20  ./code/usage_weighting.py
 2468a4f29b22e6bcc5ba7e8055fc15052eb3c79b3f474cde5f004334354086f3  ./code/validate_installs.py
 5c1154db129d683ee7d32471cb4d9f78e83e4534edfb55042a3b57bfce77f6cc  ./code/verdict_recompute.py
-76ccdd94b722bfa1108db6a0667f28320ae416218b328b0b0f3314b7b57682b0  ./code/verify_v316_claims.py
+f8d82227ee64172b5a3a5af5c719ae8ab47cbcfaab302250f8123491ba04c99d  ./code/verify_v316_claims.py
 bb11a10027095bf25ad7f19b766053cefdbb1fc3090135b7970fffe3eac82310  ./code/vuln_gap.py
 2dd7db2cd55354236176fa24f70d9f0ea131d762a33e46ba726931be621dd8ed  ./code/vuln_gap_depsdev.py
 c1a9bcedd856e94ab74ec0df2c72182527b1ec87b7edce6d63f27b9896ecf8a7  ./data/adv_npm.json

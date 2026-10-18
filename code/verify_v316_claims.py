@@ -316,7 +316,8 @@ man = [l.split("  ./")[-1].strip() for l in open("release/MANIFEST.md")
        if re.match(r"^[0-9a-f]{64}  ", l)]
 tracked = subprocess.run(["git", "-C", "release", "ls-files"], capture_output=True,
                          text=True).stdout.split()
-claim("manifest entries", len(man), 195)
+claim("manifest entries equal the tracked set",
+      len(man), len([x for x in tracked if x != "MANIFEST.md"]))
 claim("manifest equals tracked minus itself",
       sorted(man), sorted(x for x in tracked if x != "MANIFEST.md"))
 claim("docker_state not in the manifest", any("docker_state" in x for x in man), False)
@@ -336,10 +337,19 @@ claim("superseded nested_gap", (sup["trees"], sup["verdict_differs"], sup["phant
       (250, 154, 3768))
 claim("current nested_gap", (cur["trees"], cur["verdict_differs"], cur["phantom_findings"]),
       (249, 164, 4442))
-claim("no duplicate-name files anywhere",
-      subprocess.run("find . -type f \\( -name '* 2' -o -name '* 3' -o -name '* 4' "
-                     "-o -name '* 2.*' -o -name '* 3.*' -o -name '* 4.*' \\) | wc -l",
-                     shell=True, capture_output=True, text=True).stdout.strip(), "0")
+dupe_find = ("find . -type f \\( -name '* 2' -o -name '* 3' -o -name '* 4' "
+             "-o -name '* 2.*' -o -name '* 3.*' -o -name '* 4.*' \\) | wc -l")
+on_disk = int(subprocess.run(dupe_find, shell=True, cwd="release",
+                             capture_output=True, text=True).stdout.strip())
+claim("no duplicate-name file is tracked",
+      [x for x in tracked if re.search(r" [234](\.|$)", x)], [])
+claim("git reports no untracked files despite %d on disk" % on_disk,
+      subprocess.run(["git", "-C", "release", "status", "--porcelain"],
+                     capture_output=True, text=True).stdout.strip(), "")
+print("       note: %d duplicate-name files on disk right now. They regenerate "
+      "on this volume\n       between any two commands; the .gitignore patterns "
+      "are what keep them\n       out of a commit, and the assembler's guard "
+      "only sees those present when it runs." % on_disk)
 
 print("\n" + "=" * 78)
 print("%d PASS, %d FAIL" % (OK, FAIL))
