@@ -1066,16 +1066,66 @@ carrying no finding counts, which was wrong.
 right-hand side came from a resolution vintage predating the resolver
 correction, so `PREREGISTRATION-7.md` and `code/depsdev_recompute.py` re-resolve
 the live arm with a cutoff matching the deps.dev fetch window and compare again,
-holding the left side fixed. Raw, the corrected resolver is identical to
-deps.dev's graph on 30.2% of 248 servers against the pre-correction resolver's
-62.1%; one package edge produces that entire gap, and removing it gives 79.4%,
-better than the pre-correction arm. The edge is `get-intrinsic`, where the
-corrected resolver takes `1.3.0`, npm's `latest` tag, and deps.dev carries
-`1.3.1`, which declares three packages `1.3.0` does not and so produces both the
-version disagreement and the whole extra class. Counted the same way on both
-sides, the corrected resolution carries 8.1% more package instances than
+holding the left side fixed. The edge that produces the gap is `get-intrinsic`,
+where the corrected resolver takes `1.3.0`, npm's `latest` tag, and deps.dev
+carries `1.3.1`, which declares three packages `1.3.0` does not and so produces
+both the version disagreement and the whole extra class. Counted the same way on
+both sides, the corrected resolution carries 8.1% more package instances than
 deps.dev lists, because it holds several versions of 817 names that a
 one-version-per-name graph cannot express.
+
+**3.16** The agreement rates that revision 3.15 compared were not comparable,
+and the comparison is restated. Each arm excluded from the deps.dev side the
+names its own resolution carried at several versions. The historical input is
+already one version per name, so it excluded nothing, while the matched arm
+removed 763 of 21,134 deps.dev nodes across 170 of 248 servers, and removal can
+only raise agreement. Revision 3.15 therefore put 79.4% against 62.1% without
+either figure being scored on the same node set. With one exclusion set applied
+to both sides of both arms, the corrected resolver is identical to deps.dev's
+graph on 30.2% of 248 servers, rising to **79.4% once the `get-intrinsic` edge
+and its three downstream names are suppressed, against the pre-correction
+resolver's 67.7%**. The direction of 3.15's reading survives and its margin
+falls from 17.3 points to 11.7. Amendment four of the pre-registration records
+the withdrawal, the arithmetic and a blunter exclusion that reverses the
+ordering, which is not used because it strips names from servers where they are
+single-version.
+
+Three defects in the same script are fixed. The causing package was a string
+literal beneath a comment claiming it had been derived; it is now computed as
+the most frequent version disagreement, with a gate requiring its incidence to
+match the extra class it is said to explain, 159 servers against 159. The cutoff
+check reported only its violations, so a run that verified nothing was
+indistinguishable from one that verified everything; it now reports coverage
+behind a floor, and on this run compares 2,951 of 2,953 version timestamps with
+none published after the declared cutoff, which confirms the matched arm's date
+rather than assuming it. And nothing required the five input hashes to differ,
+which is what they exist to detect.
+
+**3.17** The advisory verdict for deps.dev is recomputed on shipping inputs.
+`results/final_verified.json` reported that deps.dev's graph and a live
+resolution differ in verdict on 2 of 249 servers, 0.8%, with six missed findings
+and no phantom. `RESOLVER-NOTES.md` already retracts the frozen figure from that
+file for three reasons, each of which applies to the deps.dev figure beside it:
+both sides were keyed on package name at one version each, the arms predate the
+resolver corrections of 11 to 17 September, and the inputs lived in a temporary
+directory that is gone. The retraction was never extended to the sibling figure.
+`PREREGISTRATION-8.md` and `code/verdict_recompute.py` supersede it, pair-keyed,
+against the archived advisory snapshot: **2 of 248 servers, 0.8%, eight missed
+findings at four high and four moderate, zero phantom.** The headline holds and
+the finding count does not, moving from six to eight.
+
+Three qualifications belong with it. Two events over 248 servers gives a
+Clopper-Pearson interval of 0.10% to 2.88%, and 2/n rounds to 0.8% for every n
+from 236 to 266, so the agreement with the superseded figure is close to
+uninformative. The matched walk includes optional edges without evaluating their
+platform constraints and auto-installs non-optional peers, so the resolution
+side is nearly a superset of the deps.dev side by construction and the figure is
+a one-directional missed rate rather than a symmetric difference rate.
+Suppressing `qs` alone takes it from two differing servers to one, so no claim is
+made that the result is carried by more than a couple of packages. Flattening
+both sides, which is what the superseded figure did, gives 0.8%, 2.4%, 4.0% or
+5.6% depending on which copy each side keeps, so that comparison is not
+identified and no point estimate is taken from it.
 
 Three readings were withdrawn before that one, in amendments one to three of the
 pre-registration: a flattening of multi-version names that manufactured

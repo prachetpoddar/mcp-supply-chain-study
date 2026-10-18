@@ -626,3 +626,85 @@ root age, which is the gap the age table points at.
 The OSV export itself is 214MB and does not ship. `data/advisories_npm_meta.json`
 records its date and what was built from it, and the builder regenerates the
 snapshot from a fresh export.
+
+## The deps.dev figures, recomputed 2026-10-18
+
+Two figures were published that should not have been, and a third was retracted
+without its sibling.
+
+### The agreement pairing compared different left sides
+
+`depsdev_recompute.py` excludes from the deps.dev side every package name the
+resolution carries at more than one version, which is right for a single arm:
+deps.dev's graph cannot express a name at two versions, so scoring it either way
+is a choice rather than a measurement. But each arm used its own exclusion set,
+and `tree_from_depsdev_file` hardcodes an empty one because the historical input
+is already one version per name. So the historical arm lost nothing from the
+deps.dev side while the matched arm lost 763 of 21,134 nodes across 170 of its
+248 servers, and removal can only raise agreement.
+
+Revision 3.15 therefore put 79.4% against 62.1% with neither figure scored on
+the same node set, and the maintainer of mcp-audit had pinned that pairing in his
+own documentation. `compare()` now takes an exclusion override and the result
+carries `comparable_pair_one_exclusion_both_arms`, where one exclusion set is
+applied to both sides of both arms. The left side as scored is 20,371 for both,
+which is the only field in the pair that shows the exclusion was applied: the
+agreement count can be identical with and without it, because the names removed
+match on both sides of the historical arm.
+
+The corrected pair is **79.4% against 67.7%**, so the direction of 3.15's
+reading holds and its margin falls from 17.3 points to 11.7. A blunter symmetric
+exclusion, every affected name removed from every server, reverses the ordering
+to 94.0% against 84.3%; it is recorded and not used, because it strips names from
+servers where they are single-version and removes disagreement the historical arm
+genuinely has.
+
+### The verdict figure was the retracted figure's sibling
+
+The section above dated 2026-10-09 retracts the frozen-versus-live figure from
+`results/final_verified.json` and gives three reasons. All three apply without
+modification to the deps.dev figure in the same file: both sides were keyed on
+package name at one version each, the arms predate the resolver corrections of
+11 to 17 September, and the inputs lived in `/tmp/mcpres`, which is gone. Nobody
+extended the retraction, so a hand-assembled 0.8% stayed in circulation and
+ended up in a third party's documentation.
+
+`PREREGISTRATION-8.md` and `code/verdict_recompute.py` supersede it rather than
+reproducing it, which is impossible: 2 of 248 servers, 0.8%, eight missed
+findings at four high and four moderate, zero phantom. The headline holds and the
+finding count does not, moving from six to eight.
+
+Nothing in `code/` wrote `final_verified.json`, and nothing wrote
+`data/depsdev_pairs_result.json` either. Both were assembled by hand. Two result
+files now have scripts behind them, and the earlier hand-assembled pair is
+superseded rather than cited.
+
+### What the two suites pin
+
+Neither script had a test. `code/test_verdict_recompute.py` and
+`code/test_depsdev_recompute.py` carry 31 mutations designed by three independent
+reviews, 6 harness composites and 5 meta-tests, over hand-derived fixture tables
+rather than the corpus, because the corpus is far from every boundary that
+matters: no version in it is unparseable, no deps.dev node has an empty version
+string, nothing is published at the cutoff instant, no extra class has a tie
+straddling the top-three slice, and the two median conventions coincide at the
+only node count the gated block uses.
+
+Building them found four further defects in code already published. A malformed
+`installed` token with no separator entered the resolution as a package named by
+the empty string, inflating node and instance counts. A naive timestamp in a
+packument parsed cleanly and then raised `TypeError` on a comparison sitting
+outside the `try` that caught `ValueError`. The derived cause was a string
+literal under a comment claiming it had been derived, with nothing checking it
+still mattered. And the cutoff check returned only its violations, so a run that
+compared nothing was indistinguishable from one that compared everything; it now
+reports coverage behind a floor and compares 2,951 of 2,953 version timestamps
+with none published after the declared cutoff, which confirms the matched arm's
+date rather than assuming it.
+
+One further repair came from the suites themselves. A check added to the
+comparable pair required the four rows to score equal left sides, which fires on
+correct code because suppression legitimately shrinks both sides; it now compares
+the two arms at each suppression level. Its first version grouped the rows with
+`endswith("suppressed")`, which puts `unsuppressed` in the same group and passed
+for the wrong reason.

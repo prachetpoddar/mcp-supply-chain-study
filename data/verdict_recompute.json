@@ -1,0 +1,440 @@
+{
+ "preregistration": "PREREGISTRATION-8.md",
+ "supersedes_without_reproducing": {
+  "source": "results/final_verified.json depsdev block",
+  "n": 249,
+  "verdict_differs": 2,
+  "pct": 0.8,
+  "missed_findings": 6,
+  "phantom_findings": 0,
+  "why_not_reproducible": [
+   "name-keyed on both sides",
+   "arms predate the 11-17 September resolver corrections",
+   "inputs lived in /tmp/mcpres, which is gone"
+  ]
+ },
+ "left_side": "deps.dev graphs from data/depsdev_pairs.json, fetched 2026-09-07/08, pair-keyed, NOT re-fetched",
+ "right_side_primary": "data/nested_gap_state_depsdev_matched.json. Its cutoff is not recorded in the state file; data/depsdev_recompute.json ships it as 2026-09-08T01:00:00Z bound to a matched_state_sha256 that matches this file. Nothing re-derives it from the data.",
+ "right_side_secondary": "data/nested_gap_state.json, resolved about a month later",
+ "direction_of_the_comparison": "the matched walk includes optional edges without evaluating os/cpu constraints and auto-installs non-optional peers, so the resolution side is close to a superset of the deps.dev side by construction. Read the primary as a one-directional missed rate, not a symmetric verdict-difference rate.",
+ "advisory_basis": {
+  "built_utc": "2026-10-13T21:49:42Z",
+  "source": "osv_npm_all.zip",
+  "source_mtime_utc": "2026-09-09T22:15:30Z",
+  "entries_in_zip": 228892,
+  "advisories_kept": 7020,
+  "packages": 3554,
+  "advisory_rows": 9522,
+  "latest_modified_in_export": "2026-09-09T18:15:04.495290489Z",
+  "rows_without_published": 0,
+  "advisories_without_published": 0,
+  "severity_counts": {
+   "moderate": 2447,
+   "low": 428,
+   "high": 2800,
+   "critical": 1345
+  },
+  "dropped": {
+   "excluded_prefix_EEF": 1,
+   "withdrawn": 679,
+   "excluded_prefix_GSD": 1,
+   "excluded_prefix_MAL": 221191
+  },
+  "max_enumerated_versions": 40,
+  "basis": [
+   "GHSA"
+  ]
+ },
+ "input_accounting": {
+  "depsdev_pairs": {
+   "records": 250,
+   "fetch_not_ok": [
+    "@pipeworx/mcp-pipeworx-catalog"
+   ],
+   "usable": 249
+  },
+  "matched_walk": {
+   "records": 250,
+   "skipped": [
+    "@aiwerk/mcp-server-wheel-size"
+   ],
+   "cap_truncated": [],
+   "usable": 249
+  },
+  "october_walk": {
+   "records": 250,
+   "skipped": [
+    "@aiwerk/mcp-server-wheel-size"
+   ],
+   "cap_truncated": [],
+   "usable": 249
+  }
+ },
+ "exclusions": {
+  "absent_from_depsdev": [
+   "@pipeworx/mcp-pipeworx-catalog"
+  ],
+  "absent_from_the_matched_walk": [
+   "@aiwerk/mcp-server-wheel-size"
+  ],
+  "root_version_mismatch": [],
+  "root_version_unchecked_one_side_missing": []
+ },
+ "primary_pair_keyed": {
+  "servers": 248,
+  "servers_with_a_finding_on_the_resolution_side": 44,
+  "verdict_differs": 2,
+  "verdict_differs_pct": 0.8,
+  "missed_servers": 2,
+  "missed_findings": 8,
+  "missed_by_severity": {
+   "high": 4,
+   "moderate": 4
+  },
+  "missed_by_package": {
+   "adm-zip": 2,
+   "qs": 2,
+   "sharp": 2,
+   "@opentelemetry/core": 1,
+   "@opentelemetry/propagator-jaeger": 1
+  },
+  "phantom_servers": 0,
+  "phantom_findings": 0,
+  "phantom_by_severity": {},
+  "phantom_by_package": {},
+  "total_findings_depsdev_side": 224,
+  "total_findings_resolution_side": 232,
+  "unparseable_versions_depsdev_side": 0,
+  "unparseable_versions_resolution_side": 0
+ },
+ "secondary_flattened_not_identified": {
+  "arms": {
+   "depsdev_last/resolution_last": {
+    "servers": 248,
+    "servers_with_a_finding_on_the_resolution_side": 44,
+    "verdict_differs": 14,
+    "verdict_differs_pct": 5.6,
+    "missed_servers": 12,
+    "missed_findings": 37,
+    "missed_by_severity": {
+     "high": 6,
+     "moderate": 30,
+     "low": 1
+    },
+    "missed_by_package": {
+     "qs": 20,
+     "nodemailer": 12,
+     "sharp": 2,
+     "@opentelemetry/core": 1,
+     "@opentelemetry/propagator-jaeger": 1,
+     "adm-zip": 1
+    },
+    "phantom_servers": 3,
+    "phantom_findings": 18,
+    "phantom_by_severity": {
+     "critical": 2,
+     "high": 10,
+     "moderate": 5,
+     "low": 1
+    },
+    "phantom_by_package": {
+     "protobufjs": 11,
+     "@modelcontextprotocol/sdk": 3,
+     "form-data": 2,
+     "node-fetch": 2
+    },
+    "total_findings_depsdev_side": 194,
+    "total_findings_resolution_side": 213,
+    "unparseable_versions_depsdev_side": 0,
+    "unparseable_versions_resolution_side": 0
+   },
+   "depsdev_first/resolution_last": {
+    "servers": 248,
+    "servers_with_a_finding_on_the_resolution_side": 44,
+    "verdict_differs": 2,
+    "verdict_differs_pct": 0.8,
+    "missed_servers": 2,
+    "missed_findings": 7,
+    "missed_by_severity": {
+     "high": 3,
+     "moderate": 4
+    },
+    "missed_by_package": {
+     "qs": 2,
+     "sharp": 2,
+     "@opentelemetry/core": 1,
+     "@opentelemetry/propagator-jaeger": 1,
+     "adm-zip": 1
+    },
+    "phantom_servers": 0,
+    "phantom_findings": 0,
+    "phantom_by_severity": {},
+    "phantom_by_package": {},
+    "total_findings_depsdev_side": 206,
+    "total_findings_resolution_side": 213,
+    "unparseable_versions_depsdev_side": 0,
+    "unparseable_versions_resolution_side": 0
+   },
+   "depsdev_last/resolution_first": {
+    "servers": 248,
+    "servers_with_a_finding_on_the_resolution_side": 44,
+    "verdict_differs": 10,
+    "verdict_differs_pct": 4.0,
+    "missed_servers": 10,
+    "missed_findings": 24,
+    "missed_by_severity": {
+     "high": 4,
+     "moderate": 20
+    },
+    "missed_by_package": {
+     "qs": 18,
+     "adm-zip": 2,
+     "sharp": 2,
+     "@opentelemetry/core": 1,
+     "@opentelemetry/propagator-jaeger": 1
+    },
+    "phantom_servers": 0,
+    "phantom_findings": 0,
+    "phantom_by_severity": {},
+    "phantom_by_package": {},
+    "total_findings_depsdev_side": 194,
+    "total_findings_resolution_side": 218,
+    "unparseable_versions_depsdev_side": 0,
+    "unparseable_versions_resolution_side": 0
+   },
+   "depsdev_first/resolution_first": {
+    "servers": 248,
+    "servers_with_a_finding_on_the_resolution_side": 44,
+    "verdict_differs": 6,
+    "verdict_differs_pct": 2.4,
+    "missed_servers": 5,
+    "missed_findings": 26,
+    "missed_by_severity": {
+     "critical": 2,
+     "high": 14,
+     "moderate": 9,
+     "low": 1
+    },
+    "missed_by_package": {
+     "protobufjs": 11,
+     "@modelcontextprotocol/sdk": 3,
+     "adm-zip": 2,
+     "form-data": 2,
+     "node-fetch": 2,
+     "qs": 2,
+     "sharp": 2,
+     "@opentelemetry/core": 1,
+     "@opentelemetry/propagator-jaeger": 1
+    },
+    "phantom_servers": 2,
+    "phantom_findings": 14,
+    "phantom_by_severity": {
+     "high": 3,
+     "moderate": 10,
+     "low": 1
+    },
+    "phantom_by_package": {
+     "nodemailer": 12,
+     "qs": 2
+    },
+    "total_findings_depsdev_side": 206,
+    "total_findings_resolution_side": 218,
+    "unparseable_versions_depsdev_side": 0,
+    "unparseable_versions_resolution_side": 0
+   }
+  },
+  "verdict_differs_pct_span_over_these_four": [
+   0.8,
+   5.6
+  ],
+  "phantom_findings_span_over_these_four": [
+   0,
+   18
+  ],
+  "note": "no point estimate is taken from this arm, and the span is NOT a bound on the statistic. First-wins and last-wins are two endpoint rules, and 62 of the 819 duplicated groups hold three or four versions, so there are copies neither rule can select. Running six flattening rules per side widens the span at both ends. Treat these as four samples."
+ },
+ "secondary_october_arm": {
+  "servers": 248,
+  "servers_with_a_finding_on_the_resolution_side": 37,
+  "verdict_differs": 15,
+  "verdict_differs_pct": 6.0,
+  "missed_servers": 2,
+  "missed_findings": 17,
+  "missed_by_severity": {
+   "high": 14,
+   "moderate": 3
+  },
+  "missed_by_package": {
+   "@xmldom/xmldom": 13,
+   "sharp": 2,
+   "@opentelemetry/core": 1,
+   "@opentelemetry/propagator-jaeger": 1
+  },
+  "phantom_servers": 14,
+  "phantom_findings": 30,
+  "phantom_by_severity": {
+   "high": 9,
+   "moderate": 21
+  },
+  "phantom_by_package": {
+   "qs": 18,
+   "adm-zip": 6,
+   "sharp": 4,
+   "link-preview-js": 2
+  },
+  "total_findings_depsdev_side": 224,
+  "total_findings_resolution_side": 211,
+  "unparseable_versions_depsdev_side": 0,
+  "unparseable_versions_resolution_side": 0
+ },
+ "leave_one_out_single_name_only": {
+  "adm-zip": {
+   "verdict_differs": 2,
+   "verdict_differs_pct": 0.8,
+   "missed_findings": 6,
+   "phantom_findings": 0
+  },
+  "qs": {
+   "verdict_differs": 1,
+   "verdict_differs_pct": 0.4,
+   "missed_findings": 6,
+   "phantom_findings": 0
+  },
+  "sharp": {
+   "verdict_differs": 2,
+   "verdict_differs_pct": 0.8,
+   "missed_findings": 6,
+   "phantom_findings": 0
+  },
+  "@opentelemetry/core": {
+   "verdict_differs": 2,
+   "verdict_differs_pct": 0.8,
+   "missed_findings": 7,
+   "phantom_findings": 0
+  },
+  "@opentelemetry/propagator-jaeger": {
+   "verdict_differs": 2,
+   "verdict_differs_pct": 0.8,
+   "missed_findings": 7,
+   "phantom_findings": 0
+  },
+  "__all_causes__": {
+   "suppressed": [
+    "@opentelemetry/core",
+    "@opentelemetry/propagator-jaeger",
+    "adm-zip",
+    "qs",
+    "sharp"
+   ],
+   "verdict_differs": 0,
+   "note": "arithmetic, not evidence: suppressing every cause must drive the difference to zero by construction. Kept as a consistency check.",
+   "missed_findings": 0,
+   "phantom_findings": 0
+  }
+ },
+ "flag_sensitivity_absolute_totals": {
+  "as_run_prerelease_on_loose_on": {
+   "findings_depsdev_side": 224,
+   "findings_resolution_side": 232
+  },
+  "prerelease_off": {
+   "findings_depsdev_side": 202,
+   "findings_resolution_side": 210
+  },
+  "loose_off": {
+   "findings_depsdev_side": 224,
+   "findings_resolution_side": 232
+  }
+ },
+ "gate": {
+  "orientation_probe": {
+   "probe": "hono@4.12.0",
+   "advisories_it_sits_in": 35,
+   "depsdev_side_only": {
+    "missed": 0,
+    "phantom": 35
+   },
+   "resolution_side_only": {
+    "missed": 35,
+    "phantom": 0
+   }
+  },
+  "harness_reproduction": {
+   "trees": 249,
+   "phantom_trees": 164,
+   "phantom_findings": 4442,
+   "missed_findings": 15,
+   "missed_trees": 2,
+   "verdict_differs": 164,
+   "trees_with_live_findings": 37,
+   "missed_by_severity": {
+    "high": 12,
+    "moderate": 3
+   },
+   "phantom_by_severity": {
+    "critical": 8,
+    "high": 1346,
+    "low": 283,
+    "moderate": 2805
+   }
+  },
+  "prerelease_probe_advisories_matched": 11,
+  "double_count_probe": {
+   "package": "vite",
+   "version": "3.2.9",
+   "advisory": "GHSA-93m4-6634-74q7",
+   "distinct_ranges_for_that_advisory": 7,
+   "distinct_ranges_containing_the_version": 2,
+   "row_counting_join": 2,
+   "deduplicated_join": 1
+  },
+  "cutoff_probe": {
+   "shared_servers": 249,
+   "servers_differing": 180,
+   "names_october_newer": 2040,
+   "names_october_older": 3,
+   "names_identical": 19335,
+   "forward_floor": 100,
+   "backward_cases": [
+    "@types/node 26.5.0 -> 10.17.60",
+    "sprintf-js 1.1.3 -> 1.0.3",
+    "sprintf-js 1.1.3 -> 1.0.3"
+   ],
+   "backward_note": "a dist-tag that moved backward and the deprecation preference each produce one legitimately; they are listed rather than required to be absent"
+  },
+  "symmetry_probe": {
+   "cause_used": "@opentelemetry/core",
+   "two_sided": {
+    "missed": 7,
+    "phantom": 0
+   },
+   "left_side_only": {
+    "missed": 9,
+    "phantom": 0
+   },
+   "ran": true
+  }
+ },
+ "gate_description": "Harness reproduction carries the advisory join. The side-binding check carries which arm is which and that both go through the same finding function. The orientation probe carries the direction of missed against phantom, on every paired field. The root-version requires carry the population. The double-count probe's reachable power is a membership test on the deduplicated join; it catches removal of the de-duplication and nothing subtler. The cutoff check constrains direction and a loose forward floor, and cannot establish that the cutoff was applied at all, because that needs per-node publish times and the packument cache was temporary. The flattening path has no gate.",
+ "range_sanity": {
+  "ranges_read": 9522,
+  "structurally_odd": 0,
+  "examples": [],
+  "note": "a count, not a gate: loose mode does not raise on a malformed range, so this is the only visibility into that channel and it is a weak structural test"
+ },
+ "what_this_cannot_settle": "the deps.dev side is a September snapshot and is not re-fetched, so this measures the gap between that published graph and a corrected resolution at the crawl date, not deps.dev's accuracy today",
+ "provenance": {
+  "python": "3.10.12",
+  "assertions_enabled": true,
+  "require_calls_made": 69,
+  "distinct_checks": 30,
+  "check_count_note": "require_calls_made counts every call, and the two breakdown-sum checks live inside compare, which runs once per arm and once per leave-one-out row, so the total moves with the data. distinct_checks is the coverage number.",
+  "unparseable_version_pairs_seen": 0,
+  "code_sha256": "5c1154db129d683ee7d32471cb4d9f78e83e4534edfb55042a3b57bfce77f6cc",
+  "depsdev_pairs_sha256": "825ac5f8608a31cde59fce0940ec43c6631187083b9660a2beac60d0e0ca0b76",
+  "matched_state_sha256": "1e66ecd233b64f9728c007c7b6167531c5e0c0c9aa8e7a065b9e9237b62193ed",
+  "october_state_sha256": "0b52712c09311c57f6b066e6c18f3667db64270063360f7e0b5d8af953a67066",
+  "advisories_sha256": "d20a25eecd12dc409e6f15a5935e96f8fe5f68cf2615979f550d395949ecfc1d",
+  "nested_published_sha256": "4494bc432ebde0e72571d043a40caed814f743bfe9152791cc4dfb2ee59f3c4d"
+ }
+}

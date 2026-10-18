@@ -3,3 +3,15 @@ __pycache__/
 .DS_Store
 cache/
 docker_state.json
+
+# Copy-instead-of-overwrite artifacts. This volume has produced "name 2.ext"
+# and extensionless "index 2" duplicates when the release tree could not be
+# cleared; one such file reached a published MANIFEST.md. The assembler fails
+# loudly on them, and these patterns keep any that appear outside its walk from
+# being swept in by `git add -A`.
+* 2
+* 3
+* 4
+* 2.*
+* 3.*
+* 4.*

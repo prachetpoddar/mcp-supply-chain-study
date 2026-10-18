@@ -1,5 +1,43 @@
 {
  "preregistration": "PREREGISTRATION-7.md",
+ "comparable_pair_one_exclusion_both_arms": {
+  "historical_unsuppressed": {
+   "identical": 168,
+   "identical_pct": 67.7,
+   "version_differs_pct": 32.3,
+   "extra_pct": 0.4,
+   "misses_pct": 1.2,
+   "depsdev_instances_as_scored": 20371
+  },
+  "historical_suppressed": {
+   "identical": 168,
+   "identical_pct": 67.7,
+   "version_differs_pct": 32.3,
+   "extra_pct": 0.4,
+   "misses_pct": 1.2,
+   "depsdev_instances_as_scored": 19735
+  },
+  "matched_unsuppressed": {
+   "identical": 75,
+   "identical_pct": 30.2,
+   "version_differs_pct": 66.1,
+   "extra_pct": 64.9,
+   "misses_pct": 10.9,
+   "depsdev_instances_as_scored": 20371
+  },
+  "matched_suppressed": {
+   "identical": 197,
+   "identical_pct": 79.4,
+   "version_differs_pct": 14.5,
+   "extra_pct": 2.4,
+   "misses_pct": 10.9,
+   "depsdev_instances_as_scored": 19735
+  },
+  "servers": 248,
+  "exclusion": "the matched arm's per-server multi-version names, removed from both sides of both arms",
+  "supersedes": "the pairing of the matched arm's suppressed rate against the historical arm's 62.1%, which scored the two against different left-hand node sets because the historical input carries no multi-version names and so lost nothing from the deps.dev side",
+  "note": "this is the pair that supports a direction. The arm-level figures under `arms` keep each arm's own exclusion and are not comparable across arms."
+ },
  "left_side": "deps.dev graphs, fetched 2026-09-07/08, NOT re-fetched",
  "comparable_servers": 248,
  "excluded_absent_from_gap_walk": [
@@ -325,13 +363,20 @@
  "what_this_cannot_settle": "the left side is a September snapshot and is not re-fetched, so this measures the gap between that published graph and a corrected resolution, not deps.dev's accuracy today",
  "provenance": {
   "python": "3.10.12",
-  "code_sha256": "6fce29026b4a73604877e5db8b897e8bae63c6a3e9a0fa8f7f723a67d5200789",
+  "code_sha256": "0f40d89e608ab158d30214593ded16947a5b328e00a5d70d53beb54e5f6acb6d",
   "depsdev_state_sha256": "44cf2ce5b4c573862ec091f64c07e523fb1658f4c8e407a8718fb33642a61bd3",
   "historical_trees_sha256": "82c5b3ff53daf932be10f71a904f3e2f012faa9b42d38ef174458141e5c32653",
   "aligned_state_sha256": "3fd696624f41bd252a9028c20113435855f13cdb2c0c0e1bd242dcf7dd94a99a",
   "matched_state_sha256": "1e66ecd233b64f9728c007c7b6167531c5e0c0c9aa8e7a065b9e9237b62193ed",
   "october_state_sha256": "0b52712c09311c57f6b066e6c18f3667db64270063360f7e0b5d8af953a67066",
   "matched_cutoff": "2026-09-08T01:00:00Z",
+  "cutoff_gate_coverage": {
+   "pairs_seen": 2953,
+   "pairs_compared": 2951,
+   "no_timestamp_in_packument": 2,
+   "packument_lookup_failed": 1,
+   "timestamp_unparseable": 0
+  },
   "assertions_enabled": true
  }
 }

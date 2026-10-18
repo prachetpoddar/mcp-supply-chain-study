@@ -230,3 +230,108 @@ direction from the previous two amendments.**
    deps.dev's accuracy in general: on one widely shared edge, deps.dev's
    published graph carries a version that is not the package's `latest` tag and
    that npm would not install by default.
+
+### Amendment four, 18 October 2026: the two arms were not comparable
+
+An independent reviewer that did not write this code found that the headline
+pairing compares two agreement rates computed against different left-hand node
+sets. Verified by reading the code and by recomputation.
+
+**What was wrong.** `compare()` removes from the deps.dev side every package
+name the resolution carries at more than one version, per amendment one, which
+is correct for a single arm: a name the right side holds twice cannot be matched
+against one deps.dev version without an arbitrary pick. But each arm used its
+own exclusion set. `tree_from_depsdev_file` hardcodes an empty one, because the
+historical input is already one version per name, so **nothing was removed from
+the deps.dev side on the historical arm** while the matched arm removed 763 of
+21,134 deps.dev nodes across 170 of its 248 servers. Removal can only help
+agreement: every name taken out was absent from the single-version map and would
+otherwise have counted as an extra. Only 78 of the 248 servers have no
+multi-version name, so most of the matched arm's agreeing servers were scored
+against a reduced left side.
+
+**What falls with it.** Amendment three item 1 read the comparison directly:
+79.4% is higher than 62.1%, so the corrected resolver agrees with deps.dev
+better than the pre-correction one. That conclusion is **withdrawn as stated**.
+The same asymmetry also moves `fewer_pct` and `median_nodes_depsdev` between
+arms, and the code's own comment had already noticed the problem but applied the
+correction to the instance-delta field alone.
+
+**The replacement.** One exclusion set, the matched arm's per-server
+multi-version names, applied to both sides of both arms, so the two rates are
+computed on identical node sets. `compare()` takes an `exclude` override and the
+result carries a `comparable_pair_one_exclusion_both_arms` block:
+
+| arm | identical | rate |
+|---|---|---|
+| historical, unsuppressed | 168 of 248 | 67.7% |
+| historical, suppressed | 168 of 248 | 67.7% |
+| matched, unsuppressed | 75 of 248 | 30.2% |
+| matched, suppressed | 197 of 248 | 79.4% |
+
+**The direction survives at a smaller margin.** 79.4% against 67.7%, not against
+62.1%, so the gap is 11.7 points rather than 17.3. Suppression still moves
+nothing on the historical arm, which is the same null amendment three reported.
+Any statement about which resolver agrees with deps.dev better must quote this
+pair and name the exclusion, and the per-arm figures under `arms` are explicitly
+not comparable across arms.
+
+A blunter symmetric exclusion was also tried and is **not** used: removing every
+affected name from every server reverses the ordering to 94.0% against 84.3%,
+but it strips names from servers where they are single-version and so removes
+disagreement the historical arm genuinely has. It is recorded here because a
+reader is entitled to know the result is sensitive to how the exclusion is
+drawn, and that the minimal symmetric choice is the defensible one.
+
+### Three further defects from the same review
+
+**The cause was a string literal under a comment claiming it was derived.**
+`CAUSE = ("get-intrinsic",)` sat beneath a comment saying it had been "found by
+asking which package's version disagreement the extras depend on rather than by
+assuming". Nothing computed it and nothing checked it still mattered; had it
+stopped mattering, the suppressed figure would have collapsed to the
+unsuppressed one with no gate firing. It is now derived as the most frequent
+version disagreement between the two arms, and the claim that it is the same
+event as the extra class is checked rather than asserted: `get-intrinsic`
+disagrees on 159 servers and `async-generator-function` is extra on 159, and the
+gate requires those two incidences to match. A second gate requires the derived
+cause not to be one of the three downstream names, or the two leave-one-out arms
+would not be distinct.
+
+**The cutoff gate could not be shown to have checked anything.** It returned only
+its violations. A packument lookup that raised became an empty dict, a missing
+version was skipped, and a run that compared a thousand timestamps was
+indistinguishable from one that compared none. It now reports coverage and a
+floor requires at least a quarter of the pairs to have been compared. On this
+run it compares **2,951 of 2,953** pairs with zero published after the cutoff, so
+the matched arm is confirmed as a resolution at 2026-09-08T01:00:00Z for the
+first time rather than assumed. Two pairs carry no timestamp in their packument
+and one lookup failed.
+
+**Nothing checked the five input hashes differ.** They exist so that an arm
+silently reading another arm's state file would be visible, which is the one
+substitution the code comment names as the risk. A gate now requires them
+pairwise distinct.
+
+Also fixed: `check_cutoff` indexed servers taken from the aligned arm, so a
+server the matched arm lacked raised `KeyError`, and it caught `ValueError`
+around the timestamp parse but not the `TypeError` a naive timestamp raises on
+comparison.
+
+### One pre-registered rule I did not implement, now recorded
+
+Amendment two item 4 said that if the matched arm failed to reproduce the
+historical arm's agreement "to within a few servers", the assumption behind the
+matched arm is wrong and the result says so rather than being reported. On the
+comparable pair the matched arm is 75 against 168 unsuppressed, and 197 against
+168 suppressed. Neither is within a few servers. No check implemented the rule
+and the result was reported anyway.
+
+The rule as written rests on the prediction in item 5, that matched-date
+agreement "should return close to the historical 62%". That prediction used the
+non-comparable comparator, so the rule's trigger condition was mis-specified
+from the start. It is withdrawn rather than retrofitted: a stopping rule written
+against a comparator that turned out to be wrong cannot be applied after the
+fact as though it had been right. What replaces it is the comparable pair above,
+reported in full, including the unsuppressed matched arm at 30.2% that the rule
+would have halted on.

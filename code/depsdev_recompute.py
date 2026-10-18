@@ -33,7 +33,10 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(os.path.dirname(HERE), "data")
+# Overridable so a test suite can point every input at a fixture
+# directory, since the four input paths below are module constants.
+DATA = os.environ.get("RECOMPUTE_DATA") or os.path.join(
+    os.path.dirname(HERE), "data")
 OUT = os.environ.get("RECOMPUTE_OUT", os.path.join(DATA, "depsdev_recompute.json"))
 
 # the published figures this must reproduce on the historical arm, from
@@ -73,22 +76,42 @@ def check_cutoff(arm, servers, cutoff):
                 pairs.add((k, v))
     late = []
     seen = {}
+    # Coverage, because the earlier version returned only its violations. A run
+    # that compared 1,300 timestamps and one that compared none were
+    # indistinguishable in the output: every packument failure became an empty
+    # dict and every missing version was skipped, so an empty `late` meant
+    # either "nothing was published late" or "nothing was looked at".
+    checked = no_timestamp = lookup_failed = unparseable = 0
     for name, ver in sorted(pairs):
         if name not in seen:
             try:
                 seen[name] = (mcplib.npm_packument(name) or {}).get("time") or {}
             except Exception:
                 seen[name] = {}
+                lookup_failed += 1
         ts = seen[name].get(ver)
         if not ts:
+            no_timestamp += 1
             continue
         try:
             when = dt.datetime.fromisoformat(ts.replace("Z", "+00:00"))
-        except ValueError:
+            if when.tzinfo is None:
+                # A naive timestamp parses cleanly and then raises TypeError on
+                # the comparison below, which is outside this try. Count it as
+                # unusable rather than letting it abort the gate.
+                raise ValueError("naive timestamp")
+        except (ValueError, TypeError):
+            unparseable += 1
             continue
+        # TypeError is caught alongside ValueError: a naive timestamp in a
+        # packument makes the comparison below raise rather than the parse.
+        checked += 1
         if when > want:
             late.append({"package": name, "version": ver, "published": ts})
-    return late
+    return late, {"pairs_seen": len(pairs), "pairs_compared": checked,
+                  "no_timestamp_in_packument": no_timestamp,
+                  "packument_lookup_failed": lookup_failed,
+                  "timestamp_unparseable": unparseable}
 
 
 def sha(path):
@@ -108,17 +131,24 @@ def tree_from_state(path):
     would be a choice rather than a measurement.
     """
     out = {}
+    malformed = 0
     for name, v in json.load(open(path)).items():
         if "skip" in v or v.get("truncated") or not v.get("installed"):
             continue
         seen = collections.defaultdict(set)
         for x in v["installed"]:
-            n, _, ver = x.rpartition("@@")
+            n, sep, ver = x.rpartition("@@")
+            if not sep or not n:
+                malformed += 1
+                continue
             seen[n].add(ver)
         single = {n: next(iter(vs)) for n, vs in seen.items() if len(vs) == 1}
         multi = {n: sorted(vs) for n, vs in seen.items() if len(vs) > 1}
         out[name] = {"resolved": single, "multi": multi,
                      "root_version": v.get("root_version")}
+    if malformed:
+        print("  tree_from_state: %d installed tokens had no @@ separator "
+              "and were skipped" % malformed)
     return out
 
 
@@ -146,7 +176,7 @@ def instance_totals(right, dd, servers):
     return res, ddn, round(100.0 * (res - ddn) / max(ddn, 1), 1)
 
 
-def compare(dd, right, servers, suppress=()):  # noqa: C901
+def compare(dd, right, servers, suppress=(), exclude=None):  # noqa: C901
     """Compare on the single-version subset. `suppress` drops named packages.
 
     A name the resolution carries at several versions is excluded from every
@@ -156,9 +186,19 @@ def compare(dd, right, servers, suppress=()):  # noqa: C901
     for name in servers:
         live = right[name]["resolved"]
         multi = right[name].get("multi") or {}
+        # `exclude` overrides the arm's own multi set with one supplied by the
+        # caller, so two arms can be scored on IDENTICAL node sets. Without it
+        # each arm used its own: the historical input is already one version
+        # per name, so its multi set is empty and nothing was removed from the
+        # deps.dev side, while the matched arm removed 763 deps.dev nodes
+        # across 170 servers. Removal can only help agreement, so the two arms'
+        # rates were not comparable and the published pairing of 79.4% against
+        # 62.1% scored the two sides against different left-hand node sets.
+        drop = set(multi) if exclude is None else set(exclude.get(name) or ())
         ddn = {k: v for k, v in dd[name]["nodes"].items()
-               if k not in suppress and k not in multi}
-        live = {k: v for k, v in live.items() if k not in suppress}
+               if k not in suppress and k not in drop}
+        live = {k: v for k, v in live.items()
+                if k not in suppress and k not in drop}
         miss = [k for k in live if k not in ddn]
         extra = [k for k in ddn if k not in live]
         vdiff = [k for k in live if k in ddn and ddn[k] and live[k] != ddn[k]]
@@ -251,11 +291,23 @@ def main():
 
     # The real check the matched arm needs: nothing it selected may have been
     # published after the cutoff, or it is not a 2026-09-08 resolution.
-    late = check_cutoff(arms["matched"], comparable, CUTOFF)
+    # `comparable` is built from the aligned arm, so a server it holds that the
+    # matched arm lacks used to raise KeyError here.
+    cut_servers = [n for n in comparable if n in arms["matched"]]
+    late, cut_cover = check_cutoff(arms["matched"], cut_servers, CUTOFF)
     require(not late,
             f"{len(late)} selections in the matched arm were published after "
             f"the declared cutoff {CUTOFF}, so it is not a resolution as of "
             f"that instant: {late[:4]}")
+    # A coverage floor, so an empty `late` cannot mean "nothing was looked at".
+    # The arm carries over a thousand distinct (name, version) pairs; comparing
+    # fewer than a quarter of them means the packument cache was cold or the
+    # lookups failed, and the gate's verdict is then uninterpretable rather
+    # than passed.
+    require(cut_cover["pairs_compared"] * 4 >= cut_cover["pairs_seen"],
+            "cutoff gate compared only %d of %d (name, version) pairs, so its "
+            "verdict is not interpretable: %r"
+            % (cut_cover["pairs_compared"], cut_cover["pairs_seen"], cut_cover))
 
     # The extra class and the dominant version disagreement are ONE event. The
     # corrected resolver picks get-intrinsic@1.3.0, which is npm's latest tag,
@@ -273,9 +325,39 @@ def main():
                 extra_counts[k] += 1
     ranked_extras = sorted(extra_counts.items(), key=lambda kv: (-kv[1], kv[0]))
     TOP3 = tuple(k for k, _ in ranked_extras[:3])
-    # the upstream edge, found by asking which package's version disagreement
-    # the extras depend on rather than by assuming
-    CAUSE = ("get-intrinsic",)
+    # CAUSE was the string literal "get-intrinsic" sitting under a comment
+    # claiming it had been "found by asking which package's version
+    # disagreement the extras depend on rather than by assuming". The comment
+    # described work the code did not do, and nothing checked that the name
+    # still mattered: had it stopped mattering, the suppressed figure would
+    # have quietly collapsed to the unsuppressed one with no gate firing.
+    #
+    # Derived now. The cause is the most frequent version disagreement between
+    # the two resolver arms, and the claim that it is the SAME event as the
+    # extra class is checked rather than asserted: the two incidences must
+    # match, because every server where the edge moves is a server where the
+    # downstream names appear and no other.
+    dis_counts = collections.Counter()
+    for n in comparable:
+        if n not in arms["matched"]:
+            continue
+        h = arms["historical"][n]["resolved"]
+        m = arms["matched"][n]["resolved"]
+        for k in set(h) & set(m):
+            if h[k] != m[k]:
+                dis_counts[k] += 1
+    ranked_dis = sorted(dis_counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    require(bool(ranked_dis), "no version disagreement between the two arms")
+    CAUSE = (ranked_dis[0][0],)
+    require(ranked_dis[0][1] == ranked_extras[0][1],
+            "the cause and the extra class are not one event: %s disagrees on "
+            "%d servers and %s is extra on %d, so suppressing the first cannot "
+            "be read as removing the second"
+            % (ranked_dis[0][0], ranked_dis[0][1],
+               ranked_extras[0][0], ranked_extras[0][1]))
+    require(CAUSE[0] not in TOP3,
+            "the derived cause %r is itself one of the three downstream names, "
+            "so cause_only and symptom_only are not distinct arms" % CAUSE[0])
 
     # ---- the primary comparison: same date, same roots, resolver only ----
     # Any difference here is the resolver correction and nothing else, because
@@ -335,8 +417,72 @@ def main():
                 "version_differs_pct": s["version_differs_pct"],
                 "extra_pct": s["extra_pct"]}
 
+    # ---- the comparable pair, which the published figures were not ----
+    # One exclusion set, derived from the matched arm's own multi-version names
+    # per server, applied to BOTH sides of BOTH arms. This is the only pairing
+    # that supports a statement about which resolver agrees with deps.dev
+    # better. A blunter set, every affected name removed from every server, was
+    # also tried and is NOT used: it strips names from servers where they are
+    # single-version, over-removing disagreement from the historical arm.
+    common_excl = {n: set(arms["matched"][n]["multi"] or {})
+                   for n in comparable if n in arms["matched"]}
+    pair_servers = sorted(common_excl)
+    SUP = tuple(CAUSE) + TOP3
+    pair = {}
+    for label, arm, sup in (("historical_unsuppressed", "historical", ()),
+                            ("historical_suppressed", "historical", SUP),
+                            ("matched_unsuppressed", "matched", ()),
+                            ("matched_suppressed", "matched", SUP)):
+        r, _ = compare(dd, arms[arm], pair_servers, suppress=sup,
+                       exclude=common_excl)
+        pair[label] = {"identical": r["identical"],
+                       "identical_pct": r["identical_pct"],
+                       "version_differs_pct": r["version_differs_pct"],
+                       "extra_pct": r["extra_pct"],
+                       "misses_pct": r["misses_pct"],
+                       # the size of the left side as scored. Equal across all
+                       # four rows is what "comparable" means here, and it is
+                       # the only field that shows the common exclusion was
+                       # applied: the agreement count can be identical with
+                       # and without it.
+                       "depsdev_instances_as_scored":
+                           r["instances_depsdev_after_exclusions"]}
+    # Both arms must now be scored on the same servers and the same exclusion,
+    # or the pair is no better than the one it replaces.
+    require(len({v["identical"] is not None for v in pair.values()}) == 1,
+            "comparable pair did not produce a figure for every arm")
+    require(all(r["identical"] <= len(pair_servers) for r in pair.values()),
+            "comparable pair reports more identical servers than servers")
+    # Equal BETWEEN THE ARMS at the same suppression level. Suppression itself
+    # removes names from the left side too, so the suppressed rows are
+    # legitimately smaller than the unsuppressed ones; what must not differ is
+    # the two arms at one level, which is exactly the defect being repaired.
+    # Split on the label's own suffix rather than endswith: "unsuppressed"
+    # ends with "suppressed", so an endswith test puts every row in one group
+    # and the check passes for the wrong reason.
+    for level in ("unsuppressed", "suppressed"):
+        sizes = {lbl: pair[lbl]["depsdev_instances_as_scored"]
+                 for lbl in pair if lbl.rsplit("_", 1)[-1] == level}
+        require(len(set(sizes.values())) == 1,
+                "comparable pair scored the two arms against left sides of "
+                "different sizes at the %s level, %r, so it is no better than "
+                "the pairing it replaces" % (level, sizes))
+
     out = {
         "preregistration": "PREREGISTRATION-7.md",
+        "comparable_pair_one_exclusion_both_arms": dict(
+            pair,
+            servers=len(pair_servers),
+            exclusion="the matched arm's per-server multi-version names, "
+                      "removed from both sides of both arms",
+            supersedes="the pairing of the matched arm's suppressed rate "
+                       "against the historical arm's 62.1%, which scored the "
+                       "two against different left-hand node sets because the "
+                       "historical input carries no multi-version names and so "
+                       "lost nothing from the deps.dev side",
+            note="this is the pair that supports a direction. The arm-level "
+                 "figures under `arms` keep each arm's own exclusion and are "
+                 "not comparable across arms."),
         "left_side": "deps.dev graphs, fetched 2026-09-07/08, NOT re-fetched",
         "comparable_servers": len(comparable),
         "excluded_absent_from_gap_walk": absent,
@@ -365,9 +511,19 @@ def main():
             "october_state_sha256": sha(os.path.join(
                 DATA, "nested_gap_state.json")),
             "matched_cutoff": CUTOFF,
+            "cutoff_gate_coverage": cut_cover,
             "assertions_enabled": __debug__,
         },
     }
+    # The five state hashes exist so that one arm silently pointed at another
+    # arm's file would be visible. Nothing checked they differ, which is the
+    # thing they were added to prevent: the matched arm reading the aligned
+    # state would reproduce the aligned figures under the matched label.
+    shas = {k: v for k, v in out["provenance"].items()
+            if k.endswith("_sha256") and k != "code_sha256"}
+    require(len(set(shas.values())) == len(shas),
+            "two input files hash identically, so at least one arm is reading "
+            "another arm's state: %r" % shas)
     json.dump(out, open(OUT, "w"), indent=1)
     print(json.dumps({k: v for k, v in out.items()
                       if k not in ("provenance", "excluded_absent_from_gap_walk")},
