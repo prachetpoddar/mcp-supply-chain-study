@@ -347,8 +347,17 @@ Five packages account for almost all of it:
 | zod | 4.5.4 to 4.6.5 | 164 trees |
 | hono | 4.13.7 to 4.13.8 | 161 trees |
 | proxy-addr | 2.0.7 to 2.0.8 | 158 trees |
-| fast-uri | 3.1.7 to 3.1.8 | 155 trees |
+| fast-uri | 3.1.7 to 3.1.8 | 156 trees |
 | ip-address | 10.7.0 to 10.7.2 | 152 trees |
+
+**Amendment, 2026-10-21.** The fast-uri row read 155 trees. Recomputed from
+`walk250_corrected_asof.jsonl` and `walk250_corrected_today.jsonl`, counting trees
+where `fast-uri@3.1.7` became `3.1.8`, it is 156. The extra tree is `mcpscope`, which
+holds fast-uri at both 3.1.7 and 4.1.4, and both versions move. A count keyed by package
+name alone, with the last version winning, gives 155 for fast-uri but 162 for zod, so the
+155 did not come from one counting rule. The other four rows are unchanged at 164, 161,
+158 and 152 when counted by name and version. The headline of 184 of 250 trees, 73.6%,
+reproduces exactly and does not depend on this row.
 
 This quantifies a claim the paper already makes qualitatively, that nothing in a
 launch config is pinned so the resolved set can differ between cold starts. Ten

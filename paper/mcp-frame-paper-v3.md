@@ -109,7 +109,7 @@ counts summed across the 250 trees move by 12, from 21,655 to 21,667. The churn 
 Among affected servers the median is 10 nodes different and the maximum 127.
 Five packages account for most of it: `zod` moves from 4.5.4 to 4.6.5 in 164
 trees, `hono` from 4.13.7 to 4.13.8 in 161, `proxy-addr` from 2.0.7 to 2.0.8 in
-158, `fast-uri` from 3.1.7 to 3.1.8 in 155, and `ip-address` from 10.7.0 to
+158, `fast-uri` from 3.1.7 to 3.1.8 in 156, and `ip-address` from 10.7.0 to
 10.7.2 in 152. Two cold starts a week and a half apart would therefore resolve
 different code on roughly three servers in four, and no artifact anywhere records
 that they differ.

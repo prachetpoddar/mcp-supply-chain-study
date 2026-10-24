@@ -1,6 +1,6 @@
 # Manifest
 
-SHA-256 of every released file, generated 2026-10-18T23:52:07Z.
+SHA-256 of every released file, generated 2026-10-24T13:11:37Z.
 
 ```
 709d032522cafe45d2a007170dd3692625886ac0894615de4da76e8f0ec47a0e  ./.gitignore
@@ -9,7 +9,7 @@ dd64aed5c1e648e1a5a96b2a350cc7a21d9d04f8ab02dfa3deba0d42fec8cf24  ./CITATION.cff
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  ./LICENSE
 725fca4cb8d4a5a0e9296d87fe46e7160c08ef01cc621494aadca2a2e2084c1c  ./LICENSE-DATA.md
 906f0c56dbdebb51a4fe74c9a6ca6c39cabfac8c83364be775c95a76d9a886ab  ./README.md
-c4c60de22cbb59da718bbdac14bb04d147a784455141f2246dde8b257599204f  ./RESOLVER-NOTES.md
+578f08fd3ef4ada949fefe6ebed33411a2d2cd218ff32bc06cf88c65bc2c1c49  ./RESOLVER-NOTES.md
 f408ef4c68f0a8e5c194d4acdfd83de5d22030cc9b596d95e817f3de5dc792f1  ./code/RUN_A_pypi_weighting.py
 cfcf44bee61993b46e852ec61a6e4036b37513deac23a7374b7b08702976e9c5  ./code/build_advisories.py
 bb55dc718c031e82d4cebe2f0808b7cdecffeaa7f1f0015c3247b8331c512684  ./code/collect_results.sh
@@ -183,7 +183,7 @@ d7272bbd39db9f6851648684c8e4a9be04840e6c8d55ad854d489a4582d45e64  ./data/walk250
 8f64850538b2594eb72e7c6ce2a784475317f193b62434aeb13f827d0f433034  ./data/walk250_corrected_asof.jsonl
 70aef4ed0a874ca0019306f63a83731402bdcfb1635d00c7d1b95190518c26a8  ./data/walk250_corrected_today.jsonl
 32a2403fc5bc18f23bf4115fde0d5886b08fa2361a7dd3d52d930dd398902e79  ./paper/mcp-frame-paper-v3.docx
-e95e95092505e8945266e1bdf341175c63c1aeec288471653ccc65580fb7bc7f  ./paper/mcp-frame-paper-v3.md
+4b2053834afe6e88588556e4d99a02bc91ff6bd80fc0e1b7ea71c5512fa1d801  ./paper/mcp-frame-paper-v3.md
 eb50d7b9dc8ca24aed5584f3d2568fe3dbce66b224fabecd647de7752dde8d93  ./paper/mcp-frame-paper-v3.pdf
 c1d5e8b92eae637846a8fb29c9c0b8673bc1d47fac1c00dd5ee94d0c9df92cc5  ./paper/mcp-supply-chain-nulls.md
 bc02d660dfdec9faece251fccf87a7abb195d5b97daaf69cca6286e4469ca069  ./preregistrations/PREREGISTRATION-2.md
