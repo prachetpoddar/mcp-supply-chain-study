@@ -1,0 +1,26 @@
+{
+ "what_this_is": "the deps.dev advisory-verdict figure from results/final_verified.json, recorded here because it is what PREREGISTRATION-8 supersedes and a reader cannot check a supersession against a file that is not released. results/final_verified.json itself is a working-folder artifact and is deliberately not shipped: it is hand-assembled, no script writes it, and RESOLVER-NOTES.md retracts the frozen figure beside this one.",
+ "source_file": "results/final_verified.json",
+ "source_block": "depsdev",
+ "superseded_by": "data/verdict_recompute.json primary_pair_keyed",
+ "why_not_reproducible": [
+  "both sides keyed on package name at one version each",
+  "its arms predate the resolver corrections of 11 to 17 September",
+  "its inputs lived in /tmp/mcpres, which is gone"
+ ],
+ "figure": {
+  "n": 249,
+  "verdict_differs": 2,
+  "pct": 0.8,
+  "missed_servers": 2,
+  "missed_findings": 6,
+  "missed_sev": {
+   "moderate": 3,
+   "high": 3
+  },
+  "phantom_servers": 0,
+  "phantom_findings": 0,
+  "total_depsdev": 179,
+  "total_live": 185
+ }
+}

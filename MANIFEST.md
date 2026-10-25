@@ -1,6 +1,6 @@
 # Manifest
 
-SHA-256 of every released file, generated 2026-10-25T03:27:36Z.
+SHA-256 of every released file, generated 2026-10-25T21:11:05Z.
 
 ```
 709d032522cafe45d2a007170dd3692625886ac0894615de4da76e8f0ec47a0e  ./.gitignore
@@ -9,7 +9,7 @@ dd64aed5c1e648e1a5a96b2a350cc7a21d9d04f8ab02dfa3deba0d42fec8cf24  ./CITATION.cff
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  ./LICENSE
 725fca4cb8d4a5a0e9296d87fe46e7160c08ef01cc621494aadca2a2e2084c1c  ./LICENSE-DATA.md
 906f0c56dbdebb51a4fe74c9a6ca6c39cabfac8c83364be775c95a76d9a886ab  ./README.md
-578f08fd3ef4ada949fefe6ebed33411a2d2cd218ff32bc06cf88c65bc2c1c49  ./RESOLVER-NOTES.md
+640ca2c80e52edeacfe32a80a69f420312199ed012407423e6b56bfa7fca9283  ./RESOLVER-NOTES.md
 f408ef4c68f0a8e5c194d4acdfd83de5d22030cc9b596d95e817f3de5dc792f1  ./code/RUN_A_pypi_weighting.py
 cfcf44bee61993b46e852ec61a6e4036b37513deac23a7374b7b08702976e9c5  ./code/build_advisories.py
 bb55dc718c031e82d4cebe2f0808b7cdecffeaa7f1f0015c3247b8331c512684  ./code/collect_results.sh
@@ -65,7 +65,7 @@ c407682e30189477ffff0c6d316fbad8a7db284b3bca0f952a1a0a27f946e930  ./code/test_re
 1d4d57ca5469b84d0b6be920c67a4e3e4bc971b9c3d52e2d426970d31a13ae20  ./code/usage_weighting.py
 2468a4f29b22e6bcc5ba7e8055fc15052eb3c79b3f474cde5f004334354086f3  ./code/validate_installs.py
 5c1154db129d683ee7d32471cb4d9f78e83e4534edfb55042a3b57bfce77f6cc  ./code/verdict_recompute.py
-f8d82227ee64172b5a3a5af5c719ae8ab47cbcfaab302250f8123491ba04c99d  ./code/verify_v316_claims.py
+1ffac95184efe8ce4d968927adf0db2c680d63f3d524c429ab1529397b1c809b  ./code/verify_v316_claims.py
 bb11a10027095bf25ad7f19b766053cefdbb1fc3090135b7970fffe3eac82310  ./code/vuln_gap.py
 2dd7db2cd55354236176fa24f70d9f0ea131d762a33e46ba726931be621dd8ed  ./code/vuln_gap_depsdev.py
 c1a9bcedd856e94ab74ec0df2c72182527b1ec87b7edce6d63f27b9896ecf8a7  ./data/adv_npm.json
@@ -172,6 +172,7 @@ ed70af5c9501fa974dd80f1481b77b273c2bcaa466de49857773a375cd7aa84c  ./data/rows_1_
 d196afc51aa8630f1e80ba46cb16c4ed1d4ee85895355fdad157060d36726182  ./data/stage1.json
 b3232223fe07a8a874df7ed32428799bb10b83d61a1f11ef6366046fb2ac8284  ./data/stratum_b_raw.json
 21dd603b6aa6270136593b65a542f7acd50800b215b53e4e5444eb30ebcaea07  ./data/stratum_c_raw.json
+a30bd2f100d20070898726b6bfe6eaa10f8676f806b47d7e37f26891e6954976  ./data/superseded_depsdev_verdict.json
 80f602268de8ffa8d01ec78bb201b1a99b87e4b8707a4c142d726083b4968c7b  ./data/tail_walks_raw.json
 dc7fdcd038de4bd26ea543b69f647452bc3612b3c497597e2765a8e281b1cfde  ./data/tarballs_big.json
 d4e1dc4fb28eb63a8f2744a88b91a22833435fa3c7ca725118a24b499a429b11  ./data/validate_installs.json

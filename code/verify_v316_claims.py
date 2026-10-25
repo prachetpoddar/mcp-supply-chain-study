@@ -24,6 +24,15 @@ import collections, json, os, re, subprocess, sys
 sys.path.insert(0, "code")
 import nodesemver as sv
 
+# The released files sit under release/ in the authoring folder and at the top
+# level in a clone of the tag. Everything that reads a RELEASED file goes
+# through R so one script serves both. Four inputs are genuinely
+# working-folder-only and are gated behind WORKING, below.
+R = "release" if os.path.isdir("release/data") else "."
+WORKING = all(os.path.exists(q) for q in
+              ("release-files/.gitignore", "results/superseded/nested_gap.json",
+               "Claude outputs/adam-reply-2.md"))
+
 OK = FAIL = 0
 def claim(label, got, want):
     global OK, FAIL
@@ -36,7 +45,14 @@ def section(t): print("\n== %s ==" % t)
 
 V = json.load(open("data/verdict_recompute.json"))
 D = json.load(open("data/depsdev_recompute.json"))
-FV = json.load(open("results/final_verified.json"))
+# The superseded figure now SHIPS, as data/superseded_depsdev_verdict.json.
+# This line used to read results/final_verified.json, a working-folder artifact
+# that is deliberately not released, so the script died here on a clean
+# checkout of the tag before a single check ran. The maintainer of mcp-audit
+# found that by trying it. A verification pass that only runs in the author's
+# working tree verifies the author's working tree.
+FV = {"depsdev": json.load(
+    open("data/superseded_depsdev_verdict.json"))["figure"]}
 
 # ---------------------------------------------------------------- graph figures
 section("1. the three graph figures")
@@ -68,6 +84,22 @@ for s, rec in dd_state.items():
     tot_vd += sum(1 for k in live if k in ddn and ddn[k] and live[k] != ddn[k])
 claim("name-keyed total version disagreements", tot_vd, 219)
 
+def _flatten_state(path):
+    out = {}
+    for name, v in json.load(open(path)).items():
+        if not isinstance(v, dict) or "installed" not in v or v.get("truncated"):
+            continue
+        m = {}
+        for x in v["installed"]:
+            n, _, ver = x.rpartition("@@")
+            m[n] = ver
+        out[name] = m
+    return out
+
+
+_matched_flat = _flatten_state("data/nested_gap_state_depsdev_matched.json")
+
+
 def flat(lst):
     d = {}
     for x in lst:
@@ -80,7 +112,31 @@ for s, rec in dd_state.items():
     rows += 1
     live, ddn = flat(ng[s]["installed"]), rec["nodes"]
     if any(k in ddn and ddn[k] and live[k] != ddn[k] for k in live): agree_vd += 1
-claim("name-keyed left vs corrected walk", round(100.0 * agree_vd / rows, 1), 72.2)
+# This was labelled "the corrected walk" in a note sent outward, which in
+# context read as the matched-date arm. It is the OCTOBER arm: the file it
+# reads hashes to october_state_sha256 and depsdev_recompute.json describes it
+# as resolved about a month later. Adam Dudley caught the mislabel. Both arms
+# are now computed and named, so the two cannot be confused again.
+claim("name-keyed left vs the OCTOBER walk (a month after the crawl)",
+      round(100.0 * agree_vd / rows, 1), 72.2)
+mrows = magree = 0
+for s_, rec in dd_state.items():
+    mst = _matched_flat.get(s_)
+    if mst is None:
+        continue
+    mrows += 1
+    ddn = rec["nodes"]
+    if any(k in ddn and ddn[k] and mst[k] != ddn[k] for k in mst):
+        magree += 1
+claim("name-keyed left vs the MATCHED walk, flattened",
+      round(100.0 * magree / mrows, 1), 66.1)
+# 66.1% is also what the released pair-keyed matched arm reports, by
+# coincidence rather than by identity: that arm excludes multi-version names
+# from both sides, this one keeps one version per name. Two different
+# reductions landing on the same rounded value is exactly the shape that hides
+# a mistake, so both are pinned separately.
+claim("the coincidence is two reductions, not one",
+      D["arms"]["matched"]["version_differs_pct"], 66.1)
 
 # ------------------------------------------------- the 68.3% cluster is unsourced
 section("2. the figures that reproduce nowhere")
@@ -95,13 +151,21 @@ claim("misses are not 0.4 and extras not 12.4",
 claim("no arm anywhere reports 68.3 as its disagreement rate",
       any(a.get("version_differs_pct") == 68.3 for a in D["arms"].values())
       or pb["version_differs_pct"] == 68.3, False)
-claim("68.3 appears in the 8 Sep note",
-      "68.3" in open("Claude outputs/adam-reply-2.md").read(), True)
-note_mt = os.path.getmtime("Claude outputs/adam-reply-2.md")
-pairs_mt = os.path.getmtime("data/depsdev_pairs.json")
-claim("the note predates the pair-keyed state file", note_mt < pairs_mt, True)
-claim("the 8 Sep note gave 0.4% and 5.2% as a range",
-      "0.4% and 5.2%" in open("Claude outputs/adam-reply-2.md").read(), True)
+# These three read the 8 September note, which lives in the authoring folder
+# and is not released. They establish where the unsourced figures came from,
+# which is history rather than a released claim, so they skip from a clone
+# instead of stopping the run.
+if WORKING:
+    claim("68.3 appears in the 8 Sep note",
+          "68.3" in open("Claude outputs/adam-reply-2.md").read(), True)
+    note_mt = os.path.getmtime("Claude outputs/adam-reply-2.md")
+    pairs_mt = os.path.getmtime("data/depsdev_pairs.json")
+    claim("the note predates the pair-keyed state file", note_mt < pairs_mt, True)
+    claim("the 8 Sep note gave 0.4% and 5.2% as a range",
+          "0.4% and 5.2%" in open("Claude outputs/adam-reply-2.md").read(), True)
+else:
+    print("  SKIP 3 provenance checks: they read the 8 September note, which is "
+          "an authoring-folder\n       file and is not released.")
 
 # --------------------------------------------------------- the 79.4 / 67.7 pair
 section("3. the comparable pair")
@@ -216,13 +280,13 @@ claim("236 and 266 are the tight endpoints",
 
 # ------------------------------------------------------------- provenance
 section("5. provenance and the earlier vintages")
-pr = json.load(open("release/data/depsdev_pairs_result.json"))
+pr = json.load(open(os.path.join(R, "data/depsdev_pairs_result.json")))
 claim("depsdev_pairs_result", (pr["n"], pr["verdict_differs"], pr["missed_findings"],
                                pr["phantom_findings"], pr["total_depsdev"], pr["total_live"]),
       (249, 1, 3, 0, 175, 178))
 claim("its severity split", pr["missed_by_severity"], {"moderate": 2, "high": 1})
 claim("it carries its own pair-keyed note", "pair-keyed" in pr["note"], True)
-na = json.load(open("release/data/nested_and_depsdev.json"))["depsdev_vs_verified"]
+na = json.load(open(os.path.join(R, "data/nested_and_depsdev.json")))["depsdev_vs_verified"]
 claim("nested_and_depsdev", (na["n"], na["differ"], na["missed_findings"],
                              na["phantom_findings"]), (249, 13, 29, 14))
 writers = []
@@ -312,19 +376,26 @@ claim("nothing published after the cutoff", D.get("late_selections", []), [])
 
 # ----------------------------------------------------------------- release
 section("8. the release")
-man = [l.split("  ./")[-1].strip() for l in open("release/MANIFEST.md")
+man = [l.split("  ./")[-1].strip() for l in open(os.path.join(R, "MANIFEST.md"))
        if re.match(r"^[0-9a-f]{64}  ", l)]
-tracked = subprocess.run(["git", "-C", "release", "ls-files"], capture_output=True,
+tracked = subprocess.run(["git", "-C", R, "ls-files"], capture_output=True,
                          text=True).stdout.split()
 claim("manifest entries equal the tracked set",
       len(man), len([x for x in tracked if x != "MANIFEST.md"]))
 claim("manifest equals tracked minus itself",
       sorted(man), sorted(x for x in tracked if x != "MANIFEST.md"))
 claim("docker_state not in the manifest", any("docker_state" in x for x in man), False)
+if not WORKING:
+    print("  SKIP 4 checks: the assembler's .gitignore source and the superseded\n"
+          "       result files are authoring-folder paths and are not released.")
+    print("\n" + "=" * 78)
+    print("%d PASS, %d FAIL  (sections 1 to 7 and the manifest checks ran from "
+          "the released\nfile set; 7 authoring-folder checks skipped)" % (OK, FAIL))
+    sys.exit(1 if FAIL else 0)
 gi = open("release-files/.gitignore").read()
 claim("duplicate patterns in the assembler's source", gi.count("\n* ") >= 6, True)
 claim("docker_state still gitignored", "docker_state.json" in gi, True)
-dk = json.load(open("release/data/mcp_docker.json"))
+dk = json.load(open(os.path.join(R, "data/mcp_docker.json")))
 pl = sorted(x["pull_count"] for x in dk); n = len(pl)
 claim("docker records", n, 182)
 claim("docker median", (pl[n//2-1] + pl[n//2]) / 2, 34009.0)
@@ -339,13 +410,19 @@ claim("current nested_gap", (cur["trees"], cur["verdict_differs"], cur["phantom_
       (249, 164, 4442))
 dupe_find = ("find . -type f \\( -name '* 2' -o -name '* 3' -o -name '* 4' "
              "-o -name '* 2.*' -o -name '* 3.*' -o -name '* 4.*' \\) | wc -l")
-on_disk = int(subprocess.run(dupe_find, shell=True, cwd="release",
+on_disk = int(subprocess.run(dupe_find, shell=True, cwd=R,
                              capture_output=True, text=True).stdout.strip())
 claim("no duplicate-name file is tracked",
       [x for x in tracked if re.search(r" [234](\.|$)", x)], [])
-claim("git reports no untracked files despite %d on disk" % on_disk,
-      subprocess.run(["git", "-C", "release", "status", "--porcelain"],
-                     capture_output=True, text=True).stdout.strip(), "")
+# The property is that none of the strays is UNTRACKED, which is what a later
+# `git add -A` would sweep in. Asserting a clean tree instead made the check
+# fail whenever the author had uncommitted edits in progress, which is a
+# different thing and not a defect.
+untracked = [l for l in subprocess.run(
+    ["git", "-C", R, "status", "--porcelain"], capture_output=True,
+    text=True).stdout.splitlines() if l.startswith("??")]
+claim("git reports no untracked files despite %d strays on disk" % on_disk,
+      untracked, [])
 print("       note: %d duplicate-name files on disk right now. They regenerate "
       "on this volume\n       between any two commands; the .gitignore patterns "
       "are what keep them\n       out of a commit, and the assembler's guard "

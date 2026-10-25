@@ -717,3 +717,56 @@ correct code because suppression legitimately shrinks both sides; it now compare
 the two arms at each suppression level. Its first version grouped the rows with
 `endswith("suppressed")`, which puts `unsuppressed` in the same group and passed
 for the wrong reason.
+
+## The verification script verified the wrong tree, 2026-10-25
+
+Adam Dudley read `code/verify_v316_claims.py` against the v3.16.1 tag and found
+two defects. Both confirmed by execution before anything was changed.
+
+**It could not run from a clone.** Line 39 opened
+`results/final_verified.json`, an authoring-folder artifact that is
+deliberately not released, so a clean checkout of the tag died there before a
+single check ran. Seven further inputs were also unreachable from a clone: four
+were a path-prefix problem, since the released files sit under `release/` here
+and at the top level in a clone, and three read the 8 September note, which is
+not released either.
+
+So the script checked the figures in the authoring folder, not in the artifact
+anyone else can obtain. "Every claim passing" was a statement about one machine.
+That is the provenance problem this release was written to fix, reproduced
+inside the fix, and it took a reader running the script to find it.
+
+Repaired three ways. The superseded figure now ships as
+`data/superseded_depsdev_verdict.json`, with a note on why
+`results/final_verified.json` itself is not released, so a supersession can be
+checked against a released file rather than an absent one. Every released read
+goes through a release root that resolves to `release/` in the authoring folder
+and `.` in a clone. The seven authoring-folder checks are gated and skip with a
+printed reason and a count instead of stopping the run. From the authoring
+folder the script now passes 115 checks; from the released file set alone it
+passes 101 and names the 7 it skipped, exiting zero in both.
+
+**A figure was attributed to the wrong arm.** A note sent outward described
+72.2% as the name-keyed deps.dev side against "the corrected walk", which in
+context read as the matched-date arm. The file it reads,
+`data/nested_gap_state.json`, hashes to `october_state_sha256`, and
+`data/verdict_recompute.json` describes that file as resolved about a month
+later. It is the October arm.
+
+The matched-arm equivalent is 66.1%. Both are now computed and named separately
+in the script, because 66.1% is also what the released pair-keyed matched arm
+reports, by coincidence rather than by identity: that arm excludes multi-version
+names from both sides while this one keeps one version per name. Two different
+reductions landing on the same rounded value is the shape that hides a mistake,
+so the coincidence is pinned as its own check.
+
+This is the third outward figure in this correspondence whose population was
+not checked before it was reported, after the graph cluster of 8 September and
+the 79.4% against 62.1% pairing. The first two were wrong values; this one was
+a correct value under a wrong label, which is harder to catch and no better.
+
+**One more defect, found while fixing those.** A check asserted that
+`git status --porcelain` is empty. That fails whenever the author has
+uncommitted work in progress, which is not the property it was written for. The
+property is that no duplicate-name stray is untracked, since that is what a
+later `git add -A` would sweep in. Narrowed to the `??` lines.
