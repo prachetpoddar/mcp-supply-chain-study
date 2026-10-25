@@ -1,6 +1,6 @@
 # Manifest
 
-SHA-256 of every released file, generated 2026-10-24T13:11:37Z.
+SHA-256 of every released file, generated 2026-10-25T03:27:36Z.
 
 ```
 709d032522cafe45d2a007170dd3692625886ac0894615de4da76e8f0ec47a0e  ./.gitignore
@@ -182,9 +182,9 @@ f4d107959e26500848415f318e2c0e509669a260f9913479ac33bf69d26aada4  ./data/vuln_ga
 d7272bbd39db9f6851648684c8e4a9be04840e6c8d55ad854d489a4582d45e64  ./data/walk250.jsonl
 8f64850538b2594eb72e7c6ce2a784475317f193b62434aeb13f827d0f433034  ./data/walk250_corrected_asof.jsonl
 70aef4ed0a874ca0019306f63a83731402bdcfb1635d00c7d1b95190518c26a8  ./data/walk250_corrected_today.jsonl
-32a2403fc5bc18f23bf4115fde0d5886b08fa2361a7dd3d52d930dd398902e79  ./paper/mcp-frame-paper-v3.docx
+d9c44f7d3ea8c9a750930dd44c2863bdbf2a957908d46c4de2d7a0ea4902a87b  ./paper/mcp-frame-paper-v3.docx
 4b2053834afe6e88588556e4d99a02bc91ff6bd80fc0e1b7ea71c5512fa1d801  ./paper/mcp-frame-paper-v3.md
-eb50d7b9dc8ca24aed5584f3d2568fe3dbce66b224fabecd647de7752dde8d93  ./paper/mcp-frame-paper-v3.pdf
+2e39d8321d05d1f1060b330b15d0c5992889902669d2cca58dc0e3e0c688aa8d  ./paper/mcp-frame-paper-v3.pdf
 c1d5e8b92eae637846a8fb29c9c0b8673bc1d47fac1c00dd5ee94d0c9df92cc5  ./paper/mcp-supply-chain-nulls.md
 bc02d660dfdec9faece251fccf87a7abb195d5b97daaf69cca6286e4469ca069  ./preregistrations/PREREGISTRATION-2.md
 7a8fb5601ec2debed35df3bbf106030f1197ed98306791e50df1e9b3c57e1d31  ./preregistrations/PREREGISTRATION-3.md
