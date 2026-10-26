@@ -34,6 +34,7 @@ WORKING = all(os.path.exists(q) for q in
                "Claude outputs/adam-reply-2.md"))
 
 OK = FAIL = 0
+PDF_SKIP = ""
 def claim(label, got, want):
     global OK, FAIL
     good = got == want
@@ -375,7 +376,178 @@ claim("cutoff pairs compared / seen", (cc["pairs_compared"], cc["pairs_seen"]), 
 claim("nothing published after the cutoff", D.get("late_selections", []), [])
 
 # ----------------------------------------------------------------- release
-section("8. the release")
+# ---------------------------------------------------------------- drift figures
+section("8. the ten-day drift figures, walk files to paper, docx and pdf")
+# WHY: v3.16.2 corrected "155" to "156" in the markdown, and the built .docx and
+# .pdf kept saying 155 until v3.16.3. Nothing here read the paper, so a figure in
+# the text and the walk files behind it could disagree with every check green.
+# Each figure is parsed out of every shipped surface and compared with a value
+# recomputed from the two released walk files. Pairs are counted by exact
+# name@@version key. Keying by name alone collapses a package held at two
+# versions in one tree (mcpscope holds fast-uri at 3.1.7 and 4.1.4) and gives 155.
+# A surface that cannot be read is a FAIL in the authoring folder, where the pdf
+# must be covered, and a counted SKIP from a clone, where a reader may not have
+# poppler. Either way the run says so; it never reads as full coverage.
+import html, shutil, zipfile
+
+def drift_load(path):
+    rows = {}
+    for line in open(path):
+        if line.strip():
+            r = json.loads(line)
+            assert r["name"] not in rows, "duplicate root %s in %s" % (r["name"], path)
+            rows[r["name"]] = r
+    return rows
+
+def drift_pair_trees(a, b, name, old, new):
+    """Trees where name@@old left and name@@new arrived, by exact key."""
+    assert set(a) == set(b), "root sets differ"
+    ko, kn = "%s@@%s" % (name, old), "%s@@%s" % (name, new)
+    return sum(1 for r in a if ko in a[r]["pkgs"] and ko not in b[r]["pkgs"]
+               and kn in b[r]["pkgs"] and kn not in a[r]["pkgs"])
+
+def drift_norm(t, join_hyphen=False):
+    t = t.replace("`", "").replace("**", "")
+    if join_hyphen: t = re.sub(r"-\s*\n\s*", "-", t)
+    return re.sub(r"\s+", " ", t)
+
+# Whole numbers only: no digit, comma or point may touch either end, and a
+# thousands group must be well formed, so 1,184 / 127.5 / 2,8,67 never match.
+LEFT = r"(?<![\d,.])"
+INT = LEFT + r"(\d{1,3}(?:,\d{3})*)(?!\d|[.,]\d)"
+VER = r"(\d+(?:\.\d+)+)"
+ANCHOR = "Five packages account for most of it"
+MOVE_RE = re.compile(r"(@?[\w./-]+) (?:moves )?from " + VER + " to " + VER + " in " + INT)
+def drift_moves(text):
+    """The five-package sentence only, as (name, old, new, trees); None if absent."""
+    i = text.find(ANCHOR)
+    j = text.find("Two cold starts", i)
+    if i < 0 or j < 0: return None
+    return [(n, o, w, int(c.replace(",", ""))) for n, o, w, c in MOVE_RE.findall(text[i:j])]
+
+num = lambda s: int(s.replace(",", ""))
+SCALARS = [
+    (re.compile(LEFT + r"(\d{1,3}) of (\d{1,3}) servers resolve to a different set of "
+                r"packages, (\d{1,2}\.\d)%(?!\d)"),
+     lambda m: (int(m[0]), int(m[1]), float(m[2]))),
+    (re.compile(INT + r" distinct name-and-version pairs become " + INT + ", with " + INT +
+                " gone and " + INT + " new"), lambda m: tuple(map(num, m))),
+    (re.compile(r"summed across the 250 trees move by " + INT + ", from " + INT + " to " + INT),
+     lambda m: tuple(map(num, m))),
+    (re.compile(r"median is " + INT + r" nodes different and the maximum " + INT),
+     lambda m: tuple(map(num, m))),
+]
+def drift_scalars(text):
+    out = []
+    for rx, conv in SCALARS:
+        hits = rx.findall(text)
+        out.append(conv(hits[0]) if len(hits) == 1 else ("matches", len(hits)))
+    return out
+
+# the same figures restated elsewhere in the paper: every occurrence must agree
+RESTATED = [
+    ("pct of servers", re.compile(LEFT + r"(\d{1,2}\.\d)% of servers"), float, 73.6),
+    ("net change of N nodes", re.compile(r"net change of " + INT + " nodes"), num, 12),
+    ("N from drift", re.compile(INT + " from drift"), num, 12),
+    ("leaves N", re.compile(r"(?:comparison|also) leaves " + INT), num, 184),
+    ("N is a floor", re.compile(INT + " is a floor"), num, 184),
+]
+
+# the parsers read the whole number, never a prefix or a tail of it
+claim("parser does not read 1560 as 156",
+      MOVE_RE.findall("fast-uri from 3.1.7 to 3.1.8 in 1560 trees"), [])
+claim("parser rejects 156.5", MOVE_RE.findall("fast-uri from 3.1.7 to 3.1.8 in 156.5, and"), [])
+claim("parser accepts a comma then text",
+      len(MOVE_RE.findall("fast-uri from 3.1.7 to 3.1.8 in 156, and")), 1)
+claim("1,184 is not read as 184", SCALARS[0][0].findall("1,184 of 250 servers resolve to a "
+      "different set of packages, 73.6%"), [])
+claim("127.5 is not read as 127", SCALARS[3][0].findall("median is 10 nodes different and "
+      "the maximum 127.5."), [])
+claim("2,8,67 is not read as 2867", SCALARS[1][0].findall("2,8,67 distinct name-and-version "
+      "pairs become 2,882, with 171 gone and 186 new"), [])
+_t = drift_norm("Five packages account for most of it: `zod` moves from 4.5.4 to 4.6.5 in 164\n"
+                "trees, `fast-uri` from 3.1.7 to 3.1.8 in 155, and x. Two cold starts")
+claim("a stale count is read as stale", drift_moves(_t),
+      [("zod", "4.5.4", "4.6.5", 164), ("fast-uri", "3.1.7", "3.1.8", 155)])
+claim("a reworded anchor is reported, not skipped", drift_moves("no such sentence"), None)
+
+# exact-key counting: one tree per case, so no two errors can cancel. The four
+# cases below are each wrong under name-keyed counting (last or first version
+# wins) or under counting a move in either direction.
+_mk = lambda *ks: {"pkgs": {k: {} for k in ks}}
+for lab, pa, pb, want in [
+        ("old and a second version both present, old listed first", ("p@@1", "p@@9"), ("p@@2", "p@@9"), 1),
+        ("old and a second version both present, old listed last", ("p@@9", "p@@1"), ("p@@9", "p@@2"), 1),
+        ("old stays, new arrives", ("p@@1",), ("p@@1", "p@@2"), 0),
+        ("old leaves, a different version arrives", ("p@@1",), ("p@@3",), 0),
+        ("the move runs the other way", ("p@@2",), ("p@@1",), 0),
+        ("old leaves and new arrives beside an unrelated gone key", ("p@@1", "q@@1"), ("p@@2",), 1)]:
+    claim("exact-key count: " + lab,
+          drift_pair_trees({"t": _mk(*pa)}, {"t": _mk(*pb)}, "p", "1", "2"), want)
+
+wa = drift_load(os.path.join(R, "data/walk250_corrected_asof.jsonl"))
+wb = drift_load(os.path.join(R, "data/walk250_corrected_today.jsonl"))
+claim("walk files share one root set", set(wa) == set(wb), True)
+chg = [r for r in wa if set(wa[r]["pkgs"]) != set(wb[r]["pkgs"])]
+da = {k for r in wa.values() for k in r["pkgs"]}
+db = {k for r in wb.values() for k in r["pkgs"]}
+sa = sum(len(r["pkgs"]) for r in wa.values()); sb = sum(len(r["pkgs"]) for r in wb.values())
+dd = sorted(len(set(wa[r]["pkgs"]) ^ set(wb[r]["pkgs"])) for r in chg)
+med = (dd[len(dd)//2 - 1] + dd[len(dd)//2]) / 2 if len(dd) % 2 == 0 else dd[len(dd)//2]
+want_scalars = [(len(chg), len(wa), round(100 * len(chg) / len(wa), 1)),
+                (len(da), len(db), len(da - db), len(db - da)),
+                (sb - sa, sa, sb),
+                (int(med) if med == int(med) else med, max(dd))]
+want_restated = {"pct of servers": round(100 * len(chg) / len(wa), 1),
+                 "net change of N nodes": sb - sa, "N from drift": sb - sa,
+                 "leaves N": len(chg), "N is a floor": len(chg)}
+want_moves = [("zod", "4.5.4", "4.6.5"), ("hono", "4.13.7", "4.13.8"),
+              ("proxy-addr", "2.0.7", "2.0.8"), ("fast-uri", "3.1.7", "3.1.8"),
+              ("ip-address", "10.7.0", "10.7.2")]
+
+paper_md = open(os.path.join(R, "paper/mcp-frame-paper-v3.md")).read()
+with zipfile.ZipFile(os.path.join(R, "paper/mcp-frame-paper-v3.docx")) as z:
+    _x = z.read("word/document.xml").decode("utf8")
+paper_docx = html.unescape("\n".join(
+    "".join(re.findall(r"<w:t(?: [^>]*)?>(.*?)</w:t>", p, flags=re.S))
+    for p in re.findall(r"<w:p[ >].*?</w:p>", _x, flags=re.S)))
+surfaces = [("md", drift_norm(paper_md)), ("docx", drift_norm(paper_docx))]
+if shutil.which("pdftotext"):
+    pdf = subprocess.run(["pdftotext", os.path.join(R, "paper/mcp-frame-paper-v3.pdf"), "-"],
+                         capture_output=True, text=True).stdout
+    surfaces.append(("pdf", drift_norm(pdf, join_hyphen=True)))
+elif WORKING:
+    print("       pdftotext not found: install poppler (brew install poppler) to read the pdf")
+    claim("all three surfaces were read", [s for s, _ in surfaces], ["md", "docx", "pdf"])
+else:
+    PDF_SKIP = ("; the pdf was NOT read, pdftotext is not installed")
+    print("  SKIP the pdf: pdftotext is not installed, so the md and docx were read and the\n"
+          "       built pdf was not. Install poppler to cover it.")
+
+md_counts = {}
+for tag, txt in surfaces:
+    claim("%s: the five-package sentence occurs once" % tag, txt.count(ANCHOR), 1)
+    claim("%s: five moves in the whole text" % tag, len(MOVE_RE.findall(txt)), 5)
+    mv = drift_moves(txt) or []
+    claim("%s: the five moves named, with versions" % tag, [m[:3] for m in mv], want_moves)
+    for n, o, w, c in mv:
+        claim("%s: %s %s to %s trees" % (tag, n, o, w), c, drift_pair_trees(wa, wb, n, o, w))
+    for lab, g, w in zip(("changed / roots / pct", "pairs asof, today, gone, new",
+                          "node-count delta, asof, today", "median and max nodes"),
+                         drift_scalars(txt), want_scalars):
+        claim("%s: %s" % (tag, lab), g, w)
+    for lab, rx, conv, _ in RESTATED:
+        found = [conv(x) for x in rx.findall(txt)]
+        claim("%s: restated '%s', all values" % (tag, lab), sorted(set(found)), [want_restated[lab]])
+        if tag == "md":
+            md_counts[lab] = len(found)
+            claim("md: restated '%s' occurs at least once" % lab, len(found) >= 1, True)
+        else:
+            claim("%s: restated '%s' count equals md" % (tag, lab), len(found), md_counts[lab])
+print("       not covered: that these five are the five largest moves (they are, today),")
+print("       and prose figures other than the ones named above.")
+
+section("9. the release")
 man = [l.split("  ./")[-1].strip() for l in open(os.path.join(R, "MANIFEST.md"))
        if re.match(r"^[0-9a-f]{64}  ", l)]
 tracked = subprocess.run(["git", "-C", R, "ls-files"], capture_output=True,
@@ -389,8 +561,8 @@ if not WORKING:
     print("  SKIP 4 checks: the assembler's .gitignore source and the superseded\n"
           "       result files are authoring-folder paths and are not released.")
     print("\n" + "=" * 78)
-    print("%d PASS, %d FAIL  (sections 1 to 7 and the manifest checks ran from "
-          "the released\nfile set; 7 authoring-folder checks skipped)" % (OK, FAIL))
+    print("%d PASS, %d FAIL  (sections 1 to 8 and the manifest checks ran from "
+          "the released\nfile set; 7 authoring-folder checks skipped%s)" % (OK, FAIL, PDF_SKIP))
     sys.exit(1 if FAIL else 0)
 gi = open("release-files/.gitignore").read()
 claim("duplicate patterns in the assembler's source", gi.count("\n* ") >= 6, True)
